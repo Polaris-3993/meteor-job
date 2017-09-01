@@ -1,0 +1,22 @@
+<template name="profileMain">
+    <main class="profile-page">
+        <div class="worker-profile">
+            {{>profileHeader}}
+            <section class="profile-wrapper">
+                <div class="row">
+                    {{>biographyCard}}
+                    {{>quickInfoCard}}
+                    {{>statusCard}}
+                    {{>portfolioCard}}
+                <div class="row">
+                    {{>experienceCard}}
+                    {{>educationCard}}
+                </div>
+                    <div class="row">
+                        {{>workHistory}}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</template>

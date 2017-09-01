@@ -1,0 +1,34 @@
+<template name="messagesSearch">
+    {{> searchMessageBar}}
+
+    <div class="chat-body">
+        {{#if shouldShowFilterSetting}}
+            {{> conversationSearchFilter
+            }}
+        {{else}}
+
+            <div class="chat-sec scrollable-content">
+                {{> filterByDayAndTip
+                    foundMessagesNumber=foundMessagesNumber
+                    onChangeFilterByDay=onChangeFilterByDay
+                }}
+
+                {{> messagesList
+                conversation=conversation
+                messages=foundMessages
+                }}
+            </div>
+        {{/if}}
+
+        <div class="chat-input">
+            <div class="left">
+                <input type="text" class="input-text message-input"
+                       placeholder="Send a message" disabled="disabled">
+            </div>
+            <div class="file right">
+                <label class="btn" for="file"><i class="material-icons">attachment</i></label>
+                <input id="file" name="file" type="file" disabled="disabled"/>
+            </div>
+        </div>
+    </div>
+</template>

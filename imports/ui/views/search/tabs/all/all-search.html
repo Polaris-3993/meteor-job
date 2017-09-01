@@ -1,0 +1,10 @@
+<template name="allSearch">
+    <div class="templates-wrapper">
+        {{#each tabs}}
+            <div class="row">
+                {{> UI.dynamic template=template data=tabData}}
+            </div>
+            <div class="divider"></div>
+        {{/each}}
+    </div>
+</template>

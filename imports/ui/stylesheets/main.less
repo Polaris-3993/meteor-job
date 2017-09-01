@@ -1,0 +1,43 @@
+.status-online {
+    position: relative;
+}
+
+.status-online:after {
+    position: absolute;
+    top: 36px;
+    right: 20px;
+    font-size: 0.9286rem;
+    color: gray;
+    background: #73dc77;
+    width: 6px;
+    height: 6px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+#dropdown-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 997;
+    will-change: opacity;
+}
+
+#sidenav-overlay{
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+main {
+    .container {
+        max-width: 90%;
+    }
+    .table-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}

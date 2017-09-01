@@ -1,0 +1,11 @@
+<template name="experienceItem">
+    <div class="single">
+        <h3>{{data.title}} {{#if profileOwner}}<a class="edit-icon modal-trigger" href="#"><i
+                class="fa fa-pencil edit-job"></i></a>
+            <a href="" class="edit-icon"><i class="fa fa-trash-o remove-job"></i></a>{{/if}}</h3>
+        <h5>{{data.company}}</h5>
+        <h6>{{workingPeriod}}</h6>
+        <p>{{description}}{{#if showMoreButton}}{{#unless showMore}}
+            <a href="" class="show-more-description">more</a>{{else}}<a href="" class="show-less-description"> less</a>{{/unless}}{{/if}}</p>
+    </div>
+</template>

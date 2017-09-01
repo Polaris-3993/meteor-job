@@ -1,0 +1,26 @@
+<template name="screenshotModal">
+    {{#with screenshot}}
+    <div id="edit-card-modal" class="modal screenshot-modal">
+        <div class="modal-content">
+            <div id="case-example-cover">
+                <div id="nav-container">
+                    <div class="left-div" id="case-left"><a href=""><i class="medium material-icons left-arrow">keyboard_arrow_left</i></a></div>
+                    <div class="right-div" id="case-right"><a href=""><i class="medium material-icons right-arrow">keyboard_arrow_right</i></a></div>
+                    <img src="{{screenshotOriginalURL}}" />
+                </div>
+            </div>
+        </div>
+        <div class="col s12 modal-footer">
+            <div class="left">
+                Task: {{taskName}}
+            </div>
+
+            <div class="right">
+                {{formatDate takenAt 'MMM D YYYY, HH:mm'}}&nbsp;&nbsp;&nbsp;
+                {{index}}/{{screensLength}}
+            </div>
+
+        </div>
+    </div>
+    {{/with}}
+</template>

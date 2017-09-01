@@ -1,0 +1,9 @@
+<template name="participant">
+    <li>
+        <img class="left" src="{{getUserSmallPhotoById participant._id}}" alt="">
+        {{participant.profile.fullName}}
+        {{#if canRejectParticipant}}
+            <i class="material-icons remove-participant pointer right">close</i>
+        {{/if}}
+    </li>
+</template>

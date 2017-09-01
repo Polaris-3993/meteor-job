@@ -1,0 +1,22 @@
+<template name="taskActions">
+    <div class="right col s1">
+        {{#if canEditTask}}
+            <a class='vz-time-entries-options dropdown-button btn-flat no-padding right' href='#'
+               data-activates='tasks-dropdown_{{data._id}}'>
+                <i class="material-icons">more_vert</i>
+            </a>
+        {{/if}}
+        <ul id='tasks-dropdown_{{data._id}}' class='dropdown-content small'>
+            <li><a href="{{pathFor 'editTask' id=data._id}}">Edit</a>
+            </li>
+            <li><a href="{{pathFor 'assignUsersToTask' id=data._id}}">Assign users</a>
+            </li>
+            {{#if isArchived}}
+                <li><a href="" id="restore-task">Restore</a></li>
+            {{else}}
+                <li><a href="" id="archive-task">Archive</a>
+                </li>
+            {{/if}}
+        </ul>
+    </div>
+</template>

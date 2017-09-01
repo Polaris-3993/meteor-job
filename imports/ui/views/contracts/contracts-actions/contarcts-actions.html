@@ -1,0 +1,24 @@
+<template name="contractActions">
+    <div class="right col s1">
+        {{#if canViewContract}}
+            <a class='vz-time-entries-options dropdown-button btn-flat no-padding right' href=''
+               data-activates='contracts-dropdown_{{data._id}}'>
+                <i class="material-icons">more_vert</i>
+            </a>
+        {{/if}}
+        <ul id='contracts-dropdown_{{data._id}}' class='dropdown-content small'>
+            <li><a href="{{pathFor 'contract' id=data._id}}"><i class="mdi-navigation-chevron-right"></i> View</a>
+            </li>
+            {{#if canEditContract}}
+                <li><a href="{{pathFor 'editContract' id=data._id}}"><i class="mdi-navigation-chevron-right"></i> Edit</a>
+                </li>
+            {{/if}}
+            {{#if pending}}
+                {{#if canDeleteContract}}
+                    <li><a href="" id="delete-contarct"><i class="mdi-navigation-chevron-right"></i> Delete</a>
+                    </li>
+                {{/if}}
+            {{/if}}
+        </ul>
+    </div>
+</template>

@@ -1,0 +1,52 @@
+<template name="datePicker">
+    <div class="date-picker">
+        <div class="date-head">
+            <div class="date-year">
+                {{year}}
+            </div>
+            <div class="date-line active">
+                {{date}}
+            </div>
+        </div>
+        <div class="calendar">
+            {{#if isCalendarState}}
+                <div class="month-picker valign-wrapper">
+                    <i class="material-icons pagination pagination-left waves-effect waves">chevron_left</i>
+                    <span class="current-month">{{currentMonth}}</span>
+                    <i class="material-icons pagination pagination-right waves-effect waves">chevron_right</i>
+
+                </div>
+                <div class="calendar-table-container">
+                    <table class="calendar-table centered">
+                        <thead class="calendar-header">
+                            <tr>
+                                {{#each daysOfTheWeek}}
+                                    <th class="calendar-header-day">
+                                        {{this}}
+                                    </th>
+                                {{/each}}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each calendar}}
+                                <tr>
+                                    {{#each this}}
+                                        <td class="{{isEmptyDay this}} {{isActiveDay this}}">{{this}}</td>
+                                    {{/each}}
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            {{else}}
+                {{>yearPicker years=years selectedDateReactiveVar=selectedDateReactiveVar}}
+            {{/if}}
+        </div>
+        {{#if showControls}}
+            <div class="controls">
+                <div class="btn-flat waves-effect waves right save-btn">OK</div>
+    			<div class="btn-flat waves-effect waves right cancel-btn">CANCEL</div>
+    		</div>
+        {{/if}}
+    </div>
+</template>

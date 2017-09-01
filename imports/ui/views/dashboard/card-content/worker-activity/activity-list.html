@@ -1,0 +1,33 @@
+<template name="dashboardWorkerActivityList">
+    <table class="dashboard-worker-activity" style="font-size: 12px;">
+        <thead>
+        <tr>
+            <th></th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+            <th>S</th>
+            <th class="dashboard-worker-activity-result">Total</th>
+            <th class="dashboard-worker-activity-result">Cost</th>
+        </tr>
+        </thead>
+        <tbody>
+    {{#if ready}}
+    {{#if workersItems}}
+            {{#each workersItems}}
+                {{> dashboardWorkerActivityItem}}
+            {{/each}}
+        {{/if}}
+    {{/if}}
+        </tbody>
+    </table>
+    {{#unless workersItems}}
+        {{>emptyCardContent message=emptyCardMessage}}
+    {{/unless}}
+    {{#unless ready}}
+        {{>emptyCardContent message=dataLoadingMessage}}
+    {{/unless}}
+</template>

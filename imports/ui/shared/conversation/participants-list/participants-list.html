@@ -1,0 +1,21 @@
+<template name="participantsListComponent">
+    <div class="chat-body">
+        <div class="on-group-chat scrollable-content">
+            <ul>
+                {{#each participants}}
+                    {{> participant participant=this conversationId=../conversation._id}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="confirm-buttons">
+            <a href="#" class="waves-effect waves-light btn
+            {{#if canAddNewPeople}}
+                add-participants
+            {{else}}
+                disabled
+            {{/if}}">Add people</a>
+            <a href="#" class="waves-effect waves-light btn cancel">Cancel</a>
+        </div>
+    </div>
+</template>

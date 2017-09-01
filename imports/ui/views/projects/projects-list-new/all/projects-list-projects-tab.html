@@ -1,0 +1,49 @@
+<template name="projectsListProjectsTab">
+    <main class="projects-main" id="projects">
+        <div class="row search-filter">
+            <div class="col s12">
+                <div class="left">
+                    <a class="btn add-new" href="{{pathFor 'createProject'}}"><i class="material-icons left">add</i>Create
+                        project</a>
+                </div>
+                <div class="right">
+                    <div class="search">
+                        <a id="table_search" href="">
+                            <i class="search material-icons">search</i>
+                            <i class="close material-icons">close</i>
+                            <input id="search-filter" type="search" name="" value="">
+                        </a>
+                    </div>
+                    <div class="filter"><a class="dropdown-button" href="#" data-activates="filter"
+                                           data-beloworigin="true">{{getActiveFilter}}<i class="material-icons right">arrow_drop_down</i></a>
+                    </div>
+                    <ul class="dropdown-content" id="filter">
+                        <li class="filterItem"><a href="#">Most recent</a></li>
+                        <li class="filterItem"><a href="#">Most popular</a></li>
+                        <li class="filterItem"><a href="#">Date added</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                {{#if ready}}
+                    <ul class="collapsible">
+                        {{#each getProjects}}
+                            {{> projectListItem}}
+                        {{/each}}
+                        {{#if moreLeft}}
+                            <li>
+                                <div class="col s12 center-align">
+                                    <a href="#" class="btn-load-more">Load more</a>
+                                </div>
+                            </li>
+                        {{/if}}
+                    </ul>
+                {{else}}
+                    {{>loading}}
+                {{/if}}
+            </div>
+        </div>
+    </main>
+</template>

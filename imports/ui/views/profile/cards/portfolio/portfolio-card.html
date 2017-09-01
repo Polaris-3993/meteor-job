@@ -1,0 +1,64 @@
+<template name="portfolioCard">
+    <div class="col s12">
+        <div class="single-box portfolio">
+            <h4 class="title">Portfolio {{#if profileOwner}}
+                <a href="" class="edit-icon"><i class="fa fa-plus add-portfolio"></i></a>{{/if}}
+                <span class="right">
+           <!-- Category Trigger -->
+           <a class='dropdown-button' href='#' data-activates='portfolio-cat'>{{categoryName}}<i
+                   class="fa fa-caret-down"></i></a>
+        </span>
+            </h4>
+            <!-- Category Structure -->
+            <ul id='portfolio-cat' class='dropdown-content'>
+                <li class="portfolio-category" data-name="all"><a class="category" href="#">All categories</a></li>
+                {{#each portfolioCategories}}
+                    <li class="portfolio-category" data-name="{{this}}"><a class="category" href="#">{{this}}</a></li>
+                {{/each}}
+            </ul>
+
+            <div class="row">
+                {{#each userPortfolioProjects}}
+                    <div class="col m4 s12">
+                        <div class="single">
+                            <img src="{{projectThumbnail}}">
+                            <div class="on-hover">
+                                <div class="outer">
+                                    <div class="middle">
+                                        <div class="inner">
+                                            <h6><a href="">{{projectTitle}}</a></h6>
+                                            <p>{{projectDescription}}</p>
+                                            <a class="link edit-icon modal-trigger show-portfolio-info"
+                                               href=""><i class="fa fa-link"></i></a>
+                                            {{#if profileOwner}}
+                                                <div class="edit-delete">
+                                                    <a class="right edit-icon modal-trigger"
+                                                       href=""><i
+                                                            class="fa fa-pencil edit-portfolio"></i></a>
+                                                    <a href=""><i class="fa fa-trash delete-portfolio"></i></a>
+                                                </div>
+                                            {{/if}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+                <div class="col s12">
+                    {{#if showMore}}
+                        <div class="load-more">
+                            <a class="waves-effect waves-light btn" href="">view all</a>
+                        </div>
+                    {{/if}}
+                    {{#if showLess}}
+                        <div class="show-less">
+                            <a class="waves-effect waves-light btn" href="">show less</a>
+                        </div>
+                    {{/if}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>

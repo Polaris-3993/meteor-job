@@ -1,0 +1,25 @@
+<template name="messagesRegular">
+    <div class="chat-body">
+
+        <div class="chat-sec scrollable-content">
+            {{#if isMessagesReady}}
+                {{> messagesList
+                conversation=conversation
+                messages=messages
+                afterAllMessagesReRendered=afterAllMessagesReRenderedCb
+                oldestMessageId=oldestMessageId
+                }}
+            {{/if}}
+        </div>
+
+        <div class="chat-input">
+            <div class="left">
+                <input type="text" class="input-text message-input" placeholder="Send a message">
+            </div>
+            <div class="file right">
+                <label class="btn" for="file"><i class="material-icons">attachment</i></label>
+                <input id="file" name="file" type="file"/>
+            </div>
+        </div>
+    </div>
+</template>

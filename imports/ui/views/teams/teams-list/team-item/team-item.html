@@ -1,0 +1,21 @@
+<template name="teamItem">
+    <div class="col s12 m4 l3">
+        <div class="project-item">
+            <div class="vz-project-btn hide"><a class="btn-floating"><i class="material-icons">check</i></a></div>
+            <div class="card vz-workplace">
+                <div class="card-content">
+                    {{#if canEditTeam}}
+                        <a href="{{pathFor 'editTeam' id=this._id}}">Edit team</a>
+                        <a href="{{pathFor 'assignMembersToTeam' id=this._id}}">Assign members</a>
+                    {{/if}}
+                    <p>{{name}}</p>
+                    {{#if description}}
+                        <p>{{description}}</p>
+                    {{/if}}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</template>

@@ -1,0 +1,7 @@
+<template name="companyWorkers">
+{{#if workersIds}}
+        {{#each workersIds}}
+        <a href="{{pathFor 'userProfile' id=this}}">{{userName this}}</a>
+            {{/each}}
+        {{/if}}
+</template>

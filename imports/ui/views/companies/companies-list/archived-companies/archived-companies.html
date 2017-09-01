@@ -1,0 +1,75 @@
+<template name="archivedCompanies">
+    <main id="all" class="data-table">
+        <div class="table-container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="table-wrapper">
+                        <div class="table-header {{#if isCheckedCompanies}}selected{{/if}}">
+                            <h4 class="left">{{#if isCheckedCompanies}}
+                                <a class="remove" href="#"><i class="material-icons left"
+                                                              style="margin-left: -3px;">close</i></a>
+                                {{checkedCount}}
+                                companies selected{{else}}Companies{{/if}}</h4>
+                            <div class="right">
+                                <a id="table_search" class="{{#if isCheckedCompanies}}hide{{/if}}" href="#">
+                                    <i class="search material-icons left">search</i>
+                                    <i class="close material-icons left">close</i>
+                                </a>
+                                {{#if isCheckedCompanies}}
+                                    <a href="#" id="restore-companies"><i class="material-icons left">replay</i></a>
+                                    <a href="#"><i class="material-icons left">more_vert</i></a>
+                                {{else}}
+                                    <a href="#"><i class="material-icons left">filter_list</i></a>
+                                {{/if}}
+                            </div>
+                        </div>
+                        <table id="archived-companies-table" class="row-border" width="100%">
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" class="filled-in" id="select-all" name="select-all"/><label
+                                        for="select-all"></label>Name
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Location
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Created
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th></th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            {{#each archivedCompanies}}
+                                <tr>
+                                    <td><input type="checkbox" checked={{isChecked}} class="filled-in" id="{{_id}}"
+                                               name="table-item"/><label
+                                            for="{{_id}}"></label>{{name}}
+                                    </td>
+                                    <td>{{formatLocation location}}</td>
+                                    <td>{{formatDate createdAt 'L'}}</td>
+                                    <td>
+                                        {{>companyActions data=this isArchived=true}}
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

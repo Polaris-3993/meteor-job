@@ -1,0 +1,143 @@
+<template name="creteEditJob">
+    <main>
+        <div class="add-job step-1">
+            <div class="row head">
+                <div class="col s12">
+                    <h3>Add a new job listing</h3>
+                    <ul class="steps">
+                        <li>
+                            <a class="active" href="#"><span>1</span><i class="material-icons">check</i></a><br>
+                            <span>Enter job details</span>
+                        </li>
+                        <li>
+                            <a href="#"><span>2</span><i class="material-icons">check</i></a><br>
+                            <span>Select location</span>
+                        </li>
+                        <li>
+                            <a href="#"><span>3</span></a><br>
+                            <span>Overview & post</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <h6 class="form-title">Job title</h6>
+                    <input placeholder="e.g Motion Designer"  type="text" class="validate" value="{{#if job.title}}{{job.title}}{{/if}}" id="title">
+                </div><br>
+                <div class="input-field col s12">
+                    <!--<h6 class="form-title">Job description</h6>-->
+                    <textarea id="description" rows="5" class="materialize-textarea" value="{{#if job.description}}{{job.description}}{{/if}}"></textarea>
+                </div>
+                <div class="input-field col s12">
+                    <h6 class="form-title">Contract Type</h6>
+                    <ul class="inline-list">
+                        <li>
+                            <input class="with-gap" name="contract-type" value="Full-time" type="radio" id="full-time" {{isContractType 'Full-time'}} />
+                            <label for="full-time">Full-time</label>
+                        </li>
+                        <li>
+                            <input class="with-gap" name="contract-type" value="Part-time" type="radio" id="part-time"  {{isContractType 'Part-time'}}/>
+                            <label for="part-time">Part-time</label>
+                        </li>
+                        <li>
+                            <input class="with-gap" name="contract-type" value="Contract" type="radio" id="contract"  {{isContractType 'Contract'}}/>
+                            <label for="contract">Contract</label>
+                        </li>
+                        <li>
+                            <input class="with-gap" name="contract-type" value="Internship" type="radio" id="internship"  {{isContractType 'Internship'}}/>
+                            <label for="internship">Internship</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row salary-row {{salaryType}}">
+                <div class="input-field col s12">
+                    <h6 class="form-title">Salary</h6>
+                    <ul class="inline-list">
+                        <li>
+                            <input class="with-gap" name="salary" value="Annual" type="radio" id="annual"  {{isSalary 'Annual'}}/>
+                            <label for="annual">Annual</label>
+                        </li>
+                        <li>
+                            <input class="with-gap" name="salary" value="Monthly" type="radio" id="monthly"  {{isSalary 'Monthly'}}/>
+                            <label for="monthly">Monthly</label>
+                        </li>
+                        <li>
+                            <input class="with-gap" name="salary" value="Hourly" type="radio" id="hourly"  {{isSalary 'Hourly'}}/>
+                            <label for="hourly">Hourly</label>
+                        </li>
+                        <li>
+                            <input class="with-gap" name="salary" value="Fixed price" type="radio" id="fixed-price"  {{isSalary 'Fixed price'}}/>
+                            <label for="fixed-price">Fixed price</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="range-field salary-type annual col s12">
+                    <h6 class="form-title">Salary range:</h6>
+                    <div class="slider-wrapper">
+                        <div id="slider-range"></div>
+                    </div>
+                </div>
+                <div class="input-field salary-type monthly-rate col s12">
+                    <h6 class="form-title">Monthly:</h6>
+                    <div class="relative">
+                        <label for="monthly-rate">$</label>
+                        <input type="text" id="monthly-rate" value="{{#if job.salary.montlyRate}}{{job.salary.montlyRate}}{{/if}}" placeholder=""><span>/month</span>
+                    </div>
+                </div>
+                <div class="input-field salary-type hourly-rate col s12">
+                    <h6 class="form-title">Hourly rate:</h6>
+                    <div class="relative">
+                        <label for="hourly-rate">$</label>
+                        <input type="text" id="hourly-rate" value="{{#if job.salary.hourlyRate}}{{job.salary.hourlyRate}}{{/if}}" placeholder=""><span>/hour</span>
+                    </div>
+                </div>
+                <div class="input-field salary-type fixed-rate col s12">
+                    <h6 class="form-title">Price per contract:</h6>
+                    <div class="relative">
+                        <label for="contract">$</label>
+                        <input type="text" id="contract-price" value="{{#if job.salary.contractPrice}}{{job.salary.contractPrice}}{{/if}}" placeholder=""><span>/contract</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            <div class="input-field equity col s12">
+                <h6 class="form-title">Equity:</h6>
+                <div class="relative">
+                    <label for="equity">%</label>
+                    <input type="text" id="equity" value="{{#if job.equity}}{{job.equity}}{{/if}}" placeholder="">
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <h6 class="form-title">Skills</h6>
+                    {{#unless isSettingSkill}}
+                        {{>skillsChip skills=skills}}
+                    {{/unless}}
+                </div>
+                <div class="input-field col s12">
+                    <h6 class="form-title">Suggested skills</h6>
+                    <div class="suggested-skilld">
+                        {{#each suggestedSkills}}
+                            <a href="" class="suggested-skill"><div class="chip">{{label}}<i class="close material-icons">close</i></div></a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="row action">
+                <a href="#" class="discard">Discard</a>
+                <a href="#" class="next">Next</a>
+            </div>
+
+        </div>
+    </main>
+</template>

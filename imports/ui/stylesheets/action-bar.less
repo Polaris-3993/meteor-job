@@ -1,0 +1,42 @@
+//unused style
+//TODO: delete this style if not used in the future
+
+@accent: #448AFF;
+
+.vz-action-bar {
+    background-color: @accent;
+    margin-top: -20px;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    transition: 300ms;
+
+    &.hide{
+        height: 0;
+        transform: translateY(-50px);
+        display: block!important;
+    }
+
+    .action-buttons-list{
+
+        .action-button {
+            display: inline-block;
+            padding: 0 0.8rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    i {
+        font-size: 1.75rem;
+        line-height: 50px;
+    }
+}

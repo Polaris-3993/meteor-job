@@ -1,0 +1,78 @@
+<template name="generalSettings">
+    <main id="general" class="settings">
+        <div class="container">
+            <div class="row">
+                <!--Card for password-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Password</h3>
+                        <p class="sub-title">Password last changed<strong><a href="#"> {{dateFromNow passwordUpdated}}.</a></strong></p>
+                            <a class="btn styled blue" href="#" id="change-password">Change Password</a>
+
+                        </div>
+                </div>
+                <!--Card for profile url-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Profile URL<a href="#"><i class="material-icons right">help_outline</i></a></h3>
+                        <p class="sub-title">Your public profile is accessible through this URL.</p>
+                        <div class="input-inline">http://vez.io/
+                            <input type="text" name="" value="mirobadboi420">
+                        </div><a class="btn" href="#">Update changes</a>
+                    </div>
+                </div>
+                <!--Card for connected services-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Connected services</h3>
+                        <p class="sub-title">Manage your connected services here</p>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th data-field="id"></th>
+                                <th data-field="name">Name</th>
+                                <th data-field="authorized">Authorized</th>
+                                <th data-field="action"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img src="images/drive.png" alt=""></td>
+                                <td>Google Drive</td>
+                                <td>1.2.2017</td>
+                                <td><a class="remove" href="#">Remove</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/dropbox.png" alt=""></td>
+                                <td>Dropbox</td>
+                                <td>6.5.1945</td>
+                                <td><a class="remove" href="#">Remove</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--Card for available storage-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Available storage</h3>
+                        <p class="sub-title">Your available storage counted against your quota.</p>
+                        <div class="progress-container">
+                            <div class="progress">
+                                <div class="determinate" style="width:46%;"></div>
+                            </div>
+                        </div>
+                        <p class="progress-info">4,6GB used out of 10GB</p><a class="btn styled blue" href="#">Increase Storage</a>
+                    </div>
+                </div>
+                <!--Card for remove account-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Remove account</h3>
+                        <p class="sub-title">Permanently remove your account. This action cannot be undone.</p><a class="btn styled red" href="#" id="remove-account">Remove account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

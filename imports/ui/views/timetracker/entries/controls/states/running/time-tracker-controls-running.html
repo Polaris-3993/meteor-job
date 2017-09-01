@@ -1,0 +1,37 @@
+<template name="timeTrackerControlsRunning">
+    <div id="time-entries" class="col s12 no-padding">
+
+        <div class="col s12 m12 l10 no-padding">
+
+            <div class="vz-time-entry-message z-depth-1 white">
+                <div class="input-field col no-margin {{messageInputWidth}}">
+                    <input id="time-entry-message" class="time-entry-message" type="text"
+                           placeholder="What are you working on?" disabled/>
+                </div>
+                {{#if hasProject}}
+                    <div class="col s2 valign-wrapper" style="height:100%;">
+                        <span class="waves-effect waves-light vz-tag color1" style="margin:auto;">
+                            {{selectedProject}}
+                        </span>
+                    </div>
+                {{/if}}
+                <div id="timetracker-elapsed-time" class="col s2">
+                    {{{timeElapsed}}}
+                </div>
+            </div>
+        </div>
+
+        <div class="col l2 hide-on-med-and-down" style="padding-right: 0px">
+            <a class="waves-effect waves-light btn-large fullwidth red time-tracker-stop-button">Stop</a>
+        </div>
+
+    </div>
+    <!-- end row "Where are you working" -->
+    <div class="row hide-on-large-only">
+        <div class="col s12 no-padding">
+            <div class="left-align">
+                <a class="waves-effect waves-light btn-large fullwidth red time-tracker-stop-button">Stop</a>
+            </div>
+        </div>
+    </div>
+</template>

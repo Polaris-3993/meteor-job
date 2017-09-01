@@ -1,0 +1,162 @@
+<template name="billingAddCard">
+
+    <div class="row">
+
+        <div class="col s12">
+
+            <div class="card vz-billing">
+
+                <div class="card-content">
+
+                    <span class="card-title">Add New Card</span>
+
+                    <div class="row">
+                        <div class="col s12 no-padding">Card will be charged monthly for resources used. All major
+                            credit cards accepted.
+                        </div>
+                    </div>
+
+                    <div class="row credit-container no-margin">
+
+                        <div class="col m6 valign-wrapper credit-height hide-on-small-only">
+                            <img src="images/cards/credit-card.png">
+                        </div>
+
+                        <div class="col s12 m6">
+
+                            <form class="col s12">
+
+                                <div class="row no-margin">
+                                    <div class="input-field col s12">
+                                        <b>Your Details</b>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="phone_number" type="tel" class="validate">
+                                        <label for="phone_number">Phone Number</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="street_address" type="text" class="validate">
+                                        <label for="street_address">Street Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="City" type="text" class="validate">
+                                        <label for="City">City</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="state" type="text" class="validate">
+                                        <label for="state">State</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="zip_code" type="text" class="validate">
+                                        <label for="zip_code">Country</label>
+                                    </div>
+                                    <div class="input-field col s6">
+
+                                        <select>
+                                            <option value="1">Daily View</option>
+                                            <option value="2">Month View</option>
+                                            <option value="3">Year View</option>
+                                            <option value="1">Daily View</option>
+                                            <option value="2">Month View</option>
+                                            <option value="3">Year View</option>
+                                            <option value="1">Daily View</option>
+                                            <option value="2">Month View</option>
+                                            <option value="3">Year View</option>
+                                            <option value="1">Daily View</option>
+                                            <option value="2">Month View</option>
+                                            <option value="3">Year View</option>
+                                            <option value="1">Daily View</option>
+                                            <option value="2">Month View</option>
+                                            <option value="3">Year View</option>
+                                            <option value="1">Daily View</option>
+                                            <option value="2">Month View</option>
+                                            <option value="3">Year View</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="row no-margin">
+
+                                    <div class="input-field col s12">
+                                        <b>Card Details</b>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="input-field col s6">
+                                        <input id="card_number" type="text" class="validate">
+                                        <label for="card_number">Card Number</label>
+                                    </div>
+
+                                    <div class="input-field col s6">
+
+                                        <input id="cvv" type="text" class="validate" maxlength="3">
+                                        <label for="cvv" class="fullwidth">
+                                            <div class="col s4">CVV</div>
+                                            <div class="col s8 center">
+                                                <img src="images/cards/cvv.png" class="right-align">
+                                                <a class="tooltipped" data-position="top" data-delay="50"
+                                                   data-tooltip="I am tooltip"><i class="material-icons">help</i></a>
+                                            </div>
+                                        </label>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="input-field col s6">
+                                        <input id="expires_date" type="text" class="validate">
+                                        <label for="expires_date">Expires MM/YYYY</label>
+                                    </div>
+
+                                    <div class="input-field col s6">
+                                        <input id="card_name" type="text" class="validate">
+                                        <label for="card_name">Card Name</label>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-action right-align">
+                        <a class="btn-flat" href="">Cancel</a>
+                        <a class="btn-flat" href="">Save</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</template>

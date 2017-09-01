@@ -1,0 +1,27 @@
+<template name="tasksProjectModalPicker">
+    <div id="tasks-project-modal-picker" class="modal">
+        <div class="title">
+            <h4>Select project</h4>
+        </div>
+        <div class="input-filter">
+            <div class="input-field col s12">
+                <input type="text" id="filter-project"/>
+                <label for="name">Filter projects</label>
+            </div>
+        </div>
+        <div class="modal-content tasks">
+            <div class="tasks">
+                <ul class="collection">
+                    {{#each projects}}
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">folder</i>
+                            <span class="title">{{name}}</span>
+                            <a class="select-project-button secondary-content btn-floating waves-effect waves-light green"><i
+                                    class="material-icons">play_arrow</i></a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,34 @@
+<template name="associateWorkplaceWithCompany">
+    <div class="container">
+        {{#if selectedCompany}}
+            <div class="row">
+                <p class="bold">Selected company</p>
+                <p>
+                    {{selectedCompany.name}}
+                    <i class="material-icons remove-associated-company pointer">remove</i>
+                </p>
+            </div>
+        {{/if}}
+
+        <div class="row">
+            <p class="bold">Companies list</p>
+            <ul id="companiesList">
+                {{#each companies}}
+                    <li class="team-item">
+                        {{name}}
+                        <i class="material-icons companies-for-associate-icon pointer"
+                           id="{{_id}}">add</i>
+                    </li>
+                {{/each}}
+            </ul>
+            {{#if shouldDisplayLoadMoreButton}}
+                <button class="load-more-button btn">Load More</button>
+            {{/if}}
+        </div>
+
+        <div class="row">
+            <button class="btn associate-with-company-button">Save</button>
+            <button class="btn cancel-button">Cancel</button>
+        </div>
+    </div>
+</template>

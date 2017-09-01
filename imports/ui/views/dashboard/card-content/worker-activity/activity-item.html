@@ -1,0 +1,16 @@
+<template name="dashboardWorkerActivityItem">
+  <tr>
+    <td>
+      <!--<div class="image {{#if workerStatus}}online{{else}}offline{{/if}}">
+        <img src="{{workerAvatar}}" />
+      </div>-->
+      {{> assignedUsersWithPhotoAndStatus this.workerId}}
+      <!--<div class="workerActivityUsernameLabel hidden">{{workerName}}</div>-->
+    </td>
+    {{#each weekTimeCount}}
+      {{>dashboardWorkerActivityDay}}
+    {{/each}}
+    <td class="dashboard-worker-activity-result total">{{formatSecondsAsActivityCard totalTime}}</td>
+    <td class="dashboard-worker-activity-result cost">${{totalMoneyEarned}}</td>
+  </tr>
+</template>

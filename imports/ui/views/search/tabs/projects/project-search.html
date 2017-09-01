@@ -1,0 +1,10 @@
+<template name = "projectsSearch">
+    {{#if showHeader}}
+        {{> searchTabHeader title="Projects" clickId="projectsSearch" collection="Projects"}}
+    {{/if}}
+    <div class="row">
+        {{#each projects}}
+            {{> projectItem this}}
+        {{/each}}
+    </div>
+</template>

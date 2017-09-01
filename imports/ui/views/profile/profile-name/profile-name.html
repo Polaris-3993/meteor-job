@@ -1,0 +1,27 @@
+<template name="profileName">
+    <div class="profile-name">
+        {{#unless editName}}
+            {{profileName}}
+            {{#if profileOwner}}
+                <i class="edit-button edit-name fa fa-pencil"></i>
+            {{/if}}
+        {{else}}
+            <!--EDIT NAME FORM-->
+            <div class="row">
+                <form id="editNameForm">
+                    <div class="input-field col s5">
+                        <input type="text" id="firstNameEdit" value='{{firstName}}'/>
+                        <label for="firstNameEdit" class="active">First Name</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input type="text" id="lastNameEdit" value='{{lastName}}'/>
+                        <label for="lastNameEdit" class="active">Last Name</label>
+                    </div>
+                    <div class="col s2">
+                        <button class="btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        {{/unless}}
+    </div>
+</template>

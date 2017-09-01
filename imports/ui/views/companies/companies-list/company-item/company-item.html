@@ -1,0 +1,44 @@
+<template name="companyItem">
+    <div class="col s12 m4">
+        <div class="workplace-item">
+
+            <div class="vz-workplace-btn hide"><a class="btn-floating"><i class="material-icons">check</i></a></div>
+            <div class="card vz-workplace">
+                <div class="card-content">
+
+                    <div class="top-content">
+                        <span class="card-title"><b>{{company.name}}</b></span>
+                        <hr>
+                        <p>{{#if company.description}}
+                            {{company.description}}
+                        {{else}}
+                            No description
+                        {{/if}}</p>
+                    </div>
+
+                    <!-- Yura:dont know wtf is that so commentin all this shit -->
+
+                    <!--<div class="card-icon-list hide">-->
+                    <!--  <ul>-->
+                    <!--    <li><a href="#"><i class="mdi-social-share"></i></a></li>-->
+                    <!--    <li><a href="#"><i class="mdi-content-inbox"></i></a></li>-->
+                    <!--    <li><a href="#"><i class="mdi-action-label"></i></a></li>-->
+                    <!--    <li><a href="#"><i class="mdi-action-settings"></i></a></li>-->
+                    <!--  </ul>-->
+                    <!--</div>-->
+
+                </div>
+
+                <div class="card-action">
+                    Owner: {{company.owner.profile.firstName}} {{owner.profile.lastName}}
+                    <a href="{{pathFor route='companyDetail' id=company._id}}" class='btn'>DETAILS</a>
+                    <!--<p><img src="images/avatars/avatar01.png" class="avatar-s">-->
+                    <!--<span>Last Edited 7 hours ago by <b>Name LastName</b></span></p>-->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</template>

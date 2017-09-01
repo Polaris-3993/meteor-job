@@ -1,0 +1,84 @@
+<template name="editProfileModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="col s12">
+                <div class="top-info">
+                    <div id="edit-profile-modal" class="modal edit-profile">
+                        <div class="modal-content">
+                            <div class="head">Edit profile</div>
+                            <div class="content">
+                                <div class="input-field col s6">
+                                    <input value="{{#if this.profile.firstName}}{{this.profile.firstName}}{{/if}}" id="first-name"
+                                           type="text"
+                                           class="validate">
+                                    <label class="active" for="first-name">First name</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input value="{{#if this.profile.lastName}}{{this.profile.lastName}}{{/if}}" id="last-name"
+                                           type="text"
+                                           class="validate">
+                                    <label class="active" for="last-name">Last name</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input value="{{#if this.profile.overview}}{{this.profile.overview}}{{/if}}" id="overview" type="text"
+                                           class="validate"
+                                           maxlength="25">
+                                    <label class="active" for="overview">Overview</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input value="{{#if this.profile.location}}{{this.profile.location.locality}}, {{this.profile.location.country}}{{/if}}" id="location" type="text">
+                                    <label class="active" for="location">Location</label>
+                                </div>
+
+                                <!--<div class="input-field col s6">-->
+                                    <!--<div class="chips"></div>-->
+                                <!--</div>-->
+
+                                <div class="col s6 user-skills">
+                                    <div class="chips chips-autocomplete" id="skills"></div>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input value="{{#if this.profile.hourlyRate}}{{this.profile.hourlyRate}}{{/if}}" id="hourly-rate" type="text" class="validate">
+                                    <label class="active" for="rate">Hourly rate (in us dollar)</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <select id="availability">
+                                        <option value="Less than 20 hours"  {{isSelected 'Less than 20 hours'}}>Less than 20 hours</option>
+                                        <option value="Less than 40 hours"  {{isSelected 'Less than 40 hours'}}>Less than 40 hours</option>
+                                        <option value="More than 40 hours"  {{isSelected 'More than 40 hours'}}>More than 40 hours</option>
+                                    </select>
+                                    <label>Availability</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <!-- Switch -->
+                                    <label class="active" for="invitations">Get invitations</label>
+                                    <div class="switch">
+                                        <label>
+                                            Off
+                                            <input type="checkbox" id="get-invitations" {{isChecked}}>
+                                            <span class="lever"></span>
+                                            On
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col s12 modal-footer">
+                            <a href="#!" class="modal-action waves-effect waves-red btn-flat save">Save</a>
+                            <a href="#!" class="modal-action waves-effect waves-red btn-flat cancel">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

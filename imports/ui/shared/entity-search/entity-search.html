@@ -1,0 +1,25 @@
+<template name="entitySearchForm">
+    <div class="row">
+        <div class="col s6">
+            <input type="text" id="searchString" />
+            {{#if labelName}}
+            <label for="projectName" class="active">
+                {{labelName}}
+            </label>
+                {{/if}}
+            <ul class="search-list search-dropdown {{#if isInputFocused}}active{{/if}}">
+                {{#each foundEntities}}
+                    {{> foundEntity
+                    displayedPropertyName=../displayedPropertyName
+                    entity=this
+                    onSelectEntity=onSelectEntity
+                    searchInput=getSearchInput
+                    }}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col s1">
+            <p><i class="material-icons cancel-add-assignedUser-icon pointer">cancel</i></p>
+        </div>
+    </div>
+</template>

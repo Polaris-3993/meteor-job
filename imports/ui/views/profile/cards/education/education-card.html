@@ -1,0 +1,25 @@
+<template name="educationCard">
+    <div class="col l6 m12 s12">
+        <div class="single-box education">
+            <h4 class="title">Education {{#if profileOwner}}<a href="" class="right edit-icon"><i class="fa fa-plus add-education"></i></a>{{/if}}</h4>
+
+            <div class="edu-outer">
+            {{#each userEducation}}
+                {{>educationItem data=this}}
+            {{/each}}
+            </div>
+
+            {{#if showMoreEducation}}
+                <div class="load-more">
+                    <a class="waves-effect waves-light btn" href="">load more</a>
+                </div>
+            {{/if}}
+            {{#if showLessEducation}}
+                <div class="show-less">
+                    <a class="waves-effect waves-light btn" href="">show less</a>
+                </div>
+            {{/if}}
+
+        </div>
+    </div>
+</template>

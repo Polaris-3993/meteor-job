@@ -1,0 +1,19 @@
+<template name="locationCard">
+    <div class="profile-card-wrapper">
+        <div id="locationCard" class="card location-card">
+            <div class="card-header">
+                Location
+                {{#if profileOwner}}
+                    <i class="edit-button fa fa-pencil"></i>
+                {{/if}}
+            </div>
+            <div class="card-body">
+                {{#unless editState}}
+                    {{>showLocationCard}}
+                {{else}}
+                    {{>editLocationCard editStateCb}}
+                {{/unless}}
+            </div>
+        </div>
+    </div>
+</template>

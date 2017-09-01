@@ -1,0 +1,37 @@
+<template name="assignTeamToProjectOrCompany">
+    <div class="container">
+        <div class="row">
+            <p class="bold">Assigned teams</p>
+            <ul>
+                {{#each assignedTeams}}
+                    <li>
+                        {{name}}
+                        <i class="material-icons assigned-team-item-icon pointer"
+                           id="{{_id}}">close</i>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="row">
+            <p class="bold">Teams list</p>
+            <ul id="teamsList">
+                {{#each teams}}
+                    <li class="team-item">
+                        {{name}}
+                        <i class="material-icons team-for-assigning-icon pointer"
+                           id="{{_id}}">add</i>
+                    </li>
+                {{/each}}
+            </ul>
+            {{#if shouldDisplayLoadMoreButton}}
+                <button class="load-more-button btn">Load More</button>
+            {{/if}}
+        </div>
+
+        <div class="row">
+            <button class="btn assign-team-button">Assign team</button>
+            <button class="btn cancel-button">Cancel</button>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,56 @@
+<template name="loginPageOld">
+    <div class="row">
+        <div class="col s12 m8 offset-m2 l4 offset-l4 no-padding">
+            <div class="row no-margin">
+                <div class="col s10 offset-s1 z-depth-1 white">
+                    <form id="login-form" action="#" class="login-form secondary-color">
+                        <div class="row">
+                            <div class="col s12">
+                                <h5 class="center no-margin">Sign in to your account</h5>
+                            </div>
+                        </div>
+
+                        {{> googleLogin label="Sign in"}}
+
+                        <div class="row no-margin">
+                            <div class="col s12 center-align">&nbsp;or&nbsp;</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="Invalid&nbsp;Email" data-success="">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password" type="password" class="validate">
+                                <label for="password" class="">Password</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s12">
+                                <button class="btn-large btn-dark no-shadow waves-effect waves-light col s12 text-transform-none">
+                                    Sign in
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end row -->
+    <div class="row vz-signin">
+        <p class="center">
+            <a href="/password-reset">Forgot password?</a>
+        </p>
+
+        <p class="center">
+            Need an account? <a href="/sign-up">Sign Up</a>
+        </p>
+    </div>
+</template>

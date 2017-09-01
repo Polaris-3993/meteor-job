@@ -1,0 +1,100 @@
+<template name="topNavBar">
+    <header>
+        <div class="row top-bar">
+            <div class="col m4 s7">
+                <div class="nav-drawer">
+                    {{>leftMenu}}
+                    <a class="menu button-collapse" data-activates="slide-out" data-menu="6">
+                        <div class="icon"></div>
+                        <span>{{pageTitle}}</span></a>
+                </div>
+            </div>
+            {{>searchBar}}
+            <div class="col m3 s5">
+                <div class="action-bar right-align">
+                    <a class="search-icon hide-on-med-and-up" href="#"><i class="material-icons">search</i></a>
+                    <a class="notification dropdown-button" data-beloworigin="true"
+                       data-activates="notification-dropdown" href="#">
+                        <i class="material-icons hide">notifications</i>
+                        <span>{{#if unreadNotificationsCount}}{{unreadNotificationsCount}}{{else}}0{{/if}}</span>
+                    </a>
+                    <div class="dropdown-content notifications" id="notification-dropdown">
+                        <div class="top">
+                            <a href="#" class="left">{{#if
+                                    unreadNotificationsCount}}{{unreadNotificationsCount}}{{else}}
+                                0{{/if}} unread notifications</a>
+                            <a href="#" class="right" id="clear-all-notifications">Clear all</a>
+                            <a href="#" class="all-notification"><i class="material-icons left">arrow_back</i>All
+                                notifications</a>
+                        </div>
+                        {{#each unreadNotifications}}
+                            <div class="card">
+                                <div class="image">
+                                    <div class="single active">
+                                        <img src="{{profilePhoto}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <h4>{{title}}</h4>
+                                    <p>{{message}}</p>
+                                </div>
+                                <a href="" class="setting material-icons" id="mark-as-read">close</a>
+                            </div>
+                        {{/each}}
+                        <div class="action center-align">
+                            <a href="{{pathFor 'notifications'}}" class="all-noti">See all notifications</a>
+                        </div>
+                    </div>
+
+                    <a class="dropdown-button" href="" data-beloworigin="true"
+                       data-activates="user-switch-dropdown">{{currentUser.profile.firstName}}{{#if selectedCompany}}
+                        ({{companyName}}){{/if}}<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="dropdown-content user-switch" id="user-switch-dropdown">
+                        <div class="email">
+                            {{currentUser.emails.[0].address}}
+                        </div>
+                        <a id="workers-view" class="user {{#if currentUser.profile.online}}active{{/if}}" href="">
+                            <div class="image"><img src="{{profilePhoto}}" alt=""></div>
+                            <div class="detail">
+                                <h4>{{currentUser.profile.fullName}}</h4>
+                                {{#if unreadNotificationsCount}}
+                                    <p>{{unreadNotificationsCount}} new notifications</p>
+                                {{else}}
+                                    <p>No new notifications</p>
+                                {{/if}}
+                            </div>
+                        </a>
+                        <ul class="collapsible profile-companies" data-collapsible="accordion">
+                            {{#if userCompanies}}
+                            <li>
+                                    <div class="collapsible-header"><a href="">Companies <i class="material-icons down">keyboard_arrow_down</i><i
+                                            class="material-icons up">keyboard_arrow_up</i></a></div>
+                                <div class="collapsible-body">
+                                    <div class="search-field">
+                                        <input id="filter-company" type="text" name="" value="" placeholder="Search company">
+                                    </div>
+                                    {{#each userCompanies}}
+                                        <a class="user company" id="company" href="">
+                                            <div class="image">{{#if logoUrl}}<img src="{{logoUrl}}" alt="">{{else}}{{firstChar}}{{/if}}</div>
+                                            <div class="detail">
+                                                <h4>{{name}}</h4>
+                                                <p><strong>5 unread messages</strong></p>
+                                            </div>
+                                        </a>
+                                    {{/each}}
+                                </div>
+                            </li>
+                            {{/if}}
+                        </ul>
+                        <div class="action">
+                            <a href="{{pathFor 'userProfile' id=currentUser._id}}">Manage Account</a>
+                            <a href="" class="btn waves-effect waves-light btn-logout">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</template>
+
+

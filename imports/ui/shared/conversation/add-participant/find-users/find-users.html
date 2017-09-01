@@ -1,0 +1,15 @@
+<template name="findUser">
+    <!-- Group create -->
+    <div class="create-group scrollable-content">
+        <ul>
+            {{#each foundUsers}}
+                <li>
+                    <input type="checkbox" class="filled-in" id="{{_id}}"/>
+                    <label for="{{_id}}">
+                        <img src="{{getUserSmallPhotoById _id}}" alt="">{{profile.fullName}}
+                    </label>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</template>

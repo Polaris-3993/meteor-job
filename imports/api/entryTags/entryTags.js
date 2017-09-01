@@ -1,0 +1,1 @@
+export const EntryTags = new Mongo.Collection('vz-entry-tags');

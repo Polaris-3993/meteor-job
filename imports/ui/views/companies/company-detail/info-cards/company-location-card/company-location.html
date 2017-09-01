@@ -1,0 +1,12 @@
+<template name="companyDetailCompanyLocationCard">
+    <div class= "col s4 ">
+        <div class="company-detail-card card-panel z-depth-0">
+            <span class="card-title bold no-margin">Map Location</span>
+            
+            <div class="map-location" style="height:130px">
+                {{>googleMapWrapper name="companyDetailLocation" options=mapOptions}}
+            </div>
+            
+        </div>
+    </div>
+</template>

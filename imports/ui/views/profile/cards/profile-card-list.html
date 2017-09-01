@@ -1,0 +1,15 @@
+<template name="profileCardList">
+    <div class="profile-cards">
+        {{#each profileCards}}
+            {{#if isLocation profileField}}
+                {{>locationCard userId=../userId}}
+            {{else}}
+                {{#if isSkills profileField}}
+                    {{>skillsCard}}
+                {{else}}
+                    {{>profileCard}}
+                {{/if}}
+            {{/if}}
+        {{/each}}
+    </div>
+</template>

@@ -1,0 +1,17 @@
+<template name="participantsListModal">
+    <div id="participants-list-modal" class="modal">
+        <div class="modal-content">
+            <h4>Participants</h4>
+            <ul>
+                {{#each participants}}
+                    {{> participantsListModalItem
+                    participant=this conversationId=../conversation._id}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="modal-fixed-footer">
+            <button class="btn close-modal-button">Close</button>
+        </div>
+    </div>
+</template>

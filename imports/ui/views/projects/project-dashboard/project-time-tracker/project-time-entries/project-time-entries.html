@@ -1,0 +1,64 @@
+<template name="prjectTimeEntries">
+    <div class="row search-filter">
+        <div class="col s6">
+            <div class="input-field search">
+                <a class="material-icons prefix" href="#">search</a>
+                <input id="filter-tasks" type="text" class="validate" placeholder="Search tasks">
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="filter right-align">
+                <div href="#" class="input-field dropdown mr-30">
+                    <select id="view-select">
+                        <option value="day" selected>Daily View</option>
+                        <!--<option value="week">Weekly view</option>-->
+                        <option value="month">Monthly view</option>
+                        <option value="year">Yearly view</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{#if hasEntries}}
+        <div class="row">
+            <div class="col s12">
+                {{#each timeEntriesGroups}}
+                    <h3 class="track-title">{{label}}</h3>
+                    <ul class="collapsible" data-collapsible="accordion">
+                        {{#each timeEntries}}
+                            <li>
+                                <div class="collapsible-header">
+                                    <div class="col m6 s12 pl-0">
+                                        <i class="material-icons more">expand_more</i>
+                                        <i class="material-icons less">expand_less</i>
+                                        <a href="#" class="left">{{taskNameKey.name}}</a>
+                                        <a href="#" class="right">{{taskNameKey.key}}</a>
+                                    </div>
+                                    <div class="col m6 s12">
+                                        <a href="#" class="left">{{totalEarned}}</a>
+                                        <span class="right"><a href="#"><strong>{{formatSecondsAsTimeTask
+                                                entryTimeTracked}}</strong></a><a href="" class="ml-50">{{formatDate
+                                                startDate 'HH:mm'}}-{{formatDate endDate 'HH:mm'}}</a></span>
+                                    </div>
+                                </div>
+                                <div class="collapsible-body">
+                  <span class="activity level-2"><label>Activity:</label>
+                    <i></i><i></i><i></i><i></i><i></i>
+                  </span>
+                                    <span><label>Screenshots:</label> <a href="#">{{screenShotsCount}}</a></span>
+                                    <span class="right delete"><a href="#" class="material-icons"
+                                                                  id="delete-time-entry">delete</a></span>
+                                </div>
+                            </li>
+                        {{/each}}
+                    </ul>
+                {{/each}}
+            </div>
+            {{#if shouldShowLoadMoreButton}}
+                <div class="col s12 center-align">
+                    <a href="#" class="btn-load-more" id="time-tracker-show-more">Load more</a>
+                </div>
+            {{/if}}
+        </div>
+    {{/if}}
+</template>

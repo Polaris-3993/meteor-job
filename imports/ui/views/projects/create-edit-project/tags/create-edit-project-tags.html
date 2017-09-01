@@ -1,0 +1,26 @@
+<template name="tagsBlock">
+    <div class="input-field col s12">
+        {{#each tags}}
+            <div class="chip">
+                {{this}}
+                <i class="material-icons delete-tag-icon">close</i>
+            </div>
+        {{/each}}
+        {{#if showTagInput}}
+            <div class="row">
+                <div class="col sm 6">
+                    <input type="text" id="tags" pattern="\w+"/>
+                </div>
+                <div class="col sm 1">
+                    <p><i class="material-icons add-tag-icon pointer">done</i></p>
+                </div>
+                <div class="col sm 1">
+                    <p><i class="material-icons cancel-add-tag-icon pointer">cancel</i></p>
+                </div>
+            </div>
+        {{else}}
+            <i class="material-icons show-tag-input-icon pointer">add</i>
+        {{/if}}
+        <label for="tags" class="active">Tags</label>
+    </div>
+</template>

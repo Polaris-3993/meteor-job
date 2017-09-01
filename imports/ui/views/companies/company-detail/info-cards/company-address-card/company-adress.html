@@ -1,0 +1,22 @@
+<template name="companyDetailCompanyAddressCard">
+    <div class= "col s4 ">
+        <div class="company-detail-card card-panel z-depth-0">
+            <span class="card-title bold">Address</span>
+            {{#if companyAddress}}
+                <div class="company-address row ">
+                    <div class="col s1 ">
+                        <i class="material-icons">home</i>
+                    </div>
+                    <div class="col s11 left-padding-20">
+                        {{#with companyAddress}}
+                            {{zip}} {{address}} <br>
+                            {{city}}, {{country}}
+                        {{/with}}
+                        <br>
+                        <span class="light-sign">Head Office</span>
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</template>

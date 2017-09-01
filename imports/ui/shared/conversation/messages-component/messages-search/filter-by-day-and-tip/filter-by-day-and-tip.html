@@ -1,0 +1,26 @@
+<template name="filterByDayAndTip">
+
+    {{#if shouldShowTip}}
+        <div class="alert-message">
+            <i class="material-icons left" type="button">error_outline</i>
+            <span>Tap the message to scroll up to the past conversation</span>
+            <i class="material-icons close-message right" type="button">close</i>
+        </div>
+    {{/if}}
+
+    <div class="chat-filter">
+        <span class="left">{{foundMessagesNumber}} results</span>
+
+        <a class="filter-dropdown dropdown-button right pointer" data-beloworigin="true"
+           data-activates="filter-dropdown">
+            <span>{{filterByDaySelectedValue}}</span>
+            <i class="material-icons">arrow_drop_down</i></a>
+
+        <ul id="filter-dropdown" class="dropdown-content">
+            <li id="allTime"><a>All time</a></li>
+            <li id="today"><a>Today</a></li>
+            <li id="week"><a>This week</a></li>
+            <li id="month"><a>This Month</a></li>
+        </ul>
+    </div>
+</template>

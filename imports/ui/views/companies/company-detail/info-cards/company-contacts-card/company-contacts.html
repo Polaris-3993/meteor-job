@@ -1,0 +1,42 @@
+<template name="companyDetailCompanyContactsCard">
+    <div class= "col s4 ">
+        <div class="company-detail-card card-panel z-depth-0">
+            <span class="card-title bold">Contact Info</span>
+            
+            {{#with companyContacts}}
+                {{#if phone}}
+                    <div class="phone-number row icon-sign">
+                        <div class="col s1 ">
+                            <i class="material-icons">phone</i>
+                        </div>
+                        <div class="col s11 left-padding-20">
+                            {{phone.number}}
+                        </div>
+                    </div>
+                {{/if}}
+                
+                {{#if email}}
+                    <div class="company-email row icon-sign ">
+                        <div class="col s1 ">
+                            <i class="material-icons">email</i>
+                        </div>
+                        <div class="col s11 left-padding-20">
+                            {{email}}
+                        </div>
+                    </div>
+                {{/if}}
+                
+                {{#if website}}
+                    <div class="company-website row icon-sign">
+                        <div class="col s1 ">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="col s11 left-padding-20">
+                            <a href="http://www.{{website}}">{{website}}</a>
+                        </div>
+                    </div>
+                {{/if}}
+            {{/with}}
+        </div>
+    </div> 
+</template>

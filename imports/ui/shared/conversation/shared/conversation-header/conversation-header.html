@@ -1,0 +1,13 @@
+<template name="conversationHeader">
+    <div class="chat-head {{#if hasUnreadMessages}}highlight-background{{/if}}">
+        <div class="info left">
+            <h4 class="truncate">{{conversationTitle conversation}}</h4>
+        </div>
+        <div class="action right">
+            <button class="maximize"><i class="material-icons expand-conversation-icon small pointer">open_in_new</i>
+            </button>
+            <button class="close"><i class="material-icons close-conversation-window-icon small pointer">close</i>
+            </button>
+        </div>
+    </div>
+</template>

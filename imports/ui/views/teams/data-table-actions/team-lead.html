@@ -1,0 +1,12 @@
+<template name="teamLead">
+    {{#if userId}}
+        {{#if isUserId 'workerId'}}
+            <a href="{{pathFor 'userProfile' id=data.workerId}}">{{userName data.workerId}}</a>
+        {{/if}}
+        {{#if isUserId 'employerId'}}
+            <a href="{{pathFor 'userProfile' id=data.employerId}}">{{userName data.employerId}}</a>
+        {{/if}}
+    {{else}}
+        <a href="{{pathFor 'userProfile' id=ownerId}}">{{userName ownerId}}</a>
+    {{/if}}
+</template>

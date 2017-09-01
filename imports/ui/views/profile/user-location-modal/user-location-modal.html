@@ -1,0 +1,13 @@
+<template name="userLocationModal">
+    <div class="profile-card-wrapper">
+        <div id="user-location-modal" class="modal">
+            <div class="modal-content">
+                <div class="map">
+                    {{#if haveLocation}}
+                        {{>googleMapWrapper name="profileLocationMap" options=mapOptions}}
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

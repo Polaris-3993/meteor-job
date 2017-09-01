@@ -1,0 +1,1 @@
+import './form-card.html';

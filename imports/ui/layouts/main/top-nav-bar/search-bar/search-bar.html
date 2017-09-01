@@ -1,0 +1,16 @@
+<template name="searchBar">
+    <div class="col m5 hide-on-small-only">
+        <div class="search">
+            <form id="search-form">
+                <input id="search" type="text" name="" placeholder="Search" class="search-bar">
+                <label for="search"><i class="material-icons">search</i></label>
+            </form>
+            <ul class='search-dropdown {{#if inputFocused}}active{{/if}}'>
+                {{#each searchHistory}}
+                    <li class="search-history-item"><a href="#!">
+                        <i class="material-icons left">restore</i> {{this}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>

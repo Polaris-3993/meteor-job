@@ -1,0 +1,8 @@
+<template name="teamsSearch">
+    {{#if showHeader}}
+        {{> searchTabHeader title="Teams" clickId="teamsSearch" collection="Teams"}}
+    {{/if}}
+    {{#each teams}}
+        {{>teamItem this}}
+    {{/each}}
+</template>

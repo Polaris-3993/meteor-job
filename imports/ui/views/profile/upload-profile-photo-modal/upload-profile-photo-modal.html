@@ -1,0 +1,56 @@
+<template name="uploadPhotoModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="col s12">
+                <div class="top-info">
+                    <!-- Modal Structure -->
+                    <div id="edit-profile-picture" class="modal edit-profile-picture">
+                        <div class="modal-content">
+                            <div class="head">Edit profile Picture</div>
+
+                            <div class="content">
+                                <div class="inner">
+                                    <form id="edit-profile-picture-form">
+                                        <div class="dropzone" id="profile-picture-drop-zone">
+                                            <div class="file-field input-field" style="padding-top: 75px;">
+                                                {{#if isPhotoToUpload}}
+                                                    <div class="btn">
+                                                        <span><i class="fa fa-photo"></i></span>
+                                                    </div>
+                                                    <br>
+                                                    <h4>Drag a photo here</h4>
+                                                {{/if}}
+                                                <div class="dropzone-previews"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="divider">
+                                            <div class="outer">
+                                                <button>or</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="file-field input-field upload-button">
+                                            <div class="btn">
+                                                <span><i class="fa fa-upload"></i> Upload from computer</span>
+                                                <input type="file" id="profile-photo-input">
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col s12 modal-footer">
+                            <a href="#" class="modal-action waves-effect waves-red btn-flat save">Save</a>
+                            <a href="#"
+                               class="modal-action waves-effect waves-red btn-flat cancel">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

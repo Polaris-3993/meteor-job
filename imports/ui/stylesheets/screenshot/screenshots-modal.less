@@ -1,0 +1,72 @@
+@import 'variables.less';
+
+.modal.screenshot-modal {
+  z-index: 999;
+  top: 3% !important;
+  background: @white;
+  width: 75%;
+  max-height: 95% !important;
+  .modal-content {
+    padding: 0;
+    margin-bottom: -6px;
+  }
+  .modal-footer {
+    color: black;
+    height: @32px;
+    background-color: #b9b7b7;
+  }
+}
+
+#case-example-cover {
+  display: inline-block;
+}
+#nav-container {
+  position: relative;
+}
+
+#nav-container img {
+  display: block;
+}
+#nav-container .left-arrow {
+  display: none;
+}
+
+#nav-container .right-arrow {
+  display: none;
+}
+
+#nav-container div{
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width: 11%;
+  height: 100%;
+
+}
+
+#nav-container div.left-div:hover {
+  i.left-arrow {
+    display: inline-block;
+    margin-top: 240%;
+  }
+  #nav-container div{
+    width: 8%;
+    height: 0;
+  }
+}
+#nav-container div.right-div:hover {
+  i.right-arrow {
+    display: inline-block;
+    margin-top: 240%;
+  }
+  #nav-container div{
+    width: 8%;
+    height: 0;
+  }
+}
+#case-left {
+  left: 0;
+}
+#case-right {
+  right: 0;
+}

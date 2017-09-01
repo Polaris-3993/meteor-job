@@ -1,0 +1,10 @@
+<template name="assignedUserItem">
+    <p>
+        {{getUserNameById assignedUser._id}} - {{#each assignedUser.positions}}
+            {{this.name}}
+        {{/each}}
+        <i class="material-icons change-user-roles-icon pointer">
+            assignment_ind</i>
+        <i class="material-icons remove-user-icon pointer">cancel</i>
+    </p>
+</template>

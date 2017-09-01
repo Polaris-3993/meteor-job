@@ -1,0 +1,41 @@
+<template name="createEditTeam">
+    <div style="margin-top: 60px;">
+        {{#formCard title=pageTitle}}
+        <form id="createEditTeamForm">
+
+            <div class="input-section row">
+
+                <!-- name -->
+                <div class="input-field col s12">
+                    <input type="text" id="name" value="{{#if team}}{{team.name}}{{/if}}"
+                           pattern="[\w ]{5,50}"
+                           maxlength="50" required/>
+                    <label for="name" class="{{#if team}}active{{/if}}">Name</label>
+                </div>
+
+                <!-- description -->
+                <div class="input-field col s12">
+                    <input type="text" id="description" value="{{#if team}}{{team.description}}{{/if}}"
+                           maxlength="100"/>
+                    <label for="description" class="{{#if team}}active{{/if}}">Description</label>
+                </div>
+
+                <!-- visibility -->
+                <div class="input-field col s12">
+                    <input name="visibility" type="radio" id="visibility-public" value="public"
+                           checked="{{#unless isPrivate}}checked{{/unless}}"/>
+                    <label for="visibility-public">Public</label>
+                    <input name="visibility" type="radio" id="visibility-private" value="private"
+                           checked="{{#if isPrivate}}checked{{/if}}"/>
+                    <label for="visibility-private">Private</label>
+                </div>
+
+            </div>
+            <button id="submit-form-button"
+                    class="btn-large btn-blue waves-effect waves-light">Done
+            </button>
+
+        </form>
+    {{/formCard}}
+        </div>
+</template>

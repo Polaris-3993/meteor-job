@@ -1,0 +1,35 @@
+@import 'variables.less';
+.masonry{
+  display: block;
+-webkit-column-gap: 2.25rem;
+-moz-column-gap: 2.25rem;
+column-gap: 2.25rem;
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+@media(max-width: 600px){
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+  .masonry-item {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: all 0.4s ease-in-out;
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative;
+    display: block;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: .25rem;
+    float: left;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    margin-bottom: 2.25rem !important;
+  }
+}

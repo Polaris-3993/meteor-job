@@ -1,0 +1,23 @@
+<template name="companyActions">
+    <div class="right col s1">
+        <a class='vz-time-entries-options dropdown-button btn-flat no-padding right' href='#'
+           data-activates='companies-dropdown_{{data._id}}'>
+            <i class="material-icons">more_vert</i>
+        </a>
+        <ul id='companies-dropdown_{{data._id}}' class='dropdown-content'>
+            {{#if canEditCompany}}
+                <li><a href="{{pathFor 'editCompany' id=data._id}}">Edit company
+                </a></li>
+                <li><a href="{{pathFor 'assignTeamToCompany' id=data._id}}">Assign team</a></li>
+                <li><a href="{{pathFor 'assignUsersToCompany' id=data._id}}">Assign users</a></li>
+            {{/if}}
+            <li><a href="{{pathFor route='companyDetail' id=data._id}}">Details</a></li>
+            {{#if isArchived}}
+                <li><a href="" id="restore-company">Restore</a></li>
+            {{else}}
+                <li><a href="" id="archive-company">Archive</a>
+                </li>
+            {{/if}}
+        </ul>
+    </div>
+</template>

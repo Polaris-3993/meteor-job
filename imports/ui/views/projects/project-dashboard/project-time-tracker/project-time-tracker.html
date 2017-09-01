@@ -1,0 +1,32 @@
+<template name="projectTimeTracker">
+    <main id="tracker" class="tracker">
+        <div class="tasks">
+            <div class="row">
+                <div class="tasks-top">
+                    {{>projectInfoLayout}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field start">
+                        {{#if isRunning}}
+                            <a class="prefix" href="#" id="stop-tracking">Stop</a>
+                        {{else}}
+                            <a class="prefix" href="#" id="start-tracking">Start</a>
+                        {{/if}}
+                        <a class="prefix name" href="#">{{{timeElapsed}}}</a>
+                        <input id="time-entry-message" type="text" class="validate"
+                               placeholder="What are you working on ?" disabled={{isRunning}}>
+                        <ul class="dropdown-content {{#if isFilterActive}}active{{/if}}">
+                            {{#each tasks}}
+                                <li id="search-history-item"><a href="#"><strong>{{taskKey}}: {{name}}</strong></a></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{>prjectTimeEntries filterParams=timeEntriesFilterParams project=project}}
+        </div>
+    </main>
+</template>

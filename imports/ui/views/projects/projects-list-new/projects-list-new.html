@@ -1,0 +1,15 @@
+<template name="projectsListNew">
+      <section class="header-tabs">
+      <div class="row tabs-row">
+      <ul class="tabs">
+        <li role="presentation" class="tab  {{accent 'projectsListProjectsTab'}}">
+          <a class="{{active 'projectsListProjectsTab'}}" href="#">Projects</a>
+        </li>
+        <li role="presentation" class="tab {{accent 'projectsListArchivesTab'}}">
+          <a class="{{active 'projectsListArchivesTab'}}" href="#">Archived</a>
+        </li>
+      </ul>
+    </div>
+          </section>
+        {{> Template.dynamic template=tab}}
+</template>

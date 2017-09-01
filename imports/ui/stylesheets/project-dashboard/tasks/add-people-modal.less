@@ -1,0 +1,134 @@
+@import 'variables.less';
+
+.modal.add-people{
+  overflow-y: hidden !important;
+  max-width: 505px;
+  background: #fff;
+  transform: scaleX(1) !important;
+  top: 10% !important;
+  .modal-content{
+    padding: 0;
+    .modal-head{
+      border-bottom: 1px solid @black1;
+      padding: @25px;
+      padding-bottom: 0;
+      margin-bottom: @20px;
+      padding-left: @40px;
+      h4{
+        font-size: @18px;
+        color: @black8;
+      }
+      .input-field{
+        .prefix ~ input{
+          margin-bottom: 0;
+        }
+        input[type="text"]{
+          border-bottom: none;
+          box-shadow: none;
+          margin-left: @32px;
+        }
+        .prefix{
+          top: @15px;
+          width: @32px;
+          font-size: @20px;
+          color: @black3;
+        }
+        ::-webkit-input-placeholder {
+          font-size: @16px;
+          color: @black5;
+        }
+        :-moz-placeholder {
+          font-size: @16px;
+          color: @black5;
+        }
+        ::-moz-placeholder {
+          font-size: @16px;
+          color: @black5;
+        }
+        :-ms-input-placeholder {
+          font-size: @16px;
+          color: @black5;
+        }
+      }
+    }
+    ul{
+      margin-top: 0;
+      padding: 0 @25px;
+      li{
+        padding:@15px;
+        height: @64px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        &:hover{
+          background: #fafafa;
+        }
+        &:last-child{
+          border-bottom:none;
+        }
+        span{
+          display: inline-block;
+          &.image{
+            width: @40px;
+            height: @40px;
+            border-radius: 50%;
+            overflow: hidden;
+            border:1px solid @black1;
+            margin-right: @20px;
+            margin-top: -3px;
+          }
+          &.info{
+            overflow: auto;
+            h5{
+              margin: 0;
+              font-size: @16px;
+              color: @black8;
+            }
+            p{
+              margin: 0;
+              font-size: @14px;
+              color: @black8;
+            }
+          }
+        }
+        a.action{
+          float: right;
+          margin-top: @3px;
+          span{
+            color: @black6;
+            text-transform: uppercase;
+            font-size: @14px;
+            font-weight: 500;
+          }
+          i{
+            vertical-align: middle;
+            margin-left: @10px;
+            color: @black4;
+            margin-top: -@2px;
+          }
+          .remove{
+            display: none;
+          }
+        }
+        &.remove{
+          a.action{
+            .remove{
+              display: inline;
+            }
+            .add{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-footer{
+    .btn-flat{
+      font-size: @14px;
+      color: @black8;
+      font-weight: 500;
+      &:hover{
+        background: transparent;
+      }
+    }
+  }
+}

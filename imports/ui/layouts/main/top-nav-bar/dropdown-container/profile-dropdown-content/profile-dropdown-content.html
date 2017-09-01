@@ -1,0 +1,24 @@
+<template name="profileDropdownContent">
+    <div class="profile-dropdown-content">
+        {{#with profile}}
+            <!--Header content-->
+            <div class="profile-dropdown-header">
+                <div class="round-corners avatar-margin vz-avatar" href="">
+                    <!--<div style="background-image : url({{userAvatar}});" class="avatar">-->
+                    <div style="background-image: url({{profilePhoto}});" class="avatar">
+                    </div>
+                </div>
+                <div class="profile-dropdown-short-info">
+                    <div class="name">{{firstName}} {{lastName}}</div>
+                    <div class="email">{{email}}</div>
+                    <a class="btn btn-blue edit-profile btn-medium no-shadow waves-effect waves-light">Manage
+                        account</a>
+                </div>
+            </div>
+        {{/with}}
+
+        <div class="profile-dropdown-footer right">
+            <div class="btn btn-logout btn-medium btn-white waves-effect">Sign out</div>
+        </div>
+    </div>
+</template>

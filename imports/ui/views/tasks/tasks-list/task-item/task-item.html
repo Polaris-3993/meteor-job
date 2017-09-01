@@ -1,0 +1,33 @@
+<template name="taskItem">
+    <div class="col s12 m4 l3">
+        <div class="task-item">
+            <div class="vz-task-btn hide"><a class="btn-floating"><i class="material-icons">check</i></a></div>
+            <div class="card vz-workplace">
+                <div class="card-content">
+                    {{#if canEditTask}}
+                        <a href="{{pathFor 'editTask' id=this._id}}">Edit task</a>
+                        <a href="{{pathFor 'assignUsersToTask' id=this._id}}">Assign users</a>
+                    {{/if}}
+
+                    <p>{{name}}</p>
+                    {{#if description}}
+                        <p>{{description}}</p>
+                    {{/if}}
+                    {{#if relatedProject}}
+                        <a href="{{pathFor "project" id=relatedProject._id}}">
+                            {{relatedProject.name}}
+                        </a>
+                    {{/if}}
+                    <div class="task-tags">
+                        <span class="task-tag">{{taskKey}}</span>
+                        {{#each tags}}
+                            <span class="task-tag">{{this}}</span>
+                        {{/each}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</template>

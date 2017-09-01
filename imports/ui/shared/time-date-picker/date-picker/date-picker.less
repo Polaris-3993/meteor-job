@@ -1,0 +1,163 @@
+@import '/imports/ui/stylesheets/mixins.import.less';
+
+/* TIME PICKER
+   --------------- */
+@accent: #448AFF;
+@calendar-background-color: #ececec;
+
+.transition{
+	transition: 300ms;
+}
+
+.date-picker {
+	font-size: 14px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff;
+	// box-shadow: 0 0 45px rgba(0,0,0,0.55); 
+	border-radius: 3px;
+	width: 280px;
+	display: inline-block;
+
+	.date-head {
+		//padding: 25px 0 20px 0;
+	    padding: 20px;
+		background-color: @accent;
+		
+		.date-line {
+		    color: #fff;
+    		font-size: 3em;
+    		opacity: 0.6;
+		    line-height: normal;
+		    .transition;
+		    &.active {
+    		    opacity:1;
+    		}
+    		
+		}
+		.date-year{
+		    color: #fff;
+		    opacity: 0.6;
+	        font-size: 1.5em;
+	        .transition;
+		    &.active {
+    		    opacity:1;
+    		}
+		}
+		
+	}
+	.empty{
+		cursor: default;
+	}
+	.calendar {
+		padding: 1em;
+	    .month-picker{
+	        position: relative;
+	        .current-month{
+                display: inline-block;
+                width: 100%;
+                // width: 70%;
+                text-align: center;
+                line-height: 24px;
+                font-weight: bold;
+	        }
+	        .pagination{
+	        	border-radius: 50%;
+                cursor: pointer;
+                width: 24px;
+                position: absolute;
+	        
+	            &.pagination-left{
+	            	left: 0;
+	            }
+	            
+	            &.pagination-right{
+					right: 0;
+	            }
+	            
+	        }
+	    }
+	    .calendar-table-container {
+	    	margin-top: 1em;
+	    	tr td {
+	    		background-color: transparent;
+	    		position: relative;
+	    		cursor: pointer;
+	    		z-index: 1;
+	    		
+	    		&.disabled {
+	    			cursor: default;
+	    			opacity: 0.6;
+	    		}
+	    		
+	    		&.active {
+					
+					color:white;
+					font-weight: bold;
+					
+					&::before{	
+						display: block;
+						background-color: @accent;
+						width: 35px;
+						height: 35px;
+						content: "";
+						position: absolute;
+						margin: auto;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						border-radius: 50%;
+					    z-index: -1;
+					    animation-name: scaleIn;
+					    animation-duration: 200ms;
+					}
+	    	
+	    			
+	    		}
+	    	}
+	    }
+	}
+	
+	.year-picker{
+		max-height:300px;
+		
+		.year-item {
+			cursor: pointer;
+		    width: 100%;
+		    text-align: center;
+		    padding: 10px 0;
+	        transition-duration: 300ms;
+		    font-weight: bold;
+		    &.active {
+			    font-size: 1.7em;
+			    color: @accent;
+		    }
+		}
+	}
+	
+}	
+
+.scaleInKeyframes() {
+    0%  {
+    	.scale(0);
+	}
+	75% { 
+		.scale(1.2);
+	}
+	100% { 
+		.scale(1);
+	}
+}
+@-webkit-keyframes scaleIn {
+	.scaleInKeyframes;
+}
+@-moz-keyframes scaleIn {
+	.scaleInKeyframes; 
+}
+@-o-keyframes scaleIn {
+	.scaleInKeyframes;
+}
+@keyframes scaleIn {
+	.scaleInKeyframes;
+}

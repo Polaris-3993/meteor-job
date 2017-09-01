@@ -1,0 +1,140 @@
+@import './variables.less';
+
+.dashboard-worker-activity {
+  thead {
+    background: rgba(0, 0, 0, 0.02);
+    line-height: 1;
+    border: none;
+
+    th {
+      padding: 8px 5px 19px;
+      text-align: center;
+      min-width: 30px;
+
+      &:last-child {
+        padding-right: 32px;
+      }
+
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+  tbody td {
+    text-align: center;
+
+    &:last-child {
+      padding-right: 32px;
+    }
+
+    &:first-child {
+      padding-left: 20px;
+    }
+  }
+  .dashboard-worker-activity-result {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.73);
+
+    &.total {
+      color: #448aff;
+      font-weight: 700;
+    }
+    &.cost {
+      color: #ba68c8;
+      font-weight: 700;
+    }
+  }
+  .user-avatar {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .workerActivityUsernameLabel {
+    font-size: 10px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    white-space: nowrap;
+  }
+  .image{
+    width: @30px;
+    height: @30px;
+    border-radius: 50%;
+    float: left;
+    margin-right: @15px;
+    overflow: visible;
+    margin-top: 1px;
+    position: relative;
+    &:after{
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 9;
+    }
+    &.online{
+      &:after{
+        background: #66bb6a;
+        border:2px solid #fff;
+      }
+    }
+    &.offline{
+      &:after{
+        background: #f44336;
+        border:2px solid #fff;
+      }
+    }
+    img{
+      width: @30px;
+      height: @30px;
+      border-radius: 50%;
+    }
+  }
+  /*.hidden {
+    display: none;
+  }
+
+  .workerStatus {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    margin-right: 0.938rem;
+    overflow: visible;
+    margin-top: 1px;
+    position: relative;
+  }
+
+  .workerStatus.online::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #fff;
+    background-color: #66bb6a;
+    z-index: 9;
+  }
+
+  .workerStatus.offline::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #fff;
+    background-color: #f44336;
+    z-index: 9;
+  }*/
+}

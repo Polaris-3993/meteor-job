@@ -1,0 +1,13 @@
+<template name="projectDashboard">
+    <section class="header-tabs">
+    <div class="row tabs-row">
+            <ul class="tabs">
+            <li data-template="projectTasksActivity" role="presentation" class="tab"><a href="#" class="{{isTabSelected 'projectTasksActivity'}}">Tasks</a>
+            </li>
+            <li data-template="projectTimeTracker" role="presentation" class="tab"><a href="#" class="{{isTabSelected 'projectTimeTracker'}}">Tracker</a></li>
+            <li data-template="projectActivity" role="presentation" class="tab"><a href="#" class="{{isTabSelected 'projectActivity'}}">Activity</a></li>
+            </ul>
+        </div>
+        </section>
+            {{> Template.dynamic template=tab}}
+</template>

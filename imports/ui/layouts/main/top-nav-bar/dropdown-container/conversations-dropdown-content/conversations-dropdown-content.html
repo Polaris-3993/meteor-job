@@ -1,0 +1,15 @@
+<template name="conversationsDropdownContent">
+    <ul id="conv-dropdown-content">
+        <li class="search">
+            <i class="material-icons left">search</i>
+
+            <div class="input-field">
+                <input class="search-conversation-input" type="text">
+            </div>
+        </li>
+
+        {{#each conversations}}
+            {{> conversationItem conversation=this}}
+        {{/each}}
+    </ul>
+</template>

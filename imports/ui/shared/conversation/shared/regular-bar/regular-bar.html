@@ -1,0 +1,20 @@
+<template name="regularBar">
+    <div class="action-bar">
+        <div class="regular-bar">
+            <div class="search left">
+                <button class="search-button"><i class="material-icons">search</i></button>
+            </div>
+            <div class="action right">
+                {{#unless conversation.isPrivate}}
+                    <button class="search">
+                        <i class="material-icons open-members-list-icon small pointer">perm_identity</i>
+                    </button>
+                {{/unless}}
+                <!-- remove class hide when group chat is running and add class hide to above button -->
+                <button class="search group hide"><i class="material-icons">person</i><span class="badge">5</span>
+                </button>
+                <button class="action-setting"><i class="material-icons">settings</i></button>
+            </div>
+        </div>
+    </div>
+</template>

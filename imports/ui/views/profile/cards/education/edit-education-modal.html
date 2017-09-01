@@ -1,0 +1,61 @@
+<template name="editEducationModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="single-box experience">
+                <div id="edit-education-modal" class="modal edit-education">
+                    <div class="modal-content">
+                        {{#if education}}
+                            <div class="head">Edit education</div>
+                        {{else}}
+                            <div class="head">Add education</div>
+                        {{/if}}
+
+                        <div class="content">
+
+                            <div class="input-field col s4">
+                                <input type="date" class="datepicker validate" id="start-date">
+                                <label class="active">Started date</label>
+                            </div>
+
+                            <div class="input-field col s4">
+                                <input type="date" class="datepicker validate" id="complete-date" disabled={{currentlyStudy}}>
+                                <label class="active">Completed date</label>
+                            </div>
+
+                            <div class="input-field col s4">
+                                <input type="checkbox" class="filled-in" id="filled-in-box" checked="{{#if currentlyStudy}}checked{{/if}}"/>
+                                <label for="filled-in-box">Currently study</label>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <input value="{{#if education}}{{education.school}}{{/if}}" type="text" class="validate" id="school">
+                                <label class="active">School</label>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <input value="{{#if education}}{{education.degree}}{{/if}}" type="text" class="validate" id="degree">
+                                <label class="active">Degree</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <textarea class="materialize-textarea" length="300" id="education-description">{{#if education}}{{education.description}}{{/if}}</textarea>
+                                <label class="active">Description</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 modal-footer">
+                        <a href="#"
+                           class="modal-action waves-effect waves-red btn-flat save">Save</a>
+    {{#unless education}}
+                        <a href="#" class="modal-action waves-effect waves-red btn-flat add-more">Add
+                            more</a>
+    {{/unless}}
+                        <a href="#" class="modal-action waves-effect waves-red btn-flat cancel">Cancel</a>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+
+</template>

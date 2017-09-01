@@ -1,0 +1,60 @@
+@import 'variables.less';
+
+.card.notifications{
+  ul{
+    margin: 0;
+    li{
+      border-bottom: 1px solid @black1;
+      padding: @10px 0;
+      &:last-child{
+        border-bottom: none;
+      }
+      [type="checkbox"].filled-in+label{
+        display: block;
+        padding-left: 0;
+        font-size: @16px;
+        color: @black8;
+        &:after{
+          left: auto;
+          right: 0;
+          top: 3px;
+          width: @18px;
+          height: @18px;
+          border:2px solid #757575;
+        }
+        &:before{
+          left: auto;
+          right: 11px;
+        }
+      }
+      [type="checkbox"].filled-in:checked+label:before{
+        left: auto;
+        right: 9px;
+        top: 3px;
+        width: 7px;
+        height: 11px;
+      }
+      [type="checkbox"].filled-in:checked+label:after{
+        border-color: #009688;
+        background: #009688;
+      }
+      &.newsletter{
+        [type="checkbox"].filled-in+label{
+          height: auto;
+          span{
+            max-width: 330px;
+            display: inline-block;
+          }
+          &:after{
+            top: auto;
+            bottom: 0;
+          }
+        }
+        [type="checkbox"].filled-in:checked+label:before{
+          top: auto;
+          bottom: 3px;
+        }
+      }
+    }
+  }
+}

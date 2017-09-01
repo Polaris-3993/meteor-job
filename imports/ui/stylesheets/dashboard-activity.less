@@ -1,0 +1,40 @@
+.dashboard-action {
+  display: table;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .dashboard-action-avatar {
+    display: table-cell;
+    vertical-align: middle;
+    width: 51px;
+    padding: 0 16px 0 0;
+
+    .dashboard-avatar {
+      width: 35px;
+      height: 35px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+  .dashboard-action-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px 0 0;
+  }
+  .dashboard-action-text {
+    color: rgba(1, 1, 1, 0.69);
+    font-size: 15px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+  .dashboard-action-time {
+    font-weight: 100;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    white-space: nowrap;
+  }
+}

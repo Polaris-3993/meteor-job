@@ -1,0 +1,39 @@
+<template name="changeCreditCardModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="col s12">
+                <div class="top-info">
+                    <div id="edit-card-modal" class="modal edit-profile">
+                        <div class="modal-content">
+                            <div class="head">New card</div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="row credit-container no-margin">
+                                            <div class="col s12 m6">
+                                                <form class="col s12">
+                                                    <div id="error-message"></div>
+                                                    <label for="card-number">Card Number</label>
+                                                    <div class="hosted-field" id="card-number"></div>
+                                                    <label for="cvv">CVV</label>
+                                                    <div class="hosted-field" id="cvv"></div>
+                                                    <label for="expiration-date">Expiration Date</label>
+                                                    <div class="hosted-field" id="expiration-date"></div>
+                                                    <input type="hidden" name="payment-method-nonce">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 modal-footer">
+                            <a href="#" class="waves-effect waves-red btn-flat save" id="add-card">Save</a>
+                            <a href="#" class="waves-effect waves-red btn-flat cancel">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

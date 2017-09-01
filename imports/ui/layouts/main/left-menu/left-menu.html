@@ -1,0 +1,23 @@
+<template name="leftMenu">
+    <div class="side-nav" id="slide-out">
+        <div class="dashboard"><a class="hastip" title="Dashboard" href="{{pathFor 'dashboard'}}"><i
+                class="material-icons left">dashboard</i><span
+                class="menu-name">Dashboard</span></a></div>
+        <div class="scroll">
+            {{#each categories}}
+                <div class="timetracking">
+                    <h5 class="title truncate"><span>{{title}}</span></h5>
+                    {{#each items}}
+                        {{> leftMenuItem this}}
+                    {{/each}}
+                </div>
+            {{/each}}
+        </div>
+        <div class="setting-feedback">
+            {{#each fixedMenuItems}}
+                {{> leftMenuItem this}}
+            {{/each}}
+        </div>
+    </div>
+</template>
+

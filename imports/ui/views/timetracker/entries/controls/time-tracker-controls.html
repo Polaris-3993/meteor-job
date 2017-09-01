@@ -1,0 +1,20 @@
+<template name="timeTrackerControls">
+    <div class="row">
+        {{#if isRunning}}
+            {{> timeTrackerControlsRunning}}
+        {{else}}
+            {{#unless addingManualTime}}
+                {{> timeTrackerControlsStopped selectedProject=selectedProject tagArray=tagArray onReactiveVarSet=onReactiveVarSet}}
+
+                <div class="row">
+                    <div class="col s12 right-align no-padding">
+                        <a class="waves-effect waves-light btn-flat add-manually-button">Add Manually</a>
+                    </div>
+                </div>
+            {{else}}
+                {{> timeTrackerManualTime selectedProject=projectId tagArray=tagArray
+                closeManualTimeMode=exitFromAddingManualTimeModeCb onReactiveVarSet=onReactiveVarSet}}
+            {{/unless}}
+        {{/if}}
+    </div>
+</template>

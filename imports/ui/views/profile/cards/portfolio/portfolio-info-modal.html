@@ -1,0 +1,57 @@
+<template name="portfolioInfoModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="col s12">
+                <div class="single-box portfolio">
+                    <!-- Modal Structure -->
+                    <div id="portfolio-detail-modal" class="modal portfolio-detail">
+                        <div class="modal-content">
+                            <!-- Project title -->
+                            <div class="head">{{portfolioProject.projectTitle}}</div>
+
+                            <div class="content">
+                                <div class="media">
+                                    <!-- Media contains image or video -->
+                                      <img src="{{portfolioProject.projectThumbnail}}">
+                                    <!--<div class="my-iframe">-->
+                                        <!--&lt;!&ndash; <iframe src="https://www.youtube.com/embed/KRz_M3XODjU" frameborder="0" allowfullscreen></iframe> &ndash;&gt;-->
+                                        <!--<iframe src="https://player.vimeo.com/video/10181279" frameborder="0"-->
+                                                <!--webkitallowfullscreen mozallowfullscreen-->
+                                                <!--allowfullscreen></iframe>-->
+                                    <!--</div>-->
+                                </div>
+
+                                <div class="details">
+                                    <div class="info">
+                                        <h5 class="cat">{{portfolioProject.projectTitle}}</h5>
+                                        <h6 class="date">{{formatDate portfolioProject.createdAt}}</h6>
+                                    </div>
+                                    <p>{{portfolioProject.projectDescription}}</p>
+                                        <div class="tags">
+                                            {{#each portfolioProject.skills}}
+                                                <a href="">{{this}}</a>
+                                            {{/each}}
+                                        </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="col s12 modal-footer">
+                            <a href=""
+                               class="modal-action waves-effect waves-red btn-flat close">Close</a>
+                            {{#if profileOwner}}
+                            <a href=""
+                               class="modal-action waves-effect waves-red btn-flat edit">Edit</a>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====  End of Portfolio Details ====-->
+</template>

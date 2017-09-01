@@ -1,0 +1,43 @@
+<template name="projectActivityMessage">
+    <div class="block">
+        <span class="time {{isFirst}}">{{formatDate createdAt 'lll'}}</span>
+        <div class="head row">
+            <div class="image left">
+                <img src="{{profilePhoto}}" alt="">
+            </div>
+            <div class="info left">
+                <p><span>{{authorName}}</span><span>{{formatTime createdAt}}</span></p>
+            </div>
+            <div class="action right">
+                <a href="#"><i class="material-icons">more_vert</i></a>
+            </div>
+        </div>
+        <div class="details row">
+            <h6>Commented on project:</h6>
+            <p>{{message}}</p>
+        </div>
+        {{#if file}}
+            <div class="details row">
+                <p><a href="{{file.mediaLink}}">{{file.fileName}}</a> </p>
+            </div>
+            {{/if}}
+
+        {{#each replyedMessages}}
+            <div class="reply row">
+                <div class="image left">
+                    <img src="{{profilePhoto}}" alt="">
+                </div>
+                <div class="info left">
+                    <h5>{{message}}</h5>
+                    <p><span>{{authorName}}</span><span>{{formatTime createdAt}}</span></p>
+                </div>
+            </div>
+        {{/each}}
+        <form id="reply-message-form" class="{{_id}}">
+            <div class="row input-field post-reply">
+                <i class="material-icons prefix">reply</i>
+                <input id="{{_id}}" type="text" class="validate" placeholder="Post a reply..">
+            </div>
+        </form>
+    </div>
+</template>

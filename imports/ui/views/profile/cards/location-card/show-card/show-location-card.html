@@ -1,0 +1,9 @@
+<template name="showLocationCard">
+    <div class="map">
+        {{#if haveLocation}}
+            {{>googleMapWrapper name="profileLocationMap" options=mapOptions}}
+        {{else}}
+            Click on pencil to set your location
+        {{/if}}
+    </div>
+</template>

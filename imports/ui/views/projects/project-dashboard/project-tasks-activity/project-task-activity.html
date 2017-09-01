@@ -1,0 +1,36 @@
+<template name="projectTasksActivity">
+    <main id="tasks">
+        <div class="tasks">
+            <div class="row">
+                <div class="tasks-top">
+                    {{>projectInfoLayout}}
+                    <div class="col m6 s12 assigned-users">
+                        {{#each projectAssignedUsers}}
+                            <a href="#"><img src="{{profile.photo.large}}" alt=""></a>
+                        {{/each}}
+                        {{#if canEditProject}}
+                            <a class="" href="" id="project-users"><i class="material-icons">add</i></a>
+                        {{/if}}
+                    </div>
+                </div>
+                <!-- Sub Tabs-->
+                <div class="row sub-tab">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li data-template="allProjectTasks" role="presentation" class="tab" id="all"><a
+                                    class="{{isTabSelected 'all'}}" href="#">All ({{allTaskCount}})</a></li>
+                            <li data-template="assignedTasks" role="presentation" class="tab" id="assigned"><a
+                                    class="{{isTabSelected 'assigned'}}" href="#">Assigned to me ({{assignedTaskCount}})</a></li>
+                            <li data-template="inReview" role="presentation" class="tab" id="in-review"><a
+                                    class="{{isTabSelected 'in-review'}}" href="#">In review ({{reviewTaskCount}})</a>
+                            </li>
+                            <li data-template="compleatedTasks" role="presentation" class="tab" id="completed"><a
+                                    class="{{isTabSelected 'completed'}}" href="#">Completed ({{completedTasksCount}})</a></li>
+                        </ul>
+                    </div>
+                </div>
+                {{> Template.dynamic template=tab }}
+            </div>
+        </div>
+    </main>
+</template>

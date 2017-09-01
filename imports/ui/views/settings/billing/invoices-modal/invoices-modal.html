@@ -1,0 +1,51 @@
+<template name="invoicesModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="col s12">
+                <div class="top-info">
+                    <div id="edit-profile-modal" class="modal edit-profile">
+                        <div class="modal-content">
+                            <div class="head">Create invoice</div>
+                            <div class="col s4" style="margin-left: 0;">
+                                <div class="input-field dropdown">
+                                    <div class="users-dropdown">
+                                        <select id="users-select">
+                                            <option disabled="disabled" selected="selected">Select user</option>
+                                            {{#each contractedUsers}}
+                                                <option value="{{_id}}">{{profile.fullName}}</option>
+                                            {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s8 right" style="display: inline-flex; margin-top: 20px;">
+                                <div class="range-picker valign-wrapper">
+                                    <a href="#" class="pick-prev-range rotate-180 valign-wrapper">
+                                        <i class="material-icons">play_arrow</i>
+                                    </a>
+                                    <b>{{pickerRange}}</b>
+                                    <a href="#" class="pick-next-range valign-wrapper">
+                                        <i class="material-icons ">play_arrow</i>
+                                    </a>
+
+                                </div>
+
+                                <select class="vz-select dateRange-select" style="color: black;">
+                                    <option selected>Weekly</option>
+                                    <option>Monthly</option>
+                                    <option>Quarterly</option>
+                                    <option>Yearly</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col s12 modal-footer">
+                            <a href="#!" class="modal-action waves-effect waves-red btn-flat save">Download</a>
+                            <a href="#!" class="modal-action waves-effect waves-red btn-flat cancel">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

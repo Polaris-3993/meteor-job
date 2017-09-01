@@ -1,0 +1,8 @@
+<template name = "toolsSearch">
+    {{#if showHeader}}
+        {{> searchTabHeader title="Tools" clickId="toolsSearch" collection="Tools"}}
+    {{/if}}
+    {{#each tools}}
+        {{>toolMarketCard this}}
+    {{/each}}
+</template>

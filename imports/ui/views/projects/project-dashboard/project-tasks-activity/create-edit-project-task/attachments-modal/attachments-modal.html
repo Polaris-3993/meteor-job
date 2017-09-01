@@ -1,0 +1,37 @@
+<template name="taskAttachmentsModal">
+    <div class="modal attachment" id="attachemnets-modal">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h4> Attachments<a class="right" href="" id="close-attachments-modal"><i
+                        class="material-icons">close</i></a></h4>
+            </div>
+            <div class="row">
+                <div class="col s12 no-padding">
+                    <div class="tabs-select">
+
+                        <ul class="tabs">
+                            <li data-template="imagesDropZone" role="presentation" class="tab"><a class="active"
+                                                                                                 href="#">Images</a>
+                            </li>
+                            <li data-template="videosDropZone" role="presentation" class="tab"><a href="#"> Videos</a>
+                            </li>
+                            <li data-template="filesDropZone" role="presentation" class="tab"><a href="#"> Files</a>
+                            </li>
+                            <li class="upload"><a href="#">Upload files<i class="material-icons left">backup</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {{> Template.dynamic template=tab}}
+           </div>
+        </div>
+    </div>
+    <!--<div id="lightgallery">-->
+    <!--<a href="/images/person.png">-->
+    <!--<img src="/images/person.png" />-->
+    <!--</a>-->
+    <!--<a href="/images/person.png">-->
+    <!--<img src="/images/person.png" />-->
+    <!--</a>-->
+    <!--</div>-->
+</template>

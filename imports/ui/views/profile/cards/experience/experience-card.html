@@ -1,0 +1,25 @@
+<template name="experienceCard">
+    <div class="col l6 m12 s12">
+        <div class="profile-card-wrapper">
+
+        <div class="single-box experience">
+            <h4 class="title">Work Experience {{#if profileOwner}}<a href="" class="right edit-icon"><i class="fa fa-plus add-job-icon"></i></a>{{/if}}</h4>
+            <div class="exp-outer">
+            {{#each userWorkExperience}}
+                    {{>experienceItem data=this}}
+            {{/each}}
+                </div>
+            {{#if showMore}}
+                <div class="load-more">
+                    <a class="waves-effect waves-light btn" href="">load more</a>
+                </div>
+            {{/if}}
+            {{#if showLess}}
+                <div class="show-less">
+                    <a class="waves-effect waves-light btn" href="">show less</a>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+        </div>
+</template>

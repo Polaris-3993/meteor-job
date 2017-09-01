@@ -1,0 +1,43 @@
+<template name="assignUserModal">
+
+    <div id="time-tracker-project-modal-picker" class="modal">
+        <div class="modal-content">
+            <h4>Assign role</h4>
+
+            <div class="row">
+                <p>{{getUserNameById userId}}</p>
+            </div>
+            {{#each userPositions}}
+                <div class="row">
+                    <input type="radio" value="{{name}}" class="user-position-radio"
+                           id="group-radio-{{name}}" name="user-position-radio"
+                           checked="{{#if isSelectedPosition this}}checker{{/if}}">
+                    <label for="group-radio-{{name}}">{{name}}</label>
+                </div>
+            {{/each}}
+            <div class="row">
+                <button class="btn-large btn-light-grey assign-user-button">Assign role</button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- version with checkboxes -->
+<!--<template name="assignUserModal">-->
+
+<!--<div id="time-tracker-project-modal-picker" class="modal">-->
+<!--<div class="modal-content">-->
+<!--<h4>Assign role</h4>-->
+
+<!--<div class="row">-->
+<!--<p>{{getUserNameById userId}}</p>-->
+<!--</div>-->
+        <!--{{#each userPositions}}-->
+<!--{{>userPositionItem position=this onChangePosition=onChangePositionCb}}-->
+        <!--{{/each}}-->
+<!--<div class="row">-->
+<!--<button class="btn-large btn-light-grey assign-user-button">Assign role</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</template>-->

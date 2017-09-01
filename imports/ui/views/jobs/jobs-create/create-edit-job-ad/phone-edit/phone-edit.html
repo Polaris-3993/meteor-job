@@ -1,0 +1,8 @@
+<template name="phoneEdit">
+    <div class="col l6 s12">
+        <div class="single input-field">
+            <p>Contact phone</p>
+            <input type="tel" id="contact-phone" class="form-control telephone {{#if isValidPhone}}not-valid{{/if}}" maxlength="20" value="{{phone}}">
+        </div>
+    </div>
+</template>

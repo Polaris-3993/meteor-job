@@ -1,0 +1,61 @@
+<template name="billingInfo">
+
+    <div class="row">
+
+        <div class="col s6 l3">
+            <div class="card vz-billing">
+                <div class="card-content">
+                    <span class="card-title">You Own</span>
+
+                    <p class="center bigger">$20</p>
+                </div>
+                <div class="card-action center">
+                    <a class="btn-flat" href="">Pay Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s6 l3">
+            <div class="card vz-billing">
+                <div class="card-content">
+                    <span class="card-title">Usage</span>
+
+                    <p class="center bigger">$20</p>
+                </div>
+                <div class="card-action center">
+                    <a class="btn-flat center" href="">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 l6">
+            <div class="card vz-billing">
+                <div class="card-content">
+                    <span class="card-title">Billings Alert</span>
+
+                    <p>
+                        <input type="checkbox" class="filled-in" id="amount_alert" checked="checked">
+                        <label for="amount_alert">Send me an email anytime my monthly usage has exceeded the amount
+                            listed to the bellow.</label>
+                    </p>
+                </div>
+
+                <div class="card-action amount center">
+                    <div class="row no-margin">
+                        <div class="input-field col s3 no-margin">
+                            <span class="prefix">$</span>
+                            <input id="amount" type="text" class="validate" value="10" maxlength="3">
+                            <label for="amount" data-error="enter a value"></label>
+                        </div>
+
+                        <div class="input-field col s9 no-margin left-align">
+                            <p>Alert Amount</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</template>

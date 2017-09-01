@@ -1,0 +1,74 @@
+<template name="editQuickInfoModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="col l4 m6 s12">
+                <div class="single-box">
+                    <div id="edit-quick-info-modal" class="modal edit-quick-info">
+                        <div class="modal-content">
+                            <div class="head">Edit quick info</div>
+
+                            <div class="content">
+                                <div class="input-field col s6">
+                                    <input value="{{#if this.profile.languages}}{{formatLanguages this.profile.languages}}{{/if}}"
+                                           id="languages" type="text" class="validate">
+                                    <label class="active" for="name">Languages (separate with comma)</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input value="{{#if
+                                            this.profile.personalWebsite}}{{this.profile.personalWebsite}}{{/if}}"
+                                           id="website-url" type="text" class="validate">
+                                    <label class="active" for="title">Personal website</label>
+                                </div>
+
+                                <div class="input-field col s4">
+                                    <select id="social-media">
+                                        <option value="" selected disabled>Choose social</option>
+                                        <option value="Facebook" disabled={{disabledSocial 'Facebook'}}>Facebook</option>
+                                        <option value="Twitter" disabled={{disabledSocial 'Twitter'}}>Twitter</option>
+                                        <option value="Google+" disabled={{disabledSocial 'Google+'}}>Google+</option>
+                                        <option value="Pinterest" disabled={{disabledSocial 'Pinterest'}}>Pinterest</option>
+                                        <option value="LinkedIn" disabled={{disabledSocial 'LinkedIn'}}>LinkedIn</option>
+                                    </select>
+                                    <label>Social media</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input value="" id="social-media-url" type="text"
+                                           class="validate">
+                                    <label class="active" for="title">Add url</label>
+                                </div>
+
+                                <div class="input-field add-button col s2">
+                                    <a class="waves-effect waves-light btn">ADD</a>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <!-- Connnected social media -->
+                                    <label class="active">Your connected social media</label>
+                                    <div class="social-icons">
+                                        <ul>
+                                            {{#each socialMedias}}
+                                                <li><a href=""><i class="{{socialIcon this.socialMediaName}}"></i>
+                                                    <span><i
+                                                            class="material-icons remove-media">close</i></span></a>
+                                                </li>
+                                            {{/each}}
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col s12 modal-footer">
+                            <a href="#!" class="modal-action waves-effect waves-red btn-flat save">Save</a>
+                            <a href="#!" class="modal-action waves-effect waves-red btn-flat cancel">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

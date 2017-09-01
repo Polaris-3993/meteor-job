@@ -1,0 +1,88 @@
+<template name="styleguide">
+    <div class="container row">
+        <div class="row">
+            <div class="margin-top margin-bottom center-align">
+                <h3>Headings</h3>
+            </div>
+            <div class="col s12">
+                <h1>Heading h1</h1>
+
+                <h2>Heading h2</h2>
+
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+            </div>
+            <div class="divider col s12 margin-top"></div>
+        </div>
+        <div class="row">
+            <div class="margin-top margin-bottom center-align">
+                <h3>Buttons</h3>
+            </div>
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s3">.btn-medium</div>
+                    <div class="btn btn-medium waves-effect waves-light">Button</div>
+                    <div class="btn btn-medium btn-dark waves-effect waves-light">Button</div>
+                    <div class="btn btn-medium btn-red waves-effect waves-light">Button</div>
+                </div>
+                <div class="row">
+                    <div class="col s3">.btn</div>
+                    <div class="btn waves-effect waves-light">Button</div>
+                    <div class="btn btn-dark waves-effect waves-light">Button</div>
+                    <div class="btn btn-red waves-effect waves-light">Button</div>
+                </div>
+                <div class="row">
+                    <div class="col s3">.btn-large</div>
+                    <div class="btn-large waves-effect waves-light">Button</div>
+                    <div class="btn-large btn-dark waves-effect waves-light">Button</div>
+                    <div class="btn-large btn-red waves-effect waves-light">Button</div>
+                </div>
+                <div class="row">
+                    <div class="col s3">.btn-flat</div>
+                    <div class="btn-flat waves-effect waves">Button</div>
+                </div>
+                <div class="row">
+                    <div class="col s3">.disabled</div>
+                    <div class="btn disabled">Button</div>
+                </div>
+            </div>
+            <div class="divider col s12 margin-top"></div>
+
+            <div class="row">
+                <div class="margin-top margin-bottom center-align">
+                    <h3>Checkboxes</h3>
+                </div>
+                <p>
+                    <input type="checkbox" id="test5"/>
+                    <label for="test5">Default</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="test6" checked="checked"/>
+                    <label for="test6">Checked</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked"/>
+                    <label for="filled-in-box">Filled in</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="test7" checked="checked" disabled="disabled"/>
+                    <label for="test7">Chacked disabled</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="test8" disabled="disabled"/>
+                    <label for="test8">Disabled</label>
+                </p>
+            </div>
+
+
+        </div>
+        {{> timeDatePicker date=date onSaved=onSaved onCanceled=onCanceled}}
+
+    </div>
+</template>

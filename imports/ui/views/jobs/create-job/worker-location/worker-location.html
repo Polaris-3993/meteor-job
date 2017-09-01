@@ -1,0 +1,78 @@
+<template name="workerLocation">
+    <main>
+        <div class="add-job step-2">
+            <div class="row head">
+                <div class="col s12">
+                    <h3>Add a new job listing</h3>
+                    <ul class="steps">
+                        <li>
+                            <a class="completed" href="#"><span>1</span><i class="material-icons">check</i></a><br>
+                            <span>Enter job details</span>
+                        </li>
+                        <li>
+                            <a class="active" href="#"><span>2</span><i class="material-icons">check</i></a><br>
+                            <span>Select location</span>
+                        </li>
+                        <li>
+                            <a href="#"><span>3</span></a><br>
+                            <span>Overview & post</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field {{isActive 'anywhere'}}">
+                    <h4 class="worker-location-title">Worker location</h4>
+                    <input class="with-gap location" value="anywhere" name="worker-location" type="radio" id="anywhere" {{isRestricted 'anywhere'}} />
+                    <label for="anywhere">
+                        <strong>Remote - work from anywhere</strong><br>
+                        Allows the worker to complete tasks and work remotely, from anywhere<br> in the world. No location restrictions apply.
+                    </label>
+                </div>
+                <div class="divider"></div>
+                <div class="input-field {{isActive 'restricted'}}">
+                    <input class="with-gap location" value="restricted" name="worker-location" type="radio" id="restricted" {{isRestricted 'restricted'}}/>
+                    <label for="restricted">
+                        <strong>Remote - location restricted</strong><br>
+                        Restricts the workers based on their location.
+                    </label><br>
+                    <div class="input-field for-select col m4 s12">
+                        <h6 class="form-title">Select continent:</h6>
+                        <select id="continent">
+                            <option value="" disabled selected>Unspecified</option>
+                            <option value="AF" {{selectedContinent 'AF'}}>Africa</option>
+                            <option value="AN" {{selectedContinent 'AN'}}>Antarctica</option>
+                            <option value="AS" {{selectedContinent 'AS'}}>Asia</option>
+                            <option value="EU" {{selectedContinent 'EU'}}>Europe</option>
+                            <option value="NA" {{selectedContinent 'NA'}}>North America</option>
+                            <option value="OC" {{selectedContinent 'OC'}}>Oceania</option>
+                            <option value="SA" {{selectedContinent 'SA'}}>South America</option>
+                          </select>
+                    </div>
+                    <div class="input-field for-select ml-0 col m4 s12">
+                        <h6 class="form-title">Select country:</h6>
+                        <select id="country" disabled={{isCountriesDisabled}}>
+                            <option value="" disabled selected>Unspecified</option>
+                            {{#each countries}}
+                            <option value="{{label}}" {{selectedCountry label}}>{{label}}</option>
+                            {{/each}}
+                        </select>
+
+                        <p class="ml-0">
+                            <input type="checkbox" class="filled-in" id="filled-in-box" {{isRestrictedCountry}}/>
+                            <label class="l-0" for="filled-in-box">Don’t restrict countries</label>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row action">
+                <a href="#" class="discard">Discard</a>
+                <a href="#" class="next">Next</a>
+            </div>
+
+        </div>
+    </main>
+</template>

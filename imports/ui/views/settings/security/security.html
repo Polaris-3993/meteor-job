@@ -1,0 +1,63 @@
+<template name="securitySettings">
+    <main class="settings security" id="security">
+        <div class="conatiner">
+            <div class="row">
+                <!--Card for Two-factor authentication-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Two-factor authentication</h3>
+                        <p class="sub-title">
+                            Increase account security by enabling two-factor authentication.<br>Each time you log in, you will be required to provide an additional access code.<a href="#">
+                            <u>More..</u></a></p>
+                        <p class="auth-info">Two-factor authentication is disabled.</p><a class="btn styled blue" href="#">Enable</a>
+                    </div>
+                </div>
+                <!--Card for Active sessions-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Active sessions</h3>
+                        <p class="sub-title">
+                            Your current active sessions in Vezio include logged-in and most recently used<br> computers.</p>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th data-field="os">OS</th>
+                                <th data-field="location">Location</th>
+                                <th data-field="last-used">Last used</th>
+                                <th data-field="ip">IP</th>
+                                <th data-field="action"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img src="images/windows.png" alt=""></td>
+                                <td>Santiago, Chile</td>
+                                <td>1.2.2017 20:14</td>
+                                <td>128.0.0.1</td>
+                                <td><a class="remove" href="#">Remove</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/linux.png" alt=""></td>
+                                <td>Yemen</td>
+                                <td>4.5.2005 13:25</td>
+                                <td>24.312.52.111</td>
+                                <td><a class="remove" href="#">Remove</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--Card for Phone recovery-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Phone recovery</h3>
+                        <p class="sub-title">
+                            Add a phone number in case you forget password to access<br>your account easily.</p>
+                        <p>Phone number recovery is activated.</p>
+                        <div class="input-inline">+420 608 152 551<a class="btn edit" href="#">Edit</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

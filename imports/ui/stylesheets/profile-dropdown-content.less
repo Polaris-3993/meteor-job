@@ -1,0 +1,116 @@
+@color_1: #444;
+@color_2: #666;
+
+.profile-dropdown-content {
+  background: #F1F1F1;
+  outline: none;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-user-select: text;
+  .profile-dropdown-footer, .profile-dropdown-header, .profile-dropdown-body {
+    margin: 20px;
+    line-height: normal;
+  }
+  .profile-dropdown-body {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .profile-dropdown-header {
+    margin-right: 5rem;
+  }
+  .round-corners {
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    display: inline-block;
+    padding: 0;
+  }
+  .avatar-margin {
+    margin-right: 20px;
+    position: relative;
+  }
+  .vz-avatar {
+    .avatar {
+      background-size: 96px 96px;
+      border: none;
+      vertical-align: top;
+      height: 96px;
+      width: 96px;
+      padding: 0;
+    }
+  }
+  .profile-dropdown-short-info {
+    display: inline-block;
+    vertical-align: top;
+    height: 96px;
+    position: relative;
+    .name {
+      color: @color_1;
+      font-weight: bold;
+      line-height: normal;
+      font-size: 1rem;
+    }
+    .email {
+      color: @color_2;
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+    .edit-profile {
+      vertical-align: bottom;
+      position: absolute;
+      bottom: 0;
+      width: 150px;
+    }
+  }
+  .profile-dropdown-container {
+    .divider {
+      margin: 0 20px;
+    }
+  }
+  .btn-logout {
+    padding: 0 1.5rem;
+  }
+  .profile-dropdown-companies-title {
+    color: @color_2;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 20px;
+    margin-top: 0;
+  }
+  .profile-dropdown-companies {
+    width: 100%;
+    display: inline-block;
+  }
+  .company-avatar {
+    display: inline-block;
+    height: 65px;
+    line-height: 65px;
+    width: 65px;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #448AFF;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  .profile-dropdown-company {
+    width: 100%;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+  .company-details {
+    .name {
+      color: @color_1;
+      font-weight: bold;
+      line-height: normal;
+      font-size: 1rem;
+    }
+    .role {
+      color: @color_2;
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+  }
+}

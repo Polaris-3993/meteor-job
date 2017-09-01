@@ -1,0 +1,19 @@
+<template name="projectActions">
+    <div class="right col s1">
+        <!-- Dropdown Trigger -->
+        <a class='vz-time-entries-options dropdown-button btn-flat no-padding right' href='#'
+           data-activates='projects-dropdown_{{_id}}'>
+            <i class="material-icons">more_vert</i>
+        </a>
+        <!-- Dropdown Structure -->
+        <ul id='projects-dropdown_{{_id}}' class='dropdown-content small'>
+            <li><a href="{{pathFor 'assignUsersToProject' id=_id}}">Assign users</a></li>
+            {{#if canEditProject}}
+                <li><a href="{{pathFor 'assignTeamToProject' id=_id}}">Assign team</a></li>
+                <li><a href="{{pathFor 'editProject' id=_id}}">Edit project</a></li>
+                <li><a href="#" id="archive-project">Archive project</a></li>
+            {{/if}}
+            <li><a href="{{pathFor 'viewProjectTimeEntries' id=_id}}">Time entries</a></li>
+        </ul>
+    </div>
+</template>

@@ -1,0 +1,792 @@
+@import 'variables.less';
+
+.modal.edit-profile {
+  max-width: 732px;
+  z-index: 999;
+  padding-bottom: @22px;
+  background: @white;
+
+  .modal-content {
+    padding: 0;
+    .head {
+      height: @64px;
+      line-height: @64px;
+      padding: 0 @30px;
+      background: @theme;
+      font-size: @24px;
+      color: @white;
+      text-align: left;
+    }
+    .content {
+      padding: 0 @15px;
+      .input-field {
+        margin-top: @46px;
+        label.active {
+          font-size: @12px;
+          color: #999;
+        }
+        input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+          font-size: @14px;
+          color: #666;
+          border-bottom: 1px solid #f0f0f0;
+          &:focus {
+            box-shadow: none;
+            border-bottom: 1px solid @theme;
+          }
+        }
+        input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, input[type=url].valid, input[type=url]:focus.valid, input[type=time].valid, input[type=time]:focus.valid, input[type=date].valid, input[type=date]:focus.valid, input[type=datetime-local].valid, input[type=datetime-local]:focus.valid, input[type=tel].valid, input[type=tel]:focus.valid, input[type=number].valid, input[type=number]:focus.valid, input[type=search].valid, input[type=search]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid {
+          box-shadow: none;
+          border-bottom: 1px solid @theme;
+
+        }
+        .dropdown-content li > a, .dropdown-content li > span {
+          color: #666;
+          font-size: @13px;
+        }
+        .switch {
+          margin-top: @15px;
+          display: block;
+        }
+        .switch label {
+          font-size: @12px;
+          color: #999;
+        }
+        .switch label .lever {
+          width: @50px;
+          height: @20px;
+        }
+        .switch label input[type=checkbox]:checked + .lever {
+          background: #00c9b6;
+        }
+        .switch label .lever:after {
+          width: @30px;
+          height: @30px;
+          top: -@5px;
+        }
+        .switch label input[type=checkbox]:checked + .lever:after {
+          background: @theme;
+        }
+
+      }
+    }
+  }
+  .modal-footer {
+    margin-top: @46px;
+    background-color: @white;
+    .btn-flat {
+      font-size: @14px;
+      color: @theme;
+      padding: 0 @20px;
+    }
+  }
+}
+
+.modal.edit-profile-picture, .modal.edit-cover-picture {
+  max-width: 732px;
+  z-index: 999;
+  padding-bottom: @22px;
+  background: @white;
+
+  .modal-content {
+    padding: 0;
+    .head {
+      height: @64px;
+      line-height: @64px;
+      padding: 0 @30px;
+      background: @theme;
+      font-size: @24px;
+      color: @white;
+      text-align: left;
+    }
+    .content {
+      .dropzone {
+        margin-top: -70px !important;
+        .dz-preview {
+          .dz-details {
+            display: none !important;
+          }
+          .dz-progress {
+            display: none !important;
+          }
+          .dz-success-mark {
+            display: none !important;
+          }
+          .dz-error-message {
+            display: none !important;
+          }
+          .dz-error-mark {
+            display: none !important;
+          }
+          &:hover{
+            .dz-image{
+              img {
+                -webkit-transform: none !important;
+                transform: none !important;
+                -webkit-filter: none !important;
+                filter: none !important;
+              }
+            }
+          }
+        }
+      }
+      padding: @25px;
+      .inner {
+        border: 1px solid @black1;
+        padding: @70px @30px;
+        .file-field {
+          text-align: center;
+          .btn {
+            float: none;
+            box-shadow: none;
+            background: none;
+            color: #666666;
+            i {
+              font-size: @72px;
+            }
+          }
+          &.upload-button {
+            .btn {
+              background: @theme;
+              color: @white;
+              height: @40px;
+              line-height: @40px;
+              text-transform: none;
+              border-radius: @20px;
+              font-size: @16px;
+              padding: 0 @24px;
+              i {
+                font-size: @16px;
+              }
+            }
+          }
+        }
+        h4 {
+          font-size: @24px;
+          color: #666;
+          margin-top: @30px;
+          margin-bottom: 0;
+        }
+        .divider {
+          max-width: 280px;
+          margin: @70px auto;
+          position: relative;
+          overflow: visible;
+          .outer {
+            position: absolute;
+            left: 50%;
+            width: @76px;
+            height: @76px;
+            padding: @14px;
+            border-radius: 50%;
+            bottom: -@38px;
+            margin-left: -@38px;
+            background: @white;
+            button {
+              width: @48px;
+              height: @48px;
+              background: @white;
+              border-radius: 50%;
+              line-height: @48px;
+              padding: 0;
+              outline: none;
+              border: 1px solid @black1;
+              color: @theme;
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-footer {
+    background: @white;
+    .btn-flat {
+      font-size: @14px;
+      color: @theme;
+      padding: 0 @20px;
+    }
+  }
+}
+
+.modal.edit-bio{
+  max-width: 732px;
+  z-index: 999;
+  padding-bottom: @22px;
+  background: @white;
+
+  .modal-content{
+    padding: 0;
+    .head{
+      height: @64px;
+      line-height: @64px;
+      padding: 0 @30px;
+      background: @theme;
+      font-size: @24px;
+      color: @white;
+      text-align: left;
+    }
+    .content{
+      padding: 0 @15px;
+      .input-field{
+        margin-top: @46px;
+        label.active{
+          font-size: @12px;
+          color: #999;
+        }
+        input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+          font-size: @14px;
+          color: #666;
+          border-bottom: 1px solid #f0f0f0;
+          &:focus{
+            box-shadow:none;
+            border-bottom: 1px solid @theme;
+          }
+        }
+        input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, input[type=url].valid, input[type=url]:focus.valid, input[type=time].valid, input[type=time]:focus.valid, input[type=date].valid, input[type=date]:focus.valid, input[type=datetime-local].valid, input[type=datetime-local]:focus.valid, input[type=tel].valid, input[type=tel]:focus.valid, input[type=number].valid, input[type=number]:focus.valid, input[type=search].valid, input[type=search]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid{
+          box-shadow: none;
+          border-bottom: 1px solid @theme;
+
+        }
+
+      }
+    }
+  }
+  .modal-footer{
+    margin-top: 0;
+    background-color: @white;
+    .btn-flat{
+      font-size: @14px;
+      color: @theme;
+      padding: 0 @20px;
+    }
+  }
+}
+
+.modal.edit-quick-info{
+  max-width: 732px;
+  z-index: 999;
+  padding-bottom: @22px;
+  background: @white;
+
+  .modal-content{
+    ul.dropdown-content.select-dropdown li.disabled span {
+      color: #d3d3d3 !important;
+    }
+    padding: 0;
+    .head{
+      height: @64px;
+      line-height: @64px;
+      padding: 0 @30px;
+      background: @theme;
+      font-size: @24px;
+      color: @white;
+      text-align: left;
+    }
+    .content{
+      padding: 0 @15px;
+      .input-field{
+        margin-top: @46px;
+        &.add-button{
+          margin-top: @60px;
+          .btn{
+            height: @37px;
+            box-shadow: none;
+            background: @white;
+            border: 1px solid @black1;
+            color: @theme;
+            font-size: @14px;
+            border-radius: @4px;
+            &:hover{
+              background: @theme;
+              color: @white;
+            }
+          }
+        }
+        label.active{
+          font-size: @12px;
+          color: #999;
+        }
+        input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+          font-size: @14px;
+          color: #666;
+          border-bottom: 1px solid #f0f0f0;
+          &:focus{
+            box-shadow:none;
+            border-bottom: 1px solid @theme;
+          }
+        }
+        input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, input[type=url].valid, input[type=url]:focus.valid, input[type=time].valid, input[type=time]:focus.valid, input[type=date].valid, input[type=date]:focus.valid, input[type=datetime-local].valid, input[type=datetime-local]:focus.valid, input[type=tel].valid, input[type=tel]:focus.valid, input[type=number].valid, input[type=number]:focus.valid, input[type=search].valid, input[type=search]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid{
+          box-shadow: none;
+          border-bottom: 1px solid @theme;
+
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+          color: #666;
+          font-size: @13px;
+        }
+        .social-icons{
+          ul{
+            margin: 0;
+            padding: 0;
+            li{
+              display: inline-block;
+              a{
+                display: block;
+                position: relative;
+                width: @36px;
+                height: @36px;
+                text-align: center;
+                border:1px solid @black1;
+                border-radius: 50%;
+                margin-top: @20px;
+                margin-right: @10px;
+                &:hover{
+                  span i{
+                    visibility:visible;
+                    opacity: 1;
+                  }
+                }
+                .fa{
+                  line-height: @36px;
+                  font-size: @14px;
+                  color: @theme;
+                }
+                span i{
+                  position: absolute;
+                  width: @12px;
+                  height: @12px;
+                  border-radius: 50%;
+                  border:1px solid @theme;
+                  font-size: 8px;
+                  line-height: 10px;
+                  opacity: 0;
+                  visibility: hidden;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .modal-footer{
+    margin-top: 0;
+    background-color: @white;
+    .btn-flat{
+      font-size: @14px;
+      color: @theme;
+      padding: 0 @20px;
+    }
+  }
+}
+
+.modal.edit-portfolio{
+  max-width: 732px;
+  z-index: 999;
+  padding-bottom: @22px;
+  background: @white;
+
+  .modal-content{
+    padding: 0;
+    .head{
+      height: @64px;
+      line-height: @64px;
+      padding: 0 @30px;
+      background: @theme;
+      font-size: @24px;
+      color: @white;
+      text-align: left;
+    }
+    .content{
+      padding: 0 @15px;
+      .input-field{
+        margin-top: @46px;
+        &.add-button{
+          margin-top: @60px;
+          .btn{
+            height: @37px;
+            box-shadow: none;
+            background: @white;
+            border: 1px solid @black1;
+            color: @theme;
+            font-size: @14px;
+            border-radius: @4px;
+            &:hover{
+              background: @theme;
+              color: @white;
+            }
+          }
+        }
+        label.active{
+          font-size: @12px;
+          color: #999;
+        }
+        input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+          font-size: @14px;
+          color: #666;
+          border-bottom: 1px solid #f0f0f0;
+          &:focus{
+            box-shadow:none;
+            border-bottom: 1px solid @theme;
+          }
+        }
+        input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, input[type=url].valid, input[type=url]:focus.valid, input[type=time].valid, input[type=time]:focus.valid, input[type=date].valid, input[type=date]:focus.valid, input[type=datetime-local].valid, input[type=datetime-local]:focus.valid, input[type=tel].valid, input[type=tel]:focus.valid, input[type=number].valid, input[type=number]:focus.valid, input[type=search].valid, input[type=search]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid{
+          box-shadow: none;
+          border-bottom: 1px solid @theme;
+
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+          color: #666;
+          font-size: @13px;
+        }
+
+
+      }
+      .file-field{
+        .btn{
+          background: @white;
+          box-shadow: none;
+          height: @36px;
+          line-height: @36px;
+          font-size: @12px;
+          border:1px solid @black1;
+          border-radius: 4px;
+          margin-top: @20px;
+          color: #666;
+          i{
+            font-size: @12px;
+          }
+        }
+        input[type=text], input[type=text].valid{
+          border-bottom: none;
+        }
+        .file-path-wrapper{
+          margin-top: @15px;
+        }
+      }
+      .character-counter{
+        margin-top: -@20px;
+      }
+    }
+  }
+  .modal-footer{
+    margin-top: 0;
+    background-color: @white;
+    .btn-flat{
+      font-size: @14px;
+      color: @theme;
+      padding: 0 @20px;
+    }
+  }
+}
+
+.modal.portfolio-detail{
+  max-width: 732px;
+  z-index: 999;
+  padding-bottom: @22px;
+  background: @white;
+
+  .modal-content{
+    padding: 0;
+    .head{
+      height: @64px;
+      line-height: @64px;
+      padding: 0 @30px;
+      background: @theme;
+      font-size: @24px;
+      color: @white;
+      text-align: left;
+    }
+    .content{
+      padding: 0 @30px;
+      .media{
+        margin-top: @30px;
+        .my-iframe {
+          position: relative;
+          padding-bottom: 65.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: auto;
+          -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY
+        }
+        .my-iframe iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .details{
+        margin-top: @23px;
+        .info{
+          .cat{
+            margin: 0;
+            padding: 0;
+            font-size: @16px;
+            color: #666;
+          }
+          .date{
+            font-size: @12px;
+            color: #999;
+          }
+        }
+        p{
+          font-size: @13px;
+          font-weight: 300;
+          line-height: @24px;
+          color: #666;
+        }
+        .tags{
+          a{
+            display: inline-block;
+            height: @30px;
+            padding: 0 @20px;
+            line-height: @30px;
+            border-radius: @15px;
+            border:1px solid @black1;
+            font-size: @14px;
+            color: #666;
+            margin-right: @10px;
+            &:hover{
+              border:1px solid @theme;
+              color: @theme;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+  .modal-footer{
+    margin-top: 0;
+    background-color: @white;
+    .btn-flat{
+      font-size: @14px;
+      color: @theme;
+      padding: 0 @20px;
+    }
+  }
+}
+
+.modal.edit-experience{
+  max-width: 732px;
+  z-index: 999;
+  padding-bottom: @22px;
+  background: @white;
+
+  .modal-content{
+    padding: 0;
+    .head{
+      height: @64px;
+      line-height: @64px;
+      padding: 0 @30px;
+      background: @theme;
+      font-size: @24px;
+      color: @white;
+      text-align: left;
+    }
+    .content{
+      padding: 0 @15px;
+      .input-field{
+        margin-top: @46px;
+        &.add-button{
+          margin-top: @60px;
+          .btn{
+            height: @37px;
+            box-shadow: none;
+            background: @white;
+            border: 1px solid @black1;
+            color: @theme;
+            font-size: @14px;
+            border-radius: @4px;
+            &:hover{
+              background: @theme;
+              color: @white;
+            }
+          }
+        }
+        label.active{
+          font-size: @12px;
+          color: #999;
+        }
+        input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+          font-size: @14px;
+          color: #666;
+          border-bottom: 1px solid #f0f0f0;
+          &:focus{
+            box-shadow:none;
+            border-bottom: 1px solid @theme;
+          }
+        }
+        input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, input[type=url].valid, input[type=url]:focus.valid, input[type=time].valid, input[type=time]:focus.valid, input[type=date].valid, input[type=date]:focus.valid, input[type=datetime-local].valid, input[type=datetime-local]:focus.valid, input[type=tel].valid, input[type=tel]:focus.valid, input[type=number].valid, input[type=number]:focus.valid, input[type=search].valid, input[type=search]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid{
+          box-shadow: none;
+          border-bottom: 1px solid @theme;
+
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+          color: #666;
+          font-size: @13px;
+        }
+
+
+      }
+      .file-field{
+        .btn{
+          background: @white;
+          box-shadow: none;
+          height: @36px;
+          line-height: @36px;
+          font-size: @12px;
+          border:1px solid @black1;
+          border-radius: 4px;
+          margin-top: @20px;
+          color: #666;
+          i{
+            font-size: @12px;
+          }
+        }
+        input[type=text], input[type=text].valid{
+          border-bottom: none;
+        }
+        .file-path-wrapper{
+          margin-top: @15px;
+        }
+      }
+      .character-counter{
+        margin-top: -@20px;
+      }
+    }
+  }
+  .modal-footer{
+    margin-top: 0;
+    background-color: @white;
+    .btn-flat{
+      font-size: @14px;
+      color: @theme;
+      padding: 0 @20px;
+    }
+  }
+}
+
+.modal.edit-education{
+  max-width: 732px;
+  z-index: 999;
+  padding-bottom: @22px;
+  background: @white;
+
+  .modal-content{
+    padding: 0;
+    .head{
+      height: @64px;
+      line-height: @64px;
+      padding: 0 @30px;
+      background: @theme;
+      font-size: @24px;
+      color: @white;
+      text-align: left;
+    }
+    .content{
+      padding: 0 @15px;
+      .input-field{
+        margin-top: @46px;
+        &.add-button{
+          margin-top: @60px;
+          .btn{
+            height: @37px;
+            box-shadow: none;
+            background: @white;
+            border: 1px solid @black1;
+            color: @theme;
+            font-size: @14px;
+            border-radius: @4px;
+            &:hover{
+              background: @theme;
+              color: @white;
+            }
+          }
+        }
+        label.active{
+          font-size: @12px;
+          color: #999;
+        }
+        input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+          font-size: @14px;
+          color: #666;
+          border-bottom: 1px solid #f0f0f0;
+          &:focus{
+            box-shadow:none;
+            border-bottom: 1px solid @theme;
+          }
+        }
+        input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, input[type=url].valid, input[type=url]:focus.valid, input[type=time].valid, input[type=time]:focus.valid, input[type=date].valid, input[type=date]:focus.valid, input[type=datetime-local].valid, input[type=datetime-local]:focus.valid, input[type=tel].valid, input[type=tel]:focus.valid, input[type=number].valid, input[type=number]:focus.valid, input[type=search].valid, input[type=search]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid{
+          box-shadow: none;
+          border-bottom: 1px solid @theme;
+
+        }
+        .dropdown-content li>a, .dropdown-content li>span{
+          color: #666;
+          font-size: @13px;
+        }
+
+
+      }
+      .file-field{
+        .btn{
+          background: @white;
+          box-shadow: none;
+          height: @36px;
+          line-height: @36px;
+          font-size: @12px;
+          border:1px solid @black1;
+          border-radius: 4px;
+          margin-top: @20px;
+          color: #666;
+          i{
+            font-size: @12px;
+          }
+        }
+        input[type=text], input[type=text].valid{
+          border-bottom: none;
+        }
+        .file-path-wrapper{
+          margin-top: @15px;
+        }
+      }
+      .character-counter{
+        margin-top: -@20px;
+      }
+    }
+  }
+  .modal-footer{
+    margin-top: 0;
+    background-color: @white;
+    .btn-flat{
+      font-size: @14px;
+      color: @theme;
+      padding: 0 @20px;
+    }
+  }
+}
+
+.show-less{
+  display: block;
+  width: 100%;
+  margin-top: @25px;
+  text-align: center;
+  .btn{
+    height: @33px;
+    background: @theme;
+    text-transform: lowercase;
+    font-size: @12px;
+    line-height: @33px;
+    padding: 0 @25px;
+    border-radius: @16px;
+    box-shadow: none;
+    &:hover{
+      color:@white;
+    }
+  }
+}

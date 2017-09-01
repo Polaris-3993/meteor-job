@@ -1,0 +1,10 @@
+<template name="filterItem">
+    <li>
+        <div class="item-wrapper">
+            {{#with item}}
+                <input type="checkbox" id="{{_id}}" class="item-checkbox"/>
+                <label for="{{_id}}">{{name}}</label>
+            {{/with}}
+        </div>
+    </li>
+</template>

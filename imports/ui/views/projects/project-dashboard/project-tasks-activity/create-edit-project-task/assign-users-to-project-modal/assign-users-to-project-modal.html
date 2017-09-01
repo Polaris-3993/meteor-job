@@ -1,0 +1,38 @@
+<template name="assignUsersToProjectModal">
+    <div class="modal modal-fixed-footer add-people" id="add-people-to-project">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h4> Add people</h4>
+                <div class="input-field"><i class="material-icons prefix">search</i>
+                    <input type="text" placeholder="Search by name or e-mail" id="search-string">
+                </div>
+            </div>
+            <ul>
+                {{#each assignedUsers.assignedToTaskUsers}}
+                    <li class="remove">
+                <span class="image">
+                    <img src="{{profile.photo.large}}">
+                </span>
+                        <span class="info">
+              <h5>{{profile.fullName}}</h5>
+              <p>{{emails.[0].address}}</p>
+                </span>
+                        <a class="action" href="" id="remove-user-from-project">
+                        <span class="remove">Remove<i
+                                class="material-icons right">remove_circle_outline</i></span>
+                        </a>
+                    </li>
+                {{/each}}
+
+                {{#each assignedUsers.canBeAssignedUsers}}
+                    <li><span class="image"><img src="{{profile.photo.large}}"></span><span class="info">
+              <h5>{{profile.fullName}}</h5>
+              <p>{{emails.[0].address}}</p></span><a class="action" href="" id="add-user-to-project"><span class="remove">Remove<i
+                            class="material-icons right">remove_circle_outline</i></span><span class="add">Add<i
+                            class="material-icons right">person_add</i></span></a></li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="modal-footer"><a class="modal-action modal-close btn-flat" href="">Close</a></div>
+    </div>
+</template>

@@ -1,0 +1,43 @@
+<template name="dashboardTask">
+    <div class="dashboard-task dashboard-card-list-item">
+        <div class="dashboard-task-content">
+            <div class="dashboard-task-username">
+                <a style="color: #666;"
+                   href="" id="task-name">{{name}}</a>
+                <br>
+                <div class="dashboard-task-taskname">
+                    <a style="font-size: 12px;" href="{{pathFor 'projectDashboard' id=projectId}}"
+                       id="project-name">{{projectName}}</a>
+                    &nbsp; | &nbsp;
+                    <a style="font-size: 12px;" href="" id="task-key">{{taskKey}}</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-task-additional-information">
+            <div class="dashboard-task-projectname" style="display: inline-flex;">
+                <a href="" style="margin-right: 15px; display: inline-flex;"><i class="material-icons tiny"
+                                                                                style="font-size: 1.2rem;">attach_money</i>{{totalSpent}}
+                </a>
+                <a href="" style="display: inline-flex;"><i class="material-icons tiny" style="font-size: 1.2rem;">av_timer</i>{{formatSecondsAsTimeTask
+                        taskTimeTracked}}</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="dashboardTasksList">
+    <div class="dashboard-tasks-list">
+        {{#if ready}}
+            {{#if taskItems}}
+                {{#each taskItems}}
+                    {{> dashboardTask}}
+                {{/each}}
+            {{else}}
+                {{>emptyCardContent message=emptyCardMessage}}
+            {{/if}}
+        {{else}}
+            {{>emptyCardContent message=dataLoadingMessage}}
+        {{/if}}
+    </div>
+</template>

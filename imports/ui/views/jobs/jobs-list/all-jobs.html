@@ -1,0 +1,104 @@
+<template name="allJobs">
+    <main id="all" class="data-table with-tabs">
+        <div class="table-container">
+            <div class="row">
+                <div class="col s12">
+                    <a class="btn add-new" href="{{pathFor 'createJob'}}"><i class="material-icons left">add</i>
+                        Post a new job</a>
+                </div>
+                <div class="col s12">
+                    <div class="table-wrapper">
+                        <div class="table-header {{#if isCheckedJobs}}selected{{/if}}">
+                            <h4 class="left">{{#if isCheckedJobs}}
+                                <a class="remove" href="#"><i class="material-icons left"
+                                                              style="margin-left: -3px;">close</i></a> {{checkedCount}}
+                                jobs selected{{else}}Jobs{{/if}}</h4>
+                            <div class="right">
+                                <a id="table_search" class="{{#if isCheckedJobs}}hide{{/if}}" href="#">
+                                    <i class="search material-icons left">search</i>
+                                    <i class="close material-icons left">close</i>
+                                </a>
+                                {{#if isCheckedJobs}}
+                                    <a href="#" id="archive-jobs"><i class="material-icons left">delete</i></a>
+                                    <a href="#"><i class="material-icons left">more_vert</i></a>
+                                {{else}}
+                                    <a href="#"><i class="material-icons left">filter_list</i></a>
+                                {{/if}}
+                            </div>
+                        </div>
+                        <table id="jobs-table" class="row-border" width="100%">
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" class="filled-in" id="select-all"
+                                           name="select-all"/><label
+                                        for="select-all"></label>Job title
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Applicants
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Status
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Created
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Expires
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Views
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th></th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                            {{#each jobs}}
+                                <tr>
+                                    <td><input type="checkbox" checked={{isChecked}} class="filled-in" id="{{_id}}"
+                                               name="table-item"/><label
+                                            for="{{_id}}"></label>{{title}}
+                                    </td>
+                                    <td>{{applicantsCount applicantsIds}}</td>
+                                    <td><span class="status {{statusColor status}}">{{status}}</span></td>
+                                    <td>{{formatDate createdAt 'MMM D YYYY HH:mm'}}</td>
+                                    <td>{{formatDate expireAt 'MMM D YYYY HH:mm'}}</td>
+                                    <td>{{viewsCount}}</td>
+                                    <td>
+                                        {{>jobsActions data=this isArchived=false}}
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

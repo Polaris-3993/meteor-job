@@ -1,0 +1,18 @@
+<template name="popupFilter">
+    <div id="popup-modal" class="modal z-depth-1">
+        <div class="modal-content">
+            <div class="filter-input-wrapper">
+                <input type="text" class="input-field filter-input"/>
+            </div>
+            <div class="filter-list">
+                <ul>
+                    {{#each items}}
+                        {{>filterItem item=this filter=filter}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="filter-list-footer">
+            </div>
+        </div>
+    </div>
+</template>

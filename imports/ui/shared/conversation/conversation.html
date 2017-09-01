@@ -1,0 +1,58 @@
+<template name="conversation">
+    {{#if isWindowMoving}}
+        <div class="conversation-overlay">
+        </div>
+    {{/if}}
+    <div class="chat-box">
+        {{> conversationHeader}}
+
+        <!-- messages regular -->
+        {{#if equal activeComponent "messagesRegular"}}
+            {{> regularBar
+            changeComponent=changeComponentCb
+            }}
+
+            {{> messagesRegular
+            conversation=conversation
+            messageToScrollId=messageToScrollId
+            }}
+        {{/if}}
+
+        <!-- search message -->
+        {{#if equal activeComponent "messagesSearch"}}
+            {{> messagesSearch
+            conversation=conversation
+            changeComponent=changeComponentCb
+            scrollToMessage=scrollToMessageCb
+            }}
+        {{/if}}
+
+        <!-- participants list -->
+        {{#if equal activeComponent "participantsList"}}
+            {{> regularBar
+            changeComponent=changeComponentCb
+            }}
+
+            {{> participantsListComponent
+            conversation=conversation
+            changeComponent=changeComponentCb}}
+        {{/if}}
+
+        <!-- add new participant -->
+        {{#if equal activeComponent "addParticipant"}}
+            {{> addParticipant
+            conversation=conversation
+            changeComponent=changeComponentCb}}
+        {{/if}}
+
+        <!-- conversation settings -->
+        {{#if equal activeComponent "settings"}}
+            {{> regularBar
+            changeComponent=changeComponentCb
+            }}
+
+            {{> conversationSettings
+            changeComponent=changeComponentCb}}
+        {{/if}}
+    </div>
+</template>

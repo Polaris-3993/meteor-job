@@ -1,0 +1,7 @@
+<template name="companyDetailWorkers">
+    <div class="workers-wrapper row no-margin">
+        {{#each companyWorkers}}
+            {{>companyDetailWorker workerId=this companyId=companyId}}
+        {{/each}}
+    </div>
+</template>

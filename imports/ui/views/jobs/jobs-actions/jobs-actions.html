@@ -1,0 +1,19 @@
+<template name="jobsActions">
+    <div class="right col s1">
+        <a class='vz-time-entries-options dropdown-button btn-flat no-padding right'
+           href='#'
+           data-activates='jobs-dropdown_{{data._id}}'>
+            <i class="material-icons">more_vert</i>
+        </a>
+        <ul id='jobs-dropdown_{{data._id}}' class='dropdown-content'>
+    {{#if isArchived}}
+        <li><a href="#" class="restore-job-button">Restore job</a></li>
+        {{else}}
+        <li><a href="{{pathFor 'jobDetails' id=data._id}}">Preview</a></li>
+        <li><a href="{{pathFor 'editJob' id=data._id}}">Edit job</a></li>
+        <li><a href="#" class="archive-job-button">Archive job</a></li>
+        {{/if}}
+
+        </ul>
+    </div>
+</template>

@@ -1,0 +1,184 @@
+@import '../less/variables.less';
+
+
+// File Uploader modal
+.modal.attachment{
+  background: #fff;
+  max-height: 80%;
+  transform: scaleX(1) !important;
+  top: 10% !important;
+  .modal-content{
+    padding: 0;
+    .modal-head{
+      padding: @25px;
+      padding-bottom: @10px;
+      h4{
+        font-size: @24px;
+        color: @black8;
+        a{
+          color: @black8;
+          i{
+            font-size: @28px;
+          }
+        }
+      }
+    }
+  }
+  .tabs .indicator{
+    display: none;
+  }
+.tabs{
+  padding: 0 @25px;
+  width: 100% !important;
+  display: block;
+  .tab{
+    flex-grow: initial;
+    display: inline-block;
+    width: auto;
+    min-width: @50px;
+    margin-right: @20px;
+    a{
+      color: @black5;
+      font-size: @15px;
+      font-weight: 500;
+      display: block;
+      &.active{
+        border-bottom: 2px solid @black8;
+        color: @black8;
+      }
+    }
+  }
+  .upload{
+    float: right;
+    flex-grow: initial;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    line-height: 48px;
+    height: 48px;
+    padding: 0;
+    a{
+      color: @black8;
+      font-size: @15px;
+      font-weight: 500;
+      display: block;
+      text-transform: uppercase;
+      padding-right: 5px;
+      i{
+        color:#585858;
+        opacity: 0.8;
+        font-size: @20px;
+        line-height: 48px;
+      }
+    }
+  }
+}
+
+// Attachment area
+.attachment-area{
+  background: #f9f9f9;
+  padding: @12px;
+  min-height: 400px;
+
+  .single, .single-youtube{
+    margin: @12px auto;
+    display: block;
+    position: relative;
+    line-height: 0;
+      .play-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right:0;
+        bottom: 0;
+        i{
+          color: #fff;
+          font-size: @40px;
+          margin: 0 auto;
+        }
+      }
+    .info{
+      margin-top: @15px;
+      span{
+        color: #010101;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+}
+
+
+// lightgallery
+.lg-backdrop.in{
+  background: none;
+}
+.lg-outer{
+  width: 55%;
+  height: 80%;
+  top: 10%;
+  right: 0;
+  margin: auto;
+  background: @black;
+  @media only screen and (max-width: 992px){
+      width: 80%;
+  }
+}
+.lg-actions .lg-icon{
+  width: @50px;
+  height: @50px;
+  border-radius: 50%;
+  padding: 0;
+  line-height: @50px;
+  text-align: center;
+}
+#lg-counter{
+  display: none;
+}
+.lg-outer .lg-img-wrap{
+  padding: 0;
+}
+.lg-toolbar{
+  background-color: transparent;
+  padding: @15px @15px 0 0;
+}
+.lg-outer .lg-image{
+  max-width: 100%;
+  max-height: inherit;
+}
+.lg-inner{
+  transform: translate(0, 0);
+}
+.lg-sub-html{
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  bottom: auto;
+  text-align: left;
+  font-size: @17px;
+  padding-top: @25px;
+}
+.lg-actions .lg-prev:after{
+  content: '\E314';
+  font-family: 'Material Icons';
+  color: @white8;
+}
+.lg-actions .lg-next:before{
+  content: '\E315';
+  font-family: 'Material Icons';
+  color: @white8;
+}
+.lg-toolbar .lg-close:after{
+  content: '\E5CD';
+  font-family: 'Material Icons';
+  color: @white8;
+}
+.lg-toolbar .lg-download:after{
+  content: '\E2C4';
+  font-family: 'Material Icons';
+  color: @white8;
+}
+.lg-outer .lg-video {
+  position: inherit !important;
+}

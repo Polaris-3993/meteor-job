@@ -1,0 +1,72 @@
+.dashboard-task {
+  display: table;
+
+  .dashboard-task-avatar {
+    display: table-cell;
+    vertical-align: middle;
+    width: 51px;
+    padding: 0 16px 0 0;
+
+    .dashboard-avatar {
+      width: 35px;
+      height: 35px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+  .dashboard-task-username {
+    font-size: 15px;
+    color: rgba(1, 1, 1, 0.69);
+    line-height: 1;
+    margin: 0 0 4px;
+    font-weight: 700;
+  }
+  .dashboard-task-content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .dashboard-task-additional-information {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+  }
+
+  .dashboard-task-status {
+    font-size: 14px;
+    font-weight: 400;
+
+    span {
+      display: inline-block;
+      font-weight: normal;
+
+      &.in-progress {
+        color: #43a047;
+      }
+      &.opened {
+        color: #4679c5;
+      }
+      &.closed {
+        color: #ef5350;
+      }
+    }
+    span::after {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(0, 0, 6, 0.5);
+      margin: 0 2px 3px 6px;
+    }
+  }
+  .dashboard-task-taskname {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(1, 1, 1, 0.69);
+  }
+  .dashboard-task-projectname {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

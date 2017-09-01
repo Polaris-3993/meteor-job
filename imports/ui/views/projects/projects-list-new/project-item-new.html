@@ -1,0 +1,28 @@
+<template name="projectListItem">
+    <li>
+      <div class="collapsible-header">
+        <div class="col l7 m12 s12 no-padding">
+          <div class="col s6 no-padding">
+            <div class="title-info">
+              <h5>{{name}}</h5>
+              <p>{{workersCount}}</p>
+            </div>
+          </div>
+          <div class="col s6 no-padding">
+            <div class="update-info">
+              <p>Last updated<strong>&nbsp;{{getLastUpdatedAt}}</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col l5 m12 s12 no-padding btm">
+          <div class="col m12 s12 no-padding">
+            <div class="general-info">
+              <span>{{formatSecondsAsTimeProjects getTimeTracked}}<i class="material-icons left">access_time</i></span>
+              <span>{{getTasksDone}}<i class="material-icons left">assignment_turned_in</i></span>
+              <span>${{getMoneyEarned}}<i class="material-icons left">attach_money</i></span></div>
+          </div>
+        </div>
+      </div>
+      {{> projectListItemMore project=this}}
+    </li>
+</template>

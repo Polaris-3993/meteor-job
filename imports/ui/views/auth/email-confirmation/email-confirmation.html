@@ -1,0 +1,23 @@
+<template name="emailConfirmation">
+    <div class="row">
+        <div class="col s12 m8 offset-m2 l4 offset-l4 no-padding">
+            <div class="row">
+                <div class="col s10 offset-s1 z-depth-1 white">
+                    <div class="image-card center">
+                        <img src="images/email-confirmation.png">
+
+                        <h5>Email Confirmation</h5>
+
+                        <p>Please confirm your email address to complete your registration.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            {{#if isDev}}
+                {{>devButtons}}
+            {{/if}}
+
+        </div>
+    </div>
+</template>

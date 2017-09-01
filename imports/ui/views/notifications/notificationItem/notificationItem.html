@@ -1,0 +1,23 @@
+<template name = "notificationItem">
+    <div class="notification-item col s12 m6">
+        <div class="card-panel">
+            <div class="notification-item-content valign-wrapper">
+                {{#unless isReaded}}
+                    <div class="col s1 valign-wrapper">
+                        <input type="checkbox" id="{{_id}}" class="mark-notification"/>
+                        <label for="{{_id}}"></label>
+                    </div>
+                {{/unless}}
+                <div class="col s11 row no-margin">
+                    <div class="col s12">
+                        <b>{{title}}</b>
+                    </div>
+                    <div class="col s12 valign wrapper">
+                        {{message}} {{creationDate}}
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</template>

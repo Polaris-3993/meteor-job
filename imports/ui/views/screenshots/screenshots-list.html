@@ -1,0 +1,175 @@
+<template name="screenshotsList">
+
+    <!-- Page Layout here -->
+    <div class="row">
+        <div class="col s12 l12 vz-screenshot-header">
+            <!-- Time zone -->
+            <div class="row">
+                <div class="col s12 m6 l6" style="margin-top: 8px;">
+                    <div class="row">
+                        <div class="input-field col s13 no-margin vz-sm-select">
+                            <select class="vz-select dateRange-select" id="time-zone-select">
+                                <option value="utc" {{selectedTimeZone "utc"}}>UTC</option>
+                                <option value="mine" {{selectedTimeZone "mine"}}>{{userTimeZone}}</option>
+                                <option value="ny" {{selectedTimeZone "ny"}}>(-04:00)</option>
+                                <option value="london" {{selectedTimeZone "london"}}>(+01:00)</option>
+                                <option value="berlin" {{selectedTimeZone "berlin"}}>(+02:00)</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s13 no-margin vz-sm-select">
+                            <select class="vz-select dateRange-select" id="time-format-select">
+                                <option value="12" {{selectedTimeFormat '12'}}>12h</option>
+                                <option value="24" {{selectedTimeFormat '24'}}>24h</option>
+                            </select>
+                        </div>
+                        <div class="projects-drop-down">
+                            <a class='dropdown-button' data-activates='projects' href='#'>
+                                Projects
+                                <i class="material-icons">arrow_drop_down</i>
+                            </a>
+                            <ul id='projects' class='dropdown-content'>
+                                {{#each projects}}
+                                    <li>
+                                        <input type="checkbox" checked="{{#if shouldShowChecked this}}checked{{/if}}"
+                                               id="{{_id}}" class="project-change"/>
+                                        <label for="{{_id}}">{{name}}</label>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-page">
+                    <div class="shots-sec">
+                        <div class="view-and-date">
+                            <div class="col s6">
+                                <div class="date-and-pager right">
+                                    <div class="date-wrapper">
+                                        <input id="date-picker" type="date" class="datepicker" name="" value=""
+                                               placeholder="">
+                                        <label for="date-picker" class="date-picker">
+                                            <i class="material-icons left hide-on-small-only previous-day">date_range</i>
+                                            <i class="material-icons right hide-on-med-and-up next-day">date_range</i>
+                                            <span class="hide-on-small-only">{{datePickerDate}}</span></label>
+                                    </div>
+
+                                    <div class="pager hide-on-small-only">
+                                        <a href="" title=""><i
+                                                class="material-icons previous-day">keyboard_arrow_left</i></a>
+                                        <a href="" title=""><i class="material-icons next-day">keyboard_arrow_right</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 hide-on-med-and-up">
+                                <div class="pager-mobile">
+                                    <a href="" title=""><i
+                                            class="material-icons previous-day">keyboard_arrow_left</i></a>
+                                    <a href="" title=""><i class="material-icons next-day">keyboard_arrow_right</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Time tracker: -->
+            <div class="row">
+
+                <div class="col s4 l2">
+                    <p>Total Time Log: <b>01:00</b>&nbsp;<a href=""><i class="mdi-av-replay"></i></a></p>
+                </div>
+
+                <div class="col s4 l2">
+                    <p>Auto-Tracked: <b>01:00</b>&nbsp;<a class="tooltipped" data-position="top" data-delay="50"
+                                                          data-tooltip="I am tooltip"><i
+                            class="mdi-action-help"></i></a></p>
+                </div>
+
+                <div class="col s4 l2 right-align">
+                    <p>Manual Time: <b>01:00</b>&nbsp;<a class="tooltipped" data-position="top" data-delay="50"
+                                                         data-tooltip="I am tooltip"><i class="mdi-action-help"></i></a>
+                    </p>
+                </div>
+
+                <div class="col s7 l3 right-align">
+                    <p>Requested: <b>00:00 min</b><i></i></p>
+                </div>
+
+                <div class="col s5 l3 right-align">
+
+                    <a class="btn-large blue hide-on-med-and-down">Request Manual Time</a>
+                    <a class="btn-large blue hide-on-large-only fullwidth">Manual Time</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        {{#each screenshots}}
+            <div class="col l11">
+                <div class="col l1 hide-on-med-and-down">
+                    <div class="row">
+                        <div class="col l12">
+                            <div class="vz-screenshot-time z-depth-1 right">
+                                <p class="center-align"><br>{{takenAt}}&nbsp;<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 hide-on-large-only">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <div class="vz-screenshot-time-sm z-depth-1 right">
+                                <p class="center-align white-text">{{takenAt}}&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{#each screens}}
+                    {{#if deleted}}
+                        <div class="col s6 m3 offset-m1 l2">
+                            <div class="vz-screenshot-deleted">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="card-action" style="background-color: #e7e7e7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{else}}
+                        <div class="col s6 m3 offset-m1 l2">
+                            <div class="vz-screenshot hoverable">
+                                <div class="vz-screenshot-btn"><a class="btn-floating"><i
+                                        class="material-icons">check</i></a>
+                                </div>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="{{screenshotThumbnailPreviewURL}}">
+                                    </div>
+                                    <div class=" card-action" style="background-color: #e7e7e7">
+                                        {{formatDate takenAt screenshotsTimeFormat}}
+                                        {{taskName}}
+                                        <a href="" class="resize-screenshot modal-trigger"><i
+                                                class="tiny material-icons right">image</i></a>
+                                        <a href="" class="delete-screenshot"><i
+                                                class="tiny material-icons right">delete</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/if}}
+                {{/each}}
+            </div>
+        {{/each}}
+    </div>
+    <!-- end row -->
+    <div id="modal1" class="modal screenshot-modal">
+        <img src="{{screenshotURL}}" class="image-modal">
+    </div>
+</template>

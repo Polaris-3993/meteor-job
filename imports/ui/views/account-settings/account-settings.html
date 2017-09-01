@@ -1,0 +1,15 @@
+<template name="accountSettings">
+    <h3>Account settings</h3>
+    <br>
+
+    <button data-target="close-account-modal" class="btn modal-trigger">CLOSE ACCOUNT</button>
+    <a href="{{pathFor route='changePassword'}}" class='btn btn-large'>Change password</a>
+
+    <div id="close-account-modal" class="modal">
+        <div class="modal-content">
+            <h4>You sure you want to close your account?</h4>
+            <button class="btn close-account">CLOSE ACCOUNT</button>
+            <button class="btn cancel-close">CANCEL</button>
+        </div>
+    </div>
+</template>

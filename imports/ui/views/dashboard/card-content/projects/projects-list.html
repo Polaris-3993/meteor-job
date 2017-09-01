@@ -1,0 +1,46 @@
+<template name="dashboardProject">
+    <div class="dashboard-project dashboard-card-list-item">
+      <div class="dashboard-project-main-information">
+        <div class="dashboard-project-left-block">
+            <div class="dashboard-project-name"><a href="{{pathFor 'projectDashboard' id=id}}"> {{name}}</a></div>
+            {{#if lastUpdate}}
+                <div class="dashboard-project-last-updated">Last updated: <span>{{lastUpdate}}</span></div>
+            {{/if}}
+        </div>
+      </div>
+      <div class="dashboard-project-additional-information">
+        <div class="dashboard-project-info-icon">
+          <i class="material-icons">access_time</i>
+          <span>{{formatSecondsAsTime time}}</span>
+        </div>
+        <div class="dashboard-project-info-icon">
+          <i class="material-icons">assignment_turned_in</i>
+          <span>{{tasks.completed}}/{{tasks.all}}</span>
+        </div>
+        <div class="dashboard-project-info-icon">
+          <i class="material-icons">attach_money</i>
+          <span>{{totalSpendings}}</span>
+        </div>
+        <div class="dashboard-project-info-icon">
+          <i class="material-icons">people</i>
+          <span>{{people}}</span>
+        </div>
+      </div>
+    </div>
+</template>
+
+<template name="dashboardProjectsList">
+    <div class="dashboard-projects-list">
+        {{#if ready}}
+            {{#if projectsItems}}
+                {{#each projectsItems}}
+                    {{> dashboardProject}}
+                {{/each}}
+            {{else}}
+                {{>emptyCardContent message=emptyCardMessage}}
+            {{/if}}
+        {{else}}
+            {{>emptyCardContent message=dataLoadingMessage}}
+        {{/if}}
+    </div>
+</template>

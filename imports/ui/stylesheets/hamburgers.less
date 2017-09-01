@@ -1,0 +1,64 @@
+.button-collapse {
+    min-width: 60px;
+    height: 60px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.button-collapse .icon {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 18px;
+    top: 30px;
+    background-color: rgba(0,0,0,.7);
+}
+.button-collapse span{
+    margin-left: 56px;
+    display: block;
+    line-height: 64px;
+}
+@media(max-width:767px){
+    .button-collapse span{
+        margin-left: 40px;
+        font-size: 15px;
+    }
+}
+.button-collapse .icon:before {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: rgba(0,0,0,.7);
+    content: "";
+    top: -5px;
+}
+
+.button-collapse .icon:after {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: rgba(0,0,0,.7);
+    content: "";
+    top: 5px;
+}
+.button-collapse.open .icon {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+.button-collapse.open .icon:before {
+    -webkit-transform: rotateZ(45deg) scaleX(0.75) translate(5.5px, -3px);
+    transform: rotateZ(45deg) scaleX(0.75) translate(5.5px, -3px);
+}
+.button-collapse.open .icon:after {
+    -webkit-transform: rotateZ(-45deg) scaleX(0.75) translate(5.5px, 3px);
+    transform: rotateZ(-45deg) scaleX(0.75) translate(5.5px, 3px);
+}
+.button-collapse:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+<template name="lastEditedByFooter">
+    <div class="card-action card-footer-container">
+        <div class="row no-margin valign-wrapper card-footer-content">
+            <div class="user-avatar-container">
+                <img src="{{getUserSmallPhotoById editedBy}}" class="user-avatar avatar-s round"/>
+            </div>
+            <div>
+                <p>
+                    <span>Last Edited on {{formatDate editedAt}}
+                        by <a href="{{pathFor 'userProfile' id=editedBy}}">
+                            <b>{{getUserNameById editedBy}}</b>
+                        </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</template>

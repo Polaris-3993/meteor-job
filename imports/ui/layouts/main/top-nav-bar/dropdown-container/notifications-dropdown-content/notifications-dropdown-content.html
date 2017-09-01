@@ -1,0 +1,18 @@
+<template name = "notificationsDropdownContent">
+    <div class="notifications-dropdown-content">
+        {{#if haveNotifications}}
+            {{#each unreadNotifications}}
+                {{>notificationCard this}}
+            {{/each}}
+        {{else}}
+            <i class="material-icons no-notifications-icon">notifications</i>
+            <p class="no-notifications">
+                No notifications
+            </p>
+        {{/if}}
+
+        <a href="{{pathFor route='notifications'}}" class="all-notifications-button">
+            View all notifications
+        </a>
+    </div>
+</template>

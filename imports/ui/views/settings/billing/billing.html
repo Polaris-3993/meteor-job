@@ -1,0 +1,90 @@
+<template name="billingSettings">
+    <main id="billing" class="settings">
+        <div class="container">
+            <div class="row">
+                <!--Card for My Plan-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">My Plan</h3>
+                        <p class="sub-title">You are currently using<strong><a href="#"> {{#if isSubscribed}}
+                            pro{{else}}free{{/if}}</a></strong>
+                            <Vezio>membership.</Vezio>
+                        </p>
+                        {{#if isSubscribed}}
+                            <a class="btn styled blue" href="#" id="downgrade-to-plan">Downgrade</a>
+
+                        {{else}}
+                            <a class="btn styled blue" href="#" id="upgrade-to-plan">Upgrade</a>
+
+                        {{/if}}
+                    </div>
+                </div>
+                <!--Card for Credit card-->
+                <div class="col s12">
+                    <div class="card">
+                        <h3 class="title">Credit Card</h3>
+                        {{#if isPaymentMethod}}
+                            {{#with customer}}
+                                <p class="sub-title">
+                                    {{firstName}} {{lastName}}<br><strong>**** **** **** {{last4}}</strong></p><a
+                                    class="btn styled blue" href="#" id="change-card">Change card</a>
+                            {{/with}}
+                        {{else}}
+                            You didn't add card.<br>
+                            <a class="btn styled blue" href="#" id="change-card">Change card</a>
+                        {{/if}}
+                    </div>
+                </div>
+                <!--Card for Invoice history-->
+                <div class="col s12">
+                    <div class="card invoice-history">
+                        <h3 class="title">Invoice creation</h3>
+                        <a class="btn styled blue" href="#" id="generate-invoice">Create</a>
+
+                        <!--<table>-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                        <!--<th>Item</th>-->
+                        <!--<th>Issued</th>-->
+                        <!--<th>Amount</th>-->
+                        <!--<th></th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr>-->
+                        <!--<td>Vezio enterprise plan</td>-->
+                        <!--<td>1.3.2017</td>-->
+                        <!--<td>$25.00</td>-->
+                        <!--<td><a href="#"><i class="material-icons">visibility</i></a><a href="#"><i class="material-icons">print</i></a></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Vezio enterprise plan</td>-->
+                        <!--<td>1.2.2017</td>-->
+                        <!--<td>$25.00</td>-->
+                        <!--<td><a href="#"><i class="material-icons">visibility</i></a><a href="#"><i class="material-icons">print</i></a></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                        <!--<td>Vezio storage upgrade</td>-->
+                        <!--<td>1.1.2017</td>-->
+                        <!--<td>$50.00</td>-->
+                        <!--<td><a href="#"><i class="material-icons">visibility</i></a><a href="#"><i class="material-icons">print</i></a></td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                        <!--</table>-->
+                    </div>
+                </div>
+
+                <div class="col s12">
+                    <div class="card invoice-history">
+                        <h3 class="title">Bank credentials</h3>
+                        {{#if Template.subscriptionsReady}}
+                            <a class="btn styled blue" href="#" id="add-credentials">Add</a>
+                        {{else}}
+                            Loading...
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

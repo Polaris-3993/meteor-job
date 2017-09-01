@@ -1,0 +1,8 @@
+<template name="conversationView">
+    <div class="conversation-view">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+            {{> messagesList conversation=conversation}}
+            {{> sendMessageFooter conversation=conversation}}
+        </div>
+    </div>
+</template>

@@ -1,0 +1,111 @@
+@import 'variables.less';
+
+.tasks-top{
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: inherit;
+  overflow: auto;
+  h2{
+    font-size: @24px;
+    display: inline-block;
+    color: @black8;
+    margin: 0;
+    .icons{
+      display: inline-block;
+      a{
+        color: @black5;
+        display: inline-block;
+        text-align: center;
+        padding: 0 @10px;
+        &:first-child{
+          border-left: none;
+        }
+        i{
+          font-size: @24px;
+          margin-left: 0;
+          line-height: @18px;
+        }
+      }
+    }
+  }
+  .input-field{
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    input{
+      display: inline-block;
+      width: auto;
+      margin-bottom: 0;
+      font-size: @24px;
+      color: @black8;
+      padding-right: @100px;
+      min-width: 50px;
+      box-shadow: none;
+      border-bottom: 1px solid @black1;
+      &:focus{
+        border-bottom: 1px solid @black2;
+      }
+    }
+    a.prefix{
+      position: absolute;
+      top:@15px;
+      right:0;
+      color: @black7;
+      height: @18px;
+      line-height: @18px;
+      font-size: @24px;
+      text-align: center;
+      border-left:1px solid @black1;
+      &:last-child{
+        right: @48px;
+        border-left: none;
+      }
+    }
+  }
+  ul.info{
+    li{
+      display: inline-block;
+      margin-right: @30px;
+      a{
+        color: @black8;
+        font-size: @14px;
+        height: @24px;
+        line-height: @24px;
+        i{
+          color: @black6;
+          font-size: @20px;
+          line-height: @24px;
+          &.left{
+            margin-right: @8px;
+          }
+        }
+      }
+    }
+  }
+  .col.assigned-users{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    a{
+      display: inline-block;
+      width: @36px;
+      height: @36px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: @10px;
+      &:last-child{
+        background: #efefef;
+        text-align: center;
+        i{
+          line-height: @35px;
+          font-size: @16px;
+          color: @black7;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+}

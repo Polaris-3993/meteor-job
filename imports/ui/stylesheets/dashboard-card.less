@@ -1,0 +1,64 @@
+.dashboard-card {
+  position: relative;
+  width: 510px;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  background: #fff;
+  margin: 10px;
+  float: left;
+
+  .dashboard-card-title {
+    overflow: hidden;
+    padding: 22px 30px 24px 20px;
+    background: rgba(0, 0, 0, 0.02);
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 2px 2px 0 0;
+    cursor: pointer;
+
+    .dashboard-card-name {
+      float: left;
+      line-height: 1;
+    }
+    .dashboard-card-icons {
+      float: right;
+
+      a {
+        text-align: right;
+        display: inline-block;
+        width: 34px;
+        height: 24px;
+      }
+      .material-icon {
+        font-size: 20px;
+      }
+    }
+  }
+  .dashboard-card-content {
+    width: 100%;
+    overflow: hidden;
+  }
+  .dashboard-card-content-scroll {
+    width: 510px;
+    height: 400px;
+    overflow-y: auto;
+  }
+  .dashboard-card-content-scroll-inner {
+    padding-right: 0px;
+  }
+  .dashboard-card-list-item{
+    padding: 22px 30px 24px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    width: 100%;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.dashboard-card-icons{
+  .btn-flat:hover {
+    background-color: transparent !important;
+  }
+}

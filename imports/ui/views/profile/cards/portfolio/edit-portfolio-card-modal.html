@@ -1,0 +1,74 @@
+<template name="editPortfolioModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="col s12">
+                <div class="single-box portfolio">
+                    <div id="edit-portfolio-modal" class="modal edit-portfolio">
+                        <div class="modal-content">
+                            {{#if portfolioProject}}
+                                <div class="head">Edit Portfolio</div>
+                            {{else}}
+                                <div class="head">Add Portfolio</div>
+                            {{/if}}
+
+                            <div class="content">
+                                <div class="input-field col s6">
+                                    <input value="{{#if portfolioProject}}{{portfolioProject.projectTitle}}{{/if}}"
+                                           type="text" class="validate" id="project-title">
+                                    <label class="active">Project title</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input value="{{#if portfolioProject}}{{portfolioProject.projectUrl}}{{/if}}"
+                                           type="text" class="validate" id="project-url">
+                                    <label class="active">Project url</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input value="{{#if portfolioProject}}{{formatSkills
+                                            portfolioProject.skills}}{{/if}}" type="text" class="validate" id="skills">
+                                    <label class="active">Skills (Separate with comma)</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input type="date" class="datepicker validate" id="project-creation-date">
+                                    <label class="active">When you did this?</label>
+                                </div>
+
+                                <div class="file-field col s6 input-field">
+                                    <label class="active">Thumbnail</label>
+                                    <div class="btn">
+                                        <span><i class="fa fa-upload"></i> {{#if loadingThumbnail}}loading{{else}}upload{{/if}}</span>
+                                        <input type="file" id="thumbnail">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" id="thumbnail-label">
+                                    </div>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <textarea id="project-description" class="materialize-textarea" length="300"
+                                              maxlength="300">{{#if
+                                            portfolioProject}}{{portfolioProject.projectDescription}}{{/if}}</textarea>
+                                    <label class="active" for="project-description">Project description</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col s12 modal-footer">
+                            <a href="#"
+                               class="modal-action waves-effect waves-red btn-flat save">Save</a>
+                            {{#unless portfolioProject}}
+                            <a href="#" class="modal-action waves-effect waves-red btn-flat add-more">Add
+                            more</a>
+                            {{/unless}}
+                            <a href="#" class="modal-action waves-effect waves-red btn-flat cancel">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

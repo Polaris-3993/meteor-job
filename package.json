@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "autosize-input": "^0.4.0",
+    "babel-runtime": "^6.23.0",
+    "blueimp-canvas-to-blob": "^3.11.0",
+    "braintree": "^1.47.1",
+    "braintree-web": "^3.15.0",
+    "currency-codes": "^1.1.2",
+    "gm": "1.18.1",
+    "html2canvas": "^0.5.0-beta4",
+    "iban": "0.0.8",
+    "iconv-lite": "^0.4.16",
+    "intl-tel-input": "^7.1.1",
+    "mandrill-api": "1.0.42",
+    "materialize-autocomplete": "^1.0.7",
+    "meteor-node-stubs": "^0.2.6",
+    "nouislider": "^10.1.0",
+    "pdfmake": "^0.1.28",
+    "spm-agent-nodejs": "^1.30.8"
+  },
+  "engines": {
+    "node": ">=4.5.0"
+  },
+  "devDependencies": {}
+}

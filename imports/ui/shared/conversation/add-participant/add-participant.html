@@ -1,0 +1,26 @@
+<template name="addParticipant">
+    {{> searchUserBar
+    newParticipantsIds=newParticipantsIds
+    onRemoveUser=onRemoveUserCb
+    }}
+
+    <div class="chat-body">
+        {{> findUser
+        onAddUser=onAddUserCb
+        participantsIds=newAndAlreadyAddedParticipantsIds
+        findUsersSearchString=findUsersSearchString
+        conversation=conversation
+        }}
+
+        <div class="confirm-buttons">
+            <a href="" class="waves-effect waves-light btn save">
+                {{#if conversation.isPrivate}}
+                    New group
+                {{else}}
+                    Add people
+                {{/if}}
+            </a>
+            <a href="" class="waves-effect waves-light btn cancel">Cancel</a>
+        </div>
+    </div>
+</template>

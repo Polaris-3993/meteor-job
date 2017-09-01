@@ -1,0 +1,21 @@
+<template name="companyDetailWorker">
+    <div class="worker-frame">
+        <div class="worker-picture center"> 
+            <a href="/profile/{{workerId}}">
+                <img src="{{userPhoto}}"/>
+            </a>
+        </div>
+        
+        <div class="center">
+            <span class="worker-name">
+                {{user.profile.fullName}}
+                <div class="online-status {{onlineStatus}}"></div>
+            </span>
+            
+            
+            <br>
+            <span class="light-sign">{{userPosition}}</span>
+        </div>
+        
+    </div>
+</template>

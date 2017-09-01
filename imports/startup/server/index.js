@@ -1,0 +1,9 @@
+import './namespace';
+import './dummy-documents';
+import './migrations';
+import './email';
+import './fixtures';
+import './register-api';
+import './helpers';
+import './send-email';
+import './config/aws-s3';

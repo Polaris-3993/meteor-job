@@ -1,0 +1,16 @@
+env: flex
+runtime: custom
+threadsafe: true
+automatic_scaling:
+  max_num_instances: 1
+env_variables:
+  ROOT_URL: https://vezio.work
+  MONGO_URL: mongodb://vz-core:8Cp-uS4-r8r-7pN@vezio-db-server-1.c.vezio-158513.internal,vezio-db-server-2.c.vezio-158513.internal/vezio?replicaSet=rs0
+  DISABLE_WEBSOCKETS: "1"
+skip_files:
+- ^(.*/)?\.dockerignore$
+- ^(.*/)?\npm-debug.log$
+- ^(.*/)?\yarn-error.log$
+- ^(.*/)?\.git$
+- ^(.*/)?\.hg$
+- ^(.*/)?\.svn$

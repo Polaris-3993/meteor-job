@@ -1,0 +1,92 @@
+<template name="myScreenshots">
+    <main class="screenshot-main" id="project-me">
+        <div class="row top-control">
+            <div class="col s3"><a class="dropdown-button" href="#" data-activates="projects">Projects</a>
+                <ul class="dropdown-content projects" id="projects">
+                    {{#each projects}}
+                        <li>
+                            <input type="checkbox" checked="{{#if shouldShowChecked this}}checked{{/if}}"
+                                   id="{{_id}}" class="project-change"/>
+                            <label for="{{_id}}">{{name}}</label>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <div class="col s9 right-align">
+                <div href="#" class="input-field dropdown mr-30">
+                    <select id="time-zone-select">
+                        <option value="current" {{selectedTimeZone "current"}}>Mine</option>
+                        <!--<option value="utc" {{selectedTimeZone "utc"}}>UTC</option>-->
+                        <option value="gmt" {{selectedTimeZone "gmt"}}>GMT</option>
+                        <option value="est" {{selectedTimeZone "est"}}>EST</option>
+                    </select>
+                </div>
+                <div class="input-field dropdown mr-30">
+                    <select id="time-format-select">
+                        <option value="12" {{selectedTimeFormat '12'}}>12h</option>
+                        <option value="24" selected {{selectedTimeFormat '24'}}>24h</option>
+                    </select>
+                </div>
+                <div class="input-field date">
+                    <input type="date" class="datepicker" id="datepicker">
+                    <label for="datepicker">{{datePickerDate}}<i class="material-icons">today</i></label>
+                </div>
+                <a class="btn-control" href="#" id="previous-day"><i
+                        class="material-icons">keyboard_arrow_left</i></a><a class="btn-control ml-10" href="#"
+                                                                             id="next-day"><i class="material-icons">keyboard_arrow_right</i></a>
+            </div>
+        </div>
+        {{#if isScreensLoaded}}
+            {{#if isScreensFound}}
+                {{#each screenshots}}
+                    <div class="row screenshots">
+                        <div class="time-info valign-wrapper">
+                            <div class="valign">{{getHours takenAt}}<br><span class="am-pm">{{getDayPeriod
+                                    takenAt}}</span>
+                            </div>
+                        </div>
+                        {{#each screens}}
+                            {{#if deleted}}
+                                <div class="col l2 m4 s6">
+                                    <div class="single no-activity"><img src="/images/empty.jpg">
+                                        <div class="info">
+                                            <p class="time">{{screenshotTimePeriod}}</p>
+                                            <p class="detail truncate">empty</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{else}}
+                                <div class="col l2 m4 s6">
+                                    <div class="single"><img id="screenshot-img"
+                                                             src="{{screenshotThumbnailPreviewURL}}">
+                                        <div class="info">
+                                            <p class="time">{{screenshotTimePeriod}}<span class="actions"><a
+                                                    class="material-icons"
+                                                    href="{{screenshotOriginalURL}}">file_download</a><a
+                                                    class="material-icons" href=""
+                                                    id="delete-screenshot">delete</a></span>
+                                            </p>
+                                            <p class="detail truncate">{{taskName}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/if}}
+                        {{/each}}
+                    </div>
+                {{/each}}
+            {{else}}
+                <div class="row screenshots">
+                    <div class="col-sm-12">
+                        <div class="no-screenshot">
+                            <i class="material-icons">filter</i>
+                            <h4>No activity found</h4>
+                        </div>
+                    </div>
+                </div>
+            {{/if}}
+        {{else}}
+            {{> loading}}
+        {{/if}}
+    </main>
+</template>

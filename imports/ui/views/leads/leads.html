@@ -1,0 +1,225 @@
+<template name="leads">
+    <!--<input type="file" name="uploadCSV"/>-->
+    <main id="all" class="data-table leads-data-table">
+        <div class="table-container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="table-wrapper">
+                        <div class="table-header {{#if isCheckedLeads}}selected{{/if}}">
+                            <h4 class="left">{{#if isCheckedLeads}}
+                                <a class="remove" href="#"><i class="material-icons left"
+                                                              style="margin-left: -3px;">close</i></a>
+                                {{checkedCount}}
+                                leads selected{{else}}Leads{{/if}}</h4>
+                            <div class="right">
+                                <a id="table_search" class="{{#if isCheckedLeads}}hide{{/if}}" href="#">
+                                    <i class="search material-icons left">search</i>
+                                    <i class="close material-icons left">close</i>
+                                </a>
+                                {{#if isCheckedLeads}}
+                                    <a href="#"><i class="material-icons left">more_vert</i></a>
+                                {{else}}
+                                    <a href="#"><i class="material-icons left">filter_list</i></a>
+                                {{/if}}
+                            </div>
+                        </div>
+                        <table id="leads-table" class="row-border" width="100%">
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" class="filled-in" id="select-all" name="select-all"/><label
+                                        for="select-all"></label>VAT
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Country
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    PU
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Name
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Mobile
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Related contact
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Email
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Account
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Billing Street
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Billing Postal Code
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Billing City
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Number of Employees
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Navn
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Industry
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Decision maker
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Member of
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Opportunity Type
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Customer Type
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Status
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Assigned User name
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Teams
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <th>
+                                    Sales Stage
+                                    <span class="sort">
+                        <a href="#"><i class="material-icons sorting_asc">keyboard_arrow_up</i></a>
+                        <a href="#"><i class="material-icons sorting_desc">keyboard_arrow_down</i></a>
+                      </span>
+                                </th>
+                                <!--<th></th>-->
+
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                            {{#each leads}}
+                                <tr>
+                                    <td><input type="checkbox" checked={{isChecked}} class="filled-in" id="{{_id}}" name="table-item"/><label
+                                            for="{{_id}}"></label>{{vat}}
+                                    </td>
+                                    <td>{{country}}</td>
+                                    <td>{{puCreated}}</td>
+                                    <td>{{name}}</td>
+                                    <td>{{mobileNumber}}</td>
+                                    <td>{{relatedKeyContact}}</td>
+                                    <td>{{email}}</td>
+                                    <td>{{account}}</td>
+                                    <td>{{billingStreet}}</td>
+                                    <td>{{billingPostalCode}}</td>
+                                    <td>{{billingCity}}</td>
+                                    <td>{{numberOfEmployees}}</td>
+                                    <td>{{navn}}</td>
+                                    <td>{{industry}}</td>
+                                    <td>{{decisionMaker}}</td>
+                                    <td>{{memberOf}}</td>
+                                    <td>{{opportunityType}}</td>
+                                    <td>{{customerType}}</td>
+                                    <td>{{status}}</td>
+                                    <td>{{assignedUserName}}</td>
+                                    <td>{{teams}}</td>
+                                    <td>{{salesStage}}</td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

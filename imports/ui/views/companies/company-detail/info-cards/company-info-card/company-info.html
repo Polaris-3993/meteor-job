@@ -1,0 +1,35 @@
+<template name="companyDetailCompanyInfoCard">
+    <div class= "col s4 ">
+        <div class="company-detail-card card-panel z-depth-0">
+            <span class="card-title bold">Company Info</span>
+            
+            {{#with companyInfo}}
+                {{#if registrationNumber}}
+                    <div class="registration-number row ">
+                        <div class="col s1 ">
+                            <i class="material-icons">business</i>
+                        </div>
+                        <div class="col s11 left-padding-20">
+                            {{registrationNumber}}
+                            <br>
+                            <span class="light-sign">Registration Number</span>
+                        </div>
+                    </div>
+                {{/if}}
+                
+                {{#if vat}}
+                    <div class="vat-number row ">
+                        <div class="col s1 ">
+                            <i class="material-icons">receipt</i>
+                        </div>
+                        <div class="col s11 left-padding-20">
+                            {{vat}}
+                            <br>
+                            <span class="light-sign">Vat number</span>
+                        </div>
+                    </div>
+                {{/if}}
+            {{/with}}
+        </div>
+    </div>
+</template>

@@ -1,0 +1,6 @@
+<template name="foundUserItem">
+    <input type="checkbox" class="filled-in" id="{{user._id}}"/>
+    <label for="{{user._id}}">
+        <img src="{{getUserSmallPhotoById user._id}}" alt="">{{user.profile.fullName}}
+    </label>
+</template>

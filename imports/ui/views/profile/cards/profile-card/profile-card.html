@@ -1,0 +1,21 @@
+<template name="profileCard">
+    <div class="profile-card-wrapper">
+        <div id={{profileField}} class="card {{profileField}}">
+            <div class="card-header">
+                {{label}}
+                {{#if isEditable profileField}}
+                    {{#if profileOwner}}
+                        <i class="edit-button fa fa-pencil"></i>
+                    {{/if}}
+                {{/if}}
+            </div>
+            <div class="card-body">
+                {{#unless editState}} 
+                    {{>showCard initValue=initValue}}
+                {{else}} 
+                    {{>editCard}}
+                {{/unless}}
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,213 @@
+@import 'variables.less';
+
+main.company-info {
+  margin-top: 130px;
+  .banner {
+    background-size: cover;
+    padding-top: @70px;
+    padding-bottom: 4.25rem;
+    margin-top: -17px;
+    @media (max-width: 1200px) {
+      margin-top: -27px;
+    }
+    @media (max-width: 992px) {
+      margin-top: -27px;
+    }
+    .overview {
+      .profile-pic {
+        width: 104px;
+        height: 104px;
+        text-align: center;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #FFF;
+        float: left;
+        border: 5px solid #eceff1;
+        margin-right: @30px;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .company-info {
+        padding-top: @20px;
+        @media (max-width: 600px) {
+          clear: both;
+        }
+        h2 {
+          font-size: @26px;
+          line-height: 1;
+          color: @white;
+          margin: 0;
+          .btn {
+            box-shadow: none;
+            background: @white2;
+            font-size: @11px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 @20px;
+            &.verified-stutas {
+              background: none;
+              padding: 0 @10px;
+              font-size: @25px;
+              margin-right: @10px;
+              i {
+                font-size: @25px;
+              }
+            }
+          }
+        }
+        h4 {
+          margin: 0;
+          line-height: 100%;
+          span {
+            font-size: @15px;
+            color: @white9;
+            line-height: 1;
+            display: inline-block;
+            margin-right: @20px;
+            i {
+              font-size: @15px;
+              margin-right: @10px;
+            }
+          }
+        }
+      }
+      .banner-edit {
+        position: absolute;
+        color: @white5;
+        right: @45px;
+        top: @30px;
+      }
+    }
+  }
+  .contents {
+    margin-top: -50px;
+    .col {
+      padding: 0 5px;
+    }
+  }
+  .card {
+    padding: @25px;
+    margin-bottom: 12px;
+    box-shadow: 0px 3px 2.91px 0.09px rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    h3 {
+      font-size: 1.05rem;
+      margin: 0;
+      line-height: 1;
+      color: @black8;
+      i {
+        font-size: 1.05rem;
+        color: @black5;
+      }
+    }
+
+    &.contact-info {
+      h6 {
+        font-size: @12px;
+        color: @black6;
+        font-weight: 500;
+      }
+      ul {
+        li {
+          display: block;
+          color: @black8;
+          font-size: @13px;
+          line-height: @32px;
+          font-weight: 500;
+          a {
+            color: @black8;
+            i {
+              font-size: @19px;
+              color: #8e8e8e;
+              line-height: @32px;
+              &.fa {
+                font-size: @17px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    &.additional-info {
+      dl {
+        dt {
+          font-size: @13px;
+          color: @black6;
+        }
+        dd {
+          font-size: @15px;
+          color: @black8;
+        }
+      }
+    }
+    &.about {
+      p {
+        font-size: @13px;
+        color: @black8;
+        text-align: justify;
+      }
+      blockquote {
+        font-size: @15px;
+        color: @black8;
+        i {
+          font-size: @19px;
+          color: @black6;
+        }
+      }
+      h5 {
+        font-size: @13px;
+        text-transform: uppercase;
+        color: @black6;
+        font-weight: 500;
+      }
+    }
+    &.products {
+      padding-bottom: 0;
+      h5 {
+        font-size: @13px;
+        color: @black6;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: @30px 0;
+      }
+      .thumb {
+        display: inline-block;
+        width: 147px;
+        height: 147px;
+        background: #fce4ec;
+        border-radius: 2px;
+        border: 2px solid rgb(245, 245, 245);
+        margin-right: 10px;
+        position: relative;
+        i {
+          font-size: 50px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 99;
+          opacity: 0.4;
+          line-height: 147px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+      .card-action {
+        border-top: 1px solid @black1;
+        margin: @36px -@25px 0;
+        line-height: 48px;
+        text-align: right;
+        padding: 0;
+        a {
+          font-size: @13px;
+          color: @black8 !important;
+          font-weight: 500;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

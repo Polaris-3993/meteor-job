@@ -1,0 +1,121 @@
+<template name="contractView">
+    <div class="row">
+        <div class="col s12">
+            <div class="contract-view">
+
+            <div class="section">
+                <h5>Contract name</h5>
+
+                <p>{{contract.name}} - {{relatedCompanyName}}</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h5>Progress</h5>
+
+                <div class="row">
+                    <div class="col s3">
+                        <p>This week:</p>
+
+                        <p>12:00 hours</p>
+
+                        <p>$ 75</p>
+                    </div>
+
+                    <div class="col s3">
+                        <p>Last week:</p>
+
+                        <p>24:00 hours</p>
+
+                        <p>$ 130</p>
+                    </div>
+
+                    <div class="col s3">
+                        <p>Since start:</p>
+
+                        <p>240:00 hours</p>
+
+                        <p>$ 1300</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h5>Payment info</h5>
+
+                <div class="row">
+                    <div class="col s4">
+                        <p>Rate</p>
+                    </div>
+
+                    <div class="col s8">
+                        <p>{{contract.paymentInfo.rate}} / {{rateType}}</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s4">
+                        <p>Limit</p>
+                    </div>
+
+                    <div class="col s8">
+                        <p>{{contract.paymentInfo.weekHoursLimit}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                {{#if shouldShowEmployerInfo}}
+                    <h5>Employer info</h5>
+
+                    <div class="row">
+                        <p>{{employerName}}</p>
+
+                        <p>{{relatedCompanyName}}</p>
+                    </div>
+                {{/if}}
+
+                {{#if shouldShowWorkerInfo}}
+                    <h5>Worker info</h5>
+
+                    <div class="row">
+                        <p>{{workerName}}</p>
+                    </div>
+                {{/if}}
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h5>Contact changes</h5>
+
+                <ul class="collection">
+                    {{#each statuses}}
+                        <li class="collection-item">{{name}} ({{startDate}} - {{endDate}})</li>
+                    {{/each}}
+                </ul>
+
+                {{#if canAcceptOrDecline}}
+                    <button id="acceptContract">Accept</button>
+                    <button id="declineContract">Decline</button>
+                {{/if}}
+
+                {{#if canPauseOrEnd}}
+                    <button id="pauseContract">Pause</button>
+                    <button id="endContract">End</button>
+                {{/if}}
+
+                {{#if canContinue}}
+                    <button id="continueContract">Continue</button>
+                    <button id="endContract">End</button>
+                {{/if}}
+            </div>
+            </div>
+        </div>
+    </div>
+</template>

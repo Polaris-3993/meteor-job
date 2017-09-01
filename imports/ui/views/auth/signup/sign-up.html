@@ -1,0 +1,113 @@
+<template name="signUpPage">
+
+    <div class="row">
+
+        <div class="col s12 m8 offset-m2 l4 offset-l4 no-padding">
+
+            <div class="row no-margin">
+
+                <div class="col s10 offset-s1 z-depth-1 white">
+
+                    <form class="login-form secondary-color" id="login-form">
+                        <div class="row">
+
+                        <div class="col s12">
+                                <h5 class="center no-margin">Create new account</h5>
+                            </div>
+
+                        </div>
+
+                        {{> googleLogin label="Sign up"}}
+
+                        <div class="row no-margin">
+                            <div class="col s12 center-align"> or</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text">
+                                <label for="first_name">First Name</label>
+                            </div>
+
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+
+                        <div class="row margin">
+                            <div class="input-field col s12">
+                                <input id="email" type="email">
+                                <label for="email" data-error="Invalid&nbsp;Email" data-success="">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="row margin">
+                            <div class="input-field col s12">
+                                <input id="password" type="password">
+                                <label for="password" class="" data-error="" data-success="">Password</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s12">
+                                <button class="btn-large btn-dark no-shadow waves-effect waves-light col s12 text-transform-none">
+                                    Start Free Trial
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <p class="center">No credit card required</p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row vz-signin">
+
+        <p class="center">
+            By signing up, you agree with our
+
+            <a href="">
+                Community Guidelines
+            </a>,
+
+            <a href="">
+                Terms of Use
+            </a>, and
+
+            <a href="">
+                Privacy Policy
+            </a>
+
+        </p>
+
+        <p class="center">
+            Already have an account ? Log in
+            <a href="/login">
+                here
+            </a>
+        </p>
+
+    </div>
+
+    <div id="google-proposal-modal" class="modal">
+        <div class="modal-content">
+            <h4>Google account sharing</h4>
+
+            <p>We identified, you have used your Gmail address to register! Would you like to share your Google profile
+                with us?</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat"
+               id="google-proposal-no">No</a>
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" id="google-proposal-yes">Yes</a>
+        </div>
+    </div>
+
+</template>

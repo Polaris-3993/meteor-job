@@ -1,0 +1,55 @@
+<template name="editTimeEntry">
+    <div class="indent col s8 valign-wrapper">
+        <div class="input-field col s4 no-margin">
+            <input value="{{entry.message}}" type="text" class="no-margin entry-name-input time-entry-checkbox"
+                   id="{{entry._id}}"/>
+        </div>
+        <span class="waves-effect waves-light vz-tag color1 select-project">
+            {{project}}
+            {{#if hasProject}}
+                <i class="material-icons remove-project">close</i>
+            {{/if}}
+        </span>
+        
+        <div class="col s1 valign-wrapper">
+            <i class="material-icons tag-icon">local_offer</i>
+        </div>
+        
+        {{#if isTagPopupActive}}
+            {{>tagListDropdown tagPopupControls}}
+        {{/if}}
+        <!--<input type="checkbox" id="{{_id}}" />-->
+        <!--<label for="{{_id}}">-->
+        <!--    {{message}}-->
+        <!--</label>-->
+        <!--<span class="waves-effect waves-light vz-tag color1">-->
+        <!--    My Time-->
+        <!--</span>-->
+    </div>
+
+    <div class="no-wrap col s1">
+        {{duration}}
+    </div>
+
+
+    <input id="editStartTime" class="col s2 edit-time-input"/>
+    <input id="editEndTime" class="col s2 edit-time-input"/>
+
+    <!--<div class="right-align no-wrap col s2 grey-text text-darken-1">-->
+    <!--    <small>-->
+    <!--        {{betweenHours}}-->
+    <!--    </small>-->
+    <!--</div>-->
+
+    <div class="right col s1">
+        <div class="right">
+            <a class='btn-flat no-padding submit-entry-editing' href='#'>
+                <i class="material-icons">done</i>
+            </a>
+
+            <a class='btn-flat no-padding cancel-entry-editing' href='#'>
+                <i class="material-icons">not_interested</i>
+            </a>
+        </div>
+    </div>
+</template>

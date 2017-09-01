@@ -1,0 +1,171 @@
+<template name="createEditCompany">
+    <div style="margin-top: 60px;">
+
+        {{#formCard title=pageTitle}}
+
+        <form id="editCompanyForm">
+
+            <div class="input-section row">
+                <div class="input-field col s12">
+                    <input type="text" id="name" class="validate" value="{{company.name}}"
+                           required title="Company name is required!"/>
+                    <label for="name" class="{{#if company.name}}active{{/if}}">
+                        Company Name
+                    </label>
+                </div>
+
+                <div class="input-field col s12">
+                    <textarea id="description" class="materialize-textarea"
+                              value="{{company.description}}"></textarea>
+                    <label for="description" class="{{#if company.description}}active{{/if}}">
+                        Description
+                    </label>
+                </div>
+
+                <!-- visibility -->
+                <div class="input-field col s12">
+                    <input name="visibility" type="radio" id="visibility-public" value="public"
+                           checked="{{#unless company.isPrivate}}checked{{/unless}}"/>
+                    <label for="visibility-public">Public</label>
+                    <input name="visibility" type="radio" id="visibility-private" value="private"
+                           checked="{{#if company.isPrivate}}checked{{/if}}"/>
+                    <label for="visibility-private">Private</label>
+                </div>
+
+                <div class="input-field col {{#if company.logoUrl}}s10{{else}}s12{{/if}}">
+                    <div class="file-field input-field">
+                        <div class="btn waves-effect waves-light">
+                            <span>File</span>
+                            <input id="logo" type="file" accept="image/*">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path" type="text" placeholder="Upload logo">
+                        </div>
+                    </div>
+                </div>
+
+                {{#if company.logoUrl}}
+                    <div class="input-field col s2">
+                        <input type="checkbox" id="delete-logo"/>
+                        <label for="delete-logo">Delete logo</label>
+                    </div>
+                {{/if}}
+
+                <div class="input-field col s12">
+                    <input type="text" id="vat" value="{{company.vat}}" class="validate" />
+                    <label for="vat" class="{{#if company.vat}}active{{/if}}">VAT</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input type="text" id="registrationNumber"
+                           value="{{company.registrationNumber}}" class="validate"
+                           required title="Registration number is required!"/>
+                    <label for="registrationNumber" class="{{#if company.registrationNumber}}active{{/if}}">Registration
+                        Number</label>
+                </div>
+            </div>
+
+            <div class="input-section row location-section">
+                <div class="title">Location</div>
+                <div class="input-field col s6 location-input-wrapper">
+                    <select id="country" class="location-input">
+                        <option selected="{{#unless company.location.country}}selected{{/unless}}"
+                                disabled="disabled">
+                            Choose a country
+                        </option>
+                        {{#each countriesList}}
+                            <option selected="{{#if equal ../company.location.country label}}selected{{/if}}"
+                                    value="{{label}}">
+                                {{label}}
+                            </option>
+                        {{/each}}
+                    </select>
+                    <label for="country">Country</label>
+                </div>
+
+                <div class="input-field col s6 location-input-wrapper">
+                    <input type="text" id="city" class="location-input validate"
+                           disabled="{{#unless isCountrySelected}}disabled{{/unless}}"
+                           value="{{company.location.city}}"
+                           required title="City is required!"/>
+                    <label for="city" class="{{#if company.location.city}}active{{/if}}">
+                        City
+                    </label>
+                </div>
+
+                <div class="input-field col s6 location-input-wrapper">
+                    <input type="text" id="address" class="location-input validate"
+                           disabled="{{#unless isCountrySelected}}disabled{{/unless}}"
+                           value="{{company.location.address}}"
+                           required title="Address is required!"/>
+                    <label for="address" class="{{#if company.location.address}}active{{/if}}">
+                        Address
+                    </label>
+                </div>
+
+                <div class="input-field col s6 location-input-wrapper">
+                    <input type="text" id="zip" class="location-input validate"
+                           disabled="{{#unless isCountrySelected}}disabled{{/unless}}"
+                           value="{{company.location.zip}}"
+                           required title="Zip is required!"/>
+                    <label for="zip" class="{{#if company.location.zip}}active{{/if}}">
+                        Zip-code
+                    </label>
+                </div>
+            </div>
+            {{#if isShowMap}}
+                <div class="map-wrapper">
+                    {{>googleMapWrapper name="companyLocationMap" options=mapOptions}}
+                </div>
+            {{/if}}
+
+            <div class="input-section row">
+                <div class="title">Contacts</div>
+
+                <div class="input-field col s6">
+                    <input type="text" id="number" value="{{company.contacts.phone.number}}"
+                           class="validate"/>
+                    <label for="number" class="{{#if company.contacts.phone.number}}active{{/if}}">
+                        Phone number
+                    </label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input type="email" id="email"
+                           value="{{company.contacts.email}}" class="validate"/>
+                    <label for="email" class="{{#if company.contacts.email}}active{{/if}}">
+                        Email
+                    </label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input type="text" id="website"
+                           value="{{company.contacts.website}}" class="validate"/>
+                    <label for="website" class="{{#if company.contacts.website}}active{{/if}}">
+                        Website
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn-large btn-blue" type="submit" id="submit-form-button"
+                    disabled="{{#unless canBeSubmitted}}disabled{{/unless}}">
+                Save
+            </button>
+            <button class="btn-large btn-light-grey" id="cancel-button">Cancel</button>
+            {{#if isEditState}}
+                <button class="btn-large btn-light-grey modal-trigger" data-target="deleteCompanyModal">DELETE COMPANY</button>
+            {{/if}}
+            
+            
+        </form>
+        <div id="deleteCompanyModal" class="modal">
+            <div class="modal-content">
+                <h4>Are you sure you want to delete your company?</h4>
+                <button class="btn delete-company">DELETE</button>
+                <button class="btn cancel-company-deleting">CANCEL</button>
+            </div>
+        </div>
+
+    {{/formCard}}
+        </div>
+</template>

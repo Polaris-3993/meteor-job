@@ -1,0 +1,12 @@
+<template name="mainLayout">
+        {{#if user}}
+            {{setTitle}}
+            {{> topNavBar}}
+            <div class="vz row no-margin">
+            <div class="content-section">
+                {{> yield}}
+            </div>
+            <!--{{> conversationsManager}}-->
+        </div>
+        {{/if}}
+</template>

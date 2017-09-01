@@ -1,0 +1,26 @@
+<template name="contractsList">
+    <!--<div class="vz-workplace-spacer">-->
+    <section class="header-tabs">
+        <div class="row tabs-row">
+            <ul class="tabs">
+                <li data-template="activeContracts" role="presentation" class="tab  tab-accent-white"><a class="active"
+                                                                                                         href="#">ACTIVE</a>
+                </li>
+                <li data-template="pendingContracts" role="presentation" class="tab"><a href="#">Pending</a></li>
+
+                <li data-template="pausedContracts" role="presentation" class="tab"><a href="#">PAUSED</a></li>
+                <li data-template="endedContracts" role="presentation" class="tab"><a href="#">Completed</a></li>
+            </ul>
+        </div>
+        </section>
+    <div style="margin-top: 161px;">
+        {{#if formChanged}}
+            {{> Template.dynamic template=tab}}
+        {{/if}}
+    </div>
+        <!--<div class="dashboard-templates">-->
+
+
+        <!--</div>-->
+    <!--</div>-->
+</template>

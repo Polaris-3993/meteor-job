@@ -1,0 +1,29 @@
+<template name="timeEntries">
+    <div class="row">
+        {{#if hasEntries}}
+            {{>timetrackerViewSelect}}
+        {{/if}}
+
+        {{#if shouldShowDeleteButton}}
+            <button class="btn delete-selected-group">
+                DELETE
+            </button>
+        {{/if}}
+
+        {{#if hasEntries}}
+            {{#each timeEntriesGroups}}
+                {{> timeEntriesGroup timeEntries=timeEntries label=label  groupIndex=@index}}
+            {{/each}}
+        {{else}}
+            <p>No entries to display</p>
+        {{/if}}
+        <!-- end time entries -->
+        {{#if shouldShowLoadMoreButton}}
+            <div class="center-align">
+                <a class="waves-effect waves btn-large time-tracker-show-more center-align fullwidth bordered white grey-text text-darken-3">
+                    Show more
+                </a>
+            </div>
+        {{/if}}
+    </div>
+</template>

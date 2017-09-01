@@ -1,0 +1,22 @@
+<template name="dashboardAction">
+    <div class="dashboard-action dashboard-card-list-item">
+        <div class="dashboard-action-content">
+            <div class="dashboard-action-text">{{message}}</div>
+        </div>
+        <div class="dashboard-action-time">
+            <div style="font-weight: 400; color: #666;">{{getTime}}</div>
+        </div>
+    </div>
+</template>
+
+<template name="dashboardActivityList">
+    <div class="dashboard-activity-list">
+        {{#if actionsItems}}
+        {{#each actionsItems}}
+            {{> dashboardAction}}
+        {{/each}}
+            {{else}}
+            {{>emptyCardContent message=emptyCardMessage}}
+        {{/if}}
+    </div>
+</template>

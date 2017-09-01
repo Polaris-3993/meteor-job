@@ -1,0 +1,1 @@
+// export const JobTypes = new Mongo.Collection('vj-job-types');

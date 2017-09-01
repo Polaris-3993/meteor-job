@@ -1,0 +1,127 @@
+<template name="jobPreview">
+    <section class="create-new-job-2">
+        <div class="row">
+
+            <ul class="steps">
+                <li><a href=""><span class="number">1</span> Create advertisement</a></li>
+                <li><a class="current" href=""><span class="number">2</span> Preview</a></li>
+                <li><a href=""><span class="number">3</span> Purchase</a></li>
+            </ul>
+
+            <form class="new-job-form" action="" method="POST">
+
+
+                <!--================================
+                =            Adv Preview            =
+                =================================-->
+
+                <div class="adv-preview">
+                    <div class="row">
+                        <div class="adv-head">
+                            <div class="left-content">
+                                <h2><a href="" title="">{{job.title}}</a> <span class="label">New</span></h2>
+                                <ul>
+                                    <li><a>{{job.companyName}}</a></li>
+                                    <li><a>{{desirableEmployeeLocation}}</a></li>
+                                    <li><a class="job-type">{{job.jobType}}</a></li>
+                                </ul>
+                            </div>
+                            <div class="right-content">
+                                <button class="active" type=""><i class="material-icons">star</i></button>
+                                <p>Added {{dateFromNow job.createdAt}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="preview-body">
+                            <div class="col l8 s12 no-padding">
+                                <div class="detail">
+                                    {{{job.description}}}
+                                </div>
+                            </div>
+                            <div class="col l4 s12 no-padding">
+                                <div class="sub-detail">
+                                    <div class="single">
+                                        <h6>Job category</h6>
+
+                                        <p>{{job.category}}</p>
+                                    </div>
+
+                                    <div class="single">
+                                        <h6>Job Location</h6>
+
+                                        <p>{{job.location.city}}, {{getCountryLabelByCode job.location.country}}</p>
+                                    </div>
+
+                                    {{#if job.salary}}
+                                        <div class="single">
+                                            <h6>Salary</h6>
+
+                                            {{#with job.salary}}
+                                                <p>{{min}}{{currencySymbol currency}}
+                                                    - {{max}}{{currencySymbol currency}}</p>
+                                            {{/with}}
+                                        </div>
+                                    {{/if}}
+
+                                    <div class="single">
+                                        <h6>Head quarter Location</h6>
+
+                                        <p>{{job.headquaterLocation}}</p>
+                                    </div>
+
+                                    <div class="single">
+                                        <h6>Company URL:</h6>
+
+                                        <p><a href="{{job.website}}">{{job.website}}</a></p>
+                                    </div>
+
+                                    <div class="single">
+                                        <h6>Contact</h6>
+
+                                        {{#with job.contactInfo}}
+                                            <p>{{name}}</p>
+
+                                            <p>{{email}}</p>
+
+                                            <p>{{phone}}</p>
+                                        {{/with}}
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--====  End of Ad Preview  ====-->
+
+
+                <!-- Single input : Buttons -->
+                <div class="bottom-action">
+                    <div class="col s4">
+                        <div class="single input-field left-align">
+                            <button type="button" id="delete-button" class="btn
+                            delete waves-effect waves-light">Delete Ad
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col s8">
+                        <div class="single input-field right-align">
+                            <button type="button" id="edit-button" class="btn default
+                            waves-effect waves-light">Edit Ad
+                            </button>
+                            <button type="button" id="submit-button" class="btn theme
+                            waves-effect waves-light">Next Step
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- //Single input : Buttons -->
+            </form>
+        </div>
+    </section>
+</template>

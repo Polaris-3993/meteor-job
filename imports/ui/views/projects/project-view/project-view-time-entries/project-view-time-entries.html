@@ -1,0 +1,21 @@
+<template name="projectViewTimeEntries">
+    <div class="time-entries-filter">
+        {{#if canSeeFilterByUsers}}
+            <div class="filter-by-users col sm 4">
+                <div class="row">
+                    <p>Filter by users</p>
+                </div>
+                {{#each assignedUsersToThisProject}}
+                    <div class="row">
+                        <input class="filter-user-checkbox" type="checkbox" id="{{_id}}"
+                               checked="{{#if isCheckedUserInFilter _id}}
+                                checked{{/if}}">
+                        <label for="{{_id}}">{{this.profile.fullName}}</label>
+                    </div>
+                {{/each}}
+            </div>
+        {{/if}}
+    </div>
+
+    {{> timeEntries filterParams=timeEntriesFilterParams}}
+</template>

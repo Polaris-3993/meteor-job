@@ -1,0 +1,73 @@
+<template name="createEditProject">
+    <div style="margin-top: 60px;">
+
+        {{#formCard title=formTitle}}
+            <form id="createEditProjectForm" class="dropzone">
+
+                <div class="input-section row">
+
+                    <!-- name -->
+                    <div class="input-field col s12">
+                        <input type="text" id="name" value="{{#if project}}{{project.name}}{{/if}}"
+                               pattern="[\w ]{5,50}"
+                               maxlength="50" required/>
+                        <label for="name" class="{{#if project}}active{{/if}}">Name</label>
+                    </div>
+
+                    <!-- description -->
+                    <div class="input-field col s12">
+                    <textarea id="description" value="{{#if project}}{{project.description}}{{/if}}"
+                              maxlength="500" class="materialize-textarea"></textarea>
+                        <label for="description" class="{{#if project}}active{{/if}}">Description</label>
+                    </div>
+
+                    <!-- project key-->
+                    <div class="input-field col s12">
+                        <input type="text" id="project-key" value="{{#if project}}{{project.projectKey}}{{/if}}"
+                               maxlength="6"/>
+                        <label for="project-key" class="{{#if project}}active{{/if}}">Project key</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        {{#unless selectedCompany._id}}
+                            {{> entitySearchForm
+                                    labelName="Company"
+                                    entityName="Companies"
+                                    displayedPropertyName="name"
+                                    availableEntitiesIds=availableCompaniesIds
+                                    onSelectEntity=onCompanySelectCb
+                            }}
+                        {{else}}
+                            <input type="text" id="companyName" class="validate" value="{{selectedCompany.name}}"/>
+                            <label for="companyName" class="active">
+                                Company
+                            </label>
+                        {{/unless}}
+                    </div>
+                    <!-- tags -->
+                    {{> tagsBlock tags=tags onReactiveVarSet=onReactiveVarSet}}
+
+                    <!-- attachments -->
+                </div>
+                {{#if project.projectFiles}}
+                    {{#each project.projectFiles}}
+                        <p>
+                            <a href="http://storage.googleapis.com/vezio_projects_files/{{this.fileName}}"
+                               target="_blank">{{this.fileName}}</a>
+                            <a href="" class="delete-file"><i
+                                    class="tiny material-icons right">delete</i></a>
+                        </p>
+                    {{/each}}
+                {{/if}}
+
+                <button id="submit-form-button"
+                        class="btn-large btn-blue waves-effect waves-light">Save
+                </button>
+                <button id="cancel-button"
+                        class="btn-large btn-blue waves-effect waves-light">Cancel
+                </button>
+                <div class="dropzone-previews"></div>
+            </form>
+        {{/formCard}}
+    </div>
+</template>

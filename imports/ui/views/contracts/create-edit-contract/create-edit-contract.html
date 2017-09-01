@@ -1,0 +1,124 @@
+<template name="createEditContract">
+    <div class="create-contract" style="margin-top: 60px;">
+        {{#formCard title=pageTitle}}
+        <form id="createEditContractForm">
+            <div class="input-section row">
+                <div class="input-field col s12">
+                    <input type="text" id="name" class="validate" value="{{contract.name}}"
+                           required title="Contract name is required!"/>
+                    <label for="name" class="{{#if contract.name}}active{{/if}}">
+                        Contract Name
+                    </label>
+                </div>
+
+                <!--<div class="input-field col s12">-->
+                    <!--<textarea id="description" class="materialize-textarea"-->
+                              <!--value="{{contract.description}}"></textarea>-->
+                    <!--<label for="description" class="{{#if contract.description}}active{{/if}}">-->
+                        <!--Description-->
+                    <!--</label>-->
+                <!--</div>-->
+
+                <div class="input-field col s12">
+                    {{#unless selectedWorker._id}}
+                        {{> entitySearchForm
+                        labelName="User"
+                        entityName="users"
+                        displayedPropertyName="profile.fullName"
+                        excludedEntitiesIds=excludedUsersIds
+                        onSelectEntity=onWorkerSelectedCb
+                        }}
+                    {{else}}
+                        <input type="text" id="workerName" class="validate" value="{{selectedWorker.profile.fullName}}"
+                               required title="Contract name is required!"/>
+                        <label for="workerName" class="active">
+                            Worker
+                        </label>
+                    {{/unless}}
+                </div>
+
+                <div class="input-field col s12">
+                    {{#unless selectedCompany._id}}
+                        {{> entitySearchForm
+                        labelName="Company"
+                        entityName="Companies"
+                        displayedPropertyName="name"
+                        availableEntitiesIds=availableCompaniesIds
+                        onSelectEntity=onCompanySelectCb
+                        }}
+                    {{else}}
+                        <input type="text" id="companyName" class="validate" value="{{selectedCompany.name}}"/>
+                        <label for="companyName" class="active">
+                            Company
+                        </label>
+                    {{/unless}}
+                </div>
+
+                <div class="input-field col s12">
+                  <ul id="projectsList">
+                    {{#each selectedProjects}}
+                      <li>
+                        <input type="text" id="projectName" class="validate" value="{{name}}" projectId={{_id}} />
+                        <label for="projectName" class="active">
+                          Project Id
+                        </label>
+                      </li>
+                    {{/each}}
+                    <li>
+                      {{> entitySearchForm
+                          labelName="Project"
+                          entityName="Projects"
+                          displayedPropertyName="name"
+                          availableEntitiesIds=availableProjectsIds
+                          onSelectEntity=onProjectSelectCb
+                          onRemoveEntity=onProjectRemoveCb
+                      }}
+                    </li>
+                  </ul>
+                </div>
+                <div class="input-field col s12" style="margin-bottom: 15px; margin-left: -16px;">
+                    <input name="user-role" type="radio" id="project-worker" value="project-worker"
+                           checked="{{#if isWorker}}checked{{/if}}"/>
+                    <label for="project-worker">Worker</label>
+
+                    <input name="user-role" type="radio" id="project-viewer" value="project-viewer"
+                           checked="{{#unless isWorker}}checked{{/unless}}"/>
+                    <label for="project-viewer">Viewer</label>
+                </div>
+                <br>
+                {{#if isWorker}}
+                <div class="input-field col s12">
+                    <input type="text" id="weekHoursLimit" class="validate" value="{{contract.paymentInfo.weekHoursLimit}}"/>
+                    <label for="weekHoursLimit" class="{{#if contract.paymentInfo.weekHoursLimit}}active{{/if}}">
+                        Week hours limit
+                    </label>
+                </div>
+
+                <div class="input-field col s12">
+                    <select id="paymentInfoTypeSelect">
+                        {{#each paymentTypes}}
+                            <option value="{{value}}"
+                                    selected="{{#if equal ../contract.paymentInfo.type value}}selected{{/if}}">{{label}}</option>
+                        {{/each}}
+                    </select>
+                    <label>Payment type</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input type="text" id="rate" class="validate" value="{{contract.paymentInfo.rate}}"/>
+                    <label for="rate" class="{{#if contract.paymentInfo.rate}}active{{/if}}">Rate
+                    </label>
+                </div>
+                {{/if}}
+            </div>
+
+            <button class="btn-large btn-blue" type="submit" id="submit-form-button"
+                    disabled="{{#unless canBeSubmitted}}disabled{{/unless}}">Save
+            </button>
+            <button class="btn-large btn-light-grey" id="cancel-button">Cancel</button>
+
+        </form>
+
+    {{/formCard}}
+        </div>
+</template>

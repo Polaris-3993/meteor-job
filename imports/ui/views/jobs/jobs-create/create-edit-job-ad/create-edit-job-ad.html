@@ -1,0 +1,321 @@
+<template name="createEditJobAd">
+    <section class="create-new-job-1">
+        <div class="row">
+            <ul class="steps">
+                <li><a class="current" href=""><span class="number">1</span> Create advertisement</a></li>
+                <li><a href=""><span class="number">2</span> Preview</a></li>
+                <li><a href=""><span class="number">3</span> Purchase</a></li>
+            </ul>
+
+            <form id="jobs-form" class="new-job-form">
+                <!-- Title -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Job Title</p>
+                        <input id="title" type="text" class="form-control {{#if isValidInput 'title'}}not-valid{{/if}}"
+                               placeholder="e.g. Motion designer"
+                               value="{{job.title}}" length="50" maxlength="50">
+                    </div>
+                </div>
+                <!-- // Title -->
+
+
+                <!-- Job Location -->
+                <div class="col l6 s12">
+                    {{> jobLocation
+                    selectedLocation=selectedLocation
+                    changeLocation=changeLocationCb
+                    isValid=isValidInput
+                    }}
+                </div>
+                <!-- //Job Location -->
+
+                <!-- Category -->
+                <div class="col l6 s12">
+                    <div class="single input-field category">
+                        <p>Job Category</p>
+                        <select id="category" class="form-control {{#if isValidInput 'category'}}not-valid{{/if}}">
+                            <option value="" disabled selected>Choose category</option>
+                            {{#each categories}}
+                                <option value="{{_id}}" selected="{{#if
+                                equal _id ../job.categoryId}}selected{{/if}}">{{label}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+                <!-- // Category -->
+
+                <!-- Job Type -->
+                <div class="col l6 s12">
+                    <div class="single input-field job-type">
+                        <p>Job Type</p>
+                        <select id="job-type" class="form-control {{#if isValidInput 'job-type'}}not-valid{{/if}}"
+                                multiple>
+                            <option value="" disabled selected>Choose job type</option>
+                            {{#each jobTypes}}
+                                <option selected="{{#if isInArray ../job.jobTypesIds _id}}selected{{/if}}"
+                                        value="{{_id}}">{{label}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+                <!-- //Job Type -->
+
+                <!-- Skills -->
+                <div class="col l6 s12">
+                    {{> jobSkills
+                    selectedCategoryId=selectedCategoryId
+                    selectedSkillsIds=selectedSkillsIds
+                    addSkill = addSkillCb
+                    removeSkill = removeSkillCb
+                    }}
+                </div>
+                <!-- //Skills -->
+
+                <!-- Where to work -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Where can the candiate work remotely from?</p>
+                        {{#unless isAvailableAnywhere}}
+                            <input type="text" class="form-control"
+                                   id="employee-origin-country"
+                                   value="{{job.employeeOriginCountry}}"
+                                   placeholder="Leave blank if can work from anywhere in the world">
+                        {{/unless}}
+
+                        <p>
+                            <input type="checkbox" class="filled-in" id="available-anywhere"
+                                   checked="{{#if isAvailableAnywhere}}checked{{/if}}"/>
+                            <label for="available-anywhere">Available anywhere</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- //Where to work -->
+
+                <!-- Visa sponsorship -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p class="m-top-0">Visa sponsorship (US/EU only)</p>
+
+                        <p>
+                            <input class="with-gap" name="visa-sponsorship"
+                                   type="radio" id="visa-yes"
+                                   checked="{{#if job.isVisaSponsorshipEnabled}}checked{{/if}}"/>
+                            <label for="visa-yes">Yes</label>
+                            <input class="with-gap" name="visa-sponsorship"
+                                   type="radio" id="visa-no"
+                                   checked="{{#unless job.isVisaSponsorshipEnabled}}checked{{/unless}}"/>
+                            <label for="visa-no">No</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- //Visa sponsorship -->
+
+
+                <!-- Salary -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Annual salary range (optional)</p>
+                        <div class="input-inline-outer salary-from col l3 s6">
+                            <div class="input-inline {{#if isValidInput 'salary-min'}}not-valid{{/if}}"
+                                 id="salary-min-id">
+                                <span class="left">{{currencySymbol selectedCurrency}}</span>
+                                <input id="salary-min" type="text"
+                                       value="{{job.salary.min}}">
+                            </div>
+                        </div>
+                        <div class="input-inline-outer salary-to col l3 s6">
+                            <div class="input-inline {{#if isValidInput 'salary-max'}}not-valid{{/if}}"
+                                 id="salary-max-id">
+                                <span class="left">{{currencySymbol selectedCurrency}}</span>
+                                <input id="salary-max" type="text"
+                                       value="{{job.salary.max}}">
+                            </div>
+                        </div>
+                        <div class="currency-chooser col l6 s12">
+                            <select id="salary-currency" class="form-control">
+                                {{#each currencies}}
+                                    <option value="{{value}}"
+                                            selected="{{#if equal value selectedCurrency}}selected{{else}}{{#if equal value 'usd'}}selected{{/if}}{{/if}}">{{label}}
+                                    </option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Salary -->
+
+                <!-- Equity range -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Equity range (optional)</p>
+
+                        <div class="input-inline-outer equity-from col l3 s6">
+                            <div class="input-inline {{#if isValidInput 'equity-range-min'}}not-valid{{/if}}"
+                                 id="equity-range-min-id">
+                                <input id="equity-range-min" type="text"
+                                       value="{{job.equity.min}}">
+                                <span class="right">%</span>
+                            </div>
+                        </div>
+                        <div class="input-inline-outer equity-to col l3 s6">
+                            <div class="input-inline {{#if isValidInput 'equity-range-max'}}not-valid{{/if}}"
+                                 id="equity-range-max-id">
+                                <input id="equity-range-max" type="text"
+                                       value="{{job.equity.max}}">
+                                <span class="right">%</span>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="input-inline small {{#if isValidInput 'year-vest'}}not-valid{{/if}}"
+                             id="year-vest-id">
+                            <input id="year-vest" type="text" placeholder="4.0"
+                                   value="{{job.equity.yearVest}}">
+                        </div>
+                        <div class="input-inline text-only">
+                            year vest
+                        </div>
+                        <div class="input-inline small {{#if isValidInput 'year-cliff'}}not-valid{{/if}}"
+                             id="year-cliff-id">
+                            <input id="year-cliff" type="text" placeholder="1.0"
+                                   value="{{job.equity.yearCliff}}">
+                        </div>
+                        <div class="input-inline text-only">
+                            year cliff
+                        </div>
+
+                        <p class="info">Salary and equity are required to attract top candidates.<br> Not sure how much
+                            to pay? <a href="">Browse salaries & equity</a><br>
+                            Can't pay right now? <a href="">Make this a co-founder position</a></p>
+                    </div>
+                </div>
+                <!-- // Equity range -->
+
+
+                <div class="clearfix"></div>
+
+                <div class="description">
+                    <!-- Description -->
+                    {{> jobDescriptionEditor}}
+                    <!-- // Description -->
+                </div>
+
+                <div class="col s12">
+                    <div class="single">
+                        <div class="divider"></div>
+                    </div>
+                </div>
+
+
+                <!-- Company Name -->
+
+
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Company name</p>
+                        <input id="company-name" type="text"
+                               class="form-control {{#if isValidInput 'company-name'}}not-valid{{/if}}"
+                               placeholder="Type your company name"
+                               value="{{job.companyName}}" length="50" maxlength="50">
+                    </div>
+                </div>
+                <!-- //Company Name -->
+
+
+                <!-- Headquarter location -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Headquarter location</p>
+                        <input id="headquater-location" type="text"
+                               class="form-control {{#if isValidInput 'headquater-location'}}not-valid{{/if}}"
+                               placeholder="e.g. Helsinki, Finland"
+                               value="{{job.headquaterLocation}}" length="50" maxlength="50">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- //Headquarter location -->
+
+
+                <!-- Website -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Website</p>
+                        <input id="website" type="text" pattern="{{urlPatternt}}"
+                               class="form-control {{#if isValidInput 'website'}}not-valid{{/if}}"
+                               placeholder="e.g. www.company.com"
+                               value="{{job.website}}" length="50" maxlength="50">
+                    </div>
+                </div>
+                <!-- //Website -->
+
+
+                <!-- Contact name -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Contact name</p>
+                        <input id="contact-name" type="text"
+                               class="form-control {{#if isValidInput 'contact-name'}}not-valid{{/if}}"
+                               placeholder="Type contact name"
+                               value="{{job.contactInfo.name}}" length="50" maxlength="50">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- //Contact name -->
+
+
+                <!-- Company email -->
+                <div class="col l6 s12">
+                    <div class="single input-field">
+                        <p>Company email</p>
+                        <input id="contact-email" type="email"
+                               class="form-control {{#if isValidInput 'contact-email'}}not-valid{{/if}}"
+                               placeholder="e.g. abc@company.com"
+                               value="{{job.contactInfo.email}}" length="50" maxlength="50">
+                    </div>
+                </div>
+                <!-- //Company email -->
+
+
+                <!-- Contact phone-->
+                {{> phoneEdit
+                phone = job.contactInfo.phone
+                isValid=isValidInput
+                }}
+                <div class="clearfix"></div>
+                <!-- //Contact phone -->
+
+
+                <div class="divider m-top-40"></div>
+
+                <!-- Single input : Buttons -->
+                <div class="create-job-footer">
+                    {{#if job}}
+                        <div class="col s4">
+
+                            <div class="single input-field left-align">
+                                <button type="button" id="delete-button"
+                                        class="btn delete waves-effect waves-light">
+                                    Delete ad
+                                </button>
+                            </div>
+                        </div>
+                    {{/if}}
+
+                    <div class="col s8 {{#unless job}}offset-s4{{/unless}}">
+                        <div class="single input-field right-align">
+                            <button type="button" id="cancel-button" class="btn default waves-effect waves-light">Cancel
+                            </button>
+                            <button type="submit" id="submit-button" class="btn theme waves-effect waves-light">Next
+                                Step
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- //Single input : Buttons -->
+            </form>
+        </div>
+    </section>
+</template>

@@ -1,0 +1,150 @@
+@import 'variables.less';
+
+/*-------------------Conv Dropdown------------*/
+#conv-dropdown-content {
+  min-width: 380px;
+  background-color: @white;
+  right: -30px;
+  box-shadow: 0px 18px 26.73px 0.27px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  display: block;
+
+  @media (max-width: 470px) {
+    min-width: 280px;
+  }
+
+  li.search {
+    display: block;
+    padding: 0 20px;
+    height: 60px;
+    border-bottom: 1px solid @black1;
+
+    &:hover {
+      background-color: transparent;
+    }
+    i {
+      line-height: 60px;
+      color: #999999;
+    }
+    input {
+      //width: 300px;
+      line-height: 60px;
+      padding: 0;
+      font-size: 13px;
+      font-family: "Roboto";
+      color: rgba(0, 0, 0, 0.651);
+    }
+  }
+  li {
+    height: 74px;
+    width: 100%;
+    padding: 0 15px;
+
+    .avatars-wrapper {
+      display: inline-block;
+      height: 45px;
+      width: 45px;
+      position: relative;
+      margin-right: 10px;
+
+      .avatar {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        overflow: hidden;
+        outline: none;
+        visibility: visible;
+
+        &.n0 {
+          left: 0;
+          top: 0;
+          right: auto;
+          bottom: auto;
+        }
+        &.n1 {
+          right: 0;
+          top: 0;
+          left: auto;
+          bottom: auto;
+        }
+        &.n2 {
+          left: 0;
+          bottom: 0;
+          right: auto;
+          top: auto;
+        }
+        &.n3 {
+          right: 0;
+          bottom: 0;
+          left: auto;
+          top: auto;
+        }
+
+        &.single {
+          height: inherit;
+          width: inherit;
+        }
+
+        img {
+          height: inherit;
+          width: inherit;
+          position: absolute;
+          border: none;
+          border-radius: 50%;
+          outline: none;
+          display: block;
+          visibility: visible;
+        }
+      }
+    }
+
+    .content {
+      width: 300px;
+      overflow: hidden;
+      display: inline-block;
+      h6 {
+        font-size: 13px;
+        font-family: "Roboto";
+        color: rgba(0, 0, 0, 0.451);
+        margin-bottom: 0;
+        a {
+          text-align: left;
+          width: 240px;
+          display: inline-block;
+          margin: 0;
+          color: rgba(0, 0, 0, 0.651);
+          font-weight: 500;
+        }
+
+        span {
+          text-align: center;
+          margin-left: 0;
+          width: 50px;
+          display: inline-block;
+        }
+      }
+      p {
+        width: 250px;
+        font-size: 13px;
+        font-family: "Roboto";
+        color: rgba(0, 0, 0, 0.551);
+        line-height: 28px;
+        margin: 5px 0 0 0;
+        font-weight: 500;
+      }
+    }
+  }
+  li.not-seen {
+    background-color: #f5f5f5;
+    .content {
+      p {
+        color: rgba(0, 0, 0, 0.651);
+        font-weight: bold;
+      }
+    }
+  }
+
+}

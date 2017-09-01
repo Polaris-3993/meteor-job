@@ -1,0 +1,41 @@
+<template name="projectListItemMore">
+  <div class="collapsible-body">
+    {{#if userIsBoss}}
+      <div class="col s12">
+        <div class="action">
+          <a class="dropdown-button" href="#" data-activates="chartModes_{{project._id}}" data-beloworigin="true">{{getCurrentMode}}</a>
+          <ul class="dropdown-content" id="chartModes_{{project._id}}">
+            <li><a href="#">Cost</a></li>
+            <li><a href="#">Hours</a></li>
+          </ul>
+        </div>
+      </div>
+    {{/if}}
+    {{> projectListItemChart getCurrentMode}}
+    <div class="col m4 s12">
+      <div class="info">
+        <h3><strong>{{resultThisWeek}}</strong> {{modeVerb}} this week</h3>
+        <p class="green-text">{{compareToLastWeek}}</p>
+        <h4 class="exp-title">{{bestResultsLabel}}</h4>
+        <ul>
+          {{#each hottestResults}}
+            <li>
+              <a>
+                <span class="light">#{{increment @index}}</span>
+                {{this.taskKey}}
+                <span class="right">${{taskResult this}}
+                </span>
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col s12">
+      <div class="bottom right-align"><a class="open-project" href="{{pathFor 'assignUsersToProject' id=project._id}}">Assign User</a></div>
+      <div class="bottom right-align"><a class="open-project" href="{{pathFor 'editProject' id=project._id}}">Edit Project</a></div>
+      <div class="bottom right-align archive"><a class="open-project" href="#">{{#if isArchived}}Restore{{else}}Archive{{/if}} Project</a></div>
+      <div class="bottom right-align"><a class="open-project" href="{{projectOpenURL}}">Open Project</a></div>
+    </div>
+  </div>
+</template>

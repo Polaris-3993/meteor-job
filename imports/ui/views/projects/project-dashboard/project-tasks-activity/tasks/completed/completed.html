@@ -1,0 +1,123 @@
+<template name="compleatedTasks">
+    <div id="completed">
+        <div class="col m5 tabs-content-wrapper all-content-wrapper">
+            <ul class="tabs z-depth-1" id="task-tabs1">
+
+                <li class="tab-completed tab col s12 head" id="task-item-new-task">
+                    <i class="material-icons left" style="font-size: 1.438rem; color: rgba(0, 0, 0, 0.5); line-height: 4.75rem;">search</i>
+                    <input type="text" name="" placeholder="Search" style="width: 65%; box-shadow: none;" id="task-name" maxlength="50">
+                </li>
+
+                <li class="action"><span class="btn"></span><span
+                        class="dropdown-button btn" data-activates="dropdown-filter1" data-beloworigin="true"
+                        data-stopPropagation="true"><i class="material-icons">filter_list</i></span>
+                    <ul class="dropdown-content" id="dropdown-filter1">
+                        <li><span class="top">Sort by</span>
+                            <ul>
+                                <li>
+                                    <input id="last-updated" type="radio" name="filter_list" checked="{{#if isSortedBy 'editedAt'}}checked{{/if}}">
+                                    <label for="last-updated">Last updated<i
+                                            class="material-icons right">check</i></label>
+                                </li>
+                                <li>
+                                    <input id="alphabetically" type="radio" name="filter_list" checked="{{#if isSortedBy 'name'}}checked{{/if}}">
+                                    <label for="alphabetically">Alphabetically (A-Z)<i class="material-icons right">check</i></label>
+                                </li>
+                                <li>
+                                    <input id="date-created" type="radio" name="filter_list" checked="{{#if isSortedBy 'createdAt'}}checked{{/if}}">
+                                    <label for="date-created">Date created<i
+                                            class="material-icons right">check</i></label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="scroll">
+                        {{#each completedTasks}}
+                            <li id="task-item-{{_id}}"
+                                class="tab-single tab-all-single tab col s12 {{isTaskSelected _id}}"><a
+                                    class="valign-wrapper" href="#">
+                                <p class="valign">{{name}}<br><span>{{taskKey}}</span>
+                                    <span class="dropdown-button" data-beloworigin="true"
+                                          data-hover="true"
+                                          data-activates="{{#if
+                                                  taskHaveUsers}}{{_id}}{{/if}}">{{taskMembersCount
+                                            membersIds}}<i class="material-icons left">person</i></span>
+                                    <span> {{formatSecondsAsTimeTasks
+                                        taskTimeTracked}}</span>
+                                    <span>${{totalSpent}}</span>
+                                </p></a>
+                                <ul class="dropdown-content" id="{{_id}}">
+                                    {{#each membersIds}}
+                                        <li id="task-member">
+                                            <a href="{{pathFor 'userProfile' id=this}}">
+                                                <div class="image {{#if userProfile.status}}online{{else}}offline{{/if}}"><img src="{{userProfile.photo}}" alt=""></div>
+                                                <div class="info">
+                                                    <h5>{{userProfile.fullName}}</h5>
+                                                    {{#if userProfile.location}}
+                                                        <p>{{userProfile.localTime}} - {{userProfile.location}}</p>
+                                                    {{/if}}
+                                                    {{#unless userProfile.status}}
+                                                        {{#if userProfile.lastOnline}}
+                                                            <p>Last online {{formatTime userProfile.lastOnline}}</p>
+                                                        {{/if}}
+                                                    {{/unless}}
+                                                </div>
+                                            </a>
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col m7">
+            <div class="tabs-wrapper">
+                {{#if taskId}}
+                    <div class="arrow-indicator all-indicator z-depth-1"></div>
+                    <div class="bottom-back"></div>
+                    {{#unless equal taskId 'new-task'}}
+                        {{#with task}}
+                            <div class="details-tab z-depth-1" id="details1">
+                                <div class="head valign-wrapper">
+                                    <div class="valign">
+                                        <div class="left">
+                                            <h5 class="editable-text-trigger">
+                                                {{>editableText collection="vz-tasks" field="name" eventType="dblclick" afterUpdate="updateTaskTime"}}
+                                            </h5>
+                                            <p>last updated<strong> {{formatTime editedAt}}</strong> {{#if userUpdated}} by <strong> {{userUpdated}}</strong>{{/if}}</p>
+                                        </div>
+                                        <div class="right">
+                                            <a href=""><i class="material-icons check">check</i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main editable-text-trigger">
+                                    <p>{{>editableText collection="vz-tasks" field="description" wysiwyg=true eventType="dblclick" textarea=true onStartEditing="triggerAutoResize" afterUpdate="updateTaskTime"}}
+                                    </p>
+                                </div>
+                                <div class="action">
+                                    <ul>
+                                        <li><a href="" id="task-users-count">{{membersCount}} assignees<i
+                                                class="material-icons left">person</i></a></li>
+                                        <li><a href="" id="task-files-count"><i
+                                                class="material-icons left">attachment</i><span>{{taskFilesCount}}
+                                            attachments</span></a>
+                                        </li>
+                                        <li><a href="#">${{totalSpent}} spent<i class="material-icons left">attach_money</i></a>
+                                        </li>
+                                        <li><a href="#">{{formatSecondsAsTimeTask taskTimeTracked}}<i
+                                                class="material-icons left">av_timer</i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        {{/with}}
+                    {{/unless}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,17 @@
+<template name="timeEntriesGroup">
+    <div class="row">
+        <div class="col s12 no-padding">
+            <div class="vz-timetracker-group-header">
+                <input type="checkbox" id="{{groupIndex}}" class="time-entry-group-checkbox"/>
+                <label for="{{groupIndex}}">
+                    {{label}}
+                </label>
+            </div>
+            <div class="vz-time-entries-table row bordered z-depth-1 white">
+                {{#each timeEntries}}
+                    {{> timeEntry}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</template>

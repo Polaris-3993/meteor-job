@@ -1,0 +1,8 @@
+<template name="workersDashboard">
+    <div class="dashboard-general-content">
+        {{> dashboardCardSpendingsEarnings title="Spendings" content="spendingsEarningsList"}}
+        {{> dashboardCardActive title="Working on" content="usersActiveTasks"}}
+        {{> dashboardCardInReviewTasks title="In-review" content="usersInReviewTasks"}}
+        {{> dashboardCard title="Worker activity" content="dashboardWorkerActivityList"}}
+    </div>
+</template>

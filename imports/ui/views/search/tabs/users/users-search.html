@@ -1,0 +1,13 @@
+<template name = "usersSearch">
+    {{#if showHeader}}
+        {{> searchTabHeader title="Users" clickId="usersSearch" collection="users"}}
+    {{/if}}
+    <div class="row">
+        {{#each users}}
+            <a href="/profile/{{_id}}" class="col s1">
+                <img src="{{photo}}" class="col s12 circle"/>
+                <span class=" col s12 center-align bold">{{name}}</span>
+            </a>
+        {{/each}}
+    </div>
+</template>

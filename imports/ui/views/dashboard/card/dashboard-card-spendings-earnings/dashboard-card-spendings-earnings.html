@@ -1,0 +1,19 @@
+<template name="dashboardCardSpendingsEarnings">
+    <div class="dashboard-card">
+        <div class="dashboard-card-title">
+            <div class="dashboard-card-name">{{title}}</div>
+            <div class="dashboard-card-icons">
+                <a href="#"><i class="material-icons">search</i></a>
+
+                <a href="#"><i class="material-icons">more_vert</i></a>
+            </div>
+        </div>
+        <div class="dashboard-card-content">
+            <div class="dashboard-card-content-scroll">
+                <div class="dashboard-card-content-scroll-inner">
+                    {{> Template.dynamic template=content data=query}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

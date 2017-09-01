@@ -1,0 +1,14 @@
+<template name="educationItem">
+    <div class="single">
+        <div class="date">{{completeDate}}</div>
+        <div class="content">
+            <h3>{{data.school}} {{#if profileOwner}}<a class="edit-icon modal-trigger"
+                                                            href="#"><i class="fa fa-pencil edit-education"></i></a>
+                <a href="" class="edit-icon"><i class="fa fa-trash-o remove-education"></i></a>{{/if}}</h3>
+            <h4>{{data.degree}}</h4>
+            <h6>{{studyPeriod}}</h6>
+            <p>{{description}}{{#if showMoreButton}}{{#unless showMore}}
+                <a href="" class="show-more-education">more</a>{{else}}<a href="" class="show-less-education"> less</a>{{/unless}}{{/if}}</p>
+        </div>
+    </div>
+</template>

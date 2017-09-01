@@ -1,0 +1,15 @@
+<template name="notificationCard">
+    <div class="card-panel notification-card">
+        <div class="notification-header">
+            <a href="#"  class="notification-readed">
+                <i class="tiny material-icons mark-notification-icon right" style="color:black">clear</i>
+            </a>
+        </div>
+        <div class="notification-title">
+            {{title}}
+        </div>
+        <div class="notification-content">
+            {{message}} {{creationDate}}
+        </div>
+    </div>
+</template>

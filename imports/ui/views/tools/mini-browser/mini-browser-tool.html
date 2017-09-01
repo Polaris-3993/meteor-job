@@ -1,0 +1,15 @@
+<template name="miniBrowserTool">
+    <form id="urlField" class="valign-wrapper col s12">
+        <div class="vz-input-field has-icon">
+            <input type="text" class="url-input" placeholder="http://">
+            <label><i class="material-icons">insert_drive_file</i></label>
+        </div>
+    </form>
+
+
+    <div class="page-wrapper display-flex">
+        <iframe src="{{src}}" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+                class="pageIframe"></iframe>
+    </div>
+
+</template>

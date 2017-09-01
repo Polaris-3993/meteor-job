@@ -1,0 +1,10 @@
+<template name="tagItem">
+    <li>
+        <div class="tag-wrapper">
+            {{#with tag}}
+            <input type="checkbox" id="{{_id}}" class="tag-checkbox"/>
+            <label for="{{_id}}">{{name}}</label>
+            {{/with}}
+        </div>
+    </li>
+</template>

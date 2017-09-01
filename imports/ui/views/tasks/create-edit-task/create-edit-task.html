@@ -1,0 +1,82 @@
+<template name="createEditTask">
+    {{#formCard title=formTitle}}
+        <form id="createEditTaskForm" class="dropzone">
+
+            <div class="input-section row">
+
+                <!-- name -->
+                <div class="input-field col s12">
+                    <input type="text" id="name" value="{{#if task}}{{task.name}}{{/if}}"
+                           class="validate"
+                           pattern="[\w ]{3,50}" required/>
+                    <label for="name" class="{{#if task}}active{{/if}}">Name</label>
+                </div>
+
+                <!-- description -->
+                <div class="input-field col s12">
+                    <textarea id="description" value="{{#if task}}{{task.description}}{{/if}}"
+                              class="validate materialize-textarea"
+                              maxlength="500"></textarea>
+                    <label for="description" class="{{#if task}}active{{/if}}">Description</label>
+                </div>
+
+                <!-- startDate -->
+                <div class="input-field col s12">
+                    <input type="date" id="startDate"/>
+                    <label for="startDate" class="{{#if task}}active{{/if}}">Start date</label>
+                </div>
+
+                <!-- dueDate -->
+                <div class="input-field col s12">
+                    <input type="date" id="dueDate"/>
+                    <label for="dueDate" class="{{#if task}}active{{/if}}">Due date</label>
+                </div>
+
+                <!-- duration -->
+                <!--<div class="input-field col s12">-->
+                    <!--<input type="number" id="estimatedDuration"-->
+                           <!--value="{{#if task}}{{task.estimatedDuration}}{{/if}}" min="1"/>-->
+                    <!--<label for="estimatedDuration" class="{{#if task}}active{{/if}}">Estimated duration(hours)</label>-->
+                <!--</div>-->
+
+                {{#if status}}
+                    <div class="input-field col s12" style="z-index: 999">
+                        <select id="task-status-select">
+                            <option value="Opened" {{selectedStatus 'Opened'}}>Opened</option>
+                            <option value="In Progress" {{selectedStatus 'In Progress'}}>In Progress</option>
+                            <option value="Closed" {{selectedStatus 'Closed'}}>Closed</option>
+                        </select>
+                        <label>Status</label>
+                    </div>
+                {{/if}}
+
+                <!-- tags -->
+                {{> tasksTagsBlock tags=tags onReactiveVarSet=onReactiveVarSet}}
+
+                <!-- projectSelect -->
+                <div class="input-field col s12">
+                    <div class="indent col s8 valign-wrapper">
+
+                    <span class="waves-effect waves-light create-edit-task color1 select-project">
+                        {{project}}
+                    </span>
+                    </div>
+                </div>
+            </div>
+            {{#if task.taskFiles}}
+                {{#each task.taskFiles}}
+                    <p>
+                        <a href="http://storage.googleapis.com/vezio_projects_files/{{this.fileName}}"
+                           target="_blank" >{{this.fileName}}</a>
+                        <a href="" class="delete-file"><i
+                                class="tiny material-icons right">delete</i></a>
+                    </p>
+                {{/each}}
+            {{/if}}
+            <button id="submit-form-button"
+                    class="btn-large btn-blue waves-effect waves-light">Done
+            </button>
+            <div class="dropzone-previews"></div>
+        </form>
+    {{/formCard}}
+</template>

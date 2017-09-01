@@ -1,0 +1,27 @@
+<template name="quickInfoCard">
+    <div class="col l4 m6 s12">
+        <div class="single-box">
+            <!-- .edit-icon should be visible in logged-in mode, remove class hide when user is logged-in -->
+            <h4 class="title">Quick Info{{#if profileOwner}}<a class="right edit-icon modal-trigger"
+                                                               href=""><i class="fa fa-pencil"></i></a>{{/if}}
+            </h4>
+            <div class="language">
+                <h6>Languages</h6>
+                <p>{{profileLanguages}}</p>
+            </div>
+            <div class="url">
+                <h6>Personal website</h6>
+                <a href="{{personalWebsite}}">{{formatWebsite personalWebsite}}</a>
+            </div>
+            <div class="social-media">
+                <h6>Social media</h6>
+                <ul>
+                    {{#each profileSocial}}
+                        <li><a class="{{socialName this.socialMediaName}}" href={{this.socialMediaLink}}><i
+                                class="{{socialIcon this.socialMediaName}}"></i></a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

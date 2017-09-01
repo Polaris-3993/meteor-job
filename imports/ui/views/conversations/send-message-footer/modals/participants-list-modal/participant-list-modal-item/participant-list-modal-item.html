@@ -1,0 +1,15 @@
+<template name="participantsListModalItem">
+    <li>
+        <div class="row">
+            <div class="col s3">
+                <img src="{{getUserSmallPhotoById participant._id}}">
+            </div>
+            <div class="col s8">
+                <p>{{participant.profile.fullName}}</p>
+            </div>
+            <div class="col s1">
+                <i class="material-icons small remove-participant-icon pointer">close</i>
+            </div>
+        </div>
+    </li>
+</template>

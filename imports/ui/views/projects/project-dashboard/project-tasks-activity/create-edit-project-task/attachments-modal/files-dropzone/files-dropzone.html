@@ -1,0 +1,16 @@
+<template name="filesDropZone">
+    <div class="col s12 no-padding" id="images">
+        <form id="taskAttachmentsForm" class="dropzone">
+            <div class="attachment-area">
+                <div class="row" id="fileslightgallery">
+                    {{#each taskFiles}}
+                        <a class="col l3 m6 s12 single" href="{{mediaLink}}" data-poster="{{#if isImage}}{{mediaLink}}{{else}}/images/file-type.png{{/if}}" data-sub-html="{{fileName}}"><img src="{{#if isImage}}{{mediaLink}}{{else}}/images/file-type.png{{/if}}">
+                            <div class="info"><span>{{fileName}}</span></div>
+                        </a>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="dropzone-previews"></div>
+        </form>
+    </div>
+</template>

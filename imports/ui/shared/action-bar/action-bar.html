@@ -1,0 +1,11 @@
+<template name="actionBar">
+    <div class="row vz-action-bar">
+        <div class="center-align no-wrap action-buttons-list">
+            <ul>
+                {{#each items}}
+                    {{>actionBarItem this}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>

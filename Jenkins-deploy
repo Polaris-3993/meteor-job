@@ -1,0 +1,92 @@
+String appName = 'vezio-core'
+String rootURL = 'https://vezio.work'
+String appPort = 8083
+String mongoURL = 'mongodb://vz-core:8Cp-uS4-r8r-7pN@vezio-db-server-1.c.vezio-158513.internal,vezio-db-server-2.c.vezio-158513.internal/vezio?replicaSet=rs0'
+List servers = ['vezio-app.c.vezio-158513.internal']
+
+def notifyBuild(String buildStatus) {
+    // build status of null means successful
+    buildStatus =  buildStatus ?: 'SUCCESSFUL'
+
+    // Default values
+    def colorCode = '#FFFFFF'
+    def summary = "${buildStatus}: '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
+
+    // Override default values based on build status
+    if (buildStatus == 'SUCCESSFUL') {
+        colorCode = '#36A64F'
+    } else if (buildStatus == 'FAILURE') {
+        colorCode = '#A63636'
+    }
+
+    // Send notifications
+    slackSend (channel: "#vezio-core", color: colorCode, message: summary)
+}
+
+
+try {
+    node {
+    
+        deleteDir()
+    
+        step([$class     : 'CopyArtifact',
+              filter     : "${appName}.tar.gz",
+              projectName: "Build ${appName}/${buildBranch}",
+              selector   : [$class: 'SpecificBuildSelector', buildNumber: buildID]])
+    
+        sh('mkdir target/')
+        sh("tar zxf ${appName}.tar.gz -C target/")
+    
+        Map appOptions = [
+                "apps": [
+                        "name"      : appName,
+                        "script"    : "node",
+                        "cwd"       : "/home/app/bundle-${appName}",
+                        "args"      : "main.js",
+                        "watch"     : "true",
+                        "merge_logs": true,
+                        "log_type"  : "json",
+                        env         : [
+                                "ROOT_URL"            : rootURL,
+                                "HTTP_FORWARDED_COUNT": 1,
+                                "BIND_IP"             : "127.0.0.1",
+                                "PORT"                : appPort,
+                                "METEOR_SETTINGS"     : new groovy.json.JsonBuilder(
+                                        new groovy.json.JsonSlurperClassic()
+                                                .parseText(readFile('target/settings.json')))
+                                        .toString()
+                        ]
+                ]
+        ]
+    
+        try {
+            if (mongoURL) {
+                appOptions['apps']['env']['MONGO_URL'] = mongoURL
+            }
+        } catch (e) {
+            println "WARNING: MONGO_URL is not set"
+        }
+    
+        def appOptionsString = new groovy.json.JsonBuilder(appOptions).toPrettyString()
+    
+        writeFile(file: 'target/appconfig.json', text: appOptionsString)
+    
+        println "Application PM2 configuration is:"
+        println appOptionsString
+    
+        appOptionsString = null
+    
+        for (String server : servers) {
+            println ">>> Deploying ${server}"
+    
+            sh("rsync -az --delete -e \"ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no\" target/. app@${server}:~/bundle-${appName}/")
+    
+            sh("ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no app@${server} 'bash -ci \"pm2 status ; pm2 delete ${appName} ; pm2 start ~/bundle-${appName}/appconfig.json\"'")
+        }
+    }
+} catch (e) {
+    currentBuild.result = "FAILURE"
+    throw e
+} finally {
+    notifyBuild(currentBuild.result)
+}

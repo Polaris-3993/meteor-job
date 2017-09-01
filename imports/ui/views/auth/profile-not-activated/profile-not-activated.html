@@ -1,0 +1,29 @@
+<template name="profileNotActivated">
+    <div class="row">
+        <div class="col s12 m8 offset-m2 l4 offset-l4 no-padding">
+            <div class="row">
+                <div class="col s10 offset-s1 z-depth-1 white">
+                    <div class="image-card center">
+                        <img src="images/profile-not-active.png">
+
+                        <h5>Your profile is not activated</h5>
+
+                        <p>Please confirm your email address to complete your registration.</p>
+
+                        <div class="row">
+                            <div class="col s12">
+                                <button id="resend-code" class="btn-large btn-dark waves-effect waves-light col s12"
+                                        style="margin-top: 1rem;">Resend code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{#if isDev}}
+                {{>devButtons}}
+            {{/if}}
+
+        </div>
+    </div>
+</template>

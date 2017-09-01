@@ -1,0 +1,64 @@
+<template name="showTimeEntry">
+    <div class="indent col s8">
+        <input type="checkbox" id="{{entry._id}}" class="time-entry-checkbox"/>
+        <label for="{{entry._id}}">
+            {{entry.message}}
+        </label>
+        {{#if hasProject}}
+            <span class="waves-effect waves-light vz-tag color1">
+                {{project}}
+            </span>
+        {{/if}}
+        {{#if shouldBeDisplayedUserName}}
+            <span class="waves-effect waves-light vz-tag color2">
+                <a href="{{pathFor "userProfile" id=entry.userId}}">
+                    {{getUserNameById entry.userId}}
+                </a>
+            </span>
+        {{/if}}
+        <div class="right">
+            {{#each tags}}
+                <span class="waves-effect waves-light vz-tag grey">
+                    {{this.name}}
+                </span>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="no-wrap col s1">
+        {{duration}}
+    </div>
+
+    <div class="right-align no-wrap col s2 grey-text text-darken-1">
+        <small>
+            {{betweenHours}}
+        </small>
+    </div>
+
+    <div class="right col s1">
+        <!-- Dropdown Trigger -->
+        <a class='vz-time-entries-options dropdown-button btn-flat no-padding right' href='#'
+           data-activates='dropdown_{{entry._id}}'>
+            <i class="material-icons">more_vert</i>
+        </a>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown_{{entry._id}}' class='dropdown-content small'>
+            <!--<li>-->
+            <!--    <a href="#!">-->
+            <!--        <i class="mdi-action-assignment"></i> Create an Invoice-->
+            <!--    </a>-->
+            <!--</li>-->
+            <li class="waves-effect waves edit-entry">
+                <a>
+                    <i class="mdi-editor-mode-edit"></i> Edit
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li class="waves-effect waves remove-entry">
+                <a href="#!">
+                    <i class="mdi-action-delete"></i> Remove
+                </a>
+            </li>
+        </ul>
+    </div>
+</template>

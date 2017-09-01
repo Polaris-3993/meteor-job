@@ -1,0 +1,9 @@
+<template name="timeDatePicker">
+    <div class="time-date-picker">
+        {{#if timePick}}
+            {{>timePicker this}}
+        {{else}}
+            {{>datePicker this}}
+        {{/if}}
+    </div>
+</template>

@@ -1,0 +1,51 @@
+<template name="usersInReviewTasksList">
+    <div class="dashboard-task dashboard-card-list-item">
+        <div class="dashboard-task-content">
+            <div class="dashboard-task-username">
+                <a style="color: #666;"
+                   href="" id="task-name">{{name}}</a>
+
+                <div class="dashboard-task-taskname">
+                    {{#if sendToInReview}}
+                        <a style="font-weight: 400; font-size: 12px;"
+                           href="{{pathFor 'userProfile' id=sendToInReview}}" id="task-name">{{getUserNameById sendToInReview}}</a> &nbsp; | &nbsp;
+                    {{/if}}
+                    <a style="font-size: 12px;" href="{{pathFor 'projectDashboard' id=projectId}}"
+                       id="project-name">{{projectName}}</a>
+                    &nbsp; | &nbsp;
+                    <a style="font-size: 12px;" href="" id="task-key">{{taskKey}}</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-task-additional-information">
+            <div class="dashboard-task-projectname" style="display: inline-flex;">
+                <a href="" style="margin-right: 15px; display: inline-flex;"><i class="material-icons tiny"
+                                                                                style="font-size: 1.2rem;">attach_money</i>{{totalSpent}}
+                </a>
+                <a href="" style="display: inline-flex;"><i class="material-icons tiny" style="font-size: 1.2rem;">av_timer</i>{{formatSecondsAsTimeTask
+                        taskTimeTracked}}</a>
+            </div>
+            <div class="dashboard-task-projectname">
+                <a href="" style="color: darkgreen; font-weight: 600; margin-right: 10px;" id="approve">APPROVE</a>
+                <a href="" style="color: darkred; font-weight: 600;" id="deny">DENY</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="usersInReviewTasks">
+    <div class="dashboard-tasks-list">
+        {{#if ready}}
+            {{#if taskItems}}
+                {{#each taskItems}}
+                    {{> usersInReviewTasksList}}
+                {{/each}}
+            {{else}}
+                {{>emptyCardContent message=emptyCardMessage}}
+            {{/if}}
+        {{else}}
+            {{>emptyCardContent message=dataLoadingMessage}}
+        {{/if}}
+    </div>
+</template>

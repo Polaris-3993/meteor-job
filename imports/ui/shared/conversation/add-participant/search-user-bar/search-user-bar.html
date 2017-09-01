@@ -1,0 +1,14 @@
+<template name="searchUserBar">
+    <div class="action-bar">
+        <div class="group-bar">
+            {{#each newParticipantsIds}}
+                <div class="user-single">
+                    <img class="left" src="{{getUserSmallPhotoById this}}" alt="">
+                    <span>{{getUserNameById this}}</span>
+                    <i class="material-icons close right" type="button">close</i>
+                </div>
+            {{/each}}
+            <input class="search-user-input" type="text">
+        </div>
+    </div>
+</template>

@@ -1,0 +1,70 @@
+{
+  "isDev": false,
+  "isStaging": false,
+  "isProduction": true,
+  "smtp": {
+    "host": "",
+    "port": 587,
+    "user": "dev-server@vez.io",
+    "password": ""
+  },
+  "AWS": {
+    "S3": {
+      "KEY_ID": "AKIAJPYK7Q2ZSWWZWQIQ",
+      "SECRET": "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",
+      "BUCKET": "vezio"
+    }
+  },
+  "GOOGLE": {
+    "CLIENT_ID": "837641710637-2k8ojnk70nct7ga55vf22lji5pqoavtd.apps.googleusercontent.com",
+    "SECRET": "T-i07Pw9cqFtXKNapUwQZCIB"
+  },
+  "mandrill": {
+    "apiKey": "Urb5E4lhRMZr2xG8cu1GNg",
+    "sender": {
+      "email": "no-reply@vez.io",
+      "name": "Vezio Dev account"
+    }
+  },
+  "public": {
+    "MAPS_API_KEY": "AIzaSyADyLL_YPM9PBo9w97zMxECOf8luEYFsec",
+    "TIME_ZONE_API_KEY": "AIzaSyBc8Rys8wpSBoSiaemxTL8-Jhmv4_LVTlk",
+    "isDev": false,
+    "mixpanel": {
+      "publicKey": "MIXPANEL_KEY"
+    },
+    "plans": [
+      {
+        "name": "vezio-pro",
+        "price": "9.99",
+        "amount": {
+          "cents": 999,
+          "usd": "$9.99"
+        },
+        "limit": 15,
+        "interval": "month"
+      }
+    ]
+  },
+  "private": {
+    "GOOGLE": {
+      "type": "service_account",
+      "project_id": "vezio-1119",
+      "private_key_id": "42a927514756ab40cdcd77f49e290b6523a9ff30",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCYsPx+ZxwFzziJ\nQuDCf6xdlVQEEn/4c7fOg3qF7iKqlnwxzuhYuhHHZ5kdUJveAjtZdmAXxQ648R26\ndooPjwj8cLZzgYFx9gPDkwSlqX8tu7QBwH5QUTrM9KlTBesOYTiDq9Glj3YV46w+\nS6PuyeAUXJwBSGtqKZDCrFJyASiVq0+BX8hNTdghVheBDWEwU7wWsx2mU+jTUGEI\nkoCWKb6BdM/sd2ExiCJKaDTtL1kwjc4fFZ1bP9xKlqSrn+oJlpAm8yIgEJ4JUaLY\n7OyQj0/IF50c/pjk4kmwAAtT4NdBvACe7KbmNicu3kG4CMIBdrlU3bwJBlBd7OqI\nT/m7x4btAgMBAAECggEAYolM2HHH9sPMk1/yVfI4lMgKSPp7VSWwR3g3uHh+LKIi\nka4Z6TBiytFDUVS00aeVD13CE3Ta1GTdr3hSDkpbHTXLuGyp0ZZWxX558EKazTOl\nrb/AhCp3jM6S+v4Fu+jnpKlcCMC1Dtk3TZhYuX/TuLAvCPDoSMF8JvU321R+EV9P\n3+nQKgsxsvX3DSbyn+1EEX9DQpsdlrjt6tvdRW0AEpB17bPm6RHTEcZNDq5MVmjH\nxuWI5IKrkCxe4ITTZyMl0hbmtaBvEf8Pm6TrElWESlznywEYBd4fA4CxDRpdahax\n5gdGgZUzDerP4pNlKNhmka2/A0x6sVDTGyvuqqigLQKBgQD2uVGFQayUre0sut7N\ntRURcbV3UsM54oP6rrXYLGVsxByG+ENyUz0/hy9JnkrdgU3cMZXg0rfa0NXpcCyN\n05QFUV5I7dGS0e2hBWxPOgZ2RLkf1dvA4OldvGHEgw+86ng49ih6V5IztJIJZUTV\nB42bTwZt4bKKSCznJAlBcJgbZwKBgQCebp5JagAROmFhiiFI+DjTUOyyWsQXJOlm\n5zN5tNQgclCHMKMcb4GAUyw9N7agG3iKIGixpMiHyWxJF11Hf2+IeOGaEPQul/c0\n5zzzIDYW0A8/mrLYQ5B9Y71vJez5UBp326cliVuhxHXE4kx3DlkmYzmYkCHUltbo\nw7hLJGhqiwKBgQDbFH+QxlpKw45BE8ZX/x2wGbo7NGBqe/sZlB2g0PtW82UpbDXn\nxIY0bQPOaSKtQe4zQkyGEFZ1lM79tD+7yE490pzYQWTA7GwHeVtNloa6ahfAbxPt\nV0mhlG90IbTN2Z3bZqlWyX/nLcYnVacjSsuxRyC8XZc+Nwy4SkV1uFc4rQKBgQCR\nagZua5RUO7lVxWp3hxzhF82ohhalB4QSpvJgKtDoVwQCkWmkl9PM7IoWRiShH5Wr\nccOmCRDlUMLK817yWM0N/aVTu2vjuCd1rygKHu6GUcEtJ9gvFxRvgjRE6BJxYkxo\n5nqrwT8RYziU1QBJ5il9SmV62g+zCB+I1Ns6XNhZsQKBgA2mot02WPJ89qmam1bR\nx7wbOYkJCwTcVz4ZiL7j30Dv01mLOwK0Ir5wBhfnmNZrnYQZEwFiR4T0UQun3/u2\nb668g2vttZy0ZsVjkm8no5vbEgNiICFINK6QaCv6bgJ36Lb6BGJy+j2ACpabc3y9\nFt5aP+vTDe1qIk2nHqgJVTW7\n-----END PRIVATE KEY-----\n",
+      "client_email": "vezio-p12@vezio-1119.iam.gserviceaccount.com",
+      "client_id": "107520602894015113569",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://accounts.google.com/o/oauth2/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vezio-p12%40vezio-1119.iam.gserviceaccount.com",
+      "scope": [
+        "https://www.googleapis.com/auth/cloud-platform"
+      ]
+    },
+    "BT_PUBLIC_KEY": "3ydjwbgt5khcy22t",
+    "BT_PRIVATE_KEY": "5e1238fffb96cc14118adcee1ec32aad",
+    "BT_MERCHANT_ID": "syvwcj9p5km8ckfp",
+    "NumverifyAccessKey": "38c2f8c90c247a1922c4a534f5479e14"
+  }
+}

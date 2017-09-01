@@ -1,0 +1,1 @@
+import './tool-card.html';

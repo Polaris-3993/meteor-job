@@ -1,0 +1,61 @@
+<template name="editExperienceModal">
+    <section class="profile-wrapper">
+        <div class="row">
+            <div class="single-box experience">
+            <div id="edit-experience-modal" class="modal edit-experience">
+                <div class="modal-content">
+                    {{#if jobProject}}
+                        <div class="head">Edit experience</div>
+                    {{else}}
+                        <div class="head">Add experience</div>
+                    {{/if}}
+
+                    <div class="content">
+
+                        <div class="input-field col s4">
+                            <input type="date" class="datepicker validate" id="start-date">
+                            <label class="active">Started date</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input type="date" class="datepicker validate" id="complete-date" disabled={{currentlyWorking}}>
+                            <label class="active">Completed date</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input type="checkbox" class="filled-in" id="filled-in-box" checked="{{#if currentlyWorking}}checked{{/if}}"/>
+                            <label for="filled-in-box">Currently work here</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input value="{{#if jobProject}}{{jobProject.company}}{{/if}}" type="text" class="validate" id="company">
+                            <label class="active">Company</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input value="{{#if jobProject}}{{jobProject.title}}{{/if}}" type="text" class="validate" id="title">
+                            <label class="active">Job title</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <textarea class="materialize-textarea" id="job-description"
+                                      length="300">{{#if jobProject}}{{jobProject.description}}{{/if}}</textarea>
+                            <label class="active">Description</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col s12 modal-footer">
+                    <a href="#" class="modal-action waves-effect waves-red btn-flat save">Save</a>
+    {{#unless jobProject}}
+                    <a href="#" class="modal-action waves-effect waves-red btn-flat add-more">Add
+                        more</a>
+    {{/unless}}
+                    <a href="#"
+                       class="modal-action waves-effect waves-red btn-flat cancel">Cancel</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</template>

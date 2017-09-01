@@ -1,0 +1,24 @@
+<template name="profileDescription">
+    <div class="profile-description">
+        {{#unless editDescription}}
+            {{profileDescription}}
+
+            {{#if profileOwner}}
+                <i class="edit-button edit-desc fa fa-pencil"></i>
+            {{/if}}
+        {{else}}
+            <!--EDIT DESCRIPTION FORM-->
+            <div class="row">
+                <form id="editDescriptionForm">
+                    <div class="input-field col s10">
+                        <textarea class="materialize-textarea" id="editDescription" value="{{description}}"></textarea>
+                        <!--<label for="editDescription" class="active">Edit Description</label>-->
+                    </div>
+                    <div class="col s2">
+                        <button class="btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        {{/unless}}
+    </div>
+</template>

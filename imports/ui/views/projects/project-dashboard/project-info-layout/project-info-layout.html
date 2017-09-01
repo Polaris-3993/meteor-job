@@ -1,0 +1,25 @@
+<template name="projectInfoLayout">
+    <div class="col m6 s12">
+        <div class="info-wrap">
+            {{#if canEditProject}}
+                {{#with project}}
+                    <h2 class="editable-text-trigger">
+                        <strong>
+                            {{>editableText collection="vz-projects" field="name" eventType="dblclick" afterUpdate="updateProjectTime"}}
+                        </strong>
+                    </h2>
+                {{/with}}
+            {{else}}
+                <h2><strong> {{project.name}}</strong></h2>
+            {{/if}}
+        </div>
+        <ul class="info">
+            <li><a href="#">{{formatSecondsAsTime timeTracked.time}}<i class="material-icons left">access_time</i></a>
+            </li>
+            <li><a href="#">{{timeTracked.tasks.completed}}/{{timeTracked.tasks.all}}<i class="material-icons left">assignment_turned_in</i></a>
+            </li>
+            <li><a href="#">${{project.budget}}<i class="material-icons left">attach_money</i></a></li>
+            <li><a href="#">{{assignedUsersCount}}<i class="material-icons left">group</i></a></li>
+        </ul>
+    </div>
+</template>

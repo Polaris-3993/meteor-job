@@ -1,0 +1,99 @@
+<template name="myTimeTrackerReports">
+    <div class="reports-header col s12">
+        <div class="reports-filter col s12 valign-wrapper">
+            <!--<a href="#" class="project-filter col s1 valign">Projects</a>-->
+            <!--<a href="#" class="tag-filter col s1 valign">-->
+                <!--<i class="material-icons tag-icon">local_offer</i>-->
+            <!--</a>-->
+            <div class="input-field col s4">
+                <input id="messageFilter" type="text">
+                <label for="messageFilter">Filter by message</label>
+            </div>
+        </div>
+
+        <!--FILTER MODALS-->
+        <!--{{#if isTagFilterActive}}-->
+            <!--{{> popupFilter tagFilterControls}}-->
+        <!--{{/if}}-->
+
+        <!--{{#if isProjectFilterActive}}-->
+            <!--{{> popupFilter projectFilterControls}}-->
+        <!--{{/if}}-->
+        <!--/////////////////////-->
+
+        <div class="reports-header col s12">
+
+            <h4 class="time-worked"><b>{{timeWorked}}</b></h4> &nbsp; &nbsp;
+            <b>Hours Worked</b>
+
+            <div class="right valign-wrapper action-buttons">
+
+                <div class="range-picker valign-wrapper">
+                    <a href="#" class="pick-prev-range rotate-180 valign-wrapper">
+                        <i class="material-icons">play_arrow</i>
+                    </a>
+                    <b>{{pickerRange}}</b>
+                    <a href="#" class="pick-next-range valign-wrapper">
+                        <i class="material-icons ">play_arrow</i>
+                    </a>
+
+                </div>
+
+                <!--<div class="btn-flat waves-effect waves print-report">-->
+                <!--    <i class="material-icons">print</i> -->
+                <!--</div>-->
+
+                <!--<div class="vz-dropdown">-->
+
+                <!--    <div class='export-dropdown dropdown-button' data-activates='export-dropdown-list'>-->
+                <!--        <b>Export</b>-->
+                <!--        <i class="tiny material-icons rotate-90">play_arrow</i>-->
+                <!--    </div>-->
+
+                <!--    <ul id='export-dropdown-list' class='dropdown-content'>-->
+                <!--        <li><a href="#!">CSV</a></li>-->
+                <!--        <li><a href="#!">PDF</a></li>-->
+                <!--        <li><a href="#!">Image</a></li>-->
+                <!--    </ul>-->
+
+                <!--</div>-->
+
+                <select class="vz-select dateRange-select">
+                    <option selected>Weekly</option>
+                    <option>Monthly</option>
+                    <option>Quarterly</option>
+                    <option>Yearly</option>
+                    <option>Date</option>
+                </select>
+            </div>
+        </div>
+        <div class="charts row">
+            {{#if Template.subscriptionsReady}}
+                <div class="col s12">
+                    <div class="card-panel">
+                        {{>workBarChart dateRange}}
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="card-panel">
+                        {{>projectsDoughnutChart dateRange}}
+                    </div>
+                    <!--<div class="col s6">-->
+                    <!--    <div class="card-panel">-->
+                    <!--         {{>usersDoughnutChart}}-->
+                    <!--    </div>-->
+                </div>
+            {{/if}}
+        </div>
+        <div class="entries row">
+            {{#each entries}}
+                {{> timeEntry}}
+            {{/each}}
+            {{#if isShowMoreBtn}}
+                <div class="show-more-wrapper center">
+                    <button class="show-more-entries-btn btn">Show more</button>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</template>

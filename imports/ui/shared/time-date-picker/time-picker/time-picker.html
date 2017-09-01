@@ -1,0 +1,37 @@
+<template name="timePicker">
+	<div class="time-picker">
+		<div class="digital">
+			<div class="digital-inner">
+				<div class="date light text-right bold white-text">{{date}}</div>
+				<span class="digital-clock">
+					<span class="hours">{{hours}}</span>:<span class="minutes">{{minutes}}</span>
+				</span>
+				<span class="digital-periods">
+					<div data-period="am" style="display:block;" class="digital-period period bold white-text am">am</div>
+					<div data-period="pm" class="digital-period period bold white-text pm">pm</div>
+				</span>
+				<!--<span class="format light bold white-text">12H</span>-->
+			</div>
+		</div>
+		{{#if dateState}}
+
+			{{> timePickerDateState}}
+
+		{{else}}
+		<div class="analog">
+			{{#if hoursState}}
+				{{>timePickerHoursState rotateAngle=rotateAngle number=hours}}
+			{{/if}}
+			{{#if minutesState}}
+				{{>timePickerMinutesState rotateAngle=rotateAngle number=minutes}}
+			{{/if}}
+		</div>
+		{{/if}}
+		{{#if showControls}}
+			<div class="controls">
+	            <div class="btn-flat waves-effect waves right save-btn">OK</div>
+				<div class="btn-flat waves-effect waves right cancel-btn">CANCEL</div>
+			</div>
+		{{/if}}
+	</div>
+</template>

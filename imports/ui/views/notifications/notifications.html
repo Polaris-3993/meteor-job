@@ -1,0 +1,20 @@
+<template name = "notifications">
+    <div class="container" style="margin-top: 161px;">
+        <div class="row notification-control-panel">
+            {{#if showMarkButton}}
+                <button class="btn mark-as-read-btn">MARK AS READ</button>
+            {{/if}}
+        </div>
+        <div class="row">
+            {{#each notifications}}
+                {{>notificationItem this}}
+            {{/each}}
+        </div>
+        
+        {{#if loadMore}}
+            <button class="btn load-more-btn" style="display:block">
+                Load More
+            </button>
+        {{/if}}
+    </div>
+</template>

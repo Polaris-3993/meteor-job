@@ -1,0 +1,31 @@
+<template name="skillsCard">
+    <div class="profile-card-wrapper">
+        <div id="skillsCard" class="card skills-card">
+            <div class="card-header">
+                Skills
+                {{#if profileOwner}}
+                    <i class="edit-button fa fa-pencil"></i>
+                {{/if}}
+            </div>
+            <div class="card-body">
+                {{#each skills}}
+                    <div class="chip">
+                        {{this}}
+                        {{#if editState}}
+                            <i class="material-icons delete-skill">close</i>
+                        {{/if}}
+                    </div>
+                {{/each}}
+                
+                {{#if editState}}
+                    <form id="addNewSkillForm">
+                        <div class = "input-field add-skill-wrapper">
+                            <input id="addSkillInput" type="text">
+                        </div>
+                        <button class="btn add-skill-btn" type="submit">Add new skill</button>
+                    </form>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

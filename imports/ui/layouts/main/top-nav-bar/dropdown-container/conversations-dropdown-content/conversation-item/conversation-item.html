@@ -1,0 +1,33 @@
+<template name="conversationItem">
+    <li class="conversation-item {{#if hasUnreadMessages}}not-seen{{/if}} valign-wrapper">
+        <div class="avatars-wrapper valign">
+            {{#if conversation.isPrivate}}
+                <div class="avatar single">
+                    <img src="{{getUserSmallPhotoById participantId}}">
+                </div>
+            {{else}}
+                {{#each otherParticipantsIds}}
+                    <div class="avatar n{{@index}}">
+                        <img src="{{getUserSmallPhotoById this}}">
+                    </div>
+                {{/each}}
+            {{/if}}
+        </div>
+        <div class="content">
+
+            <h6>
+                <a class="truncate">{{conversationTitle conversation}}</a>
+                {{#if lastMessage}}
+                    <span class="right">{{messageDate lastMessage.sentAt}}</span>
+                {{/if}}
+            </h6>
+
+            {{#if lastMessage}}
+                <p class="truncate">{{lastMessage.text}}</p>
+            {{else}}
+                <p>No messages yet...</p>
+            {{/if}}
+
+        </div>
+    </li>
+</template>

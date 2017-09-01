@@ -1,0 +1,65 @@
+<template name="usersActiveTasksList">
+    <div class="dashboard-task dashboard-card-list-item">
+        <div class="dashboard-task-avatar">
+            <div class="dashboard-avatar" style="width: 45px; height: 45px;">
+                {{#if workerId}}
+                    <img src="{{getUserLargePhotoById workerId}}" class="user-avatar">
+                {{else}}
+                    <img src="{{getUserLargePhotoById trakingUserId}}" class="user-avatar">
+                {{/if}}
+            </div>
+        </div>
+        <div class="dashboard-task-content">
+            <div class="dashboard-task-username">
+                {{#if workerId}}
+                    {{#if currentlyWorking}}
+                         <a href="{{pathFor 'userProfile' id=trakingUserId}}" style="color: #666;">{{trakingUser.profile.fullName}}</a><br>
+                        <div class="dashboard-task-taskname">
+                            <a style="font-size: 12px;" href="" id="task-name">{{name}}</a>
+                        </div>
+                        <div style="font-weight: 400; font-size: 12px; color: darkgreen;"><a href="" id="task-name">{{taskKey}}</a> - working now<br></div>
+                    {{/if}}
+                    {{#if lastWorked}}
+                        <a href="{{pathFor 'userProfile' id=trakingUserId}}" style="color: #666;">{{taskOwner.profile.fullName}}</a><br>
+                        <div class="dashboard-task-taskname">
+                            <a style="font-size: 12px;" href="" id="task-name">{{name}}</a>
+                        </div>
+                        <div style="font-weight: 400; font-size: 12px;"><a href="" id="task-name">{{taskKey}}</a><br>
+                            <div style="display: inline-flex;">Last worked on <div style="font-weight: normal;">&nbsp;{{formatDate endDate 'L LT'}}</div></div></div>
+                    {{/if}}
+                {{else}}
+                    <a style="color: #666;" href="{{pathFor 'userProfile' id=trakingUserId}}">{{trakingUser.profile.fullName}}</a><br>
+                    <div class="dashboard-task-taskname">
+                        <a style="font-size: 12px;" href="" id="task-name">{{name}}</a>
+                    </div>
+                    <div style="font-weight: 400; font-size: 12px; color: darkgreen;"><a href="" id="task-name">{{taskKey}}</a> - working now<br></div>
+                {{/if}}
+            </div>
+        </div>
+        <div class="dashboard-task-additional-information">
+            <div class="dashboard-task-projectname" style="display: inline-flex;">
+                <a href="" style="margin-right: 15px; display: inline-flex;"><i class="material-icons tiny" style="font-size: 1.2rem;">attach_money</i>{{totalSpentActive}}</a>
+                <a href="" style="display: inline-flex;"><i class="material-icons tiny" style="font-size: 1.2rem;">av_timer</i>{{formatSecondsAsTimeTask taskTimeTrackedActive}}</a>
+            </div>
+            <div class="dashboard-task-projectname">
+                <a href="{{pathFor 'projectDashboard' id=projectId}}">{{relatedProject.name}}</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="usersActiveTasks">
+    <div class="dashboard-tasks-list">
+        {{#if ready}}
+            {{#if taskItems}}
+                {{#each taskItems}}
+                    {{> usersActiveTasksList}}
+                {{/each}}
+            {{else}}
+                {{>emptyCardContent message=emptyCardMessage}}
+            {{/if}}
+        {{else}}
+            {{>emptyCardContent message=dataLoadingMessage}}
+        {{/if}}
+    </div>
+</template>

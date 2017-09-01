@@ -1,0 +1,15 @@
+<template name="biographyCard">
+    <div class="col l4 m12 s12">
+        <div class="single-box">
+            <!-- .edit-icon should be visible in logged-in mode, remove class hide when user is logged-in -->
+            <h4 class="title">Bio {{#if profileOwner}}<a class="right edit-icon modal-trigger edit-bio" href=""><i
+                    class="fa fa-pencil"></i></a>{{/if}}</h4>
+            <div class="bio-content">
+                <p>{{profileBiography}}{{#if showMoreButton}}{{#unless showMore}}
+                    <a href="" class="show-more">more</a>{{else}}<a href="" class="show-less">less</a>{{/unless}}{{/if}}
+                </p>
+            </div>
+
+        </div>
+    </div>
+</template>

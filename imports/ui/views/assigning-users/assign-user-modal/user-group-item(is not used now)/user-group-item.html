@@ -1,0 +1,8 @@
+<template name="userPositionItem">
+    <div class="row">
+        <input type="checkbox" value="{{position.name}}" class="user-position-checkbox"
+               id="group-checkbox-{{position.name}}"
+               checked="{{#if isAssigned position}}checked{{/if}}">
+        <label for="group-checkbox-{{position.name}}">{{position.name}}</label>
+    </div>
+</template>

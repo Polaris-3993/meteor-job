@@ -1,0 +1,14 @@
+<template name="conversationsTopBarIcon">
+    <a class="dropdown-button navbar-conversations-menu" href="#">
+        <i class="material-icons">
+            messages
+        </i>
+        {{#if greater unreadMessagesCount 0}}
+            <div class="unread-messages-count-container">
+                <p class="unread-messages-count">
+                    {{unreadMessagesCount}}
+                </p>
+            </div>
+        {{/if}}
+    </a>
+</template>

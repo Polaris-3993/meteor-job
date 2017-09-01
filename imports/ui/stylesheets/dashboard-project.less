@@ -1,0 +1,54 @@
+.dashboard-project {
+  .dashboard-project-main-information {
+    display: table;
+    width: 100%;
+    margin: 0 0 16px;
+  }
+  .dashboard-project-additional-information {
+    overflow: hidden;
+  }
+  .dashboard-project-left-block {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+  }
+  .dashboard-project-right-block {
+    display: table-cell;
+    vertical-align: middle;
+
+    .progress-bar {
+      width: 190px;
+      float: right;
+    }
+  }
+  .dashboard-project-name {
+    color: rgba(1, 1, 1, 0.77);
+    font-size: 15px;
+    line-height: 1;
+  }
+  .dashboard-project-last-updated {
+    color: rgba(148, 148, 148, 0.77);
+    font-size: 11px;
+    line-height: 1;
+    margin: 10px 0 0;
+
+    span {
+      color: rgba(0, 0, 0, 0.77);
+    }
+  }
+  .dashboard-project-info-icon {
+    float: left;
+    margin: 0 26px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+    .material-icons {
+      font-size: 16px;
+      vertical-align: middle;
+    }
+    span {
+      vertical-align: middle;
+    }
+  }
+}

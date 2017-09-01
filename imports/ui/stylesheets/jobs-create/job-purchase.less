@@ -1,0 +1,289 @@
+@import 'variables.less';
+
+.create-new-job-3 {
+  max-width: 70rem;
+  padding-bottom: @10px;
+  margin-bottom: @60px;
+  margin-top: -@8px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: @white;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.31);
+  z-index: 10;
+  position: relative;
+  @media (max-width: 600px) {
+    margin-top: 20px;
+    max-width: 96%;
+  }
+  .steps {
+    text-align: center;
+    max-width: 45.625em;
+    height: @70px;
+    position: relative;
+    margin-left: @48px;
+    padding-top: 8px;
+    @media (max-width: 600px) {
+      margin-left: @15px;
+      margin-right: @15px;
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: @black1;
+      z-index: 1;
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: 8px;
+      @media (max-width: 460px) {
+        display: none;
+      }
+    }
+    li {
+      display: inline-block;
+      line-height: @70px;
+      @media (max-width: 460px) {
+        a {
+          text-align: center;
+          span.number {
+            display: block !important;
+            margin-left: auto;
+            margin-right: auto !important;
+            float: none;
+            clear: both;
+          }
+        }
+      }
+      a {
+        font-size: @13px;
+        font-weight: 500;
+        color: #c1c3c6;
+        line-height: @40px;
+        padding: 0 @15px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        z-index: 3;
+        @media (max-width: 600px) {
+          font-size: @12px;
+          display: inline-block;
+          margin-top: @30px;
+        }
+        span.number {
+          width: @26px;
+          height: @26px;
+          line-height: @26px;
+          display: inline-block;
+          background-color: #c1c3c6;
+          color: @white;
+          border-radius: 50%;
+          margin-right: @13px;
+          @media (max-width: 600px) {
+            margin-right: 0;
+          }
+        }
+        &.current {
+          color: @black5;
+          span.number {
+            background-color: @theme;
+          }
+        }
+      }
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+  .new-job-form {
+    border-top: 1px solid @black1;
+    padding-top: @12px;
+    @media (max-width: 600px) {
+      border-top: none;
+    }
+
+    .ad-purchase {
+      padding: @30px @48px;
+      @media (max-width: 600px) {
+        padding: @30px @15px;
+      }
+      .block {
+        margin-bottom: @40px;
+        h3 {
+          font-size: @18px;
+          color: @black8;
+          margin: 0;
+          padding: 0;
+          padding-bottom: @10px;
+          font-weight: 500;
+        }
+        .option {
+          padding-bottom: @12px;
+          [type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+            font-size: @13px;
+            color: rgba(0, 0, 0, 0.77);
+            font-weight: 500;
+          }
+          p {
+            font-size: @13px;
+            color: rgba(0, 0, 0, 0.77);
+            font-weight: 500;
+          }
+          p.card-detail {
+            margin-left: @35px;
+          }
+          [type="radio"] + label:before, [type="radio"] + label:after {
+            width: @20px;
+            height: @20px;
+          }
+          [type="radio"]:checked + label:after {
+            border-color: @theme;
+            background-color: @theme;
+          }
+          [type="radio"].with-gap:checked + label:before {
+            border-color: @theme;
+          }
+          .payment-detail {
+            position: relative;
+            opacity: 0.5;
+            &.selected {
+              opacity: 1;
+            }
+            .card-num, .card-code {
+              padding-left: 0;
+              padding-right: @48px;
+              @media (max-width: 600px) {
+                padding-right: 0;
+              }
+            }
+            .card-date {
+              padding-right: 0;
+              padding-left: @48px;
+              @media (max-width: 600px) {
+                padding-left: 0;
+              }
+            }
+            .input-field {
+              background: #f1f1f1;
+              border: 1px solid rgba(0, 0, 0, 0.0);
+              box-shadow: none;
+              box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) inset;
+              border-radius: 4px;
+              padding: 0 15px;
+              margin-bottom: @20px;
+              height: @50px;
+              box-sizing: inherit;
+              font-size: @13px;
+              color: @black6;
+              font-style: italic;
+              position: relative;
+              input {
+                border-bottom: none;
+                font-size: @13px;
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+
+            }
+            ::-webkit-input-placeholder {
+              color: rgba(0, 0, 0, 0.40) !important;
+              font-size: @13px;
+              font-weight: 500;
+            }
+            :-moz-placeholder {
+              color: rgba(0, 0, 0, 0.40) !important;
+              font-size: @13px;
+              font-weight: 500;
+            }
+            ::-moz-placeholder {
+              color: rgba(0, 0, 0, 0.40) !important;
+              font-size: @13px;
+              font-weight: 500;
+            }
+            :-ms-input-placeholder {
+              color: rgba(0, 0, 0, 0.40) !important;
+              font-size: @13px;
+              font-weight: 500;
+            }
+            .input-field label {
+              position: absolute;
+              right: @15px;
+              left: auto !important;
+              top: auto;
+              bottom: 0;
+              height: @50px;
+              line-height: @50px;
+              display: inline-block;
+              img {
+                max-width: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                opacity: 0.3;
+                margin-left: @10px;
+              }
+            }
+            .input-field label.active {
+              transform: translateY(0);
+            }
+            input[type=text]:focus:not([readonly]) + label {
+              color: #999;
+            }
+          }
+          /*---------Terms & Condition Agree*/
+          [type="checkbox"] + label {
+            font-size: @13px;
+            font-weight: 400;
+          }
+          [type="checkbox"].filled-in:not(:checked) + label:after {
+            width: @16px;
+            height: @16px;
+            top: 4px;
+          }
+          [type="checkbox"].filled-in:checked + label:after {
+            width: @16px;
+            height: @16px;
+            background-color: @theme;
+            border-color: @theme;
+            top: 4px;
+          }
+          [type="checkbox"].filled-in:checked + label:before {
+            width: @7px;
+            height: @11px;
+            top: 4px;
+          }
+        }
+      }
+    }
+
+  }
+
+  /*-----------Buttons-----*/
+  .bottom-action {
+    padding: 0 @36px;
+    margin-top: @15px;
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+
+  .btn {
+    height: @41px;
+    box-shadow: none;
+    line-height: @41px;
+    border-radius: 3px;
+    font-size: @13px;
+    padding: 0 @15px;
+    font-weight: bold;
+    &.delete {
+      background: #555555;
+    }
+    &.default {
+      margin-right: @12px;
+    }
+  }
+}

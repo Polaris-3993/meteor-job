@@ -1,0 +1,38 @@
+<template name="assigningUsers">
+    <div style="">
+    <div class="assign-users">
+    <form id="assignUserToEntityForm">
+        <div class="input-section row">
+            <div class="input-field col s12">
+                {{#each assignedUsers}}
+                    {{#unless equal this._id currentUser._id}}
+                        {{> assignedUserItem
+                        assignedUser=this
+                        onChangeRoles=onChangeRolesCb
+                        onRemoveUser=onRemoveUserCb
+                        }}
+                    {{/unless}}
+                {{/each}}
+            </div>
+            {{#if shouldDisplayAssignUsersInput}}
+                {{> entitySearchForm
+                entityName="users"
+                displayedPropertyName="profile.fullName"
+                excludedEntitiesIds=excludedUsersIds
+                onSelectEntity=assignUserCb
+                }}
+            {{else}}
+                <p>
+                    Add new user
+                    <i class="material-icons show-assignUser-input-icon pointer">add</i>
+                </p>
+            {{/if}}
+        </div>
+
+        <button class="btn-large btn-blue" type="submit"
+                disabled="{{#unless changesWereMade}}disabled{{/unless}}">Save</button>
+        <button class="btn-large btn-light-grey cancel-button">Cancel</button>
+    </form>
+    </div>
+    </div>
+</template>

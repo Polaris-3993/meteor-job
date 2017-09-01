@@ -1,0 +1,463 @@
+main.data-table {
+  margin-top: 20px;
+  padding-top: 0
+}
+main.data-table.with-tabs {
+  margin-left: -23px;
+  margin-top: 90px !important;
+}
+/*@media (max-width: 1200px) {*/
+/*main.data-table {*/
+/*margin-top: 109px*/
+/*}*/
+/*}*/
+
+@media (max-width: 992px) {
+  /*main.data-table {*/
+  /*margin-top: 105px*/
+  /*}*/
+  main.data-table .table-wrapper table [type=checkbox].filled-in:checked + label:before {
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  main.data-table .table-wrapper table [type=checkbox].filled-in:checked + label:before {
+    left: -1px !important;
+  }
+}
+
+
+main.data-table .btn.add-new {
+  box-shadow: none;
+  font-size: .813rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, .6);
+  background: #f8f8f8;
+  padding: 0 .938rem
+}
+
+main.data-table .btn.add-new i {
+  margin-right: .5rem
+}
+
+main.data-table .table-wrapper {
+  background: #FFF;
+  margin-top: 1.25rem;
+  box-shadow: 0 2px 3.88px .12px rgba(0, 0, 0, .24)
+}
+
+main.data-table .table-wrapper .dataTables_filter {
+  position: absolute;
+  right: 4.688rem;
+  top: -48px;
+  width: 20px;
+  transition: all .4s ease-in-out;
+  visibility: hidden
+}
+
+main.data-table .table-wrapper .dataTables_filter input {
+  border-bottom: 1px solid transparent
+}
+
+main.data-table .table-wrapper .dataTables_filter.active {
+  width: 150px;
+  visibility: visible
+}
+
+main.data-table .table-wrapper .dataTables_filter.active input {
+  border-bottom: 1px solid #ddd
+}
+
+main.data-table .table-wrapper .dataTables_filter:before {
+  content: '\E8B6';
+  font-family: 'Material Icons';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  font-size: 1.563rem;
+  color: rgba(0, 0, 0, .7)
+}
+
+main.data-table .table-wrapper .dataTables_filter label {
+  font-size: 0
+}
+
+main.data-table .table-wrapper .dataTables_filter label input {
+  margin: 0;
+  height: 1.875rem;
+  padding-left: 1.875rem;
+  box-sizing: inherit;
+  font-size: .938rem;
+  color: rgba(0, 0, 0, .7);
+  font-weight: 500
+}
+
+main.data-table .table-wrapper .dataTables_filter label input:focus {
+  box-shadow: none;
+  border-color: #ddd
+}
+
+main.data-table .table-wrapper .bottom {
+  text-align: right;
+  background: #fafafa;
+  height: 4.375rem;
+  line-height: 1;
+  margin-bottom: 5px
+}
+
+main.data-table .table-wrapper .dataTables_paginate {
+  padding-right: 1.563rem;
+  float: right;
+  display: block
+}
+
+main.data-table .table-wrapper .dataTables_paginate span {
+  display: none
+}
+
+main.data-table .table-wrapper .dataTables_paginate a.paginate_button {
+  width: 2.188rem;
+  height: 4.375rem;
+  overflow: hidden;
+  padding: 0 !important;
+  margin-top: -.32em
+}
+
+main.data-table .table-wrapper .dataTables_paginate a.paginate_button:hover {
+  border: 1px solid transparent !important
+}
+
+main.data-table .table-wrapper .dataTables_paginate a.paginate_button.previous {
+  position: relative
+}
+
+main.data-table .table-wrapper .dataTables_paginate a.paginate_button.previous.disabled:before {
+  color: rgba(0, 0, 0, .2)
+}
+
+main.data-table .table-wrapper .dataTables_paginate a.paginate_button.previous:before {
+  content: '\E408';
+  font-family: 'Material Icons';
+  position: absolute;
+  color: #FFEB3B;
+  background: #fafafa;
+  display: block;
+  width: 35px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.563rem;
+  color: rgba(0, 0, 0, .8)
+}
+
+main.data-table .table-wrapper .dataTables_paginate a.paginate_button.next {
+  position: relative
+}
+
+main.data-table .table-wrapper .dataTables_paginate a.paginate_button.next.disabled:before {
+  color: rgba(0, 0, 0, .2)
+}
+
+main.data-table .table-wrapper .dataTables_paginate a.paginate_button.next:before {
+  content: '\E409';
+  font-family: 'Material Icons';
+  position: absolute;
+  color: #FFEB3B;
+  background: #fafafa;
+  display: block;
+  width: 35px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.563rem;
+  color: rgba(0, 0, 0, .8)
+}
+
+main.data-table .table-wrapper .dataTables_info {
+  float: right;
+  display: block;
+  clear: initial;
+  text-align: right;
+  padding: 0;
+  height: 70px;
+  line-height: 70px;
+  margin-right: 24px;
+  font-size: .875rem;
+  color: rgba(0, 0, 0, .8);
+  font-weight: 600
+}
+
+main.data-table .table-wrapper .dataTables_length {
+  float: right;
+  display: block;
+  margin-right: 2.5rem;
+  font-size: .875rem;
+  color: rgba(0, 0, 0, .8);
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+main.data-table .table-wrapper .dataTables_length label {
+  font-size: .875rem;
+  color: rgba(0, 0, 0, .8);
+  font-weight: 600;
+  margin-top: 12px;
+  display: -webkit-box
+}
+
+main.data-table .table-wrapper .dataTables_length .select-wrapper {
+  display: inline-block;
+  width: 40px;
+  height: 27px
+}
+
+main.data-table .table-wrapper .dataTables_length .select-wrapper .dropdown-content {
+  min-width: 60px
+}
+
+main.data-table .table-wrapper .dataTables_length .select-wrapper .dropdown-content li > a, main.data-table .table-wrapper .dataTables_length .select-wrapper .dropdown-content li > span {
+  color: #666;
+  font-size: .813rem
+}
+
+main.data-table .table-wrapper .dataTables_length .select-wrapper input.select-dropdown {
+  border-bottom: none
+}
+
+main.data-table .table-wrapper table tr {
+  padding: 0 1.875rem;
+  height: 3.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  border-collapse: collapse
+}
+
+main.data-table .table-wrapper table td, main.data-table .table-wrapper table th {
+  font-size: .938rem;
+  color: rgba(0, 0, 0, .7);
+  text-align: right
+}
+
+main.data-table .table-wrapper table td:first-child, main.data-table .table-wrapper table th:first-child {
+  padding-left: 1.875rem;
+  text-align: left
+}
+
+main.data-table .table-wrapper table td:last-child, main.data-table .table-wrapper table th:last-child {
+  padding-right: 1rem;
+  text-align: right
+}
+
+main.data-table .table-wrapper table td:last-child .dropdown-button, main.data-table .table-wrapper table th:last-child .dropdown-button {
+  color: rgba(0, 0, 0, .7)
+}
+
+main.data-table .table-wrapper table td:last-child .dropdown-button i, main.data-table .table-wrapper table th:last-child .dropdown-button i {
+  float: right;
+  font-size: 1.125rem
+}
+
+main.data-table .table-wrapper table td:last-child .dropdown-content, main.data-table .table-wrapper table th:last-child .dropdown-content {
+  margin-left: 1.25rem
+}
+
+main.data-table .table-wrapper table td:last-child .dropdown-content li, main.data-table .table-wrapper table th:last-child .dropdown-content li {
+  min-height: 1.875rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+main.data-table .table-wrapper table td:last-child .dropdown-content li:last-child, main.data-table .table-wrapper table th:last-child .dropdown-content li:last-child {
+  border-bottom: none
+}
+
+main.data-table .table-wrapper table td:last-child .dropdown-content li a, main.data-table .table-wrapper table th:last-child .dropdown-content li a {
+  padding: .438rem .938rem;
+  color: rgba(0, 0, 0, .6)
+}
+
+main.data-table .table-wrapper table td [type=checkbox] + label, main.data-table .table-wrapper table th [type=checkbox] + label {
+  display: inline
+}
+
+main.data-table .table-wrapper table td span.status, main.data-table .table-wrapper table td span.status.opened, main.data-table .table-wrapper table th span.status, main.data-table .table-wrapper table th span.status.opened {
+  color: #43a047
+}
+
+main.data-table .table-wrapper table td span.status.expiring, main.data-table .table-wrapper table th span.status.expiring {
+  color: #ef6c00
+}
+
+main.data-table .table-wrapper table td span.status.closed, main.data-table .table-wrapper table th span.status.closed {
+  color: #c62828
+}
+main.data-table .table-wrapper table td .user-with-tip, main.data-table .table-wrapper table th .user-with-tip {
+  display: inline-block;
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+  border-radius: .938rem;
+  margin-right: -5px;
+  z-index: 1
+}
+main.data-table .table-wrapper table th {
+  font-size: .938rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .6);
+  white-space: nowrap
+}
+
+main.data-table .table-wrapper table th:last-child {
+  padding-right: 3rem
+}
+
+main.data-table .table-wrapper table th span.sort {
+  position: relative;
+  display: inline-block
+}
+
+main.data-table .table-wrapper table th span.sort a {
+  position: absolute;
+  top: -.438rem;
+  color: rgba(0, 0, 0, .7)
+}
+
+main.data-table .table-wrapper table th span.sort a:first-child {
+  bottom: -.375rem;
+  top: auto
+}
+
+main.data-table .table-wrapper table th span.sort a i {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, .7)
+}
+
+main.data-table .table-wrapper table [type=checkbox].filled-in:not(:checked) + label:after {
+  width: 1rem;
+  height: 1.05rem;
+  border-color: #757575
+}
+
+main.data-table .table-wrapper table [type=checkbox].filled-in:checked + label:after {
+  width: 1rem;
+  height: 1.05rem;
+  background: #ee5351;
+  border-color: #ee5351
+}
+
+main.data-table .table-wrapper table [type=checkbox].filled-in:checked + label:before {
+  left: 1px;
+  width: 5px;
+  height: 10px
+}
+
+main.data-table .table-wrapper .table-header {
+  height: 4.375rem;
+  padding: 0 1.875rem;
+  position: relative
+}
+
+main.data-table .table-wrapper .table-header.selected {
+  background: #f7f7f7
+}
+
+main.data-table .table-wrapper .table-header.selected a.remove {
+  margin-right: 1.25rem
+}
+
+main.data-table .table-wrapper .table-header h4 {
+  font-size: 1.438rem;
+  color: rgba(0, 0, 0, .7);
+  margin: 0;
+  line-height: 4.375rem
+}
+
+main.data-table .table-wrapper .table-header a {
+  color: rgba(0, 0, 0, .7)
+}
+
+main.data-table .table-wrapper .table-header a#table_search {
+  z-index: 1;
+  position: absolute;
+  right: 4.063rem
+}
+
+main.data-table .table-wrapper .table-header a#table_search .close {
+  display: none
+}
+
+main.data-table .table-wrapper .table-header a#table_search.active .close {
+  display: inline;
+  font-size: .938rem
+}
+
+main.data-table .table-wrapper .table-header a#table_search.active .search {
+  display: none
+}
+
+main.data-table .table-wrapper .table-header a:last-child i {
+  margin-right: 0
+}
+
+main.data-table .table-wrapper .table-header a i {
+  font-size: 1.563rem;
+  line-height: 4.375rem
+}
+
+main.data-table .bottom .select-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* works with row or column */
+
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+main.data-table .bottom .select-wrapper input.select-dropdown {
+  margin: 0;
+  border-bottom: none;
+  height: auto;
+  line-height: normal;
+  font-size: 12px;
+  width: 40px;
+  text-align: right;
+}
+
+main.data-table .bottom select {
+  background-color: transparent;
+  width: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  height: auto;
+  margin-left: 20px;
+}
+
+main.data-table .table-wrapper .dataTables_filter label input:focus {
+  box-shadow: none;
+  border-color: #ddd
+}
+main.data-table .table-wrapper table td {
+  padding-right: 1.25rem
+}
+
+@media (max-width: 767px) {
+  .dataTables_wrapper .dataTables_paginate {
+    margin-top: 0 !important;
+  }
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: none;
+}
+
+main.data-table .dataTables_scrollBody {
+  position: static !important
+}
+
+main.data-table:not(.leads-data-table) .dataTables_scrollBody, main.data-table:not(.leads-data-table) .dataTables_scrollBody .dataTable, main.data-table:not(.leads-data-table) .dataTables_scrollHeadInner, main.data-table:not(.leads-data-table) .dataTables_scrollHeadInner .dataTable {
+  width: 100% !important
+}
+
+main.data-table .dataTables_scrollBody {
+  border-bottom: 1px solid rgba(17, 17, 17, .09) !important
+}

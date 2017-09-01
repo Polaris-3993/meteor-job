@@ -1,0 +1,1 @@
+export const JobCategories = new Mongo.Collection('vj-job-categories');

@@ -1,0 +1,39 @@
+<template name="search">
+    {{#if isHaveSearchResults}}
+        <!--<div class="vz-action-bar-container">-->
+            <!--<div class="col s12 vz-action-bar z-depth-1">-->
+    <!---->
+                <!--<div class="col s12 l8 offset-l2">-->
+                    <!--<ul class="tabs">-->
+                        <!--{{#each tabs}}-->
+                            <!--<li id="{{template}}" class="tab">-->
+                                <!--<a href="#">{{title}}</a>-->
+                            <!--</li>-->
+                        <!--{{/each}}-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    
+    
+        <div class="col s12 m12 l12" style="margin-top: 60px;  padding-left: 5.875rem;">
+            <div class="row search-container">
+                {{#if Template.subscriptionsReady}}
+                    {{#if isAllSearch activeTab}}
+                        {{> UI.dynamic template=activeTab data = allSearchData}}
+                    {{else}}
+                        {{> UI.dynamic template=activeTab}}
+                    {{/if}}
+                {{/if}}
+
+            </div>
+        </div>
+            <!-- End Content -->
+        <!-- end main row -->
+    {{else}}
+        <div class="center no-search-data-text">
+            Oops... no matching data found
+        </div>
+    {{/if}}
+
+</template>

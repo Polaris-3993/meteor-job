@@ -1,0 +1,41 @@
+<template name="createEditWorkplace">
+    {{#formCard title=pageTitle}}
+        <form id="createEditWorkplaceForm">
+
+            <div class="input-section row">
+                <div class="input-field col s12">
+                    <input type="text" id="name" pattern="[\w\d\s]{3,}" class="validate"
+                           value="{{#if workplace}}{{workplace.name}}{{/if}}" required/>
+                    <label for="name" class="{{#if workplace}}active{{/if}}">Name</label>
+                </div>
+            </div>
+
+            <div class="input-field col s12">
+                <textarea id="description" class="materialize-textarea validate"
+                          value="{{#if workplace}}{{workplace.description}}{{/if}}"
+                          required maxlength="250"></textarea>
+                <label for="description" class="{{#if workplace}}active{{/if}}">Description</label>
+            </div>
+
+            <h5>TOOLS:</h5>
+
+            <div class="row">
+                {{#each tools}}
+                    <div class="input-field col s12">
+                        <input type="checkbox" id="{{_id}}" value="{{_id}}"
+                               class="tool-checkbox"
+                               checked="{{#if isToolInWorkplace _id}}checked{{/if}}"/>
+                        <label for="{{_id}}">{{name}}</label>
+                    </div>
+
+                {{/each}}
+            </div>
+
+
+            <button type="submit" class="btn-large btn-blue"
+                    disabled="{{#unless canBeSubmitted}}disabled{{/unless}}">Done</button>
+            <button type="reset" class="btn-large btn-blue">Cancel</button>
+
+        </form>
+    {{/formCard}}
+</template>

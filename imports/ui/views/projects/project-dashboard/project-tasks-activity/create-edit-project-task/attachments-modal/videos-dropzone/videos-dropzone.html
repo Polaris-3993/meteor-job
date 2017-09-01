@@ -1,0 +1,35 @@
+<template name="videosDropZone">
+    <div class="col s12 no-padding" id="videos">
+        <input type="text" name="" placeholder="Enter YouTube url" id="you-tube-url">
+        <form id="taskVideoAttachmentsForm" class="dropzone">
+            <div class="attachment-area">
+                {{#each taskVideos}}
+                    {{#unless isYouTubeVideo}}
+                        <div style="display:none;" id="{{size}}">
+                            <video class="lg-video-object lg-html5" controls preload="none">
+                                <source src="{{mediaLink}}" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    {{/unless}}
+                {{/each}}
+
+
+                <div class="row" id="video-gallery">
+                    {{#each youTubeVideos}}
+                        <a class="col l3 m6 s12 single-youtube" href="{{mediaLink}}">
+                            <img src="/images/youtube.png"/>
+                        </a>
+                    {{/each}}
+                    {{#each taskVideos}}
+                        <a class="col l3 m6 s12 single" data-sub-html="{{fileName}}" data-html="#{{size}}">
+                            <img src="/images/play.png"/>
+                        </a>
+                    {{/each}}
+
+                </div>
+            </div>
+            <div class="dropzone-previews"></div>
+        </form>
+    </div>
+</template>

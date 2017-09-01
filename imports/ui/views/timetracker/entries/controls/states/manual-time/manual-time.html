@@ -1,0 +1,75 @@
+<template name="timeTrackerManualTime">
+    <div id="time-entries" class="col s12 no-padding">
+
+        <div class="col s12 m12 l10 no-padding">
+
+            <div class="vz-time-entry-message z-depth-1 white">
+                <div class="input-field col no-margin s4 l4">
+                    <input id="time-entry-message" class="time-entry-message" type="text"
+                           placeholder="What are you working on?"/>
+                    {{#if isFilterActive}}
+                        <ul class="collection left" style="color:black; font-size: 12px;">
+                            {{#each tasks}}
+                                <li class="collection-item search-history-item col s12 left-align valign-wrapper left">
+                                    {{taskKey}}:&nbsp;{{name}}
+                                </li>
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+                
+                <div class="col s1 valign-wrapper">
+                    <i class="material-icons tag-icon">local_offer</i>
+                </div>
+                
+                {{#if isTagPopupActive}}
+                    {{>tagListDropdown tagPopupControls}}
+                {{/if}}
+
+                {{#if isProjectSelected}}
+                    <div class="col s2 valign-wrapper" style="height:100%;">
+                        <span class="select-project waves-effect waves-light vz-tag color1" style="margin:auto;">
+                            {{selectedProject}}
+                        </span>
+                    </div>
+                {{else}}
+                    <div class="col s2 hide-on-med-and-down no-padding">
+                        <span class="waves-effect waves select-project no-shadow btn-large white grey-text no-wrap fullwidth">
+                            Project
+                        </span>
+                    </div>
+                {{/if}}
+                <div class="time-diff col s1">{{duration}}</div>
+                <input id="startManualTime" class="col s2 manual-time-input"/>
+                <input id="endManualTime" class="col s2 manual-time-input"/>
+            </div>
+        </div>
+
+        <div class="col l1 hide-on-med-and-down" style="padding-right: 0px">
+            <a class="waves-effect waves-light btn-large fullwidth green save-manual-button">Save</a>
+        </div>
+        <div class="col l1 hide-on-med-and-down" style="padding-right: 0px">
+            <a class="waves-effect waves-light btn-large fullwidth green cancel-manual-button">Cancel</a>
+        </div>
+
+    </div>
+
+    <div class="row hide-on-large-only">
+        <div class="col s6" style="padding-left: 0px;">
+            <div class="left-align">
+                <span class="btn-large waves-effect white grey-text fullwidth select-project">Select Project</span>
+            </div>
+        </div>
+
+        <div class="col s3" style="padding-right: 0px;">
+            <div class="left-align">
+                <span class="btn-large waves-effect waves-light fullwidth green save-manual-button">Save</span>
+            </div>
+        </div>
+        <div class="col s3" style="padding-right: 0px;">
+            <div class="left-align">
+                <span class="btn-large waves-effect waves-light fullwidth green cancel-manual-button">Cancel</span>
+            </div>
+        </div>
+    </div>
+</template>

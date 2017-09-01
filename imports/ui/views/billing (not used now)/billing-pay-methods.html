@@ -1,0 +1,138 @@
+<template name="billingPayMethods">
+<!--<a class="waves-effect waves-light btn settlement">SET</a>-->
+    <div class="row">
+        <div class="col s12">
+            <div class="card vz-billing">
+                <div class="card-content">
+                    <span class="card-title">Payment Methods</span>
+                    <table class="bordered">
+                        <tbody>
+                        {{#each paymentMethods}}
+                            <!--{{#with paymentMethod this}}-->
+                            <tr>
+                                <td><img src="{{imageUrl}}"></td>
+                                <td>{{maskedNumber}}</td>
+                                <td>Exp Date {{expirationDate}}</td>
+                                <td>{{cardType}}</td>
+                                <td><a href=""><i class="tiny material-icons delete-payment-method">delete</i></a></td>
+                            </tr>
+                                    <!--{{/with}}-->
+                        {{/each}}
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="card vz-billing">
+                <div class="card-content">
+                    <span class="card-title">Plans</span>
+                    <table class="bordered">
+                        <tbody>
+                        {{#with plan}}
+                            <tr>
+                                <td>{{name}}</td>
+                                <td>{{price}} {{currencyIsoCode}}</td>
+                                <td>Every 1 Month</td>
+                                {{#if isSubscibed id}}
+                                    {{#if isPaymentMethod}}
+                                            <td>{{paymentMethod.maskedNumber}}</td>
+                                        <td><a class="waves-effect waves-light btn update-subscribtion">Update subscribtion</a></td>
+                                        {{else}}
+                                    <td>{{cardMaskedNumber id}}</td>
+                                        {{/if}}
+                                    <td><a class="waves-effect waves-light btn unsubscribe">Unsubscribe</a></td>
+                                    <td><a class="waves-effect waves-light btn change-subscribtion-method">Change payment method</a></td>
+                                {{else}}
+                                    {{#if isPaymentMethod}}
+                                        <td>{{paymentMethod.maskedNumber}}</td>
+                                        <td><a class="waves-effect waves-light btn subscribe">Subscribe</a></td>
+                                        <td><a class="waves-effect waves-light btn change-method">Change</a></td>
+                                    {{else}}
+                                        <td><a class="waves-effect waves-light btn select-card">Select payment
+                                            method</a></td>
+                                    {{/if}}
+                                {{/if}}
+
+
+                                <!--<td>Exp Date {{expirationDate}}</td>-->
+                            </tr>
+                        {{/with}}
+                        </tbody>
+                    </table>
+                    <br>
+                    {{#if isSelectingMethod}}
+                        <table class="bordered">
+                            <tbody>
+                            {{#each paymentMethods}}
+                                <tr id="method">
+                                    <td><img src="{{imageUrl}}"></td>
+                                    <td>{{maskedNumber}}</td>
+                                    <td>Exp Date {{expirationDate}}</td>
+
+                                    <td>{{cardType}}</td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col s12">
+
+            <div class="card vz-billing">
+
+                <div class="card-content">
+
+                    <span class="card-title">Add New Card</span>
+
+                    <div class="row credit-container no-margin">
+
+                        <div class="col m6 valign-wrapper credit-height hide-on-small-only">
+                            <img src="images/cards/credit-card.png">
+                        </div>
+
+                        <div class="col s12 m6">
+                            <form class="col s12">
+                                <div id="error-message"></div>
+
+                                <label for="card-number">Card Number</label>
+                                <div class="hosted-field" id="card-number"></div>
+
+                                <label for="cvv">CVV</label>
+                                <div class="hosted-field" id="cvv"></div>
+
+                                <label for="expiration-date">Expiration Date</label>
+                                <div class="hosted-field" id="expiration-date"></div>
+
+                                <input type="hidden" name="payment-method-nonce">
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-action right-align">
+                        <a class="btn-flat" href="">Cancel</a>
+                        <a class="btn-flat" id="add-card" href="">Save</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</template>

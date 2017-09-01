@@ -1,0 +1,143 @@
+<template name="jobPurchase">
+    <section class="create-new-job-3">
+        <div class="row">
+
+            <ul class="steps">
+                <li><a href=""><span class="number">1</span> Create advertisement</a></li>
+                <li><a href=""><span class="number">2</span> Preview</a></li>
+                <li><a class="current" href=""><span class="number">3</span> Purchase</a></li>
+            </ul>
+
+            <form class="new-job-form" action="" method="POST">
+
+                <!--=================================
+                =            AD Purchase            =
+                ==================================-->
+
+                <div class="ad-purchase">
+                    <div class="block choose-package">
+                        <h3>Choose Package</h3>
+
+                        <div class="option">
+                            <p>
+                                <input class="with-gap" name="package" type="radio" id="hot-job"/>
+                                <label for="hot-job">Basic + Hot job listing (300$ for 30 days)</label>
+                            </p>
+
+                            <p>Hot Jobs are displayed in the widget positions are displayed above the rest in the job
+                                list and in the search results.<br>
+                                As well as the fall in the daily newsletter. //more random text</p>
+                        </div>
+
+                        <div class="option">
+                            <p>
+                                <input class="with-gap" name="package" type="radio" id="basic-job"/>
+                                <label for="basic-job">Basic (100$ for 30 days)</label>
+                            </p>
+
+                            <p>Your job listing will be accessible to all viewers without exception for 30 days. //some
+                                random text</p>
+                        </div>
+                    </div>
+
+                    <div class="block choose-payment">
+                        <h3>Payment details</h3>
+
+                        <div class="option">
+                            <p>
+                                <input class="with-gap" name="payment" type="radio" id="m-card"/>
+                                <label for="m-card">Use MasterCard-1953</label>
+                            </p>
+
+                            <p class="card-detail">Miroslav Vitula<br>
+                                Amphitheatre Parkway 41/311<br>
+                                California
+                            </p>
+                        </div>
+
+                        <div class="option">
+                            <p>
+                                <input class="with-gap" name="payment" type="radio" id="other-payment"/>
+                                <label for="other-payment">Use other payment method</label>
+                            </p>
+
+                            <!-- add class "selected" to payment-detail if "Use other payment method" is choosen. -->
+                            <div class="payment-detail">
+                                <div class="card-num col m6 s12">
+                                    <p>Card Number</p>
+
+                                    <div class="input-field">
+                                        <input id="" type="text" class="validate" placeholder="Type your card number">
+                                        <label class="card-icon">
+                                            <img src="../../../images/mastercard.png">
+                                            <img src="../../../images/visa.png">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="card-date col m6 s12">
+                                    <p>Expire Date(MM/YY)</p>
+
+                                    <div class="input-field">
+                                        <input id="" type="text" class="validate" placeholder="e.g. 02/16">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <div class="card-code col m6 s12">
+                                    <p>Card Code</p>
+
+                                    <div class="input-field">
+                                        <input id="" type="text" class="validate" placeholder="CVC">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+
+                            </div>
+
+                            <div class="col s12 no-padding">
+                                <p>
+                                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked"/>
+                                    <label for="filled-in-box">I agree vezio jobs <a href="">terms &
+                                        conditions</a></label>
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="clearfix"></div>
+                <!--====  End of AD Purchase  ====-->
+
+
+                <!-- Single input : Buttons -->
+                <div class="bottom-action">
+                    <div class="col s4">
+                        <div class="single input-field left-align">
+                            <button type="submit" id="delete-button" class="btn
+                            delete waves-effect waves-light">Delete Ad
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col s8">
+                        <div class="single input-field right-align">
+                            <button type="button" id="edit-button" class="btn
+                            default waves-effect waves-light">Edit Ad
+                            </button>
+                            <button type="button" id="submit-button" class="btn
+                            theme waves-effect waves-light">Next Step
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- //Single input : Buttons -->
+            </form>
+        </div>
+    </section>
+</template>

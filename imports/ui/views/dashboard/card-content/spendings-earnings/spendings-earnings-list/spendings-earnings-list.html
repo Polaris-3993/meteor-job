@@ -1,0 +1,130 @@
+<template name="totalTimeMoneyList">
+    <div class="collapsible-header" style="line-height: 0rem !important;">
+        <div class="dashboard-task dashboard-card-list-item">
+            <div class="dashboard-task-content">
+                <div class="dashboard-task-username">
+                    <div class="dashboard-task-taskname">
+                        <a style="font-size: 12px;" href="" id="task-name">{{data.name}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-task-additional-information" style="padding-top: 15px !important;">
+                <div class="dashboard-task-projectname">
+                    <a href="" style="margin-right: 15px; display: inline-flex;"><i class="material-icons tiny"
+                                                                                    style="font-size: 1.2rem;">attach_money</i>{{data.counts.totalSpent}}
+                    </a>
+                    <a href="" style="display: inline-flex;"><i class="material-icons tiny" style="font-size: 1.2rem;">av_timer</i>{{formatSecondsAsTimeTask
+                            data.counts.timeTracked}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="collapsible-body" style="background-color: #fafafa !important;">
+        {{#if isSpendingsCard}}
+            <ul class="collapsible counts" data-collapsible="accordion">
+                {{#each data.items}}
+                    <li>
+                        <div class="collapsible-header"
+                             style="line-height: 0rem !important; background-color: #fafafa; border-bottom: none;">
+                            <div class="dashboard-task dashboard-card-list-item"
+                                 style="padding: 10px 16px 10px 0px; !important;">
+                                <div class="dashboard-task-avatar">
+                                    <div class="dashboard-avatar">
+                                        <img src="{{getUserLargePhotoById userId}}" class="user-avatar">
+                                    </div>
+                                </div>
+                                <div class="dashboard-task-content">
+                                    <div class="dashboard-task-username">
+                                        <div class="dashboard-task-taskname">
+                                            <a style="font-size: 12px;" href="{{pathFor 'userProfile' id=userId}}"
+                                               id="task-name">{{getUserNameById userId}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard-task-additional-information">
+                                    <div class="dashboard-task-projectname" style="margin-top: 20px;">
+                                        <a href="" style="margin-right: 15px; display: inline-flex;"><i
+                                                class="material-icons tiny"
+                                                style="font-size: 1.2rem;">attach_money</i>{{userCounts.totalSpent}}
+                                        </a>
+                                        <a href="" style="display: inline-flex;"><i class="material-icons tiny"
+                                                                                    style="font-size: 1.2rem;">av_timer</i>{{formatSecondsAsTimeTask
+                                                userCounts.timeTracked}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{#each userTaskCounts}}
+                            <div class="collapsible-body"
+                                 style="background-color: #fafafa !important; border-bottom: none; padding: 0 0 0 10px !important;">
+                                <div class="dashboard-task dashboard-card-list-item"
+                                     style="padding: 10px 0; !important;">
+                                    <div class="dashboard-task-content">
+                                        <div class="dashboard-task-username">
+                                            <div class="dashboard-task-taskname">
+                                                <a style="font-size: 12px;" href="" id="task-name">{{taskName}}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-task-additional-information">
+                                        <div class="dashboard-task-projectname">
+                                            <a href="" style="margin-right: 21px; display: inline-flex;"><i
+                                                    class="material-icons tiny"
+                                                    style="font-size: 1.2rem; margin-right: 5px;">attach_money</i>{{taskCounts.totalSpent}}
+                                            </a>
+                                            <a href="" style="display: inline-flex;"><i class="material-icons tiny"
+                                                                                        style="font-size: 1.2rem; margin-right: 4px;">av_timer</i>{{formatSecondsAsTimeTask
+                                                    taskCounts.timeTracked}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {{/each}}
+
+                    </li>
+                {{/each}}
+            </ul>
+        {{else}}
+            {{#each data.items}}
+                <div class="dashboard-task dashboard-card-list-item">
+                    <div class="dashboard-task-content">
+                        <div class="dashboard-task-username">
+                            <div class="dashboard-task-taskname">
+                                <a style="font-size: 12px;" href="" id="task-name">{{taskName}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-task-additional-information">
+                        <div class="dashboard-task-projectname">
+                            <a href="" style="margin-right: 15px; display: inline-flex;"><i class="material-icons tiny"
+                                                                                            style="font-size: 1.2rem;">attach_money</i>{{taskCounts.totalSpent}}
+                            </a>
+                            <a href="" style="display: inline-flex;"><i class="material-icons tiny" style="font-size: 1.2rem;">av_timer</i>{{formatSecondsAsTimeTask
+                                    taskCounts.timeTracked}}</a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        {{/if}}
+    </div>
+</template>
+
+<template name="spendingsEarningsList">
+    <div class="dashboard-tasks-list">
+        {{#if ready}}
+            {{#if totalCounts}}
+                <ul class="collapsible counts" data-collapsible="accordion">
+                    {{#each totalCounts}}
+                        <li>
+                            {{>totalTimeMoneyList data=this title=../title}}
+                        </li>
+                    {{/each}}
+                </ul>
+            {{else}}
+                {{>emptyCardContent message=emptyCardMessage}}
+            {{/if}}
+        {{else}}
+            {{>emptyCardContent message=dataLoadingMessage}}
+        {{/if}}
+    </div>
+</template>

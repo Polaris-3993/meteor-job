@@ -1,0 +1,21 @@
+<template name="tagListDropdown">
+    <div id="tag-list-modal" class="modal z-depth-1">
+        <div class="modal-content">
+            <div class="tag-input-wrapper">
+                <input type="text" class="input-field tag-input"/>
+            </div>
+            {{#unless isHaveSuchTag}}
+                <a href="#" class="create-tag-link">Create tag "{{currentInput}}"</a>
+            {{/unless}}
+            <div class="tag-list">
+                <ul>
+                    {{#each tags}}
+                        {{>tagItem tag=this tagArray=tagArray}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="tag-list-footer">
+            </div>
+        </div>
+    </div>
+</template>

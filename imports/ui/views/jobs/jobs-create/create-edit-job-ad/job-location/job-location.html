@@ -1,0 +1,21 @@
+<template name="jobLocation">
+    <div class="single input-field">
+        <p>Job location</p>
+
+        <div class="row">
+            <div class="col s6">
+                <input id="country-input" type="search" class="form-control {{#if isValidCountry}}not-valid{{/if}}" list="all-countries" autocomplete="on"
+                        value="{{selectedCountry}}">
+                <datalist id="all-countries">
+                    {{#each countriesList}}
+                        <option id="{{countryCode}}" value="{{label}}"></option>
+                    {{/each}}
+                </datalist>
+            </div>
+            <div class="col s6">
+                <input type="text" class="form-control {{#if isValidCity}}not-valid{{/if}}"
+                       id="job-location-city" value="{{selectedLocation.city}}">
+            </div>
+        </div>
+    </div>
+</template>

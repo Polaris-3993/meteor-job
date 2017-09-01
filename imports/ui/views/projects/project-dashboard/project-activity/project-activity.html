@@ -1,0 +1,51 @@
+<template name="projectActivity">
+    <main id="activity">
+        <div class="activity">
+            <div class="row">
+                <div class="col s12">
+                    <div class="tasks-top">
+                        <h2>Project
+                            <strong>{{project.name}}</strong>
+                            <a href="{{pathFor 'editProject' id=project._id}}"><i class="material-icons right">info_outline</i></a>
+                            <a href="{{pathFor 'editProject' id=project._id}}"><i class="material-icons right">edit</i></a>
+                        </h2>
+                        <p class="update-status">last updated <strong>{{formatTime project.updatedAt}}</strong></p>
+                        <ul class="info">
+                            <li><a href="#"><i class="material-icons left">access_time</i> {{formatSecondsAsTime
+                                    timeTracked.time}}</a></li>
+                            <li><a href="#"><i
+                                    class="material-icons left">assignment_turned_in</i> {{timeTracked.tasks.completed}}/{{timeTracked.tasks.all}}</a></li>
+                            <li><a href="#"><i class="material-icons left">attach_money</i>{{project.budget}}</a></li>
+                            <li><a href="#"><i class="material-icons left">group</i> {{assignedUsersCount}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col s12">
+                    <div class="post-update">
+                        <form id="activity-message">
+                            <input type="text" name="" value="" placeholder="Post an update" id="message-text">
+                            <div class="row action">
+                                <div class="col s8 no-padding file-field input-field">
+                                    <div class="btn">
+                                        <span><i class="material-icons left">attach_file</i> Attach</span>
+                                        <input type="file" id="post-file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" id="file-path">
+                                    </div>
+                                </div>
+                                <div class="col s4 no-padding submit-button">
+                                    <input type="submit" name="" value="Submit" class="btn-flat">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    {{#each activityMessages}}
+                        {{> Template.dynamic template=templateName data=templateData}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

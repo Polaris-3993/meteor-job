@@ -1,0 +1,8 @@
+<template name = "workplacesSearch">
+    {{#if showHeader}}
+        {{> searchTabHeader title="Workplaces" clickId="workplacesSearch" collection="Workplaces"}}
+    {{/if}}
+    {{#each workplaces}}
+        {{>workplaceCard this}}
+    {{/each}}
+</template>

@@ -1,0 +1,1 @@
+import './workers-dashboard.html';

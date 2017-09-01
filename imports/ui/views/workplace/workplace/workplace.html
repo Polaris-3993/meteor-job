@@ -1,0 +1,22 @@
+<template name="workplace">
+
+    <!--{{> workplacesAction}}-->
+    <div class="no-margin">
+        <div class="col s12 l12 no-padding">
+            <div class="workplace-wrapper">
+                <div class="col s1">
+                    <ul id="menuWrapper">
+                        {{#each tools}}
+                            <li class="{{template}}">{{name}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="col s11">
+                    <div id="layoutWrapper">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

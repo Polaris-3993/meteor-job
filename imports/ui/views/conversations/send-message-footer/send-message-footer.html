@@ -1,0 +1,23 @@
+<template name="sendMessageFooter">
+    <div class="row send-message-footer">
+        <div class="col s2">
+            <img class="participant-avatar pointer" id="{{currentUser._id}}"
+                 src="{{getUserSmallPhotoById currentUser._id}}">
+        </div>
+        {{#if conversation.isPrivate}}
+            <div class="col s8">
+                <input type="text" class="send-message-input">
+            </div>
+            <div class="col s2">
+                <img class="participant-avatar pointer" id="{{participantId}}"
+                     src="{{getUserSmallPhotoById participantId}}">
+            </div>
+        {{else}}
+            <div class="col s10">
+                <input type="text" class="send-message-input">
+                <a href="#" class="participant-count">{{participantCount}} participants</a>
+                <a href="#" class="add-participant">Add participant</a>
+            </div>
+        {{/if}}
+    </div>
+</template>

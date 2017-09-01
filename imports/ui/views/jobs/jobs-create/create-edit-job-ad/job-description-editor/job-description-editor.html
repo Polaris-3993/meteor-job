@@ -1,0 +1,10 @@
+<template name="jobDescriptionEditor">
+    <div class="col s12">
+        <div class="single description ">
+            <p>Job description</p>
+            <textarea id="description"></textarea>
+            <input type="file" id="desc-image-input" accept="image/*">
+            {{#if isFocused}}<span class="descriptionCounter">{{chars}}/10000</span>{{/if}}
+        </div>
+    </div>
+</template>

@@ -1,0 +1,26 @@
+<template name="jobSkills">
+    <div class="single input-field">
+        <p>Skills</p>
+
+        <div>
+            {{#each selectedSkills}}
+                <div class="chip">{{label}}{{#unless isRequired}}<i id="{{_id}}" class="remove-icon material-icons">close</i>{{/unless}}
+                </div>
+            {{/each}}
+
+            {{#if and shouldShowAllSkillsList canAddMoreSkills}}
+                {{> allSkillsList
+                selectedCategoryId=selectedCategoryId
+                addSkill=addSkillCb
+                hideAllSkillsList=hideAllSkillsListCb
+                selectedSkillsIds=selectedSkillsIds
+                }}
+            {{else}}
+                {{#if canAddMoreSkills}}
+                    <i class="add-icon material-icons">add</i>
+                {{/if}}
+            {{/if}}
+
+        </div>
+    </div>
+</template>

@@ -1,0 +1,5102 @@
+[
+ {
+   "label": "Attorney",
+   "link": "https://en.wikipedia.org/wiki/Attorney_general",
+   "type": "Other",
+   "language": ""
+ },
+ {
+   "label": "Business analyst",
+   "link": "https://en.wikipedia.org/wiki/Business_analyst",
+   "type": "Other",
+   "language": ""
+ },
+ {
+   "label": "Data scientist",
+   "link": "https://en.wikipedia.org/wiki/Data_science",
+   "type": "Other",
+   "language": ""
+ },
+ {
+   "label": "Product manager",
+   "link": "https://en.wikipedia.org/wiki/Product_manager",
+   "type": "Other",
+   "language": ""
+ },
+ {
+   "label": "Project manager",
+   "link": "https://en.wikipedia.org/wiki/Project_manager",
+   "type": "Other",
+   "language": ""
+ },
+ {
+   "label": "CEO",
+   "link": "https://en.wikipedia.org/wiki/Chief_executive_officer",
+   "type": "Managment",
+   "language": ""
+ },
+ {
+   "label": "CFO",
+   "link": "https://en.wikipedia.org/wiki/Chief_financial_officer",
+   "type": "Managment",
+   "language": ""
+ },
+ {
+   "label": "CMO",
+   "link": "https://en.wikipedia.org/wiki/Chief_marketing_officer",
+   "type": "Managment",
+   "language": ""
+ },
+ {
+   "label": "COO",
+   "link": "https://en.wikipedia.org/wiki/Chief_operating_officer",
+   "type": "Managment",
+   "language": ""
+ },
+ {
+   "label": "CTO",
+   "link": "https://en.wikipedia.org/wiki/Chief_technology_officer",
+   "type": "Managment",
+   "language": ""
+ },
+ {
+   "label": "Growth Hacker",
+   "link": "https://en.wikipedia.org/wiki/Growth_hacking",
+   "type": "Marketing",
+   "language": ""
+ },
+ {
+   "label": "Marketing Manager",
+   "link": "https://en.wikipedia.org/wiki/Marketing_management",
+   "type": "Marketing",
+   "language": ""
+ },
+ {
+   "label": "Content Creation",
+   "link": "https://en.wikipedia.org/wiki/Content_creation",
+   "type": "Marketing",
+   "language": ""
+ },
+ {
+   "label": "Business Development",
+   "link": "https://en.wikipedia.org/wiki/Business_development",
+   "type": "Sales",
+   "language": ""
+ },
+ {
+   "label": "Account Manager",
+   "link": "https://en.wikipedia.org/wiki/Account_manager",
+   "type": "Sales",
+   "language": ""
+ },
+ {
+   "label": "Sales Management",
+   "link": " https://en.wikipedia.org/wiki/Sales_management",
+   "type": "Sales",
+   "language": ""
+ },
+ {
+   "label": "Finace",
+   "link": "https://en.wikipedia.org/wiki/Finance",
+   "type": "Operations",
+   "language": ""
+ },
+ {
+   "label": "Accounting",
+   "link": "https://en.wikipedia.org/wiki/Accounting",
+   "type": "Operations",
+   "language": ""
+ },
+ {
+   "label": "H.R",
+   "link": "https://en.wikipedia.org/wiki/Human_resources",
+   "type": "Operations",
+   "language": ""
+ },
+ {
+   "label": "Office Management",
+   "link": "https://en.wikipedia.org/wiki/Office_management",
+   "type": "Operations",
+   "language": ""
+ },
+ {
+   "label": "Recruitment",
+   "link": "https://en.wikipedia.org/wiki/Recruitment",
+   "type": "Operations",
+   "language": ""
+ },
+ {
+   "label": "Consumer service",
+   "link": "https://en.wikipedia.org/wiki/Consumer_service",
+   "type": "Operations",
+   "language": ""
+ },
+ {
+   "label": "Operations management",
+   "link": "https://en.wikipedia.org/wiki/Operations_management",
+   "type": "Operations",
+   "language": ""
+ },
+ {
+   "label": "UI/UX Designer",
+   "link": "https://en.wikipedia.org/wiki/User_experience_design",
+   "type": "Designer",
+   "language": ""
+ },
+ {
+   "label": "User Research",
+   "link": "https://en.wikipedia.org/wiki/User_Research",
+   "type": "Designer",
+   "language": ""
+ },
+ {
+   "label": "Visual Designer",
+   "link": "https://en.wikipedia.org/wiki/Communication_design",
+   "type": "Designer",
+   "language": ""
+ },
+ {
+   "label": "Creative director",
+   "link": "https://en.wikipedia.org/wiki/Creative_director",
+   "type": "Designer",
+   "language": ""
+ },
+ {
+   "label": "Mobile Developer",
+   "link": "https://en.wikipedia.org/wiki/Mobile_application_development",
+   "type": "Software Engineer",
+   "language": ""
+ },
+ {
+   "label": "Front-end development",
+   "link": "https://en.wikipedia.org/wiki/Front-end_web_development",
+   "type": "Software Engineer",
+   "language": ""
+ },
+ {
+   "label": "Backend Developer",
+   "link": "https://en.wikipedia.org/wiki/Front_and_back_ends",
+   "type": "Software Engineer",
+   "language": ""
+ },
+ {
+   "label": "Full-Stack Developer",
+   "link": "https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer",
+   "type": "Software Engineer",
+   "language": ""
+ },
+ {
+   "label": "Engineering Manager",
+   "link": "https://en.wikipedia.org/wiki/Engineering_management",
+   "type": "Software Engineer",
+   "language": ""
+ },
+ {
+   "label": "QA Engineer",
+   "link": "https://en.wikipedia.org/wiki/Quality_assurance",
+   "type": "Software Engineer",
+   "language": ""
+ },
+ {
+   "label": "DevOps",
+   "link": "https://en.wikipedia.org/wiki/DevOps",
+   "type": "Software Engineer",
+   "language": ""
+ },
+ {
+   "label": "Software architect",
+   "link": "https://en.wikipedia.org/wiki/Software_architect",
+   "type": "Software Engineer",
+   "language": ""
+ },
+ {
+   "label": "Hardware Engineer",
+   "link": "https://en.wikipedia.org/wiki/Computer_engineering",
+   "type": "Other Engineering",
+   "language": ""
+ },
+ {
+   "label": "Mechanical Engineer",
+   "link": "https://en.wikipedia.org/wiki/Mechanical_engineering",
+   "type": "Other Engineering",
+   "language": ""
+ },
+ {
+   "label": "Systems Engineer",
+   "link": "https://en.wikipedia.org/wiki/Systems_engineering",
+   "type": "Other Engineering",
+   "language": ""
+ },
+ {
+   "label": "AngularJS",
+   "link": "https://en.wikipedia.org/wiki/AngularJS",
+   "type": "Programming framework",
+   "language": "Javascript"
+ },
+ {
+   "label": "Backbone.js",
+   "link": "https://en.wikipedia.org/wiki/Backbone.js",
+   "type": "Programming framework",
+   "language": "Javascript"
+ },
+ {
+   "label": "Ember.js",
+   "link": "https://en.wikipedia.org/wiki/Ember.js",
+   "type": "Programming framework",
+   "language": "Javascript"
+ },
+ {
+   "label": "Express.js",
+   "link": "https://en.wikipedia.org/wiki/Express.js",
+   "type": "Programming framework",
+   "language": "Javascript"
+ },
+ {
+   "label": "KnockoutJS",
+   "link": "https://en.wikipedia.org/wiki/Knockout_(web_framework)",
+   "type": "Programming framework",
+   "language": "Javascript"
+ },
+ {
+   "label": "Meteor",
+   "link": "https://en.wikipedia.org/wiki/Meteor_(web_framework)",
+   "type": "Programming framework",
+   "language": "Javascript"
+ },
+ {
+   "label": "OpenUI5",
+   "link": "https://en.wikipedia.org/wiki/OpenUI5",
+   "type": "Programming framework",
+   "language": "Javascript"
+ },
+ {
+   "label": "Unified.js",
+   "link": "https://en.wikipedia.org/wiki/Unified.js",
+   "type": "Programming framework",
+   "language": "Javascript"
+ },
+ {
+   "label": "ASP.NET Dynamic Data",
+   "link": "https://en.wikipedia.org/wiki/ASP.NET_Dynamic_Data",
+   "type": "Programming framework",
+   "language": "ASP.NET"
+ },
+ {
+   "label": "Base One Foundation Component Library (BFC)",
+   "link": "https://en.wikipedia.org/wiki/Base_One_Foundation_Component_Library",
+   "type": "Programming framework",
+   "language": "ASP.NET"
+ },
+ {
+   "label": "Component-based Scalable Logical Architecture (CSLA)",
+   "link": "https://en.wikipedia.org/wiki/Component-based_Scalable_Logical_Architecture",
+   "type": "Programming framework",
+   "language": "ASP.NET"
+ },
+ {
+   "label": "MonoRail",
+   "link": "https://en.wikipedia.org/wiki/MonoRail_(software)",
+   "type": "Programming framework",
+   "language": "ASP.NET"
+ },
+ {
+   "label": "OpenRasta",
+   "link": "https://en.wikipedia.org/wiki/OpenRasta",
+   "type": "Programming framework",
+   "language": "ASP.NET"
+ },
+ {
+   "label": "Saetta Web Server",
+   "link": "https://en.wikipedia.org/wiki/Saetta_Web_Server",
+   "type": "Programming framework",
+   "language": "C"
+ },
+ {
+   "label": "CppCMS",
+   "link": "https://en.wikipedia.org/wiki/CppCMS",
+   "type": "Programming framework",
+   "language": "C++"
+ },
+ {
+   "label": "Poco",
+   "link": "https://en.wikipedia.org/wiki/POCO_C%2B%2B_Libraries",
+   "type": "Programming framework",
+   "language": "C++"
+ },
+ {
+   "label": "Tntnet",
+   "link": "https://en.wikipedia.org/wiki/Tntnet",
+   "type": "Programming framework",
+   "language": "C++"
+ },
+ {
+   "label": "Wt",
+   "link": "https://en.wikipedia.org/wiki/Wt_(web_toolkit)",
+   "type": "Programming framework",
+   "language": "C++"
+ },
+ {
+   "label": "CFWheels",
+   "link": "https://en.wikipedia.org/wiki/ColdFusion_on_Wheels",
+   "type": "Programming framework",
+   "language": "ColdFusion Markup Language (CFML)[edit]"
+ },
+ {
+   "label": "ColdBox Platform",
+   "link": "https://en.wikipedia.org/wiki/ColdBox_Platform",
+   "type": "Programming framework",
+   "language": "ColdFusion Markup Language (CFML)[edit]"
+ },
+ {
+   "label": "ColdSpring",
+   "link": "https://en.wikipedia.org/wiki/ColdSpring_Framework",
+   "type": "Programming framework",
+   "language": "ColdFusion Markup Language (CFML)[edit]"
+ },
+ {
+   "label": "Fusebox",
+   "link": "https://en.wikipedia.org/wiki/Fusebox_(programming)",
+   "type": "Programming framework",
+   "language": "ColdFusion Markup Language (CFML)[edit]"
+ },
+ {
+   "label": "Mach-II",
+   "link": "https://en.wikipedia.org/wiki/Mach-II",
+   "type": "Programming framework",
+   "language": "ColdFusion Markup Language (CFML)[edit]"
+ },
+ {
+   "label": "Model-Glue",
+   "link": "https://en.wikipedia.org/wiki/Model-Glue",
+   "type": "Programming framework",
+   "language": "ColdFusion Markup Language (CFML)[edit]"
+ },
+ {
+   "label": "Caveman2",
+   "link": "https://en.wikipedia.org/wiki/Caveman2",
+   "type": "Programming framework",
+   "language": "Common Lisp"
+ },
+ {
+   "label": "vibe.d",
+   "link": "https://en.wikipedia.org/wiki/Vibe.d",
+   "type": "Programming framework",
+   "language": "D"
+ },
+ {
+   "label": "Happstack",
+   "link": "https://en.wikipedia.org/wiki/Happstack",
+   "type": "Programming framework",
+   "language": "Haskell"
+ },
+ {
+   "label": "Snap",
+   "link": "https://en.wikipedia.org/wiki/Snap_(web_framework)",
+   "type": "Programming framework",
+   "language": "Haskell"
+ },
+ {
+   "label": "Yesod",
+   "link": "https://en.wikipedia.org/wiki/Yesod_(Web_framework)",
+   "type": "Programming framework",
+   "language": "Haskell"
+ },
+ {
+   "label": "Apache Click",
+   "link": "https://en.wikipedia.org/wiki/Apache_Click",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Apache OFBiz",
+   "link": "https://en.wikipedia.org/wiki/Apache_OFBiz",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Apache Shale",
+   "link": "https://en.wikipedia.org/wiki/Apache_Shale",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Apache Sling",
+   "link": "https://en.wikipedia.org/wiki/Apache_Sling",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Apache Struts 2",
+   "link": "https://en.wikipedia.org/wiki/Apache_Struts_2",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Apache Tapestry",
+   "link": "https://en.wikipedia.org/wiki/Apache_Tapestry",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Apache Wicket",
+   "link": "https://en.wikipedia.org/wiki/Apache_Wicket",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "AppFuse",
+   "link": "https://en.wikipedia.org/wiki/AppFuse",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Brutos Framework",
+   "link": "https://en.wikipedia.org/wiki/Brutos_Framework",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Eclipse RAP",
+   "link": "https://en.wikipedia.org/wiki/Remote_Application_Platform",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "FormEngine",
+   "link": "https://en.wikipedia.org/wiki/FormEngine",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Grails",
+   "link": "https://en.wikipedia.org/wiki/Grails_(framework)",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Google Web Toolkit",
+   "link": "https://en.wikipedia.org/wiki/Google_Web_Toolkit",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Hamlets",
+   "link": "https://en.wikipedia.org/wiki/Hamlets",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "ItsNat",
+   "link": "https://en.wikipedia.org/wiki/ItsNat",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "JavaServer Faces (Mojarra)",
+   "link": "https://en.wikipedia.org/wiki/JavaServer_Faces",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "JBoss Seam",
+   "link": "https://en.wikipedia.org/wiki/JBoss_Seam",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Jspx-bay",
+   "link": "https://en.wikipedia.org/wiki/Jspx-bay",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "JVx",
+   "link": "https://en.wikipedia.org/wiki/JVx_(Framework)",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "OpenLaszlo",
+   "link": "https://en.wikipedia.org/wiki/OpenLaszlo",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "OpenXava",
+   "link": "https://en.wikipedia.org/wiki/OpenXava",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Oracle ADF",
+   "link": "https://en.wikipedia.org/wiki/Oracle_Application_Development_Framework",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Play",
+   "link": "https://en.wikipedia.org/wiki/Play_Framework",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "RIFE",
+   "link": "https://en.wikipedia.org/wiki/RIFE",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Spark",
+   "link": "https://en.wikipedia.org/wiki/Spark_(software)",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Spring",
+   "link": "https://en.wikipedia.org/wiki/Spring_Framework",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Stripes",
+   "link": "https://en.wikipedia.org/wiki/Stripes_(framework)",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Takes",
+   "link": "https://en.wikipedia.org/wiki/Takes_(framework)",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Vaadin",
+   "link": "https://en.wikipedia.org/wiki/Vaadin",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "VRaptor",
+   "link": "https://en.wikipedia.org/wiki/VRaptor",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Wavemaker",
+   "link": "https://en.wikipedia.org/wiki/WaveMaker",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "WebObjects",
+   "link": "https://en.wikipedia.org/wiki/WebObjects",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "WebWork",
+   "link": "https://en.wikipedia.org/wiki/WebWork",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "ztemplates",
+   "link": "https://en.wikipedia.org/wiki/ZTemplates",
+   "type": "Programming framework",
+   "language": "Java"
+ },
+ {
+   "label": "Play!",
+   "link": "https://en.wikipedia.org/wiki/Play_Framework",
+   "type": "Programming framework",
+   "language": "Scala"
+ },
+ {
+   "label": "Lift",
+   "link": "https://en.wikipedia.org/wiki/Lift_(web_framework)",
+   "type": "Programming framework",
+   "language": "Scala"
+ },
+ {
+   "label": "Scalatra",
+   "link": "https://en.wikipedia.org/wiki/Scalatra",
+   "type": "Programming framework",
+   "language": "Scala"
+ },
+ {
+   "label": "Catalyst",
+   "link": "https://en.wikipedia.org/wiki/Catalyst_(software)",
+   "type": "Programming framework",
+   "language": "Perl"
+ },
+ {
+   "label": "Dancer",
+   "link": "https://en.wikipedia.org/wiki/Dancer_(software)",
+   "type": "Programming framework",
+   "language": "Perl"
+ },
+ {
+   "label": "Mason",
+   "link": "https://en.wikipedia.org/wiki/Mason_(Perl)",
+   "type": "Programming framework",
+   "language": "Perl"
+ },
+ {
+   "label": "Maypole",
+   "link": "https://en.wikipedia.org/wiki/Catalyst_(software)#History",
+   "type": "Programming framework",
+   "language": "Perl"
+ },
+ {
+   "label": "Mojolicious",
+   "link": "https://en.wikipedia.org/wiki/Mojolicious",
+   "type": "Programming framework",
+   "language": "Perl"
+ },
+ {
+   "label": "Agavi",
+   "link": "https://en.wikipedia.org/wiki/Agavi",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "CakePHP",
+   "link": "https://en.wikipedia.org/wiki/CakePHP",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "CodeIgniter",
+   "link": "https://en.wikipedia.org/wiki/CodeIgniter",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Fat-Free",
+   "link": "https://en.wikipedia.org/wiki/Fat-Free_Framework",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "FuelPHP",
+   "link": "https://en.wikipedia.org/wiki/FuelPHP",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Gyroscope",
+   "link": "https://en.wikipedia.org/wiki/Gyroscope_(software)",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Jamroom",
+   "link": "https://en.wikipedia.org/wiki/Jamroom",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Kajona",
+   "link": "https://en.wikipedia.org/wiki/Kajona",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Kohana",
+   "link": "https://en.wikipedia.org/wiki/Kohana_(framework)",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Laravel",
+   "link": "https://en.wikipedia.org/wiki/Laravel",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Lithium",
+   "link": "https://en.wikipedia.org/wiki/Lithium_(software)",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Nette Framework",
+   "link": "https://en.wikipedia.org/wiki/Nette_Framework",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Phalcon",
+   "link": "https://en.wikipedia.org/wiki/Phalcon_(framework)",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "PRADO",
+   "link": "https://en.wikipedia.org/wiki/PRADO_(framework)",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Silex",
+   "link": "https://en.wikipedia.org/wiki/Silex_(web_framework)",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "SilverStripe",
+   "link": "https://en.wikipedia.org/wiki/SilverStripe",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Smart.Framework",
+   "link": "https://en.wikipedia.org/wiki/Smart_Framework_PHP",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Symfony",
+   "link": "https://en.wikipedia.org/wiki/Symfony",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "TYPO3 Flow",
+   "link": "https://en.wikipedia.org/wiki/TYPO3_Flow",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Zend Framework",
+   "link": "https://en.wikipedia.org/wiki/Zend_Framework",
+   "type": "Programming framework",
+   "language": "PHP"
+ },
+ {
+   "label": "Bottle",
+   "link": "https://en.wikipedia.org/wiki/Bottle_(web_framework)",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "BlueBream",
+   "link": "https://en.wikipedia.org/wiki/Zope#BlueBream",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "CherryPy",
+   "link": "https://en.wikipedia.org/wiki/CherryPy",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "CubicWeb",
+   "link": "https://en.wikipedia.org/wiki/CubicWeb",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Django",
+   "link": "https://en.wikipedia.org/wiki/Django_(web_framework)",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Flask",
+   "link": "https://en.wikipedia.org/wiki/Flask_(web_framework)",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Grok",
+   "link": "https://en.wikipedia.org/wiki/Grok_(web_framework)",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Nagare",
+   "link": "https://en.wikipedia.org/wiki/Nagare_(web_framework)",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Pyjs",
+   "link": "https://en.wikipedia.org/wiki/Pyjs",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Pylons",
+   "link": "https://en.wikipedia.org/wiki/Pylons_project#Pylons_Framework",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Pyramid",
+   "link": "https://en.wikipedia.org/wiki/Pylons_project#Pyramid",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "TACTIC",
+   "link": "https://en.wikipedia.org/wiki/TACTIC_(web_framework)",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Tornado",
+   "link": "https://en.wikipedia.org/wiki/Tornado_(web_server)",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "TurboGears",
+   "link": "https://en.wikipedia.org/wiki/TurboGears",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "web2py",
+   "link": "https://en.wikipedia.org/wiki/Web2py",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Webware",
+   "link": "https://en.wikipedia.org/wiki/Webware_for_Python",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Zope 2",
+   "link": "https://en.wikipedia.org/wiki/Zope#Zope_2",
+   "type": "Programming framework",
+   "language": "Python"
+ },
+ {
+   "label": "Camping",
+   "link": "https://en.wikipedia.org/wiki/Camping_(microframework)",
+   "type": "Programming framework",
+   "language": "Ruby"
+ },
+ {
+   "label": "Padrino",
+   "link": "https://en.wikipedia.org/wiki/Padrino_(web_framework)",
+   "type": "Programming framework",
+   "language": "Ruby"
+ },
+ {
+   "label": "Ruby on Rails",
+   "link": "https://en.wikipedia.org/wiki/Ruby_on_Rails",
+   "type": "Programming framework",
+   "language": "Ruby"
+ },
+ {
+   "label": "Sinatra",
+   "link": "https://en.wikipedia.org/wiki/Sinatra_(software)",
+   "type": "Programming framework",
+   "language": "Ruby"
+ },
+ {
+   "label": "Merb",
+   "link": "https://en.wikipedia.org/wiki/Merb",
+   "type": "Programming framework",
+   "language": "Ruby"
+ },
+ {
+   "label": "PureMVC",
+   "link": "https://en.wikipedia.org/wiki/PureMVC",
+   "type": "Programming framework",
+   "language": "Ruby"
+ },
+ {
+   "label": "AIDA/Web",
+   "link": "https://en.wikipedia.org/wiki/AIDA/Web",
+   "type": "Programming framework",
+   "language": "Smalltalk"
+ },
+ {
+   "label": "Application Express",
+   "link": "https://en.wikipedia.org/wiki/Oracle_Application_Express",
+   "type": "Programming framework",
+   "language": "PL/SQL"
+ },
+ {
+   "label": "Flex",
+   "link": "https://en.wikipedia.org/wiki/Apache_Flex",
+   "type": "Programming framework",
+   "language": "ActionScript, MXML"
+ },
+ {
+   "label": "Grails",
+   "link": "https://en.wikipedia.org/wiki/Grails_(framework)",
+   "type": "Programming framework",
+   "language": "Groovy (JVM)"
+ },
+ {
+   "label": "Kepler",
+   "link": "https://en.wikipedia.org/wiki/Kepler_(software)",
+   "type": "Programming framework",
+   "language": "Lua"
+ },
+ {
+   "label": "Morfik",
+   "link": "https://en.wikipedia.org/wiki/Morfik",
+   "type": "Programming framework",
+   "language": "C#, BASIC, Pascal, Java"
+ },
+ {
+   "label": "Ocsigen",
+   "link": "https://en.wikipedia.org/wiki/Ocsigen",
+   "type": "Programming framework",
+   "language": "OCaml"
+ },
+ {
+   "label": "Opa",
+   "link": "https://en.wikipedia.org/wiki/Opa_(programming_language)",
+   "type": "Programming framework",
+   "language": "Opa"
+ },
+ {
+   "label": "OpenACS",
+   "link": "https://en.wikipedia.org/wiki/ArsDigita_Community_System",
+   "type": "Programming framework",
+   "language": "Tcl"
+ },
+ {
+   "label": "Seaside",
+   "link": "https://en.wikipedia.org/wiki/Seaside_(software)",
+   "type": "Programming framework",
+   "language": "Smalltalk"
+ },
+ {
+   "label": "Alef",
+   "link": "https://en.wikipedia.org/wiki/Alef_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ALF",
+   "link": "https://en.wikipedia.org/wiki/Algebraic_Logic_Functional_programming_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ALGOL 58",
+   "link": "https://en.wikipedia.org/wiki/ALGOL_58",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ALGOL 60",
+   "link": "https://en.wikipedia.org/wiki/ALGOL_60",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ALGOL 68",
+   "link": "https://en.wikipedia.org/wiki/ALGOL_68",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ALGOL W",
+   "link": "https://en.wikipedia.org/wiki/ALGOL_W",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Alice",
+   "link": "https://en.wikipedia.org/wiki/Alice_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Alma-0",
+   "link": "https://en.wikipedia.org/wiki/Alma-0",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AmbientTalk",
+   "link": "https://en.wikipedia.org/wiki/AmbientTalk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Amiga E",
+   "link": "https://en.wikipedia.org/wiki/Amiga_E",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AMOS",
+   "link": "https://en.wikipedia.org/wiki/AMOS_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AMPL",
+   "link": "https://en.wikipedia.org/wiki/AMPL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AngularJS",
+   "link": "https://en.wikipedia.org/wiki/AngularJS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Apex (Salesforce.com)",
+   "link": "https://en.wikipedia.org/wiki/Salesforce.com#Apex",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "APL",
+   "link": "https://en.wikipedia.org/wiki/APL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "App Inventor for Android's visual block language",
+   "link": "https://en.wikipedia.org/wiki/App_Inventor_for_Android_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AppleScript",
+   "link": "https://en.wikipedia.org/wiki/AppleScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Arc",
+   "link": "https://en.wikipedia.org/wiki/Arc_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ARexx",
+   "link": "https://en.wikipedia.org/wiki/ARexx",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Argus",
+   "link": "https://en.wikipedia.org/wiki/Argus_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AspectJ",
+   "link": "https://en.wikipedia.org/wiki/AspectJ",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Assembly language",
+   "link": "https://en.wikipedia.org/wiki/Assembly_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ATS",
+   "link": "https://en.wikipedia.org/wiki/ATS_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ateji PX",
+   "link": "https://en.wikipedia.org/wiki/Ateji_PX",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AutoHotkey",
+   "link": "https://en.wikipedia.org/wiki/AutoHotkey",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Autocoder",
+   "link": "https://en.wikipedia.org/wiki/Autocoder",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AutoIt",
+   "link": "https://en.wikipedia.org/wiki/AutoIt",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AutoLISP / Visual LISP",
+   "link": "https://en.wikipedia.org/wiki/AutoLISP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Averest",
+   "link": "https://en.wikipedia.org/wiki/Averest",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "AWK",
+   "link": "https://en.wikipedia.org/wiki/AWK",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Axum",
+   "link": "https://en.wikipedia.org/wiki/Axum_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Active Server Pages",
+   "link": "https://en.wikipedia.org/wiki/Active_Server_Pages",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ASP.NET",
+   "link": "https://en.wikipedia.org/wiki/ASP.NET",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "B",
+   "link": "https://en.wikipedia.org/wiki/B_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Babbage",
+   "link": "https://en.wikipedia.org/wiki/Babbage_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Bash",
+   "link": "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BASIC",
+   "link": "https://en.wikipedia.org/wiki/BASIC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "bc",
+   "link": "https://en.wikipedia.org/wiki/Bc_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BCPL",
+   "link": "https://en.wikipedia.org/wiki/BCPL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BeanShell",
+   "link": "https://en.wikipedia.org/wiki/BeanShell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Batch (Windows/Dos)",
+   "link": "https://en.wikipedia.org/wiki/Batch_file",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Bertrand",
+   "link": "https://en.wikipedia.org/wiki/Bertrand_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BETA",
+   "link": "https://en.wikipedia.org/wiki/BETA_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Bistro",
+   "link": "https://en.wikipedia.org/wiki/Bistro_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BitC",
+   "link": "https://en.wikipedia.org/wiki/BitC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BLISS",
+   "link": "https://en.wikipedia.org/wiki/BLISS_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Blockly",
+   "link": "https://en.wikipedia.org/wiki/Blockly",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BlooP",
+   "link": "https://en.wikipedia.org/wiki/BlooP_and_FlooP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Boo",
+   "link": "https://en.wikipedia.org/wiki/Boo_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Boomerang",
+   "link": "https://en.wikipedia.org/wiki/Boomerang_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Bourne shell (including bash and ksh)",
+   "link": "",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BREW",
+   "link": "https://en.wikipedia.org/wiki/Qualcomm_Brew",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "BPEL",
+   "link": "https://en.wikipedia.org/wiki/Business_Process_Execution_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Business Basic",
+   "link": "https://en.wikipedia.org/wiki/Business_Basic",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "C",
+   "link": "https://en.wikipedia.org/wiki/C_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "C--",
+   "link": "https://en.wikipedia.org/wiki/C--",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "C++ – ISO/IEC 14882",
+   "link": "https://en.wikipedia.org/wiki/C%2B%2B",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "C# – ISO/IEC 23270",
+   "link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "C/AL",
+   "link": "https://en.wikipedia.org/wiki/C/AL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Caché ObjectScript",
+   "link": "https://en.wikipedia.org/wiki/Cach%C3%A9_ObjectScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "C Shell",
+   "link": "https://en.wikipedia.org/wiki/C_Shell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Caml",
+   "link": "https://en.wikipedia.org/wiki/Caml",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cayenne",
+   "link": "https://en.wikipedia.org/wiki/Cayenne_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CDuce",
+   "link": "https://en.wikipedia.org/wiki/CDuce",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cecil",
+   "link": "https://en.wikipedia.org/wiki/Cecil_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cesil",
+   "link": "https://en.wikipedia.org/wiki/Cesil",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Céu",
+   "link": "https://en.wikipedia.org/wiki/C%C3%A9u_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ceylon",
+   "link": "https://en.wikipedia.org/wiki/Ceylon_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CFEngine",
+   "link": "https://en.wikipedia.org/wiki/CFEngine",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CFML",
+   "link": "https://en.wikipedia.org/wiki/ColdFusion_Markup_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cg",
+   "link": "https://en.wikipedia.org/wiki/Cg_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ch",
+   "link": "https://en.wikipedia.org/wiki/Ch_(computer_programming)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Chapel",
+   "link": "https://en.wikipedia.org/wiki/Chapel_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Charity",
+   "link": "https://en.wikipedia.org/wiki/Charity_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Charm",
+   "link": "https://en.wikipedia.org/wiki/Charm_(language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Chef",
+   "link": "https://en.wikipedia.org/wiki/Chef_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CHILL",
+   "link": "https://en.wikipedia.org/wiki/CHILL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CHIP-8",
+   "link": "https://en.wikipedia.org/wiki/CHIP-8",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "chomski",
+   "link": "https://en.wikipedia.org/wiki/Chomski",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ChucK",
+   "link": "https://en.wikipedia.org/wiki/ChucK",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CICS",
+   "link": "https://en.wikipedia.org/wiki/CICS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cilk",
+   "link": "https://en.wikipedia.org/wiki/Cilk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Citrine (programming language)",
+   "link": "https://en.wikipedia.org/wiki/Citrine_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CL (IBM)",
+   "link": "https://en.wikipedia.org/wiki/AS/400_Control_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Claire",
+   "link": "https://en.wikipedia.org/wiki/Claire_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Clarion",
+   "link": "https://en.wikipedia.org/wiki/Clarion_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Clean",
+   "link": "https://en.wikipedia.org/wiki/Clean_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Clipper",
+   "link": "https://en.wikipedia.org/wiki/Clipper_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CLIPS",
+   "link": "https://en.wikipedia.org/wiki/CLIPS_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CLIST",
+   "link": "https://en.wikipedia.org/wiki/CLIST",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Clojure",
+   "link": "https://en.wikipedia.org/wiki/Clojure",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CLU",
+   "link": "https://en.wikipedia.org/wiki/CLU_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CMS-2",
+   "link": "https://en.wikipedia.org/wiki/CMS-2_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "COBOL – ISO/IEC 1989",
+   "link": "https://en.wikipedia.org/wiki/COBOL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CobolScript – COBOL Scripting language",
+   "link": "https://en.wikipedia.org/wiki/CobolScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cobra",
+   "link": "https://en.wikipedia.org/wiki/Cobra_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CODE",
+   "link": "https://en.wikipedia.org/wiki/CODE_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CoffeeScript",
+   "link": "https://en.wikipedia.org/wiki/CoffeeScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ColdFusion",
+   "link": "https://en.wikipedia.org/wiki/ColdFusion",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "COMAL",
+   "link": "https://en.wikipedia.org/wiki/COMAL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Combined Programming Language (CPL)",
+   "link": "https://en.wikipedia.org/wiki/Combined_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "COMIT",
+   "link": "https://en.wikipedia.org/wiki/COMIT",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Common Intermediate Language (CIL)",
+   "link": "https://en.wikipedia.org/wiki/Common_Intermediate_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Common Lisp (also known as CL)",
+   "link": "https://en.wikipedia.org/wiki/Common_Lisp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "COMPASS",
+   "link": "https://en.wikipedia.org/wiki/COMPASS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Component Pascal",
+   "link": "https://en.wikipedia.org/wiki/Component_Pascal",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Constraint Handling Rules (CHR)",
+   "link": "https://en.wikipedia.org/wiki/Constraint_Handling_Rules",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "COMTRAN",
+   "link": "https://en.wikipedia.org/wiki/COMTRAN",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Converge",
+   "link": "https://en.wikipedia.org/wiki/Converge_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cool",
+   "link": "https://en.wikipedia.org/wiki/Cool_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Coq",
+   "link": "https://en.wikipedia.org/wiki/Coq",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Coral 66",
+   "link": "https://en.wikipedia.org/wiki/Coral_66",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Corn",
+   "link": "https://en.wikipedia.org/wiki/Corn_(emulator)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CorVision",
+   "link": "https://en.wikipedia.org/wiki/CorVision",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "COWSEL",
+   "link": "https://en.wikipedia.org/wiki/COWSEL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CPL",
+   "link": "https://en.wikipedia.org/wiki/Combined_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CPL",
+   "link": "https://en.wikipedia.org/wiki/CPL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cryptol",
+   "link": "https://en.wikipedia.org/wiki/Cryptol",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "csh",
+   "link": "https://en.wikipedia.org/wiki/C_shell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Csound",
+   "link": "https://en.wikipedia.org/wiki/Csound",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CSP",
+   "link": "https://en.wikipedia.org/wiki/Communicating_sequential_processes",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CUDA",
+   "link": "https://en.wikipedia.org/wiki/CUDA",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Curl",
+   "link": "https://en.wikipedia.org/wiki/Curl_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Curry",
+   "link": "https://en.wikipedia.org/wiki/Curry_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cybil",
+   "link": "https://en.wikipedia.org/wiki/Cybil_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cyclone",
+   "link": "https://en.wikipedia.org/wiki/Cyclone_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Cython",
+   "link": "https://en.wikipedia.org/wiki/Cython",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "D",
+   "link": "https://en.wikipedia.org/wiki/D_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DASL (Datapoint's Advanced Systems Language)",
+   "link": "https://en.wikipedia.org/wiki/Datapoint%27s_Advanced_Systems_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DASL (Distributed Application Specification Language)",
+   "link": "https://en.wikipedia.org/wiki/Distributed_Application_Specification_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Dart",
+   "link": "https://en.wikipedia.org/wiki/Dart_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DataFlex",
+   "link": "https://en.wikipedia.org/wiki/DataFlex",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Datalog",
+   "link": "https://en.wikipedia.org/wiki/Datalog",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DATATRIEVE",
+   "link": "https://en.wikipedia.org/wiki/DATATRIEVE",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "dBase",
+   "link": "https://en.wikipedia.org/wiki/DBase",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "dc",
+   "link": "https://en.wikipedia.org/wiki/Dc_(computer_program)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DCL",
+   "link": "https://en.wikipedia.org/wiki/DIGITAL_Command_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Deesel (formerly G)",
+   "link": "https://en.wikipedia.org/wiki/Deesel",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Delphi",
+   "link": "https://en.wikipedia.org/wiki/Delphi_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DinkC",
+   "link": "https://en.wikipedia.org/wiki/Dink_Smallwood#Modification",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DIBOL",
+   "link": "https://en.wikipedia.org/wiki/DIBOL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Dog",
+   "link": "https://en.wikipedia.org/wiki/Sepandar_Kamvar#.22Dog.22_programming_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Draco",
+   "link": "https://en.wikipedia.org/wiki/Draco_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DRAKON",
+   "link": "https://en.wikipedia.org/wiki/DRAKON",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Dylan",
+   "link": "https://en.wikipedia.org/wiki/Dylan_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "DYNAMO",
+   "link": "https://en.wikipedia.org/wiki/DYNAMO_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "E",
+   "link": "https://en.wikipedia.org/wiki/E_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "E#",
+   "link": "",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "EarSketch",
+   "link": "https://en.wikipedia.org/wiki/EarSketch",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ease",
+   "link": "https://en.wikipedia.org/wiki/Ease_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Easy PL/I",
+   "link": "https://en.wikipedia.org/wiki/PL/I",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Easy Programming Language",
+   "link": "https://en.wikipedia.org/wiki/Easy_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "EASYTRIEVE PLUS",
+   "link": "https://en.wikipedia.org/wiki/Easytrieve",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ECMAScript",
+   "link": "https://en.wikipedia.org/wiki/ECMAScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Edinburgh IMP",
+   "link": "https://en.wikipedia.org/wiki/Edinburgh_IMP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "EGL",
+   "link": "https://en.wikipedia.org/wiki/EGL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Eiffel",
+   "link": "https://en.wikipedia.org/wiki/Eiffel_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ELAN",
+   "link": "https://en.wikipedia.org/wiki/ELAN_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Elixir",
+   "link": "https://en.wikipedia.org/wiki/Elixir_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Elm",
+   "link": "https://en.wikipedia.org/wiki/Elm_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Emacs Lisp",
+   "link": "https://en.wikipedia.org/wiki/Emacs_Lisp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Emerald",
+   "link": "https://en.wikipedia.org/wiki/Emerald_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Epigram",
+   "link": "https://en.wikipedia.org/wiki/Epigram_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "EPL",
+   "link": "https://en.wikipedia.org/wiki/Easy_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Erlang",
+   "link": "https://en.wikipedia.org/wiki/Erlang_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "es",
+   "link": "https://en.wikipedia.org/wiki/Es_(Unix_shell)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Escher",
+   "link": "https://en.wikipedia.org/wiki/Escher_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ESPOL",
+   "link": "https://en.wikipedia.org/wiki/Executive_Systems_Problem_Oriented_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Esterel",
+   "link": "https://en.wikipedia.org/wiki/Esterel",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Etoys",
+   "link": "https://en.wikipedia.org/wiki/Etoys_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Euclid",
+   "link": "https://en.wikipedia.org/wiki/Euclid_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Euler",
+   "link": "https://en.wikipedia.org/wiki/Euler_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Euphoria",
+   "link": "https://en.wikipedia.org/wiki/Euphoria_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "EusLisp Robot Programming Language",
+   "link": "https://en.wikipedia.org/wiki/EusLisp_Robot_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "CMS EXEC (EXEC)",
+   "link": "https://en.wikipedia.org/wiki/CMS_EXEC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "EXEC 2",
+   "link": "https://en.wikipedia.org/wiki/EXEC_2",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Executable UML",
+   "link": "https://en.wikipedia.org/wiki/F_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "F",
+   "link": "https://en.wikipedia.org/wiki/F_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "F#",
+   "link": "https://en.wikipedia.org/wiki/F_Sharp_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "F*",
+   "link": "https://en.wikipedia.org/wiki/F*_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Factor",
+   "link": "https://en.wikipedia.org/wiki/Factor_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Falcon",
+   "link": "https://en.wikipedia.org/wiki/Falcon_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Fantom",
+   "link": "https://en.wikipedia.org/wiki/Fantom_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FAUST",
+   "link": "https://en.wikipedia.org/wiki/FAUST_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FFP",
+   "link": "https://en.wikipedia.org/wiki/FFP_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Fjölnir",
+   "link": "https://en.wikipedia.org/wiki/Fj%C3%B6lnir_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FL",
+   "link": "https://en.wikipedia.org/wiki/FL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Flavors",
+   "link": "https://en.wikipedia.org/wiki/Flavors_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Flex",
+   "link": "https://en.wikipedia.org/wiki/Flex_(language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FlooP",
+   "link": "https://en.wikipedia.org/wiki/BlooP_and_FlooP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FLOW-MATIC",
+   "link": "https://en.wikipedia.org/wiki/FLOW-MATIC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FOCAL",
+   "link": "https://en.wikipedia.org/wiki/FOCAL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FOCUS",
+   "link": "https://en.wikipedia.org/wiki/FOCUS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FOIL",
+   "link": "https://en.wikipedia.org/wiki/FOIL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FORMAC",
+   "link": "https://en.wikipedia.org/wiki/FORMAC_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "@Formula",
+   "link": "https://en.wikipedia.org/wiki/Formula_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Forth",
+   "link": "https://en.wikipedia.org/wiki/Forth_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Fortran – ISO/IEC 1539",
+   "link": "https://en.wikipedia.org/wiki/Fortran",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Fortress",
+   "link": "https://en.wikipedia.org/wiki/Fortress_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FoxBase",
+   "link": "https://en.wikipedia.org/wiki/FoxBase",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FoxPro",
+   "link": "https://en.wikipedia.org/wiki/FoxPro",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "FP",
+   "link": "https://en.wikipedia.org/wiki/FP_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Franz Lisp",
+   "link": "https://en.wikipedia.org/wiki/Franz_Lisp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Frege",
+   "link": "https://en.wikipedia.org/wiki/Frege_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "F-Script",
+   "link": "https://en.wikipedia.org/wiki/F-Script_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "G",
+   "link": "https://en.wikipedia.org/wiki/G_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Game Maker Language",
+   "link": "https://en.wikipedia.org/wiki/GameMaker:_Studio",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GameMonkey Script",
+   "link": "https://en.wikipedia.org/wiki/GameMonkey_Script",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GAMS",
+   "link": "https://en.wikipedia.org/wiki/General_Algebraic_Modeling_System",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GAP",
+   "link": "https://en.wikipedia.org/wiki/GAP_computer_algebra_system",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "G-code",
+   "link": "https://en.wikipedia.org/wiki/G-code",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GDScript",
+   "link": "https://en.wikipedia.org/wiki/Godot_(game_engine)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Genie",
+   "link": "https://en.wikipedia.org/wiki/Genie_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GDL",
+   "link": "https://en.wikipedia.org/wiki/Geometric_Description_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GJ",
+   "link": "https://en.wikipedia.org/w/index.php?title=Generic_Java&action=edit&redlink=1",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GEORGE",
+   "link": "https://en.wikipedia.org/wiki/GEORGE_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GLSL",
+   "link": "https://en.wikipedia.org/wiki/GLSL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GNU E",
+   "link": "https://en.wikipedia.org/wiki/GNU_E",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GM",
+   "link": "https://en.wikipedia.org/wiki/Golden_master",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Go",
+   "link": "https://en.wikipedia.org/wiki/Go_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Go!",
+   "link": "https://en.wikipedia.org/wiki/Go!_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GOAL",
+   "link": "https://en.wikipedia.org/wiki/Game_Oriented_Assembly_Lisp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Gödel",
+   "link": "https://en.wikipedia.org/wiki/G%C3%B6del_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Golo",
+   "link": "https://en.wikipedia.org/wiki/Golo_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GOM (Good Old Mad)",
+   "link": "https://en.wikipedia.org/wiki/MAD_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Google Apps Script",
+   "link": "https://en.wikipedia.org/wiki/Google_Apps_Script",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Gosu",
+   "link": "https://en.wikipedia.org/wiki/Gosu_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GOTRAN",
+   "link": "https://en.wikipedia.org/wiki/IBM_1620#GOTRAN",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GPSS",
+   "link": "https://en.wikipedia.org/wiki/GPSS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GraphTalk",
+   "link": "https://en.wikipedia.org/wiki/Computer_Sciences_Corporation",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "GRASS",
+   "link": "https://en.wikipedia.org/wiki/GRASS_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Groovy",
+   "link": "https://en.wikipedia.org/wiki/Groovy_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hack",
+   "link": "https://en.wikipedia.org/wiki/Hack_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "HAGGIS",
+   "link": "https://en.wikipedia.org/wiki/HAGGIS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "HAL/S",
+   "link": "https://en.wikipedia.org/wiki/HAL/S",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hamilton C shell",
+   "link": "https://en.wikipedia.org/wiki/Hamilton_C_shell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Harbour",
+   "link": "https://en.wikipedia.org/wiki/Harbour_(software)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hartmann pipelines",
+   "link": "https://en.wikipedia.org/wiki/Hartmann_pipeline",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Haskell",
+   "link": "https://en.wikipedia.org/wiki/Haskell_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Haxe",
+   "link": "https://en.wikipedia.org/wiki/Haxe",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hermes",
+   "link": "https://en.wikipedia.org/wiki/Hermes_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "High Level Assembly",
+   "link": "https://en.wikipedia.org/wiki/High_Level_Assembly",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "HLSL",
+   "link": "https://en.wikipedia.org/wiki/High_Level_Shader_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hop",
+   "link": "https://en.wikipedia.org/wiki/Hop_(software)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hopscotch",
+   "link": "https://en.wikipedia.org/wiki/Hopscotch_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hope",
+   "link": "https://en.wikipedia.org/wiki/Hope_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hugo",
+   "link": "https://en.wikipedia.org/wiki/Hugo_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Hume",
+   "link": "https://en.wikipedia.org/wiki/Hume_(language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "HyperTalk",
+   "link": "https://en.wikipedia.org/wiki/HyperTalk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "IBM Basic assembly language",
+   "link": "https://en.wikipedia.org/wiki/IBM_Basic_assembly_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "IBM HAScript",
+   "link": "https://en.wikipedia.org/wiki/IBM_HAScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "IBM Informix-4GL",
+   "link": "https://en.wikipedia.org/wiki/IBM_Informix-4GL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "IBM RPG",
+   "link": "https://en.wikipedia.org/wiki/IBM_RPG",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ICI",
+   "link": "https://en.wikipedia.org/wiki/ICI_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Icon",
+   "link": "https://en.wikipedia.org/wiki/Icon_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Id",
+   "link": "https://en.wikipedia.org/wiki/Id_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "IDL",
+   "link": "https://en.wikipedia.org/wiki/IDL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Idris",
+   "link": "https://en.wikipedia.org/wiki/Idris_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "IMP",
+   "link": "https://en.wikipedia.org/wiki/IMP_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Inform",
+   "link": "https://en.wikipedia.org/wiki/Inform",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "INTERLISP",
+   "link": "https://en.wikipedia.org/wiki/Interlisp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Io",
+   "link": "https://en.wikipedia.org/wiki/Io_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ioke",
+   "link": "https://en.wikipedia.org/wiki/Ioke_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "IPL",
+   "link": "https://en.wikipedia.org/wiki/Information_Processing_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "IPTSCRAE",
+   "link": "https://en.wikipedia.org/wiki/IPTSCRAE",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ISLISP",
+   "link": "https://en.wikipedia.org/wiki/ISLISP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ISPF",
+   "link": "https://en.wikipedia.org/wiki/ISPF",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ISWIM",
+   "link": "https://en.wikipedia.org/wiki/ISWIM",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "J",
+   "link": "https://en.wikipedia.org/wiki/J_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "J#",
+   "link": "https://en.wikipedia.org/wiki/J_Sharp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "J++",
+   "link": "https://en.wikipedia.org/wiki/Visual_J%2B%2B",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JADE",
+   "link": "https://en.wikipedia.org/wiki/JADE_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JAL",
+   "link": "https://en.wikipedia.org/wiki/JAL_(compiler)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Janus (concurrent constraint programming language)",
+   "link": "https://en.wikipedia.org/wiki/Janus_(concurrent_constraint_programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Janus (time-reversible computing programming language)",
+   "link": "https://en.wikipedia.org/wiki/Janus_(time-reversible_computing_programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JASS",
+   "link": "https://en.wikipedia.org/wiki/JASS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Java",
+   "link": "https://en.wikipedia.org/wiki/Java_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JavaScript",
+   "link": "https://en.wikipedia.org/wiki/JavaScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JCL",
+   "link": "https://en.wikipedia.org/wiki/Job_Control_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JEAN",
+   "link": "https://en.wikipedia.org/wiki/JEAN",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Join Java",
+   "link": "https://en.wikipedia.org/wiki/JEAN",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JOSS",
+   "link": "https://en.wikipedia.org/wiki/JOSS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Joule",
+   "link": "https://en.wikipedia.org/wiki/Joule_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JOVIAL",
+   "link": "https://en.wikipedia.org/wiki/JOVIAL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Joy",
+   "link": "https://en.wikipedia.org/wiki/Joy_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JScript",
+   "link": "https://en.wikipedia.org/wiki/JScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JScript .NET",
+   "link": "https://en.wikipedia.org/wiki/JScript_.NET",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "JavaFX Script",
+   "link": "https://en.wikipedia.org/wiki/JavaFX_Script",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Julia",
+   "link": "https://en.wikipedia.org/wiki/Julia_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Jython",
+   "link": "https://en.wikipedia.org/wiki/Jython",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "K",
+   "link": "https://en.wikipedia.org/wiki/K_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Kaleidoscope",
+   "link": "https://en.wikipedia.org/wiki/Kaleidoscope_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Karel",
+   "link": "https://en.wikipedia.org/wiki/Karel_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Karel++",
+   "link": "https://en.wikipedia.org/wiki/Karel%2B%2B",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "KEE",
+   "link": "https://en.wikipedia.org/wiki/IntelliCorp_(Software)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Kixtart",
+   "link": "https://en.wikipedia.org/wiki/KiXtart",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Klerer-May System",
+   "link": "https://en.wikipedia.org/wiki/Klerer-May_System",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "KIF",
+   "link": "https://en.wikipedia.org/wiki/Knowledge_Interchange_Format",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Kojo",
+   "link": "https://en.wikipedia.org/wiki/Kojo_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Kotlin",
+   "link": "https://en.wikipedia.org/wiki/Kotlin_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "KRC",
+   "link": "https://en.wikipedia.org/wiki/Kent_Recursive_Calculator",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "KRL",
+   "link": "https://en.wikipedia.org/wiki/KRL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "KRL (KUKA Robot Language)",
+   "link": "https://en.wikipedia.org/wiki/KUKA",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "KRYPTON",
+   "link": "https://en.wikipedia.org/wiki/KRYPTON",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ksh",
+   "link": "https://en.wikipedia.org/wiki/Korn_shell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "L",
+   "link": "https://en.wikipedia.org/wiki/L_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "L# .NET",
+   "link": "https://en.wikipedia.org/wiki/L_Sharp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LabVIEW",
+   "link": "https://en.wikipedia.org/wiki/LabVIEW",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ladder",
+   "link": "https://en.wikipedia.org/wiki/Ladder_logic",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lagoona",
+   "link": "https://en.wikipedia.org/wiki/Lagoona_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LANSA",
+   "link": "https://en.wikipedia.org/wiki/LANSA_(development_environment)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lasso",
+   "link": "https://en.wikipedia.org/wiki/Lasso_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lava",
+   "link": "https://en.wikipedia.org/wiki/Lava_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LC-3",
+   "link": "https://en.wikipedia.org/wiki/LC-3",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Leda",
+   "link": "https://en.wikipedia.org/wiki/Leda_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Legoscript",
+   "link": "https://en.wikipedia.org/wiki/Lego_Mindstorms",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LIL",
+   "link": "https://en.wikipedia.org/wiki/Little_Implementation_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LilyPond",
+   "link": "https://en.wikipedia.org/wiki/LilyPond",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Limbo",
+   "link": "https://en.wikipedia.org/wiki/Limbo_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Limnor",
+   "link": "https://en.wikipedia.org/wiki/Limnor",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LINC",
+   "link": "https://en.wikipedia.org/wiki/LINC_4GL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lingo",
+   "link": "https://en.wikipedia.org/wiki/Lingo_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LIS",
+   "link": "https://en.wikipedia.org/wiki/LIS_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LISA",
+   "link": "https://en.wikipedia.org/wiki/Language_for_Instruction_Set_Architecture",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lisaac",
+   "link": "https://en.wikipedia.org/wiki/Lisaac",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lisp – ISO/IEC 13816",
+   "link": "https://en.wikipedia.org/wiki/Lisp_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lite-C",
+   "link": "https://en.wikipedia.org/wiki/Lite-C",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lithe",
+   "link": "https://en.wikipedia.org/wiki/Lithe_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Little b",
+   "link": "https://en.wikipedia.org/wiki/Little_b_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Logo",
+   "link": "https://en.wikipedia.org/wiki/Logo_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Logtalk",
+   "link": "https://en.wikipedia.org/wiki/Logtalk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LotusScript",
+   "link": "https://en.wikipedia.org/wiki/LotusScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LPC",
+   "link": "https://en.wikipedia.org/wiki/LPC_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LSE",
+   "link": "https://en.wikipedia.org/wiki/LSE_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LSL",
+   "link": "https://en.wikipedia.org/wiki/Linden_Scripting_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LiveScript",
+   "link": "https://en.wikipedia.org/wiki/LiveScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lua",
+   "link": "https://en.wikipedia.org/wiki/Lua_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lucid",
+   "link": "https://en.wikipedia.org/wiki/Lucid_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lustre",
+   "link": "https://en.wikipedia.org/wiki/Lustre_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "LYaPAS",
+   "link": "https://en.wikipedia.org/wiki/LYaPAS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Lynx",
+   "link": "https://en.wikipedia.org/wiki/Lynx_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "M[edit]",
+   "link": "https://en.wikipedia.org/w/index.php?title=List_of_programming_languages&action=edit&section=13",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "M2001",
+   "link": "https://en.wikipedia.org/wiki/M2001",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "M4",
+   "link": "https://en.wikipedia.org/wiki/M4_(computer_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "M#",
+   "link": "https://en.wikipedia.org/wiki/M_Sharp_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Machine code",
+   "link": "https://en.wikipedia.org/wiki/Machine_code",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MAD (Michigan Algorithm Decoder)",
+   "link": "https://en.wikipedia.org/wiki/MAD_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MAD/I",
+   "link": "https://en.wikipedia.org/wiki/MAD_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Magik",
+   "link": "https://en.wikipedia.org/wiki/Magik_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Magma",
+   "link": "https://en.wikipedia.org/wiki/Magma_computer_algebra_system",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "make",
+   "link": "https://en.wikipedia.org/wiki/Make_(software)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Maple",
+   "link": "https://en.wikipedia.org/wiki/Maple_(software)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MAPPER (now part of BIS)",
+   "link": "https://en.wikipedia.org/wiki/MAPPER",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MARK-IV (now VISION:BUILDER)",
+   "link": "https://en.wikipedia.org/wiki/MARK_IV_(software)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mary",
+   "link": "https://en.wikipedia.org/wiki/Mary_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MASM Microsoft Assembly x86",
+   "link": "https://en.wikipedia.org/wiki/Microsoft_Macro_Assembler",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MATH-MATIC",
+   "link": "https://en.wikipedia.org/wiki/MATH-MATIC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mathematica",
+   "link": "https://en.wikipedia.org/wiki/Mathematica",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MATLAB",
+   "link": "https://en.wikipedia.org/wiki/MATLAB",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Maxima (see also Macsyma)",
+   "link": "",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Max (Max Msp – Graphical Programming Environment)",
+   "link": "https://en.wikipedia.org/wiki/Max_(software)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MaxScript internal language 3D Studio Max",
+   "link": "https://en.wikipedia.org/wiki/Autodesk_3ds_Max",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Maya (MEL)",
+   "link": "https://en.wikipedia.org/wiki/Maya_Embedded_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MDL",
+   "link": "https://en.wikipedia.org/wiki/MDL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mercury",
+   "link": "https://en.wikipedia.org/wiki/Mercury_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mesa",
+   "link": "https://en.wikipedia.org/wiki/Mesa_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Metafont",
+   "link": "https://en.wikipedia.org/wiki/Metafont",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Microcode",
+   "link": "https://en.wikipedia.org/wiki/Microassembler",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MicroScript",
+   "link": "https://en.wikipedia.org/wiki/MicroScript_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MIIS",
+   "link": "https://en.wikipedia.org/wiki/MIIS_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Milk (programming language)",
+   "link": "https://en.wikipedia.org/wiki/Milk_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MIMIC",
+   "link": "https://en.wikipedia.org/wiki/MIMIC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mirah",
+   "link": "https://en.wikipedia.org/wiki/Mirah_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Miranda",
+   "link": "https://en.wikipedia.org/wiki/Miranda_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MIVA Script",
+   "link": "https://en.wikipedia.org/wiki/MIVA_Script",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ML",
+   "link": "https://en.wikipedia.org/wiki/ML_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Model 204",
+   "link": "https://en.wikipedia.org/wiki/Model_204",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Modelica",
+   "link": "https://en.wikipedia.org/wiki/Modelica",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Modula",
+   "link": "https://en.wikipedia.org/wiki/Modula",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Modula-2",
+   "link": "https://en.wikipedia.org/wiki/Modula-2",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Modula-3",
+   "link": "https://en.wikipedia.org/wiki/Modula-3",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mohol",
+   "link": "https://en.wikipedia.org/wiki/Mohol_programming_languages",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MOO",
+   "link": "https://en.wikipedia.org/wiki/MOO_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mortran",
+   "link": "https://en.wikipedia.org/wiki/Mortran",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mouse",
+   "link": "https://en.wikipedia.org/wiki/Mouse_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MPD",
+   "link": "https://en.wikipedia.org/wiki/MPD_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mathcad",
+   "link": "https://en.wikipedia.org/wiki/Mathcad",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MSIL – deprecated name for CIL",
+   "link": "https://en.wikipedia.org/wiki/Common_Intermediate_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MSL",
+   "link": "https://en.wikipedia.org/wiki/MIRC_scripting_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "MUMPS",
+   "link": "https://en.wikipedia.org/wiki/MUMPS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Mystic Programming Language (MPL)",
+   "link": "https://en.wikipedia.org/wiki/Mystic_BBS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NASM",
+   "link": "https://en.wikipedia.org/wiki/Netwide_Assembler",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Napier88",
+   "link": "https://en.wikipedia.org/wiki/Napier88",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Neko",
+   "link": "https://en.wikipedia.org/wiki/Neko_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Nemerle",
+   "link": "https://en.wikipedia.org/wiki/Nemerle",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "nesC",
+   "link": "https://en.wikipedia.org/wiki/NesC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NESL",
+   "link": "https://en.wikipedia.org/wiki/NESL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Net.Data",
+   "link": "https://en.wikipedia.org/wiki/Net.Data",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NetLogo",
+   "link": "https://en.wikipedia.org/wiki/NetLogo",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NetRexx",
+   "link": "https://en.wikipedia.org/wiki/NetRexx",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NewLISP",
+   "link": "https://en.wikipedia.org/wiki/NewLISP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NEWP",
+   "link": "https://en.wikipedia.org/wiki/NEWP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Newspeak",
+   "link": "https://en.wikipedia.org/wiki/Newspeak_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NewtonScript",
+   "link": "https://en.wikipedia.org/wiki/NewtonScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NGL",
+   "link": "https://en.wikipedia.org/wiki/NGL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Nial",
+   "link": "https://en.wikipedia.org/wiki/Nial",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Nice",
+   "link": "https://en.wikipedia.org/wiki/Nice_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Nickle",
+   "link": "https://en.wikipedia.org/wiki/Nickle_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Nim",
+   "link": "https://en.wikipedia.org/wiki/Nim_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NO",
+   "link": "https://en.wikipedia.org/w/index.php?title=NO_(programming_language)&action=edit&redlink=1",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NPL",
+   "link": "https://en.wikipedia.org/wiki/NORD_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Not eXactly C (NXC)",
+   "link": "https://en.wikipedia.org/wiki/Not_eXactly_C",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Not Quite C (NQC)",
+   "link": "https://en.wikipedia.org/wiki/Not_Quite_C",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NSIS",
+   "link": "https://en.wikipedia.org/wiki/Nullsoft_Scriptable_Install_System",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Nu",
+   "link": "https://en.wikipedia.org/wiki/Nu_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Numpy",
+   "link": "https://en.wikipedia.org/wiki/Numpy",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NWScript",
+   "link": "https://en.wikipedia.org/wiki/NWScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NXT-G",
+   "link": "https://en.wikipedia.org/wiki/NXT-G",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "NPL",
+   "link": "https://en.wikipedia.org/wiki/Neural_parallel_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "o:XML",
+   "link": "https://en.wikipedia.org/wiki/O:XML",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Oak",
+   "link": "https://en.wikipedia.org/wiki/Oak_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Oberon",
+   "link": "https://en.wikipedia.org/wiki/Oberon_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OBJ2",
+   "link": "https://en.wikipedia.org/wiki/OBJ2",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Object Lisp",
+   "link": "https://en.wikipedia.org/wiki/Object_Lisp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ObjectLOGO",
+   "link": "https://en.wikipedia.org/wiki/ObjectLOGO",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Object REXX",
+   "link": "https://en.wikipedia.org/wiki/Object_REXX",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Object Pascal",
+   "link": "https://en.wikipedia.org/wiki/Object_Pascal",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Objective-C",
+   "link": "https://en.wikipedia.org/wiki/Objective-C",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Objective-J",
+   "link": "https://en.wikipedia.org/wiki/Objective-J",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Obliq",
+   "link": "https://en.wikipedia.org/wiki/Obliq",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OCaml",
+   "link": "https://en.wikipedia.org/wiki/OCaml",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "occam",
+   "link": "https://en.wikipedia.org/wiki/Occam_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "occam-π",
+   "link": "https://en.wikipedia.org/wiki/Occam-%CF%80",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Octave",
+   "link": "https://en.wikipedia.org/wiki/GNU_Octave",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OmniMark",
+   "link": "https://en.wikipedia.org/wiki/OmniMark",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Onyx",
+   "link": "https://en.wikipedia.org/wiki/Onyx_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Opa",
+   "link": "https://en.wikipedia.org/wiki/Opa_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Opal",
+   "link": "https://en.wikipedia.org/wiki/Opal_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OpenCL",
+   "link": "https://en.wikipedia.org/wiki/OpenCL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OpenEdge ABL",
+   "link": "https://en.wikipedia.org/wiki/OpenEdge_Advanced_Business_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OPL",
+   "link": "https://en.wikipedia.org/wiki/Open_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OpenVera",
+   "link": "https://en.wikipedia.org/wiki/OpenVera",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OPS5",
+   "link": "https://en.wikipedia.org/wiki/OPS5",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "OptimJ",
+   "link": "https://en.wikipedia.org/wiki/OptimJ",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Orc",
+   "link": "https://en.wikipedia.org/wiki/Orc_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ORCA/Modula-2",
+   "link": "https://en.wikipedia.org/wiki/ORCA/Modula-2",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Oriel",
+   "link": "https://en.wikipedia.org/wiki/Oriel_(scripting_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Orwell",
+   "link": "https://en.wikipedia.org/wiki/Orwell_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Oxygene",
+   "link": "https://en.wikipedia.org/wiki/Oxygene_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Oz",
+   "link": "https://en.wikipedia.org/wiki/Oz_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "P′′",
+   "link": "https://en.wikipedia.org/wiki/P%E2%80%B2%E2%80%B2",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "P#",
+   "link": "https://en.wikipedia.org/wiki/P_Sharp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ParaSail (programming language)",
+   "link": "https://en.wikipedia.org/wiki/ParaSail_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PARI/GP",
+   "link": "https://en.wikipedia.org/wiki/PARI/GP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pascal – ISO 7185",
+   "link": "https://en.wikipedia.org/wiki/Pascal_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PCASTL",
+   "link": "https://en.wikipedia.org/wiki/PCASTL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PCF",
+   "link": "https://en.wikipedia.org/wiki/Programming_language_for_Computable_Functions",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PEARL",
+   "link": "https://en.wikipedia.org/wiki/PEARL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PeopleCode",
+   "link": "https://en.wikipedia.org/wiki/PeopleCode",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Perl",
+   "link": "https://en.wikipedia.org/wiki/Perl",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PDL",
+   "link": "https://en.wikipedia.org/wiki/Perl_Data_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Perl 6",
+   "link": "https://en.wikipedia.org/wiki/Perl_6",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pharo",
+   "link": "https://en.wikipedia.org/wiki/Pharo",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PHP",
+   "link": "https://en.wikipedia.org/wiki/PHP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pico",
+   "link": "https://en.wikipedia.org/wiki/Pico_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Picolisp",
+   "link": "https://en.wikipedia.org/wiki/Picolisp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pict",
+   "link": "https://en.wikipedia.org/wiki/Pict_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pike",
+   "link": "https://en.wikipedia.org/wiki/Pike_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PIKT",
+   "link": "https://en.wikipedia.org/wiki/PIKT",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PILOT",
+   "link": "https://en.wikipedia.org/wiki/PILOT",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pipelines",
+   "link": "https://en.wikipedia.org/wiki/Hartmann_pipeline",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pizza",
+   "link": "https://en.wikipedia.org/wiki/Pizza_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL-11",
+   "link": "https://en.wikipedia.org/wiki/PL-11",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL/0",
+   "link": "https://en.wikipedia.org/wiki/PL/0",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL/B",
+   "link": "https://en.wikipedia.org/wiki/Programming_Language_for_Business",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL/C",
+   "link": "https://en.wikipedia.org/wiki/PL/C",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL/I – ISO 6160",
+   "link": "https://en.wikipedia.org/wiki/PL/I",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL/M",
+   "link": "https://en.wikipedia.org/wiki/PL/M",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL/P",
+   "link": "https://en.wikipedia.org/wiki/PL/P",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL/SQL",
+   "link": "https://en.wikipedia.org/wiki/PL/SQL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PL360",
+   "link": "https://en.wikipedia.org/wiki/PL360",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PLANC",
+   "link": "https://en.wikipedia.org/wiki/PLANC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Plankalkül",
+   "link": "https://en.wikipedia.org/wiki/Plankalk%C3%BCl",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Planner",
+   "link": "https://en.wikipedia.org/wiki/Planner_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PLEX",
+   "link": "https://en.wikipedia.org/wiki/Planner_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PLEXIL",
+   "link": "https://en.wikipedia.org/wiki/PLEXIL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Plus",
+   "link": "https://en.wikipedia.org/wiki/Plus_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "POP-11",
+   "link": "https://en.wikipedia.org/wiki/POP-11",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "POP-2",
+   "link": "https://en.wikipedia.org/wiki/POP-2",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PostScript",
+   "link": "https://en.wikipedia.org/wiki/PostScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PortablE",
+   "link": "https://en.wikipedia.org/wiki/Amiga_E#PortablE",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Powerhouse",
+   "link": "https://en.wikipedia.org/wiki/Powerhouse_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PowerBuilder – 4GL GUI application generator from Sybase",
+   "link": "https://en.wikipedia.org/wiki/PowerBuilder",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PowerShell",
+   "link": "https://en.wikipedia.org/wiki/PowerShell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PPL",
+   "link": "https://en.wikipedia.org/wiki/Polymorphic_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Processing",
+   "link": "https://en.wikipedia.org/wiki/Processing_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Processing.js",
+   "link": "https://en.wikipedia.org/wiki/Processing.js",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Prograph",
+   "link": "https://en.wikipedia.org/wiki/Prograph",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PROIV",
+   "link": "https://en.wikipedia.org/wiki/PROIV",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Prolog",
+   "link": "https://en.wikipedia.org/wiki/PROIV",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PROMAL",
+   "link": "https://en.wikipedia.org/wiki/PROMAL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Promela",
+   "link": "https://en.wikipedia.org/wiki/Promela",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PROSE modeling language",
+   "link": "https://en.wikipedia.org/wiki/PROSE_modeling_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "PROTEL",
+   "link": "https://en.wikipedia.org/wiki/Protel",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ProvideX",
+   "link": "https://en.wikipedia.org/wiki/ProvideX",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pro*C",
+   "link": "https://en.wikipedia.org/wiki/Pro*C",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pure",
+   "link": "https://en.wikipedia.org/wiki/Pure_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Pure Data",
+   "link": "https://en.wikipedia.org/wiki/Pure_Data",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Python",
+   "link": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Q (equational programming language)",
+   "link": "https://en.wikipedia.org/wiki/Q_(equational_programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Q (programming language from Kx Systems)",
+   "link": "https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Qalb",
+   "link": "https://en.wikipedia.org/wiki/Qalb_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "QtScript",
+   "link": "https://en.wikipedia.org/wiki/QtScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "QuakeC",
+   "link": "https://en.wikipedia.org/wiki/QuakeC",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "QPL",
+   "link": "https://en.wikipedia.org/wiki/Quantum_programming",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "R",
+   "link": "https://en.wikipedia.org/wiki/R_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "R++",
+   "link": "https://en.wikipedia.org/wiki/R%2B%2B",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Racket",
+   "link": "https://en.wikipedia.org/wiki/Racket_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "RAPID",
+   "link": "https://en.wikipedia.org/wiki/RAPID",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Rapira",
+   "link": "https://en.wikipedia.org/wiki/Rapira",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ratfiv",
+   "link": "https://en.wikipedia.org/wiki/Ratfiv",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ratfor",
+   "link": "https://en.wikipedia.org/wiki/Ratfor",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "rc",
+   "link": "https://en.wikipedia.org/wiki/Rc",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "REBOL",
+   "link": "https://en.wikipedia.org/wiki/REBOL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Red",
+   "link": "https://en.wikipedia.org/wiki/Red_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Redcode",
+   "link": "https://en.wikipedia.org/wiki/Core_War",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "REFAL",
+   "link": "https://en.wikipedia.org/wiki/REFAL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Reia",
+   "link": "https://en.wikipedia.org/wiki/Reia_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "REXX",
+   "link": "https://en.wikipedia.org/wiki/REXX",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Rlab",
+   "link": "https://en.wikipedia.org/wiki/Rlab",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ROOP",
+   "link": "https://en.wikipedia.org/wiki/ROOP_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "RPG",
+   "link": "https://en.wikipedia.org/wiki/IBM_RPG",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "RPL",
+   "link": "https://en.wikipedia.org/wiki/RPL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "RSL",
+   "link": "https://en.wikipedia.org/wiki/Robot_Battle#Robot_scripting_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "RTL/2",
+   "link": "https://en.wikipedia.org/wiki/RTL/2",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ruby",
+   "link": "https://en.wikipedia.org/wiki/Ruby_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "RuneScript",
+   "link": "https://en.wikipedia.org/wiki/RuneScape#History_and_development",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Rust",
+   "link": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "S",
+   "link": "https://en.wikipedia.org/wiki/S_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "S2",
+   "link": "https://en.wikipedia.org/wiki/S2_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "S3",
+   "link": "https://en.wikipedia.org/wiki/S3_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "S-Lang",
+   "link": "https://en.wikipedia.org/wiki/S-Lang_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "S-PLUS",
+   "link": "https://en.wikipedia.org/wiki/S-PLUS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SA-C",
+   "link": "https://en.wikipedia.org/wiki/SA-C_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SabreTalk",
+   "link": "https://en.wikipedia.org/wiki/SabreTalk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SAIL",
+   "link": "https://en.wikipedia.org/wiki/SAIL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SALSA",
+   "link": "https://en.wikipedia.org/wiki/SALSA_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SAM76",
+   "link": "https://en.wikipedia.org/wiki/SAM76",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SAS",
+   "link": "https://en.wikipedia.org/wiki/SAS_System",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SASL",
+   "link": "https://en.wikipedia.org/wiki/SASL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Sather",
+   "link": "https://en.wikipedia.org/wiki/Sather",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Sawzall",
+   "link": "https://en.wikipedia.org/wiki/Sawzall_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SBL",
+   "link": "https://en.wikipedia.org/wiki/Superbase_database",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Scala",
+   "link": "https://en.wikipedia.org/wiki/Scala_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Scheme",
+   "link": "https://en.wikipedia.org/wiki/Scheme_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Scilab",
+   "link": "https://en.wikipedia.org/wiki/Scilab",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Scratch",
+   "link": "https://en.wikipedia.org/wiki/Scratch_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Script.NET",
+   "link": "https://en.wikipedia.org/wiki/Script.NET",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Sed",
+   "link": "https://en.wikipedia.org/wiki/Sed",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Seed7",
+   "link": "https://en.wikipedia.org/wiki/Seed7",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Self",
+   "link": "https://en.wikipedia.org/wiki/Self_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SenseTalk",
+   "link": "https://en.wikipedia.org/wiki/SenseTalk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SequenceL",
+   "link": "https://en.wikipedia.org/wiki/SequenceL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SETL",
+   "link": "https://en.wikipedia.org/wiki/SETL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SIMPOL",
+   "link": "https://en.wikipedia.org/wiki/Superbase_database#History",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SIGNAL",
+   "link": "https://en.wikipedia.org/wiki/SIGNAL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SiMPLE",
+   "link": "https://en.wikipedia.org/wiki/SiMPLE",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SIMSCRIPT",
+   "link": "https://en.wikipedia.org/wiki/SIMSCRIPT",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Simula",
+   "link": "https://en.wikipedia.org/wiki/Simula",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Simulink",
+   "link": "https://en.wikipedia.org/wiki/Simulink",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Singularity",
+   "link": "https://en.wikipedia.org/wiki/Singularity_(operating_system)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SISAL",
+   "link": "https://en.wikipedia.org/wiki/SISAL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SLIP",
+   "link": "https://en.wikipedia.org/wiki/SLIP_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SMALL",
+   "link": "https://en.wikipedia.org/wiki/SMALL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Smalltalk",
+   "link": "https://en.wikipedia.org/wiki/Smalltalk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Small Basic",
+   "link": "https://en.wikipedia.org/wiki/Microsoft_Small_Basic",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SML",
+   "link": "https://en.wikipedia.org/wiki/Standard_ML",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Strongtalk",
+   "link": "https://en.wikipedia.org/wiki/Strongtalk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Snap!",
+   "link": "https://en.wikipedia.org/wiki/Snap!_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SNOBOL(SPITBOL)",
+   "link": "",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Snowball",
+   "link": "https://en.wikipedia.org/wiki/Snowball_programming_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SOL",
+   "link": "https://en.wikipedia.org/wiki/Secure_Operations_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SPARK",
+   "link": "https://en.wikipedia.org/wiki/SPARK_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Speedcode",
+   "link": "https://en.wikipedia.org/wiki/Speedcoding",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SPIN",
+   "link": "https://en.wikipedia.org/wiki/Parallax_Propeller",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SP/k",
+   "link": "https://en.wikipedia.org/wiki/SP/k",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SPS",
+   "link": "https://en.wikipedia.org/wiki/IBM_1401_Symbolic_Programming_System",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SQL",
+   "link": "https://en.wikipedia.org/wiki/SQL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SQR",
+   "link": "https://en.wikipedia.org/wiki/SQR",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Squeak",
+   "link": "https://en.wikipedia.org/wiki/Squeak",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Squirrel",
+   "link": "https://en.wikipedia.org/wiki/Squirrel_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SR",
+   "link": "https://en.wikipedia.org/wiki/SR_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "S/SL",
+   "link": "https://en.wikipedia.org/wiki/S/SL_programming_language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Stackless Python",
+   "link": "https://en.wikipedia.org/wiki/Stackless_Python",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Starlogo",
+   "link": "https://en.wikipedia.org/wiki/Starlogo",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Strand",
+   "link": "https://en.wikipedia.org/wiki/Strand_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Stata",
+   "link": "https://en.wikipedia.org/wiki/Stata",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Stateflow",
+   "link": "https://en.wikipedia.org/wiki/Stateflow",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Subtext",
+   "link": "https://en.wikipedia.org/wiki/Subtext_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SuperCollider",
+   "link": "https://en.wikipedia.org/wiki/SuperCollider",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SuperTalk",
+   "link": "https://en.wikipedia.org/wiki/SuperTalk",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Swift (Apple programming language)",
+   "link": "https://en.wikipedia.org/wiki/Swift_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Swift (parallel scripting language)",
+   "link": "https://en.wikipedia.org/wiki/Swift_(parallel_scripting_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SYMPL",
+   "link": "https://en.wikipedia.org/wiki/SYMPL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SyncCharts",
+   "link": "https://en.wikipedia.org/wiki/SyncCharts",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "SystemVerilog",
+   "link": "https://en.wikipedia.org/wiki/SystemVerilog",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "T",
+   "link": "https://en.wikipedia.org/wiki/T_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TACL",
+   "link": "https://en.wikipedia.org/wiki/TACL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TACPOL",
+   "link": "https://en.wikipedia.org/wiki/TACPOL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TADS",
+   "link": "https://en.wikipedia.org/wiki/TADS",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TAL",
+   "link": "https://en.wikipedia.org/wiki/Transaction_Application_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Tcl",
+   "link": "https://en.wikipedia.org/wiki/Tcl",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Tea",
+   "link": "https://en.wikipedia.org/wiki/Tea_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TECO",
+   "link": "https://en.wikipedia.org/wiki/Text_Editor_and_Corrector",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TELCOMP",
+   "link": "https://en.wikipedia.org/wiki/TELCOMP",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TeX",
+   "link": "https://en.wik....org/wiki/TeX",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TEX",
+   "link": "https://en.wikipedia.org/wiki/Text_Executive_Programming_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TIE",
+   "link": "https://en.wikipedia.org/wiki/Tensilica_Instruction_Extension",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Timber",
+   "link": "https://en.wikipedia.org/wiki/Timber_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TMG, compiler-compiler",
+   "link": "https://en.wikipedia.org/wiki/TMG_(language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Tom",
+   "link": "https://en.wikipedia.org/wiki/Tom_(pattern_matching_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TOM",
+   "link": "https://en.wikipedia.org/wiki/TOM_(object-oriented_programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TouchDevelop",
+   "link": "https://en.wikipedia.org/wiki/TouchDevelop",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Toi",
+   "link": "https://en.wikipedia.org/wiki/Toi_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Topspeed",
+   "link": "https://en.wikipedia.org/wiki/Clarion_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TPU",
+   "link": "https://en.wikipedia.org/wiki/Text_Processing_Utility",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Trac",
+   "link": "https://en.wikipedia.org/wiki/TRAC_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TTM",
+   "link": "https://en.wikipedia.org/wiki/TTM_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "T-SQL",
+   "link": "https://en.wikipedia.org/wiki/Transact-SQL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Transcript",
+   "link": "https://en.wikipedia.org/wiki/Transcript_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TTCN",
+   "link": "https://en.wikipedia.org/wiki/TTCN",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Turing",
+   "link": "https://en.wikipedia.org/wiki/Turing_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TUTOR",
+   "link": "https://en.wikipedia.org/wiki/TUTOR_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TXL",
+   "link": "https://en.wikipedia.org/wiki/TXL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "TypeScript",
+   "link": "https://en.wikipedia.org/wiki/TypeScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Turbo C++",
+   "link": "https://en.wikipedia.org/wiki/Turbo_C%2B%2B",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Ubercode",
+   "link": "https://en.wikipedia.org/wiki/Ubercode",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "UCSD Pascal",
+   "link": "https://en.wikipedia.org/wiki/UCSD_Pascal",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Umple",
+   "link": "https://en.wikipedia.org/wiki/Umple",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Unicon",
+   "link": "https://en.wikipedia.org/wiki/Unicon_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Uniface",
+   "link": "https://en.wikipedia.org/wiki/Uniface_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "UNITY",
+   "link": "https://en.wikipedia.org/wiki/UNITY_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Unix shell",
+   "link": "https://en.wikipedia.org/wiki/Unix_shell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "UnrealScript",
+   "link": "https://en.wikipedia.org/wiki/UnrealScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Vala",
+   "link": "https://en.wikipedia.org/wiki/Vala_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Verilog",
+   "link": "https://en.wikipedia.org/wiki/Verilog",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "VHDL",
+   "link": "https://en.wikipedia.org/wiki/VHDL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual Basic",
+   "link": "https://en.wikipedia.org/wiki/Visual_Basic",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual Basic .NET",
+   "link": "https://en.wikipedia.org/wiki/Visual_Basic_.NET",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual DataFlex",
+   "link": "https://en.wikipedia.org/wiki/Visual_DataFlex",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual DialogScript",
+   "link": "https://en.wikipedia.org/wiki/Visual_DialogScript",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual Fortran",
+   "link": "https://en.wikipedia.org/wiki/Visual_Fortran",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual FoxPro",
+   "link": "https://en.wikipedia.org/wiki/Visual_FoxPro",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual J++",
+   "link": "https://en.wikipedia.org/wiki/Visual_J%2B%2B",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual J#",
+   "link": "https://en.wikipedia.org/wiki/Visual_J",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual Objects",
+   "link": "https://en.wikipedia.org/wiki/Visual_Objects",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Visual Prolog",
+   "link": "https://en.wikipedia.org/wiki/Visual_Prolog",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "VSXu",
+   "link": "https://en.wikipedia.org/wiki/VSXu",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "vvvv",
+   "link": "https://en.wikipedia.org/wiki/Vvvv",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "WATFIV, WATFOR",
+   "link": "https://en.wikipedia.org/wiki/WATFIV_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "WebDNA",
+   "link": "https://en.wikipedia.org/wiki/WebDNA",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "WebQL",
+   "link": "https://en.wikipedia.org/wiki/WebQL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Whiley",
+   "link": "https://en.wikipedia.org/wiki/Whiley_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Windows PowerShell",
+   "link": "https://en.wikipedia.org/wiki/Windows_PowerShell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Winbatch",
+   "link": "https://en.wikipedia.org/wiki/Winbatch",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Wolfram Language",
+   "link": "https://en.wikipedia.org/wiki/Wolfram_Language",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Wyvern",
+   "link": "https://en.wikipedia.org/wiki/Wyvern_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XBL",
+   "link": "https://en.wikipedia.org/wiki/XBL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XC (exploits XMOS architecture)",
+   "link": "",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "xHarbour",
+   "link": "https://en.wikipedia.org/wiki/XHarbour",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XL",
+   "link": "https://en.wikipedia.org/wiki/XL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Xojo",
+   "link": "https://en.wikipedia.org/wiki/Xojo",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XOTcl",
+   "link": "https://en.wikipedia.org/wiki/XOTcl",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XPL",
+   "link": "https://en.wikipedia.org/wiki/XPL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XPL0",
+   "link": "https://en.wikipedia.org/wiki/XPL0",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XQuery",
+   "link": "https://en.wikipedia.org/wiki/XQuery",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XSB",
+   "link": "https://en.wikipedia.org/wiki/XSB",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XSharp",
+   "link": "https://en.wikipedia.org/wiki/XSharp",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "XSLT – see XPath",
+   "link": "",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Xtend",
+   "link": "https://en.wikipedia.org/wiki/Xtend",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Yorick",
+   "link": "https://en.wikipedia.org/wiki/Yorick_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "YQL",
+   "link": "https://en.wikipedia.org/wiki/YQL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Yoix",
+   "link": "https://en.wikipedia.org/wiki/Yoix",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Z notation",
+   "link": "https://en.wikipedia.org/wiki/Z_notation",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Zeno",
+   "link": "https://en.wikipedia.org/wiki/Zeno_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ZOPL",
+   "link": "https://en.wikipedia.org/wiki/ZOPL",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "Zsh",
+   "link": "https://en.wikipedia.org/wiki/Z_shell",
+   "type": "Programming language",
+   "language": ""
+ },
+ {
+   "label": "ZPL",
+   "link": "https://en.wikipedia.org/wiki/ZPL_(programming_language)",
+   "type": "Programming language",
+   "language": ""
+ }
+]

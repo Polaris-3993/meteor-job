@@ -1,0 +1,287 @@
+/* TIME PICKER
+   --------------- */
+@accent: #448AFF;
+@body-width : 280px;
+@analog-container-width: @body-width*2;
+@analog-period-size: 40px;
+@analog-container-height: @body-width + @analog-period-size;
+@analog-width: @body-width;
+@hand-length: 260px;
+//@hand-color: #B1C6E9;
+@hand-color: @accent;
+@face-color: #ececec;
+
+.transition{
+	transition: 300ms;
+}
+
+.time-picker {
+	font-size: 14px;
+	width: 100%;
+	width: @body-width;
+	overflow: hidden;
+	//border-radius: 5px;
+	background-color: #fff;
+	// box-shadow: 0 0 45px rgba(0,0,0,0.55); 
+	border-radius: 3px;
+	display: inline-block;
+	
+	.date{
+		cursor: pointer;
+	}
+	.digital-clock .minutes.active {
+		opacity: 1;
+	}
+	
+	.digital-clock .hours.active {
+		opacity: 1;	
+	}
+	
+	.digital-upper {
+		display: none;
+		padding: 25px 10px 10px 20px;
+		font-size: 2.0em; 
+	}
+	
+	.digital {
+		//padding: 25px 0 20px 0;
+	    padding: 20px;
+		background-color: @accent;
+	}
+	
+	.digital-inner {
+		display: block; 
+		//text-align: center;
+	}
+	
+	.digital-clock {
+		color: #fff;
+		font-size: 4em;
+	}
+	
+	.hours,
+	.minutes {
+		.transition;
+		opacity: 0.6;
+		cursor: pointer
+	}
+	
+	.light {
+		opacity: 0.6;	
+	}
+	
+	.ultra-light {
+		opacity: 0.3;	
+	}
+	
+	.digital-period {
+	    text-transform: uppercase;
+	    color: white;
+	    font-weight: bold;
+	    opacity: 0.6;
+	    .transition;
+	    padding: 3px 3px;
+	    border-radius: 50%;
+	    
+	    &.active{
+	    	opacity: 1;
+	    }
+	}
+	
+	.digital-periods {
+		display: inline-block;
+		cursor: pointer;
+	}
+	
+	.format {
+	    margin-left: 39px;
+	    display: inline-block;
+	    .text-right;
+	}
+	
+	.text-right {
+		text-align: right;
+	}
+	
+	.white-text{
+		color: #ffffff !important;
+	}
+	
+	.bold {
+		font-weight: bold;
+	}
+	
+	.smaller {
+		font-size: 0.9em;
+	}
+	
+	
+	&.minutes-state .analog-inner {
+		transform: translateX(-1*@body-width);
+	}
+	
+	.analog-period {
+	    display: inline-block;
+	    cursor: pointer;
+	    font-size: 1em;
+	    font-weight: bold;
+	    width: @analog-period-size;
+	    text-transform: uppercase;
+	    line-height: @analog-period-size;
+	    border-radius: 50%;
+	    text-align: center;
+	    margin: 0 15px;
+        .transition;
+        
+	    &.right{
+			float:right
+		}
+		&.active{
+		    color: @accent;
+		}
+	}
+	
+	.analog-hours,
+	.analog-minutes {
+		// width: 50%;
+		// height: @body-width;
+		float: left;
+		position: relative;
+	    padding: 10px;
+	    
+	    &.active {
+	    	color: white;
+	    }
+	}
+	
+	.analog-face {
+		cursor: pointer;
+	    position: relative;
+	    border-radius: 50%;
+	    background-color: #ececec;
+	}
+	
+	.analog-hand {
+		width: @hand-length;
+		height: @hand-length;
+		display: block;
+		overflow: hidden;
+		border-radius: 50%;
+		position: relative;
+		transform: rotate(0deg);
+
+		&:before {
+		    content: " ";
+		    width: 2px;
+		    top: 0;
+		    bottom: 0;
+		    left: 50%;
+		    z-index: -1;
+		    display: block;
+		    margin-left: -1px;
+		    position: absolute;
+		    background-color: @hand-color;
+		}
+	
+		&:after {
+		    content: " ";
+		    top: 50%;
+		    left: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    z-index: 1;
+		    display: block;
+		    position: absolute;
+		    background-color: #ECECEC;
+		}
+	
+	}
+	
+	.analog-ball {
+	    height: 3em;
+	    width: 3em;
+	    display: block;
+	    left: 50%;
+	    top: 6px;
+	    border-radius: 50%;
+	    position: absolute;
+	    margin-left: -1.5em;
+	    background-color: @hand-color;
+	
+	    &:before {
+		    content: " ";
+		    height: 20px;
+		    width: 20px;
+		    top: -6px;
+		    left: 11px;
+		    z-index: -1;
+		    position: absolute;
+		    border-radius: 50%;
+		    background-color: @face-color;
+	    }
+	}
+	
+	.analog-center {
+		height: 4px;
+		width: 4px;
+		top: 50%;
+		left: 50%;
+		z-index: 3;
+		margin-top: -2px;
+		margin-left: -2px;
+		display: block;
+		position: absolute;
+		background-color: #666666;
+	}
+	
+	.analog-minute,
+	.analog-hour {
+	    font-size: 1.1em;
+	    color: #666666;
+	    left: 50%;
+	    top: 50%;
+	    z-index: 3;
+	    text-align: center;
+	    width: 2em;
+	    line-height: 2em;
+	    border-radius: 50%;
+	    cursor: pointer;
+	    margin-left: -1em;
+	    margin-top: -1em;
+	    position: absolute;
+	    font-weight: bold;
+	    &.active{
+			background-color: @accent;
+			color:white;
+		}
+	}
+	
+	@d: 6.7em;
+	.deg-360 {transform: rotate(-90deg) translate(@d) rotate(90deg)}
+	.deg-30 {transform: rotate(-60deg) translate(@d) rotate(60deg)}
+	.deg-60 {transform: rotate(-30deg) translate(@d) rotate(30deg)}
+	.deg-90 {transform: rotate(0) translate(@d) rotate(0)}
+	.deg-120 {transform: rotate(30deg) translate(@d) rotate(-30deg)}
+	.deg-150 {transform: rotate(60deg) translate(@d) rotate(-60deg)}
+	.deg-180 {transform: rotate(90deg) translate(@d) rotate(-90deg)}
+	.deg-210 {transform: rotate(120deg) translate(@d) rotate(-120deg)}
+	.deg-240 {transform: rotate(150deg) translate(@d) rotate(-150deg)}
+	.deg-270 {transform: rotate(180deg) translate(@d) rotate(-180deg)}
+	.deg-300 {transform: rotate(210deg) translate(@d) rotate(-210deg)}
+	.deg-330 {transform: rotate(240deg) translate(@d) rotate(-240deg)}
+	
+	.period-picker{
+		width: @body-width;
+	}
+	
+	/* LOWER CONTROLS
+	   --------------- */
+	
+	.controls {
+		padding: 10px;
+		text-align: right;
+	}
+}	
+
+

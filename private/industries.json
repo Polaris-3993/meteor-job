@@ -1,0 +1,590 @@
+[
+  {
+    "name": "Accounting",
+    "categories": ["corporation", "finance"]
+  },
+  {
+    "name": "Airlines/Aviation",
+    "categories": ["technology", "transportation"]
+  },
+  {
+    "name": "Alternative Dsipute Resolution",
+    "categories": ["organization"]
+  },
+  {
+    "name": "Alternative Medicine",
+    "categories": ["health"]
+  },
+  {
+    "name": "Animation",
+    "categories": ["art", "media"]
+  },
+  {
+    "name": "Apparel & Fashion",
+    "categories": [""]
+  },
+  {
+    "name": "Architecture & Planning",
+    "categories": ["construction"]
+  },
+  {
+    "name": "Arts and Crafts",
+    "categories": ["art"]
+  },
+  {
+    "name": "Automotive",
+    "categories": [""]
+  },
+  {
+    "name": "Avitaion & Aerospace",
+    "categories": [""]
+  },
+  {
+    "name": "Banking",
+    "categories": ["finance"]
+  },
+  {
+    "name": "Biotechnology",
+    "categorieis": ["health", "technology"]
+  },
+  {
+    "name": "Broadcast Media",
+    "categories": ["media"]
+  },
+  {
+    "name": "Building Materials",
+    "categories": ["construction"]
+  },
+  {
+    "name": "Business Supplies & Equipment",
+    "categories": ["corporation"]
+  },
+  {
+    "name": "Capital Markets",
+    "categories": ["finance"]
+  },
+  {
+    "name": "Chemicals",
+    "categories": [""]
+  },
+  {
+    "name": "Civil & Social Organization",
+    "categories": ["organization", "service"]
+  },
+  {
+    "name": "Civil Engineering",
+    "categories": ["construction"]
+  },
+  {
+    "name": "Commercial Real Estate",
+    "categories": ["construction", "corporation", "finance"]
+  },
+  {
+    "name": "Computer & Network Security",
+    "categories": ["technology"]
+  },
+  {
+    "name": "Computer Games",
+    "categories": ["media"]
+  },
+  {
+    "name": "Computer Hardware",
+    "categories": ["technology"]
+  },
+  {
+    "name": "Computer Networking",
+    "categories": ["technology"]
+  },
+  {
+    "name": "Computer Software",
+    "categories": ["technology"]
+  },
+  {
+    "name": "Construction",
+    "categories": ["construction"]
+  },
+  {
+    "name": "Consumer Electronics",
+    "categories": [""]
+  },
+  {
+    "name": "Consumer Goods",
+    "categores": [""]
+  },
+  {
+    "name": "Consumer Services",
+    "categories": ["organization", "services"]
+  },
+  {
+    "name": "Cosmetics",
+    "categories": [""]
+  },
+  {
+    "name": "Diary",
+    "categories": [""]
+  },
+  {
+    "name": "Defence & Space",
+    "categories": [""]
+  },
+  {
+    "name": "Design",
+    "categories": ["art", "media"]
+  },
+  {
+    "name": "Education Management",
+    "categories": ["educatuion"]
+  },
+  {
+    "name": "E-learning",
+    "categories": ["education", "organization"]
+  },
+  {
+    "name": "Electrical/Electronic Manufacturing",
+    "categories": [""]
+  },
+  {
+    "name": "Entertaiment",
+    "categories": ["media"]
+  },
+  {
+    "name": "Environmental Services",
+    "categories": ["organization", "services"]
+  },
+  {
+    "name": "Events Services",
+    "categories": ["corporation", "services"]
+  },
+  {
+    "name": "Executive Office",
+    "categories": [""]
+  },
+  {
+    "name": "Facilities Services",
+    "categories": ["corporation", "services"]
+  },
+  {
+    "name": "Farming",
+    "categories": ["agriculture"]
+  },
+  {
+    "name": "Financial Services",
+    "categories": ["finance"]
+  },
+  {
+    "name": "Fine Art",
+    "categories": ["art", "media"]
+  },
+  {
+    "name": "Fishery",
+    "categories": ["agriculture"]
+  },
+  {
+    "name": "Food & Beverages",
+    "categories": [""]
+  },
+  {
+    "name": "Food production",
+    "categories": [""]
+  },
+  {
+    "name": "Fund Raising",
+    "categories": ["services"]
+  },
+  {
+    "name": "Furniture",
+    "categories": [""]
+  },
+  {
+    "name": "Gambling & Casinos",
+    "categories": [""]
+  },
+  {
+    "name": "Glass, Ceramics & Concrete",
+    "categories": ["construction"]
+  },
+  {
+    "name": "Government Administration",
+    "categories": [""]
+  },
+  {
+    "name": "Government Relation",
+    "categories": [""]
+  },
+  {
+    "name": "Graphic Design",
+    "categories": [""]
+  },
+  {
+    "name": "Health, Wellness & Fitness",
+    "categories": ["health"]
+  },
+  {
+    "name": "Higher Education",
+    "categories": ["education"]
+  },
+  {
+    "name": "Hospital & Health Care",
+    "categories": ["health"]
+  },
+  {
+    "name": "Hospitality",
+    "categories": [""]
+  },
+  {
+    "name": "Human Resources",
+    "categories": ["corporation"]
+  },
+  {
+    "name": "Import & Export",
+    "categories": ["corporation"]
+  },
+  {
+    "name": "Individual & Family Services",
+    "categories": [""]
+  },
+  {
+    "name": "Industrial Automation",
+    "categories": [""]
+  },
+  {
+    "name": "Information Services",
+    "categories": [""]
+  },
+  {
+    "name": "Information Technology & Services",
+    "categories": [""]
+  },
+  {
+    "name": "Insurance",
+    "categories": [""]
+  },
+  {
+    "name": "International Affairs",
+    "categories": [""]
+  },
+  {
+    "name": "International Trade & Development",
+    "categories": [""]
+  },
+  {
+    "name": "Internet",
+    "categories": [""]
+  },
+  {
+    "name": "Investment Banking",
+    "categories": [""]
+  },
+  {
+    "name": "Investment Management",
+    "categories": [""]
+  },
+  {
+    "name": "Judiciary",
+    "categories": [""]
+  },
+  {
+    "name": "Law Enforcment",
+    "categories": [""]
+  },
+  {
+    "name": "Law Practice",
+    "categories": [""]
+  },
+  {
+    "name": "Legal Services",
+    "categories": [""]
+  },
+  {
+    "name": "Legislative Office",
+    "categories": [""]
+  },
+  {
+    "name": "Leisure, Travel & Tourism",
+    "categories": [""]
+  },
+  {
+    "name": "Libraries",
+    "categories": [""]
+  },
+  {
+    "name": "Logistics & Supply Chain",
+    "categories": [""]
+  },
+  {
+    "name": "Luxury Goods & Jewerly",
+    "categories": [""]
+  },
+  {
+    "name": "Machinery",
+    "categories": [""]
+  },
+  {
+    "name": "Management Consulting",
+    "categories": [""]
+  },
+  {
+    "name": "Maritime",
+    "categories": [""]
+  },
+  {
+    "name": "Market Research",
+    "categories": [""]
+  },
+  {
+    "name": "Marketing & Advertising",
+    "categories": [""]
+  },
+  {
+    "name": "Mechanical or Industrial Engineering",
+    "categories": [""]
+  },
+  {
+    "name": "Media Production",
+    "categories": [""]
+  },
+  {
+    "name": "Medical Devices",
+    "categories": [""]
+  },
+  {
+    "name": "Medical Practice",
+    "categories": [""]
+  },
+  {
+    "name": "Mental Health Care",
+    "categories": [""]
+  },
+  {
+    "name": "Military",
+    "categories": [""]
+  },
+  {
+    "name": "Mining & Metals",
+    "categories": [""]
+  },
+  {
+    "name": "Motion Picutres & Film",
+    "categories": [""]
+  },
+  {
+    "name": "Museum & Institutions",
+    "categores": [""]
+  },
+  {
+    "name": "Music",
+    "categories": [""]
+  },
+  {
+    "name": "Nanotechnology",
+    "categories": [""]
+  },
+  {
+    "name": "Newspapers",
+    "categories": [""]
+  },
+  {
+    "name": "Non-Profit Organization Management",
+    "categories": [""]
+  },
+  {
+    "name": "Oil & Energy",
+    "categories": [""]
+  },
+  {
+    "name": "Online Media",
+    "categories": [""]
+  },
+  {
+    "name": "Outsourcing/Offshoring",
+    "categories": [""]
+  },
+  {
+    "name": "Package/Freight Delivery",
+    "categories": [""]
+  },
+  {
+    "name": "Packaging & Containers",
+    "categories": [""]
+  },
+  {
+    "name": "Paper & Forest Products",
+    "categories": [""]
+  },
+  {
+    "name": "Performing Arts",
+    "categories": [""]
+  },
+  {
+    "name": "Pharmaceuticals",
+    "categories": [""]
+  },
+  {
+    "name": "Philantropy",
+    "categories": [""]
+  },
+  {
+    "name": "Photography",
+    "categories": [""]
+  },
+  {
+    "name": "Plastics",
+    "categories": [""]
+  },
+  {
+    "name": "Political Organization",
+    "categories": [""]
+  },
+  {
+    "name": "Primary/Secondary Education",
+    "categories": [""]
+  },
+  {
+    "name": "Printing",
+    "categories": [""]
+  },
+  {
+    "name": "Professional Training & Coaching",
+    "categories": [""]
+  },
+  {
+    "name": "Program Development",
+    "categories": [""]
+  },
+  {
+    "name": "Public Policy",
+    "categories": [""]
+  },
+  {
+    "name": "Public Relation & Communications",
+    "categories": [""]
+  },
+  {
+    "name": "Public Safety",
+    "categories": [""]
+  },
+  {
+    "name": "Publising",
+    "categories": [""]
+  },
+  {
+    "name": "Railroad Manufacture",
+    "categories": [""]
+  },
+  {
+    "name": "Ranching",
+    "categories": [""]
+  },
+  {
+    "name": "Real Estate",
+    "categories": [""]
+  },
+  {
+    "name": "Recreational Facilities & Services",
+    "categories": [""]
+  },
+  {
+    "name": "Religious Institutions",
+    "categories": [""]
+  },
+  {
+    "name": "Renewables & Environment",
+    "categories": [""]
+  },
+  {
+    "name": "Research",
+    "categories": [""]
+  },
+  {
+    "name": "Restaurants",
+    "categories": [""]
+  },
+  {
+    "name": "Retail",
+    "categories": [""]
+  },
+  {
+    "name": "Security & Investigations",
+    "categorities": [""]
+  },
+  {
+    "name": "Semiconductors",
+    "categories": [""]
+  },
+  {
+    "name": "Shipbuilding",
+    "categories": [""]
+  },
+  {
+    "name": "Sporting Goods",
+    "categories": [""]
+  },
+  {
+    "name": "Sports",
+    "categories": [""]
+  },
+  {
+    "name": "Staffing & Recruiting",
+    "categories": [""]
+  },
+  {
+    "name": "Supermarkets",
+    "categories": [""]
+  },
+  {
+    "name": "Telecommunications",
+    "categories": [""]
+  },
+  {
+    "name": "Textiles",
+    "categories": [""]
+  },
+  {
+    "name": "Think Tanks",
+    "categories": [""]
+  },
+  {
+    "name": "Tobacco",
+    "categories": [""]
+  },
+  {
+    "name": "Translation and Localization",
+    "categories": [""]
+  },
+  {
+    "name": "Transportation/Tracking/Railroad",
+    "categories": [""]
+  },
+  {
+    "name": "Utilities",
+    "categories": [""]
+  },
+  {
+    "name": "Venture Capital & Private Equity",
+    "categories": [""]
+  },
+  {
+    "name": "Veterinary",
+    "categories": [""]
+  },
+  {
+    "name": "Warehousing",
+    "categories": [""]
+  },
+  {
+    "name": "Wholsale",
+    "categories": [""]
+  },
+  {
+    "name": "Winde and Spirtis",
+    "categories": [""]
+  },
+  {
+    "name": "Wireless",
+    "categories": [""]
+  },
+  {
+    "name": "Writing & Editing",
+    "categories": [""]
+  }
+]

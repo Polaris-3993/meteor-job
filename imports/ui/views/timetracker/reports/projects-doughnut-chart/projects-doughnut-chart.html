@@ -1,0 +1,16 @@
+<template name="projectsDoughnutChart">
+    <h5>Projects</h5>
+
+    <div class="projects-doughnut-chart-wrapper">
+        {{> chartCanvas id='projectsChart' height="150"}}
+    </div>
+
+    {{#each projects}}
+        <div class="input-color">
+            <h6>{{label}}</h6>
+
+            <div class="color-box" style="background-color: {{color}};"></div>
+        </div>
+    {{/each}}
+
+</template>

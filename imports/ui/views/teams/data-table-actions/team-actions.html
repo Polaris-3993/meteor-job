@@ -1,0 +1,22 @@
+<template name="teamActions">
+    <div class="right col s1">
+            <a class='vz-time-entries-options dropdown-button btn-flat no-padding right' href='#'
+               data-activates='teams-dropdown_{{data._id}}'>
+                <i class="material-icons">more_vert</i>
+            </a>
+        <ul id='teams-dropdown_{{data._id}}' class='dropdown-content small'>
+        {{#if canEditTeam}}
+            <li><a href="{{pathFor 'editTeam' id=data._id}}">Edit team</a>
+            </li>
+            <li><a href="{{pathFor 'assignMembersToTeam' id=data._id}}">Assign users</a></li>
+        {{/if}}
+
+            {{#if isArchived}}
+                <li><a href="" id="restore-team">Restore</a></li>
+            {{else}}
+                <li><a href="" id="archive-team">Archive</a>
+                </li>
+            {{/if}}
+        </ul>
+    </div>
+</template>

@@ -1,0 +1,13 @@
+<template name="topNavBarDropdownContainer">
+    <div class="dropdown-overlay">
+    </div>
+    <div class="dropdown-container">
+        <div class="triangle-top">
+            <div class="triangle-background"></div>
+            <div class="triangle-fill"></div>
+        </div>
+        <div class="dropdown-wrapper z-depth-1">
+            {{> UI.dynamic template=templateToDisplay data=contentTmplData}}
+        </div>
+    </div>
+</template>

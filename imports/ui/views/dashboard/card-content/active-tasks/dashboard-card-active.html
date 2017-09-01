@@ -1,0 +1,45 @@
+<template name="dashboardCardActive">
+    <div class="dashboard-card">
+        <div class="dashboard-card-title">
+            <div class="dashboard-card-name">{{title}}</div>
+            <div class="dashboard-card-icons">
+                <a href="#"><i class="material-icons">search</i></a>
+                {{#if showUsers}}
+                    <a href="#" class="dropdown-button btn-flat" data-activates="card-item-active" style="margin-top: -28px; margin-left: -10px;" data-beloworigin="true"
+                       data-stopPropagation="true"><i
+                            class="material-icons" style="font-size: x-large;">filter_list</i></a>
+                {{else}}
+                    <a href="#"><i class="material-icons">filter_list</i></a>
+                {{/if}}
+                <a href="#"><i class="material-icons">more_vert</i></a>
+            </div>
+            <ul class="dropdown-content" id="card-item-active" style="min-width: 210px; z-index: 1;">
+                <li><span class="top">Users</span>
+                    <ul>
+                        <li>
+                            <input id="item-active-all" type="radio" class="all-active-tasks" name="item-active">
+                            <label for="item-active-all">All</label>
+                        </li>
+                        <li>
+                            <input id="item-active" type="radio" class="assigned-to-me" name="item-active">
+                            <label for="item-active">Assigned to me</label>
+                        </li>
+                        {{#each contractedUsers}}
+                            <li>
+                                <input id="item-active{{_id}}" type="radio" class="{{_id}}" name="item-active">
+                                <label for="item-active{{_id}}">Assigned to {{profile.fullName}}</label>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard-card-content">
+            <div class="dashboard-card-content-scroll">
+                <div class="dashboard-card-content-scroll-inner">
+                    {{> Template.dynamic template=content data=query}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

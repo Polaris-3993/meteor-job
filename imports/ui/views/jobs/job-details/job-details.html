@@ -1,0 +1,50 @@
+<template name="jobDetails">
+    <main>
+        <div class="add-job step-3">
+            <div class="row head">
+                <div class="col s12">
+                    <h3>Overview</h3>
+                </div>
+            </div>
+
+            <div class="row overview">
+                <div class="col s12">
+                    <h6>Job title</h6>
+                    <h4>{{#if job.title}}{{job.title}}{{/if}}</h4>
+
+                    <h6>Job description</h6>
+                    <p>{{#if job.description}}{{job.description}}{{/if}}</p>
+
+                    <h6>Salary</h6>
+                    <h4>{{#if job.salary.type}}{{job.salary.type}}{{/if}}<br>{{salary}}</h4>
+
+                    <h6>Contract type</h6>
+                    <h4>{{#if job.contractType}}{{job.contractType}}{{/if}}</h4>
+
+                    <h6>Skills</h6>
+                    <h4>{{#if job.skillsIds}}{{jobSkills}}{{/if}}</h4>
+
+
+                </div>
+            </div>
+
+            <div class="row action">
+                <a href="#" class="discard">Discard</a>
+                {{#unless isExpired}}
+                    {{#unless isDraft}}
+                        {{#if applied}}
+                            <a href="#" class="apply">Apply</a>
+                        {{else}}
+                            <a href="#" class="applied">Applied</a>
+                        {{/if}}
+                    {{else}}
+                        <a href="#" class="draft">Job is draft</a>
+                    {{/unless}}
+                {{else}}
+                    <a href="#" class="expired">Job expired</a>
+                {{/unless}}
+            </div>
+
+        </div>
+    </main>
+</template>

@@ -1,0 +1,13 @@
+<template name="allSkillsList">
+    <div class="skills-list">
+        <div class="skill-filter-input-wrapper">
+            <input id="filter-input" type="text" autocomplete="off">
+            <i class="material-icons">search</i>
+        </div>
+        <div class="collection scrollable-list">
+            {{#each allSkills}}
+                <a id="{{_id}}" class="all-skills collection-item">{{label}}</a>
+            {{/each}}
+        </div>
+    </div>
+</template>

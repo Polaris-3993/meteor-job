@@ -1,0 +1,24 @@
+<template name="messagesList">
+    {{#if isCursorOrArrayHasDocuments messagesGroupByDays}}
+        {{#each messagesGroupByDays}}
+            <div class="chat-single messages-group-date">
+                <p class="no-margin-bottom">{{formatMessageGroupDate date}}</p>
+            </div>
+            <div class="chat-outer">
+                {{#each messages}}
+                    {{> message
+                    message=this
+                    oldestMessageId=../../oldestMessageId
+                    lastReadMessages=lastReadMessagesByEachUser
+                    }}
+                {{/each}}
+            </div>
+        {{/each}}
+    {{else}}
+        {{#if isSearchMode}}
+            <p>No messages found</p>
+        {{else}}
+            <p>No messages yet</p>
+        {{/if}}
+    {{/if}}
+</template>

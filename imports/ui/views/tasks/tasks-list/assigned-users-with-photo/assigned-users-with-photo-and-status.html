@@ -1,0 +1,12 @@
+<template name="assignedUsersWithPhotoAndStatus">
+    <a href="{{pathFor 'userProfile' id=this}}"
+       class="user-with-tip image
+         {{#if isOnline this}}
+           online
+         {{else}}
+           offline
+         {{/if}}"
+       title="{{userNamePhoto this}}">
+      <img src="{{userPhoto this}}">
+    </a>
+</template>

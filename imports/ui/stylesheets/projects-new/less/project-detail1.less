@@ -1,0 +1,78 @@
+@import 'variables.less';
+.collapsible-body{
+  padding: @32px 0;
+  overflow: auto;
+  .action{
+    padding: 0 @30px;
+    .dropdown-button{
+      color: @black8;
+      display: inline-block;
+      border-bottom: 1px solid @black1;
+      &:after{
+        content: '\E5C5';
+        font-family: 'Material Icons';
+        float: right;
+        color: @black5;
+      }
+    }
+    .dropdown-content{
+      li{
+        a{
+          color: @black7;
+          font-size: @16px;
+        }
+      }
+    }
+  }
+  .chart-wrap{
+    .chart{
+      width:100%;
+      margin-left: -10px;
+    }
+  }
+ .info{
+   h3{
+     font-size: @22px;
+     color: @black7;
+     margin: 0;
+   }
+   p{
+     padding: 0;
+   }
+   .exp-title{
+     font-size: @15px;
+     color: @black5;
+     margin-top: @36px;
+     text-transform: uppercase;
+   }
+   ul{
+     display: inline-block;
+     min-width: 250px;
+     li{
+       display: block;
+       a{
+         font-size: @18px;
+         color: @black7;
+         .light{
+           font-weight: 500;
+           color: rgba(0, 0, 0, 0.35);
+         }
+       }
+     }
+   }
+ }
+ .col.s12:nth-child(4) {
+   display: flex;
+   justify-content: flex-end;
+ }
+ .bottom{
+   margin-top: @40px;
+   padding-right: @30px;
+   .open-project{
+     color: #78909c;
+     font-size: @15px;
+     text-transform: uppercase;
+     font-weight: bold;
+   }
+ }
+}
